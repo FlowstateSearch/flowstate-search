@@ -23,22 +23,22 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <Link href="/">
-            <a className="flex items-center gap-2 font-heading font-bold text-xl tracking-tighter text-primary">
+            <div className="flex items-center gap-2 font-heading font-bold text-xl tracking-tighter text-primary cursor-pointer">
               <span className="text-foreground">FLOWSTATE</span> SEARCH
-            </a>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href}>
-                <a
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
+                <div
+                  className={`text-sm font-medium transition-colors hover:text-primary cursor-pointer ${
                     isActive(link.href) ? "text-primary" : "text-muted-foreground"
                   }`}
                 >
                   {link.label}
-                </a>
+                </div>
               </Link>
             ))}
             <Link href="/contact">
@@ -60,14 +60,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <nav className="flex flex-col gap-4 mt-8">
                 {navLinks.map((link) => (
                   <Link key={link.href} href={link.href}>
-                    <a
-                      className={`text-lg font-medium transition-colors hover:text-primary ${
+                    <div
+                      className={`text-lg font-medium transition-colors hover:text-primary cursor-pointer ${
                         isActive(link.href) ? "text-primary" : "text-muted-foreground"
                       }`}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {link.label}
-                    </a>
+                    </div>
                   </Link>
                 ))}
                 <Link href="/contact">
@@ -103,13 +103,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 {navLinks.map((link) => (
                   <li key={link.href}>
                     <Link href={link.href}>
-                      <a className="hover:text-primary transition-colors">{link.label}</a>
+                      <div className="hover:text-primary transition-colors cursor-pointer">{link.label}</div>
                     </Link>
                   </li>
                 ))}
                 <li>
                   <Link href="/contact">
-                    <a className="hover:text-primary transition-colors">Request Portal Demo</a>
+                    <div className="hover:text-primary transition-colors cursor-pointer">Request Portal Demo</div>
                   </Link>
                 </li>
               </ul>
@@ -138,7 +138,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </li>
                 <li>
                   <Link href="/contact">
-                    <a className="hover:text-primary transition-colors">Schedule a Call</a>
+                    <div className="hover:text-primary transition-colors cursor-pointer">Schedule a Call</div>
                   </Link>
                 </li>
               </ul>

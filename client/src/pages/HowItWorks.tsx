@@ -100,7 +100,9 @@ export default function HowItWorks() {
                   </div>
                   {step.id === 4 && (
                     <Link href="/contact">
-                      <Button variant="outline" className="mt-4">Request a Portal Demo</Button>
+                      <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 mt-4 cursor-pointer">
+                        Request a Portal Demo
+                      </div>
                     </Link>
                   )}
                 </div>
@@ -129,14 +131,14 @@ export default function HowItWorks() {
           <h2 className="text-3xl md:text-5xl font-heading font-bold">Ready to Experience a Search That Flows?</h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Link href="/start-search">
-              <Button size="lg" variant="secondary" className="text-base px-10 h-14 font-bold text-primary bg-white hover:bg-white/90">
+              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-11 px-8 text-base px-10 h-14 font-bold text-primary bg-white hover:bg-white/90 cursor-pointer">
                 Start Your Search
-              </Button>
+              </div>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" size="lg" className="text-base px-10 h-14 border-white/20 text-white hover:bg-white/10 hover:text-white">
+              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 text-base px-10 h-14 border-white/20 text-white hover:bg-white/10 hover:text-white cursor-pointer">
                 Request a Portal Demo
-              </Button>
+              </div>
             </Link>
           </div>
         </div>

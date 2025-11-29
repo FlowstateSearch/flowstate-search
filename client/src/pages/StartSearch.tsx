@@ -134,9 +134,9 @@ export default function StartSearch() {
 
           <div className="pt-8">
             <Link href="/contact">
-              <Button size="lg" className="text-base px-10 h-14 shadow-xl shadow-primary/20">
+              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 text-base px-10 h-14 shadow-xl shadow-primary/20 cursor-pointer">
                 Schedule a Discovery Call
-              </Button>
+              </div>
             </Link>
           </div>
         </div>
@@ -184,14 +184,14 @@ export default function StartSearch() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Link href="/contact">
-              <Button size="lg" className="text-base px-10 h-14 shadow-xl shadow-primary/20">
+              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 text-base px-10 h-14 shadow-xl shadow-primary/20 cursor-pointer">
                 Schedule a Discovery Call
-              </Button>
+              </div>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" size="lg" className="text-base px-10 h-14">
+              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 text-base px-10 h-14 cursor-pointer">
                 Request a Portal Demo
-              </Button>
+              </div>
             </Link>
           </div>
         </div>

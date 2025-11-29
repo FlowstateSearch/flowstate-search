@@ -51,14 +51,14 @@ export default function Home() {
             
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
               <Link href="/start-search">
-                <Button size="lg" className="text-base px-8 h-12 shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all">
+                <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 text-base h-12 shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all cursor-pointer">
                   Start Your Search
-                </Button>
+                </div>
               </Link>
               <Link href="/how-it-works">
-                <Button variant="outline" size="lg" className="text-base px-8 h-12 border-primary/20 hover:bg-primary/5">
+                <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 text-base h-12 border-primary/20 hover:bg-primary/5 cursor-pointer">
                   See How It Works
-                </Button>
+                </div>
               </Link>
             </motion.div>
 
@@ -203,10 +203,10 @@ export default function Home() {
 
           <div className="mt-12 text-center">
             <Link href="/how-it-works">
-              <Button variant="outline" className="group">
+              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 group cursor-pointer">
                 See How It Works
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              </div>
             </Link>
           </div>
         </div>
@@ -286,14 +286,14 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Link href="/start-search">
-              <Button size="lg" className="text-base px-10 h-14 shadow-xl shadow-primary/20">
+              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 text-base px-10 h-14 shadow-xl shadow-primary/20 cursor-pointer">
                 Start Your Search
-              </Button>
+              </div>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" size="lg" className="text-base px-10 h-14">
+              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 text-base px-10 h-14 cursor-pointer">
                 Request a Portal Demo
-              </Button>
+              </div>
             </Link>
           </div>
         </div>
