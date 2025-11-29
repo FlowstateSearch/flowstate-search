@@ -1,0 +1,186 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "wouter";
+import { Check, Zap, Layout, Users, ShieldCheck, Target } from "lucide-react";
+
+export default function WhyFlowstate() {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section className="relative py-20 md:py-32 overflow-hidden bg-muted/10">
+        <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
+          <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight">
+            The Portal. The Process. <span className="text-primary">The Results.</span>
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            We've built a recruiting system designed for one thing: finding construction leaders who will thrive on your team and delivering them through an experience that actually works.
+          </p>
+        </div>
+      </section>
+
+      {/* The Portal Section */}
+      <section className="py-24 border-b border-border/50">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                <Layout className="w-4 h-4" />
+                <span>THE PORTAL</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold">
+                Most Recruiters Still Send Email Attachments Like It's 2015
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Traditional recruiting is chaos. Email attachments get lost. Resumes are outdated. Feedback is scattered across 47 messages.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                We built a portal so you actually know what's happening in your search. Everything lives in one place.
+              </p>
+              
+              <div className="space-y-4">
+                {[
+                  "Fewer emails clogging your inbox",
+                  "Faster decision-making",
+                  "Higher alignment across your hiring team",
+                  "Full transparency into your search pipeline"
+                ].map((benefit) => (
+                  <div key={benefit} className="flex items-center gap-3">
+                    <div className="w-6 h-6 rounded-full bg-green-500/10 flex items-center justify-center text-green-600">
+                      <Check className="w-4 h-4" />
+                    </div>
+                    <span className="font-medium">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+
+              <Link href="/contact">
+                <Button variant="outline" size="lg">Request a Portal Demo</Button>
+              </Link>
+            </div>
+            
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl blur-2xl opacity-50"></div>
+              <img 
+                src="/portal-dashboard-abstract.png" 
+                alt="Portal Dashboard" 
+                className="relative rounded-xl shadow-2xl border border-border/50 w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Process Section */}
+      <section className="py-24 bg-muted/30 border-b border-border/50">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1 relative">
+              <div className="grid grid-cols-2 gap-4">
+                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4">
+                  <Zap className="w-8 h-8 text-amber-500" />
+                  <h3 className="font-bold">AI-Powered Ranking</h3>
+                  <p className="text-sm text-muted-foreground">Scoring 200+ candidates in minutes.</p>
+                </Card>
+                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4 mt-8">
+                  <Users className="w-8 h-8 text-blue-500" />
+                  <h3 className="font-bold">Human Expertise</h3>
+                  <p className="text-sm text-muted-foreground">Evaluating fit, risk, and opportunity.</p>
+                </Card>
+                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4">
+                  <Target className="w-8 h-8 text-red-500" />
+                  <h3 className="font-bold">Market Mapping</h3>
+                  <p className="text-sm text-muted-foreground">Identifying every potential candidate.</p>
+                </Card>
+                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4 mt-8">
+                  <ShieldCheck className="w-8 h-8 text-green-500" />
+                  <h3 className="font-bold">Omni-Channel</h3>
+                  <p className="text-sm text-muted-foreground">Reaching candidates where they are.</p>
+                </Card>
+              </div>
+            </div>
+
+            <div className="order-1 lg:order-2 space-y-8">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                <Zap className="w-4 h-4" />
+                <span>THE PROCESS</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold">
+                Strategic Sourcing + Human Expertise
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                We don't post-and-pray. We hunt. Our process combines market mapping, AI-powered tools, and deep human expertise to find the people who aren't looking but should be.
+              </p>
+              
+              <div className="p-6 bg-background rounded-xl border border-border shadow-sm">
+                <div className="flex items-start gap-4">
+                  <div className="text-4xl">🎯</div>
+                  <div>
+                    <h4 className="font-bold text-lg mb-1">Our Pipeline Stats</h4>
+                    <p className="text-muted-foreground">
+                      200+ professionals evaluated → 8-12 presented → 1 perfect hire who stays.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Results Section */}
+      <section className="py-24">
+        <div className="container text-center max-w-4xl mx-auto space-y-12">
+          <div className="space-y-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+              <Users className="w-4 h-4" />
+              <span>THE RESULTS</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold">
+              We Find People Who Thrive, Not Just Survive
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Flow state is that optimal zone where someone is fully immersed in their work, performing at their peak, and energized by what they do. That's what we deliver.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="p-8 rounded-2xl bg-muted/30 border border-border/50 space-y-4">
+              <div className="text-4xl font-bold font-mono text-primary">91%</div>
+              <h3 className="font-bold text-lg">Retention Rate</h3>
+              <p className="text-sm text-muted-foreground">After one year, our placements are still thriving.</p>
+            </div>
+            <div className="p-8 rounded-2xl bg-muted/30 border border-border/50 space-y-4">
+              <div className="text-4xl font-bold font-mono text-primary">5-Star</div>
+              <h3 className="font-bold text-lg">Candidate Satisfaction</h3>
+              <p className="text-sm text-muted-foreground">We treat candidates like professionals.</p>
+            </div>
+            <div className="p-8 rounded-2xl bg-muted/30 border border-border/50 space-y-4">
+              <div className="text-4xl font-bold font-mono text-primary">200+</div>
+              <h3 className="font-bold text-lg">Candidates Evaluated</h3>
+              <p className="text-sm text-muted-foreground">Per search to find your perfect match.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24 bg-background border-t border-border">
+        <div className="container text-center max-w-3xl mx-auto space-y-8">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold">See the Difference for Yourself</h2>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+            <Link href="/start-search">
+              <Button size="lg" className="text-base px-10 h-14 shadow-xl shadow-primary/20">
+                Start Your Search
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button variant="outline" size="lg" className="text-base px-10 h-14">
+                Request a Portal Demo
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
