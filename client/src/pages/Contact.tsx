@@ -173,18 +173,20 @@ export default function Contact() {
                   </Card>
                 </a>
 
-                <Card className="hover:border-primary/50 transition-colors cursor-pointer group">
-                  <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                      <Mail className="w-6 h-6" />
-                    </div>
-                    <div className="space-y-1">
-                      <h3 className="font-bold text-lg">Email Us Directly</h3>
-                      <p className="text-muted-foreground text-sm">Prefer email? Drop us a line and we'll respond within 24 hours.</p>
-                      <div className="pt-2 text-primary font-medium text-sm group-hover:underline">jordan@flowstatesearch.com</div>
-                    </div>
-                  </CardContent>
-                </Card>
+                <a href="mailto:hello@flowstatesearch.com" className="block">
+                  <Card className="hover:border-primary/50 transition-colors cursor-pointer group">
+                    <CardContent className="p-6 flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                        <Mail className="w-6 h-6" />
+                      </div>
+                      <div className="space-y-1">
+                        <h3 className="font-bold text-lg">Email Us Directly</h3>
+                        <p className="text-muted-foreground text-sm">Prefer email? Drop us a line and we'll respond within 24 hours.</p>
+                        <div className="pt-2 text-primary font-medium text-sm group-hover:underline">hello@flowstatesearch.com</div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
               </div>
             </div>
           </div>
