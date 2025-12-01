@@ -109,13 +109,23 @@ export default function HowItWorks() {
                 
                 <div className="flex-1 w-full">
                   <Card className="overflow-hidden border-border/50 bg-background/50 backdrop-blur shadow-xl">
-                    <CardContent className="p-8 min-h-[300px] flex items-center justify-center bg-muted/20">
-                      {/* Placeholder for step-specific visuals */}
-                      <div className="text-center space-y-4 opacity-50">
-                        <step.icon className="w-24 h-24 mx-auto text-muted-foreground/20" />
-                        <p className="text-sm font-mono text-muted-foreground">Visual representation of {step.title}</p>
+                    {step.id === 1 ? (
+                      <div className="relative h-[300px] w-full">
+                        <img 
+                          src="/market-mapping.png" 
+                          alt="Market Mapping Visualization" 
+                          className="w-full h-full object-cover"
+                        />
                       </div>
-                    </CardContent>
+                    ) : (
+                      <CardContent className="p-8 min-h-[300px] flex items-center justify-center bg-muted/20">
+                        {/* Placeholder for step-specific visuals */}
+                        <div className="text-center space-y-4 opacity-50">
+                          <step.icon className="w-24 h-24 mx-auto text-muted-foreground/20" />
+                          <p className="text-sm font-mono text-muted-foreground">Visual representation of {step.title}</p>
+                        </div>
+                      </CardContent>
+                    )}
                   </Card>
                 </div>
               </div>
