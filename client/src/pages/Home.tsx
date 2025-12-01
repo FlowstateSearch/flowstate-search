@@ -87,14 +87,7 @@ export default function Home() {
                 className="w-full h-auto object-cover rounded-2xl"
               />
               
-              {/* Floating UI Element - Portal Preview */}
-              <div className="absolute -bottom-12 -left-12 w-2/3 rounded-xl overflow-hidden shadow-2xl border border-border bg-background/95 backdrop-blur p-1 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-500">
-                <img 
-                  src="/portal-dashboard-abstract.png" 
-                  alt="Portal Interface" 
-                  className="w-full h-auto rounded-lg"
-                />
-              </div>
+
             </div>
           </motion.div>
         </div>
