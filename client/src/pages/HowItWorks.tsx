@@ -181,7 +181,7 @@ export default function HowItWorks() {
           <h2 className="text-3xl md:text-5xl font-heading font-bold">Ready to Experience a Search That Flows?</h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Link href="/start-search">
-              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-11 px-8 text-base px-10 h-14 font-bold text-primary bg-white hover:bg-white/90 cursor-pointer">
+              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-11 px-8 text-base px-10 h-14 font-bold text-primary bg-white hover:bg-white/90 cursor-pointer" style={{backgroundColor: '#969696', fontWeight: '700'}}>
                 Start Your Search
               </div>
             </Link>
