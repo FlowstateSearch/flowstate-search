@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Portal from "./pages/Portal";
 import JobDescription from "./pages/JobDescription";
 import JobDescriptionCPM from "./pages/JobDescriptionCPM";
+import JobDescriptionSuperintendent from "./pages/JobDescriptionSuperintendent";
 
 function Router() {
   return (
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/portal" component={Portal} />
       <Route path="/jobs/senior-project-manager-ny" component={JobDescription} />
       <Route path="/jobs/construction-project-manager-in" component={JobDescriptionCPM} />
+      <Route path="/jobs/senior-superintendent-in" component={JobDescriptionSuperintendent} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
