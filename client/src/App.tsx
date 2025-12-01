@@ -9,6 +9,7 @@ import HowItWorks from "./pages/HowItWorks";
 import WhyFlowstate from "./pages/WhyFlowstate";
 import StartSearch from "./pages/StartSearch";
 import Contact from "./pages/Contact";
+import Portal from "./pages/Portal";
 
 function Router() {
   return (
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/why-flowstate" component={WhyFlowstate} />
       <Route path="/start-search" component={StartSearch} />
       <Route path="/contact" component={Contact} />
+      <Route path="/portal" component={Portal} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

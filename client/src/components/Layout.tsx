@@ -41,6 +41,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               </Link>
             ))}
+            <Link href="/portal">
+              <Button variant="outline" size="sm" className="font-semibold">
+                Login
+              </Button>
+            </Link>
             <Link href="/contact">
               <Button variant="default" size="sm" className="font-semibold">
                 Request Portal Demo
@@ -70,8 +75,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     </div>
                   </Link>
                 ))}
+                <Link href="/portal">
+                  <Button variant="outline" className="w-full mt-4" onClick={() => setIsMobileMenuOpen(false)}>
+                    Login
+                  </Button>
+                </Link>
                 <Link href="/contact">
-                  <Button className="w-full mt-4" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Button className="w-full mt-2" onClick={() => setIsMobileMenuOpen(false)}>
                     Request Portal Demo
                   </Button>
                 </Link>
