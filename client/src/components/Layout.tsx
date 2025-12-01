@@ -16,11 +16,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   ];
 
   const isActive = (path: string) => location === path;
-  const isPortal = location === "/portal";
-
-  if (isPortal) {
-    return <main className="min-h-screen bg-background">{children}</main>;
-  }
 
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans">

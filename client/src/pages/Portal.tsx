@@ -24,15 +24,15 @@ export default function Portal() {
   }, []);
 
   return (
-    <div className="h-screen w-screen overflow-hidden bg-background">
+    <div className="w-full min-h-[calc(100vh-64px)] bg-background">
       <iframe
         id="knack-app-iframe"
         src="https://apps.knack.com/flowstatesearch/untitled-app/client-dashboard?embedKey=dist_2"
         width="100%"
-        height="100%"
+        height="800"
         frameBorder="0"
         allowFullScreen
-        className="w-full h-full border-0"
+        className="w-full min-h-[800px] border-0"
         title="Client Portal"
       ></iframe>
     </div>
