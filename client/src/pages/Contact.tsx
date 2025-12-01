@@ -4,9 +4,46 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Calendar, Mail, Monitor } from "lucide-react";
+import { Calendar, Mail, Monitor, Loader2 } from "lucide-react";
+import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
+import { toast } from "sonner";
 
 export default function Contact() {
+  const form = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [source, setSource] = useState("");
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!form.current) return;
+
+    setIsSubmitting(true);
+
+    // Prepare template parameters matching the form fields
+    // Note: The template in EmailJS should expect these variable names:
+    // user_name, user_email, user_phone, company, role, message, source
+    
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      form.current,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+      .then((result) => {
+          console.log(result.text);
+          toast.success("Message sent successfully! We'll be in touch soon.");
+          if (form.current) form.current.reset();
+          setSource("");
+          setIsSubmitting(false);
+      }, (error) => {
+          console.log(error.text);
+          toast.error("Failed to send message. Please try again or email us directly.");
+          setIsSubmitting(false);
+      });
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -29,46 +66,48 @@ export default function Contact() {
                 <p className="text-muted-foreground">Fill out the form below and we'll get back to you within 24 hours.</p>
               </div>
 
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+              <form ref={form} className="space-y-6" onSubmit={sendEmail}>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
-                    <Input id="name" placeholder="John Doe" required />
+                    <Label htmlFor="user_name">Name</Label>
+                    <Input id="user_name" name="user_name" placeholder="John Doe" required />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="company">Company</Label>
-                    <Input id="company" placeholder="Acme Construction" required />
+                    <Input id="company" name="company" placeholder="Acme Construction" required />
                   </div>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" placeholder="john@example.com" required />
+                    <Label htmlFor="user_email">Email</Label>
+                    <Input id="user_email" name="user_email" type="email" placeholder="john@example.com" required />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Phone (Optional)</Label>
-                    <Input id="phone" type="tel" placeholder="(555) 123-4567" />
+                    <Label htmlFor="user_phone">Phone (Optional)</Label>
+                    <Input id="user_phone" name="user_phone" type="tel" placeholder="(555) 123-4567" />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="role">What role are you hiring for?</Label>
-                  <Input id="role" placeholder="e.g. Senior Project Manager" />
+                  <Input id="role" name="role" placeholder="e.g. Senior Project Manager" />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="challenge">What's your biggest hiring challenge?</Label>
+                  <Label htmlFor="message">What's your biggest hiring challenge?</Label>
                   <Textarea 
-                    id="challenge" 
+                    id="message" 
+                    name="message"
                     placeholder="Tell us about your current situation..." 
                     className="min-h-[120px]"
+                    required
                   />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="source">How did you hear about us?</Label>
-                  <Select>
+                  <Select name="source" value={source} onValueChange={setSource}>
                     <SelectTrigger>
                       <SelectValue placeholder="Select an option" />
                     </SelectTrigger>
@@ -79,10 +118,19 @@ export default function Contact() {
                       <SelectItem value="other">Other</SelectItem>
                     </SelectContent>
                   </Select>
+                  {/* Hidden input to include select value in form data for EmailJS */}
+                  <input type="hidden" name="source" value={source} />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full md:w-auto px-8">
-                  Send Message
+                <Button type="submit" size="lg" className="w-full md:w-auto px-8" disabled={isSubmitting}>
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    "Send Message"
+                  )}
                 </Button>
               </form>
             </div>
@@ -129,7 +177,7 @@ export default function Contact() {
                     <div className="space-y-1">
                       <h3 className="font-bold text-lg">Email Us Directly</h3>
                       <p className="text-muted-foreground text-sm">Prefer email? Drop us a line and we'll respond within 24 hours.</p>
-                      <div className="pt-2 text-primary font-medium text-sm group-hover:underline">hello@flowstatesearch.com</div>
+                      <div className="pt-2 text-primary font-medium text-sm group-hover:underline">jordan@flowstatesearch.com</div>
                     </div>
                   </CardContent>
                 </Card>
