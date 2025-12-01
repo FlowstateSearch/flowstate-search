@@ -143,18 +143,20 @@ export default function Contact() {
               </div>
 
               <div className="grid gap-6">
-                <Card className="hover:border-primary/50 transition-colors cursor-pointer group">
-                  <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                      <Calendar className="w-6 h-6" />
-                    </div>
-                    <div className="space-y-1">
-                      <h3 className="font-bold text-lg">Schedule a Discovery Call</h3>
-                      <p className="text-muted-foreground text-sm">Book a 30-minute discovery call to discuss your hiring goals.</p>
-                      <div className="pt-2 text-primary font-medium text-sm group-hover:underline">Book now →</div>
-                    </div>
-                  </CardContent>
-                </Card>
+                <a href="https://calendar.app.google/AqXeWeNxbRwMtkB67" target="_blank" rel="noopener noreferrer" className="block">
+                  <Card className="hover:border-primary/50 transition-colors cursor-pointer group">
+                    <CardContent className="p-6 flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                        <Calendar className="w-6 h-6" />
+                      </div>
+                      <div className="space-y-1">
+                        <h3 className="font-bold text-lg">Schedule a Discovery Call</h3>
+                        <p className="text-muted-foreground text-sm">Book a 30-minute discovery call to discuss your hiring goals.</p>
+                        <div className="pt-2 text-primary font-medium text-sm group-hover:underline">Book now →</div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
 
                 <Card className="hover:border-primary/50 transition-colors cursor-pointer group">
                   <CardContent className="p-6 flex items-start gap-4">
