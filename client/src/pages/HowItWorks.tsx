@@ -149,6 +149,14 @@ export default function HowItWorks() {
                           className="w-full h-full object-cover"
                         />
                       </div>
+                    ) : step.id === 6 ? (
+                      <div className="relative h-[300px] w-full">
+                        <img 
+                          src="/post-hire-followup.png" 
+                          alt="Post-Hire Follow-Up Visualization" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                     ) : (
                       <CardContent className="p-8 min-h-[300px] flex items-center justify-center bg-muted/20">
                         {/* Placeholder for step-specific visuals */}
