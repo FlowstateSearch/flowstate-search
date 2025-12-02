@@ -7,7 +7,7 @@ export default function WhyFlowstate() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 overflow-hidden bg-muted/10">
+      <section className="relative py-16 md:py-24 overflow-hidden bg-muted/10">
         <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight">
             The Portal. The Process. <span className="text-primary">The Results.</span>
@@ -108,7 +108,7 @@ export default function WhyFlowstate() {
                 Strategic Sourcing + Human Expertise
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We don't post-and-pray. We hunt. Our process combines market mapping, AI-powered tools, and deep human expertise to find the people who aren't looking but should be.
+                We don't post-and-pray. We hunt. AI ranks candidate performance indicators, track records, and career progression — then our industry experts evaluate leadership style, communication skills, and job site fit.
               </p>
               
               <div className="p-6 bg-background rounded-xl border border-border shadow-sm">
@@ -139,7 +139,7 @@ export default function WhyFlowstate() {
               We Find People Who Thrive, Not Just Survive
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Flow state is that optimal zone where someone is fully immersed in their work, performing at their peak, and energized by what they do. That's what we deliver.
+              Flow state means fewer mistakes, better communication, safer job sites, and projects that finish on time and under budget.
             </p>
           </div>
 
@@ -163,19 +163,28 @@ export default function WhyFlowstate() {
         </div>
       </section>
 
+      {/* Concrete Ending Section */}
+      <section className="py-20 bg-muted/30 border-y border-border/50">
+        <div className="container text-center max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl font-medium text-foreground leading-relaxed">
+            If you’re tired of waiting for applications, fighting turnover, and losing talent to competitors, it’s time for a recruiting system built for construction. Let’s build your leadership pipeline.
+          </p>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-24 bg-background border-t border-border">
+      <section className="py-24 bg-background">
         <div className="container text-center max-w-3xl mx-auto space-y-8">
           <h2 className="text-3xl md:text-5xl font-heading font-bold">See the Difference for Yourself</h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Link href="/start-search">
               <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 text-base px-10 h-14 shadow-xl shadow-primary/20 cursor-pointer">
-                Start Your Search
+                Book a 15-Minute Discovery Call
               </div>
             </Link>
             <Link href="/contact">
               <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 text-base px-10 h-14 cursor-pointer">
-                Request a Portal Demo
+                See a Sample Portal Dashboard
               </div>
             </Link>
           </div>
