@@ -41,7 +41,7 @@ export default function Home() {
             variants={staggerContainer}
             className="space-y-8"
           >
-            <motion.h1 variants={fadeIn} className="text-4xl md:text-6xl font-heading font-bold tracking-tight leading-tight text-foreground">
+            <motion.h1 variants={fadeIn} className="text-4xl md:text-6xl font-heading font-bold tracking-tight leading-tight text-foreground" style={{fontSize: '40px'}}>
               We Don't Wait for Applications. <span className="text-primary">We Recruit the Talent</span> Already Working for Your Competitors.
             </motion.h1>
             
