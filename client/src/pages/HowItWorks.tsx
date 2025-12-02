@@ -99,26 +99,23 @@ export default function HowItWorks() {
                     <p className="text-lg text-muted-foreground leading-relaxed">{step.description}</p>
                     {step.id === 1 && (
                       <div className="mt-4 p-4 bg-muted/30 rounded-lg border-l-4 border-primary">
-                        <p className="font-bold text-primary">Metric: 6-8 Finalist Candidates</p>
-                        <p className="text-sm text-muted-foreground">We narrow the field so you only see the best.</p>
+                     <p className="font-bold text-primary">6-8 Finalist Candidates</p>                    <p className="text-sm text-muted-foreground">We narrow the field so you only see the best.</p>
                       </div>
                     )}
                     {step.id === 2 && (
                       <div className="mt-4 p-4 bg-muted/30 rounded-lg border-l-4 border-primary">
-                        <p className="font-bold text-primary">Metric: Average 27-Day Time to Shortlist</p>
+                <p className="font-bold text-primary">Average 27-Day Time to Shortlist</p>
                         <p className="text-sm text-muted-foreground">Speed without sacrificing quality.</p>
                       </div>
                     )}
                     {step.id === 5 && (
                       <div className="mt-4 p-4 bg-muted/30 rounded-lg border-l-4 border-primary">
-                        <p className="font-bold text-primary">Metric: 5-Star Candidate Satisfaction</p>
-                        <p className="text-sm text-muted-foreground">We treat your future leaders with respect.</p>
+                 <p className="font-bold text-primary">5-Star Candidate Satisfaction</p>                        <p className="text-sm text-muted-foreground">We treat your future leaders with respect.</p>
                       </div>
                     )}
                     {step.id === 6 && (
                       <div className="mt-4 p-4 bg-muted/30 rounded-lg border-l-4 border-primary">
-                        <p className="font-bold text-primary">Metric: 91% Retention After 1 Year</p>
-                        <p className="text-sm text-muted-foreground">Our placements stick because they fit.</p>
+                  <p className="font-bold text-primary">91% Retention After 1 Year</p>                       <p className="text-sm text-muted-foreground">Our placements stick because they fit.</p>
                       </div>
                     )}
                   </div>
