@@ -265,7 +265,7 @@ export default function Home() {
               {
                 step: "04",
                 title: "Shortlist Delivery",
-                description: "Top 6-18 ready to interview."
+                description: "Top 6-8 ready to interview."
               }
             ].map((item, index) => (
               <div key={index} className="relative p-6 bg-background rounded-lg border border-border shadow-sm hover:shadow-md transition-all duration-300 group">
@@ -324,19 +324,14 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-24 bg-muted/30 border-t border-border">
         <div className="container text-center max-w-3xl mx-auto space-y-8">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold">Ready to Stop Competing on Job Boards?</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-bold" style={{fontSize: '32px'}}>Stop Competing on Job Boards. Start Recruiting the Leaders Driving Results in Your Market.</h2>
           <p className="text-xl text-muted-foreground">
-            Let's find the construction leaders already performing at your competitors—and bring them to your team.
+            If you're tired of backlog, turnover, and hiring risk—it's time for a proactive recruiting strategy built for construction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Link href="/start-search">
               <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 text-base px-10 h-14 shadow-xl shadow-primary/20 cursor-pointer">
-                Start Your Search
-              </div>
-            </Link>
-            <Link href="/contact">
-              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 text-base px-10 h-14 cursor-pointer">
-                Request a Portal Demo
+                Book a 15-Minute Call
               </div>
             </Link>
           </div>
