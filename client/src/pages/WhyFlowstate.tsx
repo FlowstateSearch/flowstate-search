@@ -12,8 +12,8 @@ export default function WhyFlowstate() {
           <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight">
             The Portal. The Process. <span className="text-primary">The Results.</span>
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We've built a recruiting system designed for one thing: finding construction leaders who will thrive on your team and delivering them through an experience that actually works.
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto" style={{fontSize: '18px'}}>
+            Because every delayed hire is a delayed project. Our system keeps your pipeline moving, reduces turnover, and gets proven leaders onto your job sites faster.
           </p>
         </div>
       </section>
@@ -27,21 +27,19 @@ export default function WhyFlowstate() {
                 <Layout className="w-4 h-4" />
                 <span>THE PORTAL</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold">
-                Most Recruiters Still Send Email Attachments Like It's 2015
+              <h2 className="text-3xl md:text-4xl font-heading font-bold" style={{fontSize: '35px'}}>
+                We built a portal so you actually know what's happening in your search all in one place.
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Traditional recruiting is chaos. Email attachments get lost. Resumes are outdated. Feedback is scattered across 47 messages.
+                Faster decisions = projects staffed sooner. No more delaying mobilization or asking the team to do more with less.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                We built a portal so you actually know what's happening in your search. Everything lives in one place.
-              </p>
+              
               
               <div className="space-y-4">
                 {[
-                  "Fewer emails clogging your inbox",
-                  "Faster decision-making",
-                  "Higher alignment across your hiring team",
+                  "Align office and field decision-makers faster",
+                  "Reduce weeks of back-and-forth so projects start on schedule",
+                  "Prevent costly mis-hires and turnover cycles",
                   "Full transparency into your search pipeline"
                 ].map((benefit) => (
                   <div key={benefit} className="flex items-center gap-3">
