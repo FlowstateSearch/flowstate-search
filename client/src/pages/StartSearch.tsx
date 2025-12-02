@@ -168,8 +168,8 @@ export default function StartSearch() {
 
       {/* CTA Section */}
       <section className="py-24 bg-background border-t border-border">
-        <div className="container text-center max-w-3xl mx-auto space-y-8">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold">
+        <div className="container text-center max-w-5xl mx-auto space-y-8">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold whitespace-nowrap">
             Stop Competing on Job Boards.
             <br />
             Start Taking Market Share.
