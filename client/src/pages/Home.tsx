@@ -107,7 +107,7 @@ export default function Home() {
                         <div className="mt-1 text-destructive">❌</div>
                         <div>
                           <h4 className="font-bold text-foreground">High Turnover</h4>
-                          <p className="text-sm text-muted-foreground">Critical leadership roles revolving door.</p>
+                          <p className="text-sm text-muted-foreground">Stop the revolving door. Hire leaders committed to long-term growth.</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-4 p-4 rounded-lg bg-destructive/5 border border-destructive/10">
@@ -120,8 +120,8 @@ export default function Home() {
                       <div className="flex items-start gap-4 p-4 rounded-lg bg-destructive/5 border border-destructive/10">
                         <div className="mt-1 text-destructive">❌</div>
                         <div>
-                          <h4 className="font-bold text-foreground">Culture Misfits</h4>
-                          <p className="text-sm text-muted-foreground">Look good on paper, fail on the job site.</p>
+                           <h4 className="font-bold text-foreground">High Turnover</h4>
+                          <p className="text-sm text-muted-foreground">Stop the revolving door. Hire leaders committed to long-term growth.</p>
                         </div>
                       </div>
                     </div>
@@ -180,6 +180,10 @@ export default function Home() {
                 <p className="text-muted-foreground">
                   See every candidate, every document, every piece of feedback in one place. No email attachments. Just clarity.
                 </p>
+                <ul className="text-sm text-muted-foreground list-disc pl-4 space-y-1">
+                  <li>Faster decision-making</li>
+                  <li>Live status tracking</li>
+                </ul>
               </CardContent>
             </Card>
 
