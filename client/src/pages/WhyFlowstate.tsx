@@ -126,7 +126,7 @@ export default function WhyFlowstate() {
                   <div>
                     <h4 className="font-bold text-lg mb-1">Our Pipeline Stats</h4>
                     <p className="text-muted-foreground">
-                      200+ professionals evaluated → 8-12 presented → 1 perfect hire who stays.
+                      200+ professionals evaluated → 6-8 presented → 1 excellent hire who stays.
                     </p>
                   </div>
                 </div>
