@@ -50,21 +50,21 @@
   /* Kinetic Flow + Architectural Blueprint Hybrid Palette */
   /* Deep Ocean & Dawn + Blueprint & Steel */
   
-  /* Primary: Electric Blue (Kinetic) */
-  --primary: oklch(0.55 0.2 260); 
+  /* Primary: Brand Blue (#6e95f2) */
+  --primary: oklch(0.65 0.15 260); 
   --primary-foreground: oklch(0.98 0 0);
 
-  /* Secondary: Deep Navy (Kinetic/Blueprint) */
-  --secondary: oklch(0.25 0.05 260);
+  /* Secondary: Brand Dark Blue (#333366) */
+  --secondary: oklch(0.35 0.1 275);
   --secondary-foreground: oklch(0.98 0 0);
 
-  /* Accent: Amber (Kinetic Energy) */
-  --accent: oklch(0.75 0.18 70);
-  --accent-foreground: oklch(0.2 0.05 260);
+  /* Accent: Brand Bright Green (#0db54b) */
+  --accent: oklch(0.65 0.2 145);
+  --accent-foreground: oklch(0.98 0 0);
 
-  /* Muted: Cool Concrete (Blueprint) */
-  --muted: oklch(0.95 0.01 260);
-  --muted-foreground: oklch(0.45 0.02 260);
+  /* Muted: Brand Grey (#b5b9bf) */
+  --muted: oklch(0.8 0.02 260);
+  --muted-foreground: oklch(0.35 0.1 275);
 
   /* Backgrounds */
   --background: oklch(0.99 0.005 260);
