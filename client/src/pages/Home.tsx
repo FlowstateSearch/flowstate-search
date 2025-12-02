@@ -82,7 +82,7 @@ export default function Home() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-card/50 backdrop-blur-sm">
               <img 
-                src="/hero-construction-team.png" 
+                src="/images/commercial-construction-warm.png" 
                 alt="Construction Leadership Team" 
                 className="w-full h-auto object-cover rounded-2xl"
               />
