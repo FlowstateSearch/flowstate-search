@@ -46,8 +46,7 @@ export default function Home() {
             </motion.h1>
             
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
-              Matching proven leaders with top rated companies in the Construction and Logistics Industry
-            </motion.p>
+     Matching proven leaders with top rated companies in the Construction Industry        </motion.p>
             
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
               <Link href="/start-search">
