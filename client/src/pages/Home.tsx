@@ -138,9 +138,10 @@ export default function Home() {
                 <li>The top project managers, supers, and construction directors aren't scrolling LinkedIn.</li>
                 <li>They're already employed, already performing, already embedded at other companies in your market.</li>
               </ul>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                You don't need more applications. You need someone who will recruit the people who aren't looking—but should be.
-              </p>
+              <ul className="text-lg text-muted-foreground leading-relaxed space-y-4 list-disc pl-5">
+                <li>You don't need more applications.</li>
+                <li>You need someone who will recruit the people who aren't looking—but should be.</li>
+              </ul>
             </div>
           </div>
         </div>
