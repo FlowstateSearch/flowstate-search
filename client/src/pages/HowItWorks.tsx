@@ -24,7 +24,7 @@ export default function HowItWorks() {
     {
       id: 3,
       title: "Culture-First Evaluation",
-      description: "Every candidate goes through a rigorous evaluation. We're not looking for 'qualified' candidates. We're looking for people who will hit flow state in this specific role.",
+      description: "We evaluate proven performance, leadership style, communication strength, and job-site behavior—reducing turnover risk and avoiding costly mis-hires.",
       icon: Users,
       color: "text-indigo-500",
       bg: "bg-indigo-500/10"
@@ -62,7 +62,7 @@ export default function HowItWorks() {
         <div className="absolute inset-0 bg-[url('/flow-blueprint-bg.png')] opacity-5 bg-cover bg-center"></div>
         <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight" style={{fontSize: '41px'}}>
-            A Hiring Process Built for Construction. Designed to Maintain Schedule, Reduce Turnover, and Strengthen Project Delivery
+            A Hiring Process Built for <span className="text-primary">Construction</span>. Designed to Maintain <span className="text-primary">Schedule</span>, Reduce <span className="text-primary">Turnover</span>, and Strengthen <span className="text-primary">Project Delivery</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             No stops and starts. No email chaos. Just a clear, strategic path to finding construction leaders who will thrive on your team.
@@ -75,7 +75,7 @@ export default function HowItWorks() {
         <div className="container max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-2xl md:text-3xl font-heading font-bold">The Problem With Traditional Recruiting</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Traditional recruiting is full of friction—ghosted candidates, outdated resumes buried in email threads, hiring managers going dark for weeks, offers rejected at the last minute.
+            Traditional recruiting is full of friction which leads to missed deadlines, frustrated clients, and millions lost in backlog bottlenecks.
           </p>
           <p className="text-lg font-medium text-foreground">
             Our process flows. From the moment we kick off your search to the day your new hire starts, you'll have visibility, momentum, and a partner who stays in the zone.
@@ -186,8 +186,8 @@ export default function HowItWorks() {
               </div>
             </Link>
             <Link href="/contact">
-              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 text-base px-10 h-14 border-white/20 text-white hover:bg-white/10 hover:text-white cursor-pointer">
-                Request a Portal Demo
+              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 text-base px-10 h-14 border-white/20 text-white hover:bg-white/10 hover:text-white cursor-pointer" style={{backgroundColor: '#969696', fontWeight: '700'}}>
+                See a Live Example of a Market Map
               </div>
             </Link>
           </div>

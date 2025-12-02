@@ -41,7 +41,7 @@ export default function Home() {
             variants={staggerContainer}
             className="space-y-8"
           >
-            <motion.h1 variants={fadeIn} className="text-4xl md:text-6xl font-heading font-bold tracking-tight leading-tight text-foreground" style={{fontSize: '37px', fontSize: '37px'}}>
+            <motion.h1 variants={fadeIn} className="text-4xl md:text-6xl font-heading font-bold tracking-tight leading-tight text-foreground" style={{fontSize: '37px'}}>
               We Recruit <span className="text-primary">High-Performing Construction Leaders</span> Already Winning for Your Competitors
             </motion.h1>
             
@@ -117,13 +117,7 @@ export default function Home() {
                           <p className="text-sm text-muted-foreground">Can't clear work because you can't hire fast enough.</p>
                         </div>
                       </div>
-                      <div className="flex items-start gap-4 p-4 rounded-lg bg-destructive/5 border border-destructive/10">
-                        <div className="mt-1 text-destructive">❌</div>
-                        <div>
-                           <h4 className="font-bold text-foreground">High Turnover</h4>
-                          <p className="text-sm text-muted-foreground">Stop the revolving door. Hire leaders committed to long-term growth.</p>
-                        </div>
-                      </div>
+
                     </div>
                   </CardContent>
                 </Card>
