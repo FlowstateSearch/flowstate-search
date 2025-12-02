@@ -23,8 +23,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <Link href="/">
-            <div className="flex items-center gap-2 font-heading font-bold text-xl tracking-tighter text-primary cursor-pointer">
-              <span className="text-foreground">FLOWSTATE</span> SEARCH
+            <div className="flex items-center gap-2 cursor-pointer">
+              <img src="/COMPLETELOGO.png" alt="Flowstate Search" className="h-10 w-auto" />
             </div>
           </Link>
 
@@ -100,7 +100,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
             {/* Brand Column */}
             <div className="space-y-4">
-              <h3 className="font-heading font-bold text-lg">Flowstate Search</h3>
+              <Link href="/">
+                <img src="/COMPLETELOGO.png" alt="Flowstate Search" className="h-8 w-auto mb-4 cursor-pointer" />
+              </Link>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Finding construction leaders who thrive, not just survive. We recruit the talent already performing at your competitors.
               </p>
