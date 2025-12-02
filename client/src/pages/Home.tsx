@@ -42,11 +42,12 @@ export default function Home() {
             className="space-y-8"
           >
             <motion.h1 variants={fadeIn} className="text-4xl md:text-6xl font-heading font-bold tracking-tight leading-tight text-foreground" style={{fontSize: '37px'}}>
-              We Recruit <span className="text-primary">High-Performing Construction Leaders</span> Already Winning for Your Competitors
+              Recruit The <span className="text-primary">High-Performing Construction Leaders</span> Your Competitors Fear Losing.
             </motion.h1>
             
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
-     Matching proven leaders with top rated companies in the Construction Industry        </motion.p>
+              Job boards attract job seekers. We hunt the talent that makes companies legendary.
+            </motion.p>
             
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
               <Link href="/start-search">
