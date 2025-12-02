@@ -83,7 +83,7 @@ export default function WhyFlowstate() {
                   </div>
                   <p className="text-sm text-muted-foreground">Scoring 200+ candidates in minutes.</p>
                 </Card>
-                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4 h-full flex flex-col justify-between mt-8">
+                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4 h-full flex flex-col justify-between">
                   <div>
                     <Users className="w-8 h-8 text-blue-500 mb-4" />
                     <h3 className="font-bold">Human Expertise</h3>
@@ -97,7 +97,7 @@ export default function WhyFlowstate() {
                   </div>
                   <p className="text-sm text-muted-foreground">Identifying every potential candidate.</p>
                 </Card>
-                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4 h-full flex flex-col justify-between mt-8">
+                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4 h-full flex flex-col justify-between">
                   <div>
                     <ShieldCheck className="w-8 h-8 text-green-500 mb-4" />
                     <h3 className="font-bold">Omni-Channel</h3>
