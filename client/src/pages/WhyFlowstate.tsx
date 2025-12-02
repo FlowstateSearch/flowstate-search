@@ -7,7 +7,7 @@ export default function WhyFlowstate() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-16 md:py-24 overflow-hidden bg-muted/10">
+      <section className="relative py-12 md:py-16 overflow-hidden bg-muted/10">
         <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight">
             The Portal. The Process.<br />
@@ -20,7 +20,7 @@ export default function WhyFlowstate() {
       </section>
 
       {/* The Portal Section */}
-      <section className="py-24 border-b border-border/50">
+      <section className="py-16 md:py-20 border-b border-border/50">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
@@ -53,7 +53,7 @@ export default function WhyFlowstate() {
               </div>
 
               <Link href="/contact">
-                <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 cursor-pointer">
+                <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-[#0db54b] hover:text-white hover:border-[#0db54b] h-11 px-8 cursor-pointer">
                   Request a Portal Demo
                 </div>
               </Link>
@@ -226,7 +226,7 @@ export default function WhyFlowstate() {
               </div>
             </Link>
             <Link href="/contact">
-              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 text-base px-10 h-14 cursor-pointer">
+              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-[#0db54b] hover:text-white hover:border-[#0db54b] h-11 px-8 text-base px-10 h-14 cursor-pointer">
                 See a Sample Portal Dashboard
               </div>
             </Link>
