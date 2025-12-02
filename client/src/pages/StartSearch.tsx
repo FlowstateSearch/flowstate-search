@@ -11,10 +11,10 @@ export default function StartSearch() {
         <div className="absolute inset-0 bg-[url('/flow-blueprint-bg.png')] opacity-10 mix-blend-overlay bg-cover bg-center"></div>
         <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight">
-            Let's Find Your Next Construction Leader
+            Hire Leaders,<br />Not Applications.
           </h1>
-          <p className="text-xl opacity-90 max-w-2xl mx-auto">
-            If you're tired of high turnover, resume spam, and hiring processes that stall out—let's build something better together.
+          <p className="text-xl opacity-90 max-w-2xl mx-auto" style={{fontSize: '25px'}}>
+            When you’re tired of churn and chaos, we deliver proven construction talent built to stay.
           </p>
         </div>
       </section>
