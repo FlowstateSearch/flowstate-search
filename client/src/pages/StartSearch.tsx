@@ -169,14 +169,14 @@ export default function StartSearch() {
       {/* CTA Section */}
       <section className="py-24 bg-background border-t border-border">
         <div className="container text-center max-w-3xl mx-auto space-y-8">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold">Ready to Stop Competing on Job Boards?</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-bold">Stop Competing on Job Boards. Start Taking Market Share.</h2>
           <p className="text-xl text-muted-foreground">
-            Let's hunt the construction leaders already performing at your competitors—and bring them to your team.
+            Let's hunt the construction leaders already performing at your competitors and bring them to your team.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Link href="/contact">
               <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 text-base px-10 h-14 shadow-xl shadow-primary/20 cursor-pointer">
-                Schedule a Discovery Call
+                Claim Your Competitive Edge
               </div>
             </Link>
             <Link href="/contact">
