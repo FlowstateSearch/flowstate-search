@@ -24,7 +24,7 @@ export default function HowItWorks() {
     {
       id: 3,
       title: "Culture-First Evaluation",
-      description: "We evaluate proven performance, leadership style, communication strength, and job-site behavior—reducing turnover risk and avoiding costly mis-hires.",
+      description: "We evaluate proven performance, leadership style, communication strength, and job-site behavior. We look for leaders who perform under pressure and elevate field + office execution.",
       icon: Users,
       color: "text-indigo-500",
       bg: "bg-indigo-500/10"
@@ -78,7 +78,7 @@ export default function HowItWorks() {
             Traditional recruiting is full of friction which leads to missed deadlines, frustrated clients, and millions lost in backlog bottlenecks.
           </p>
           <p className="text-lg font-medium text-foreground">
-            Our process flows. From the moment we kick off your search to the day your new hire starts, you'll have visibility, momentum, and a partner who stays in the zone.
+            Our process keeps projects moving and hiring momentum strong. From the moment we kick off your search to the day your new hire starts, you'll have visibility, momentum, and a partner who stays in the zone.
           </p>
         </div>
       </section>
