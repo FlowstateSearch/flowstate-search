@@ -46,13 +46,13 @@ export default function Home() {
             </motion.h1>
             
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
-              We source project managers, superintendents, and construction directors who are already crushing it—then place them where they'll thrive on your team for the long haul.
+              Matching proven leaders with top rated companies in the Construction and Logistics Industry
             </motion.p>
             
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
               <Link href="/start-search">
                 <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 text-base h-12 shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all cursor-pointer">
-                  Start Your Search
+                  Start the Conversation
                 </div>
               </Link>
               <Link href="/how-it-works">
@@ -65,11 +65,11 @@ export default function Home() {
             <motion.div variants={fadeIn} className="pt-8 flex items-center gap-8 text-sm font-mono text-muted-foreground">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-primary" />
-                <span>NO JOB BOARDS</span>
+                <span style={{fontSize: '20px'}}>NO JOB BOARDS</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-primary" />
-                <span>91% RETENTION</span>
+                <span style={{fontSize: '20px'}}>91% RETENTION</span>
               </div>
             </motion.div>
           </motion.div>
@@ -134,9 +134,10 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
                 Your Best Hires Aren't on Job Boards
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                The top project managers, supers, and construction directors aren't scrolling LinkedIn. They're already employed, already performing, already embedded at other companies in your market.
-              </p>
+              <ul className="text-lg text-muted-foreground leading-relaxed space-y-4 list-disc pl-5">
+                <li>The top project managers, supers, and construction directors aren't scrolling LinkedIn.</li>
+                <li>They're already employed, already performing, already embedded at other companies in your market.</li>
+              </ul>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 You don't need more applications. You need someone who will recruit the people who aren't looking—but should be.
               </p>
