@@ -62,7 +62,7 @@ export default function HowItWorks() {
         <div className="absolute inset-0 bg-[url('/flow-blueprint-bg.png')] opacity-5 bg-cover bg-center"></div>
         <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight" style={{fontSize: '41px'}}>
-            A Hiring Process <span className="text-primary">Built for Construction</span>. Designed to Maintain Schedule, Reduce Turnover, and Strengthen Project Delivery
+            A Hiring Process <span className="text-primary">Built for Construction</span>. <br className="hidden md:block" />Designed to Maintain Schedule, Reduce Turnover, and Strengthen Project Delivery
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             No stops and starts. No email chaos. Just a clear, strategic path to finding construction leaders who will thrive on your team.
