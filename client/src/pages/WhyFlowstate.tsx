@@ -178,8 +178,8 @@ export default function WhyFlowstate() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl blur-2xl opacity-50"></div>
               <img 
-                src="/founder-portrait.png" 
-                alt="Founder of Flowstate Search" 
+                src="/images/Headshot.JPEG" 
+                alt="Jordan Arp, Founder of Flowstate Search" 
                 className="relative rounded-xl shadow-2xl border border-border/50 w-full h-auto object-cover aspect-[4/5]"
               />
             </div>
@@ -197,7 +197,7 @@ export default function WhyFlowstate() {
                 "We built this system to be the partner I wish I had—transparent, data-driven, and relentlessly focused on quality. When you work with us, you're not just getting resumes; you're getting a strategic ally committed to your long-term success."
               </p>
               <div className="pt-4">
-                <p className="font-bold text-xl">Your Name</p>
+                <p className="font-bold text-xl">Jordan Arp</p>
                 <p className="text-muted-foreground">Founder, Flowstate Search</p>
               </div>
             </div>
