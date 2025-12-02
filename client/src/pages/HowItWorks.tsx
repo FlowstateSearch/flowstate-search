@@ -8,7 +8,7 @@ export default function HowItWorks() {
     {
       id: 1,
       title: "Discovery & Market Mapping",
-      description: "We dig into your culture, team dynamics, and hiring goals. Then we map your market—every project manager, super, and director in your area who could be a fit.",
+      description: "We dig into your culture, team dynamics, and hiring goals. Then we map every project manager, super, and director in your market who could be a fit. This targets the right talent pool from day one—no wasted outreach.",
       icon: Search,
       color: "text-blue-500",
       bg: "bg-blue-500/10"
@@ -16,7 +16,7 @@ export default function HowItWorks() {
     {
       id: 2,
       title: "Targeted Sourcing & Outreach",
-      description: "We find candidates where other recruiters don't look. Our omni-channel outreach includes personalized video messages, direct outreach, and industry-specific groups.",
+      description: "We find candidates where other recruiters don't look—personalized video messages, direct outreach, industry groups, and certification databases. You get access to top performers who aren't actively looking—the ones your competitors want but can't reach.",
       icon: Target,
       color: "text-amber-500",
       bg: "bg-amber-500/10"
@@ -32,7 +32,7 @@ export default function HowItWorks() {
     {
       id: 4,
       title: "Seamless Presentation",
-      description: "No more email attachments. You'll log into your custom hiring portal and see full candidate profiles, resumes, assessments, and interview recordings.",
+      description: "You log into your custom hiring portal and see full candidate profiles, resumes, assessments, and interview recordings. Your team stays aligned, decisions happen faster, and nothing gets lost.",
       icon: LayoutDashboard,
       color: "text-cyan-500",
       bg: "bg-cyan-500/10"
@@ -40,7 +40,7 @@ export default function HowItWorks() {
     {
       id: 5,
       title: "Interview Support & Closing",
-      description: "We're with you through the entire process: interview prep, debrief sessions, offer strategy, and background checks. We're your partner, not a resume vendor.",
+      description: "We're with you through interview prep, debrief sessions, offer strategy, and background checks. We're your partner, not a resume vendor—which means fewer rejected offers, smoother negotiations, and confidence in your hire.",
       icon: MessageSquare,
       color: "text-emerald-500",
       bg: "bg-emerald-500/10"
@@ -48,7 +48,7 @@ export default function HowItWorks() {
     {
       id: 6,
       title: "Post-Hire Follow-Up",
-      description: "We check in during onboarding to make sure your new hire is settling in. This is why our retention rate is 91% after one year.",
+      description: "We check in during onboarding to ensure your new hire is settling in and thriving. Early intervention prevents small issues from becoming turnover.",
       icon: UserCheck,
       color: "text-primary",
       bg: "bg-primary/10"
