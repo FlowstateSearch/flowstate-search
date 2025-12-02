@@ -62,8 +62,8 @@ export default function WhyFlowstate() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl blur-2xl opacity-50"></div>
               <img 
-                src="/portal-dashboard-abstract.png" 
-                alt="Portal Dashboard" 
+                src="/images/portal-pipeline.png" 
+                alt="Flowstate Search Portal Dashboard showing candidate pipeline" 
                 className="relative rounded-xl shadow-2xl border border-border/50 w-full h-auto"
               />
             </div>
