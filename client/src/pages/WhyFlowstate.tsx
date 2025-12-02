@@ -10,7 +10,8 @@ export default function WhyFlowstate() {
       <section className="relative py-16 md:py-24 overflow-hidden bg-muted/10">
         <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight">
-            The Portal. The Process. <span className="text-primary">The Results.</span>
+            The Portal. The Process.<br />
+            <span className="text-primary">The Results.</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto" style={{fontSize: '18px'}}>
             Because every delayed hire is a delayed project. Our system keeps your pipeline moving, reduces turnover, and gets proven leaders onto your job sites faster.
