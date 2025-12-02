@@ -41,18 +41,18 @@ export default function Home() {
             variants={staggerContainer}
             className="space-y-8"
           >
-            <motion.h1 variants={fadeIn} className="text-4xl md:text-6xl font-heading font-bold tracking-tight leading-tight text-foreground">
-              We Don't Wait for Applications. <span className="text-primary">We Recruit the Talent</span> Already Working for Your Competitors.
+            <motion.h1 variants={fadeIn} className="text-4xl md:text-6xl font-heading font-bold tracking-tight leading-tight text-foreground" style={{fontSize: '37px'}}>
+              We Recruit <span className="text-primary">High-Performing Construction Leaders</span> Already Winning for Your Competitors
             </motion.h1>
             
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
-              We source project managers, superintendents, and construction directors who are already crushing it—then place them where they'll thrive on your team for the long haul.
+              Matching proven leaders with top rated companies in the Construction and Logistics Industry
             </motion.p>
             
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
               <Link href="/start-search">
                 <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 text-base h-12 shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all cursor-pointer">
-                  Start Your Search
+                  Start the Conversation
                 </div>
               </Link>
               <Link href="/how-it-works">
@@ -65,11 +65,11 @@ export default function Home() {
             <motion.div variants={fadeIn} className="pt-8 flex items-center gap-8 text-sm font-mono text-muted-foreground">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-primary" />
-                <span>NO JOB BOARDS</span>
+                <span style={{fontSize: '20px'}}>NO JOB BOARDS</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-primary" />
-                <span>91% RETENTION</span>
+                <span style={{fontSize: '20px'}}>91% RETENTION</span>
               </div>
             </motion.div>
           </motion.div>
@@ -107,7 +107,7 @@ export default function Home() {
                         <div className="mt-1 text-destructive">❌</div>
                         <div>
                           <h4 className="font-bold text-foreground">High Turnover</h4>
-                          <p className="text-sm text-muted-foreground">Critical leadership roles revolving door.</p>
+                          <p className="text-sm text-muted-foreground">Stop the revolving door. Hire leaders committed to long-term growth.</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-4 p-4 rounded-lg bg-destructive/5 border border-destructive/10">
@@ -117,13 +117,7 @@ export default function Home() {
                           <p className="text-sm text-muted-foreground">Can't clear work because you can't hire fast enough.</p>
                         </div>
                       </div>
-                      <div className="flex items-start gap-4 p-4 rounded-lg bg-destructive/5 border border-destructive/10">
-                        <div className="mt-1 text-destructive">❌</div>
-                        <div>
-                          <h4 className="font-bold text-foreground">Culture Misfits</h4>
-                          <p className="text-sm text-muted-foreground">Look good on paper, fail on the job site.</p>
-                        </div>
-                      </div>
+
                     </div>
                   </CardContent>
                 </Card>
@@ -134,12 +128,14 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
                 Your Best Hires Aren't on Job Boards
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                The top project managers, supers, and construction directors aren't scrolling LinkedIn. They're already employed, already performing, already embedded at other companies in your market.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                You don't need more applications. You need someone who will recruit the people who aren't looking—but should be.
-              </p>
+              <ul className="text-lg text-muted-foreground leading-relaxed space-y-4 list-disc pl-5">
+                <li>The top project managers, supers, and construction directors aren't scrolling LinkedIn.</li>
+                <li>They're already employed, already performing, already embedded at other companies in your market.</li>
+              </ul>
+              <ul className="text-lg text-muted-foreground leading-relaxed space-y-4 list-disc pl-5">
+                <li>You don't need more applications.</li>
+                <li>You need someone who will recruit the people who aren't looking—but should be.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -178,6 +174,10 @@ export default function Home() {
                 <p className="text-muted-foreground">
                   See every candidate, every document, every piece of feedback in one place. No email attachments. Just clarity.
                 </p>
+                <ul className="text-sm text-muted-foreground list-disc pl-4 space-y-1">
+                  <li>Faster decision-making</li>
+                  <li>Live status tracking</li>
+                </ul>
               </CardContent>
             </Card>
 
@@ -229,6 +229,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Process Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold">How It Works</h2>
+            <p className="text-lg text-muted-foreground">
+              A transparent, data-driven process designed to deliver results, not just resumes.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            {[
+              {
+                step: "01",
+                title: "Market Mapping",
+                description: "We identify every qualified leader in your region."
+              },
+              {
+                step: "02",
+                title: "Direct Outreach",
+                description: "We recruit high-performers currently employed."
+              },
+              {
+                step: "03",
+                title: "Candidate Evaluation",
+                description: "Skill, culture, proven results."
+              },
+              {
+                step: "04",
+                title: "Shortlist Delivery",
+                description: "Top 6-8 ready to interview."
+              }
+            ].map((item, index) => (
+              <div key={index} className="relative p-6 bg-background rounded-lg border border-border shadow-sm hover:shadow-md transition-all duration-300 group">
+                <div className="text-4xl font-bold text-primary/10 mb-4 group-hover:text-primary/20 transition-colors">
+                  {item.step}
+                </div>
+                <h3 className="text-xl font-bold font-heading mb-2">{item.title}</h3>
+                <p className="text-muted-foreground">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Roles Section */}
       <section className="py-24 bg-background">
         <div className="container">
@@ -273,19 +318,14 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-24 bg-muted/30 border-t border-border">
         <div className="container text-center max-w-3xl mx-auto space-y-8">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold">Ready to Stop Competing on Job Boards?</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-bold" style={{fontSize: '32px'}}>Stop Competing on Job Boards. Start Recruiting the Leaders Driving Results in Your Market.</h2>
           <p className="text-xl text-muted-foreground">
-            Let's find the construction leaders already performing at your competitors—and bring them to your team.
+            If you're tired of backlog, turnover, and hiring risk—it's time for a proactive recruiting strategy built for construction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Link href="/start-search">
               <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 text-base px-10 h-14 shadow-xl shadow-primary/20 cursor-pointer">
-                Start Your Search
-              </div>
-            </Link>
-            <Link href="/contact">
-              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 text-base px-10 h-14 cursor-pointer">
-                Request a Portal Demo
+                Book a 15-Minute Call
               </div>
             </Link>
           </div>

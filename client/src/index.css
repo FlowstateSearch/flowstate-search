@@ -50,31 +50,31 @@
   /* Kinetic Flow + Architectural Blueprint Hybrid Palette */
   /* Deep Ocean & Dawn + Blueprint & Steel */
   
-  /* Primary: Brand Blue (#6e95f2) */
-  --primary: oklch(0.65 0.15 260); 
+  /* Primary: Electric Blue (Kinetic) */
+  --primary: oklch(0.55 0.2 260); 
   --primary-foreground: oklch(0.98 0 0);
 
-  /* Secondary: Brand Dark Blue (#333366) */
-  --secondary: oklch(0.35 0.1 275);
+  /* Secondary: Deep Navy (Kinetic/Blueprint) */
+  --secondary: oklch(0.25 0.05 260);
   --secondary-foreground: oklch(0.98 0 0);
 
-  /* Accent: Brand Bright Green (#0db54b) */
-  --accent: oklch(0.65 0.2 145);
-  --accent-foreground: oklch(0.98 0 0);
+  /* Accent: Amber (Kinetic Energy) */
+  --accent: oklch(0.75 0.18 70);
+  --accent-foreground: oklch(0.2 0.05 260);
 
-  /* Muted: Brand Grey (#b5b9bf) */
-  --muted: oklch(0.8 0.02 260);
-  --muted-foreground: oklch(0.45 0 0); /* Neutral Grey */
+  /* Muted: Cool Concrete (Blueprint) */
+  --muted: oklch(0.95 0.01 260);
+  --muted-foreground: oklch(0.45 0.02 260);
 
   /* Backgrounds */
-  --background: oklch(1 0 0); /* Pure White */
-  --foreground: oklch(0 0 0); /* Pure Black */
+  --background: oklch(0.99 0.005 260);
+  --foreground: oklch(0.2 0.05 260);
   
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0 0 0); /* Pure Black */
+  --card-foreground: oklch(0.2 0.05 260);
   
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0 0 0); /* Pure Black */
+  --popover-foreground: oklch(0.2 0.05 260);
 
   --destructive: oklch(0.6 0.2 25);
   --destructive-foreground: oklch(0.98 0 0);
