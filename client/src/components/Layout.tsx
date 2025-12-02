@@ -29,7 +29,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-10 ml-auto">
+          <nav className="hidden lg:flex items-center gap-8 ml-auto">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href}>
                 <div
@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* Mobile Nav */}
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-            <SheetTrigger asChild className="md:hidden">
+            <SheetTrigger asChild className="lg:hidden">
               <Button variant="ghost" size="icon">
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Toggle menu</span>
@@ -97,7 +97,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Footer */}
       <footer className="border-t border-border bg-muted/30">
         <div className="container py-12 md:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
             {/* Brand Column */}
             <div className="space-y-4">
               <Link href="/">
