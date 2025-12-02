@@ -76,24 +76,32 @@ export default function WhyFlowstate() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative">
               <div className="grid grid-cols-2 gap-4">
-                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4">
-                  <Zap className="w-8 h-8 text-amber-500" />
-                  <h3 className="font-bold">AI-Powered Ranking</h3>
+                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4 h-full flex flex-col justify-between">
+                  <div>
+                    <Zap className="w-8 h-8 text-amber-500 mb-4" />
+                    <h3 className="font-bold">AI-Powered Ranking</h3>
+                  </div>
                   <p className="text-sm text-muted-foreground">Scoring 200+ candidates in minutes.</p>
                 </Card>
-                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4 mt-8">
-                  <Users className="w-8 h-8 text-blue-500" />
-                  <h3 className="font-bold">Human Expertise</h3>
+                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4 h-full flex flex-col justify-between mt-8">
+                  <div>
+                    <Users className="w-8 h-8 text-blue-500 mb-4" />
+                    <h3 className="font-bold">Human Expertise</h3>
+                  </div>
                   <p className="text-sm text-muted-foreground">Evaluating fit, risk, and opportunity.</p>
                 </Card>
-                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4">
-                  <Target className="w-8 h-8 text-red-500" />
-                  <h3 className="font-bold">Market Mapping</h3>
+                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4 h-full flex flex-col justify-between">
+                  <div>
+                    <Target className="w-8 h-8 text-red-500 mb-4" />
+                    <h3 className="font-bold">Market Mapping</h3>
+                  </div>
                   <p className="text-sm text-muted-foreground">Identifying every potential candidate.</p>
                 </Card>
-                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4 mt-8">
-                  <ShieldCheck className="w-8 h-8 text-green-500" />
-                  <h3 className="font-bold">Omni-Channel</h3>
+                <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4 h-full flex flex-col justify-between mt-8">
+                  <div>
+                    <ShieldCheck className="w-8 h-8 text-green-500 mb-4" />
+                    <h3 className="font-bold">Omni-Channel</h3>
+                  </div>
                   <p className="text-sm text-muted-foreground">Reaching candidates where they are.</p>
                 </Card>
               </div>
