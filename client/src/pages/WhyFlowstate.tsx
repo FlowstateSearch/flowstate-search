@@ -171,6 +171,40 @@ export default function WhyFlowstate() {
         </div>
       </section>
 
+      {/* Meet the Founder Section */}
+      <section className="py-24 bg-background border-t border-border/50">
+        <div className="container max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl blur-2xl opacity-50"></div>
+              <img 
+                src="/founder-portrait.png" 
+                alt="Founder of Flowstate Search" 
+                className="relative rounded-xl shadow-2xl border border-border/50 w-full h-auto object-cover aspect-[4/5]"
+              />
+            </div>
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                <span>MEET THE FOUNDER</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold">
+                Recruiting Built by Construction Insiders
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                "I started Flowstate Search because I saw too many great construction companies struggling to find the leaders they deserved. Traditional recruiters didn't understand the field, and job boards were just noise."
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                "We built this system to be the partner I wish I had—transparent, data-driven, and relentlessly focused on quality. When you work with us, you're not just getting resumes; you're getting a strategic ally committed to your long-term success."
+              </p>
+              <div className="pt-4">
+                <p className="font-bold text-xl">Your Name</p>
+                <p className="text-muted-foreground">Founder, Flowstate Search</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Concrete Ending Section */}
       <section className="py-20 bg-muted/30 border-y border-border/50">
         <div className="container text-center max-w-3xl mx-auto">
