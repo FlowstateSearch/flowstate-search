@@ -73,7 +73,7 @@ export default function HowItWorks() {
       {/* Intro Section */}
       <section className="py-16 bg-muted/30 border-y border-border/50">
         <div className="container max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold">The Problem With Traditional Recruiting</h2>
+          <h2 className="text-2xl md:text-3xl font-heading font-bold">A True Partner, Not Just a Resume Vendor</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Traditional recruiting is full of friction which leads to missed deadlines, frustrated clients, and millions lost in backlog bottlenecks.
           </p>
@@ -97,6 +97,30 @@ export default function HowItWorks() {
                     <div className="text-sm font-mono font-bold text-muted-foreground tracking-wider uppercase">Step {step.id}</div>
                     <h3 className="text-3xl font-heading font-bold">{step.title}</h3>
                     <p className="text-lg text-muted-foreground leading-relaxed">{step.description}</p>
+                    {step.id === 1 && (
+                      <div className="mt-4 p-4 bg-muted/30 rounded-lg border-l-4 border-primary">
+                        <p className="font-bold text-primary">Metric: 6-8 Finalist Candidates</p>
+                        <p className="text-sm text-muted-foreground">We narrow the field so you only see the best.</p>
+                      </div>
+                    )}
+                    {step.id === 2 && (
+                      <div className="mt-4 p-4 bg-muted/30 rounded-lg border-l-4 border-primary">
+                        <p className="font-bold text-primary">Metric: Average 27-Day Time to Shortlist</p>
+                        <p className="text-sm text-muted-foreground">Speed without sacrificing quality.</p>
+                      </div>
+                    )}
+                    {step.id === 5 && (
+                      <div className="mt-4 p-4 bg-muted/30 rounded-lg border-l-4 border-primary">
+                        <p className="font-bold text-primary">Metric: 5-Star Candidate Satisfaction</p>
+                        <p className="text-sm text-muted-foreground">We treat your future leaders with respect.</p>
+                      </div>
+                    )}
+                    {step.id === 6 && (
+                      <div className="mt-4 p-4 bg-muted/30 rounded-lg border-l-4 border-primary">
+                        <p className="font-bold text-primary">Metric: 91% Retention After 1 Year</p>
+                        <p className="text-sm text-muted-foreground">Our placements stick because they fit.</p>
+                      </div>
+                    )}
                   </div>
                   {step.id === 4 && (
                     <Link href="/contact">
