@@ -31,9 +31,21 @@ export default function StartSearch() {
             </p>
           </div>
 
+          <div className="grid md:grid-cols-2 gap-6 mb-16">
+            {[
+              "Frustrated with constant turnover costing time and profit",
+              "Losing revenue due to project backlogs and understaffed jobs",
+              "Need leaders who elevate culture, not disrupt it",
+              "Want a recruiting partner accountable for results"
+            ].map((item, index) => (
+              <div key={index} className="flex items-start gap-4 p-6 rounded-xl bg-muted/30 border border-border/50">
+                <CheckCircle2 className="w-6 h-6 text-primary mt-1 shrink-0" />
+                <span className="text-lg font-medium">{item}</span>
+              </div>
+            ))}
+          </div>
 
-
-          <div className="mb-16 p-8 rounded-2xl bg-muted/20 border border-border/50 text-center space-y-6">
+          <div className="p-8 rounded-2xl bg-muted/20 border border-border/50 text-center space-y-6">
             <h3 className="text-2xl font-heading font-bold">What You Get</h3>
             <div className="grid sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto pt-4">
               <div className="flex items-center gap-3">
@@ -53,20 +65,6 @@ export default function StartSearch() {
                 <span>91% retention rate</span>
               </div>
             </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              "Frustrated with constant turnover costing time and profit",
-              "Losing revenue due to project backlogs and understaffed jobs",
-              "Need leaders who elevate culture, not disrupt it",
-              "Want a recruiting partner accountable for results"
-            ].map((item, index) => (
-              <div key={index} className="flex items-start gap-4 p-6 rounded-xl bg-muted/30 border border-border/50">
-                <CheckCircle2 className="w-6 h-6 text-primary mt-1 shrink-0" />
-                <span className="text-lg font-medium">{item}</span>
-              </div>
-            ))}
           </div>
         </div>
       </section>
