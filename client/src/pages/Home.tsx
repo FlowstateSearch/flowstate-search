@@ -235,6 +235,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Process Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold">How It Works</h2>
+            <p className="text-lg text-muted-foreground">
+              A transparent, data-driven process designed to deliver results, not just resumes.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            {[
+              {
+                step: "01",
+                title: "Market Mapping",
+                description: "We identify every qualified leader in your region."
+              },
+              {
+                step: "02",
+                title: "Direct Outreach",
+                description: "We recruit high-performers currently employed."
+              },
+              {
+                step: "03",
+                title: "Candidate Evaluation",
+                description: "Skill, culture, proven results."
+              },
+              {
+                step: "04",
+                title: "Shortlist Delivery",
+                description: "Top 6-18 ready to interview."
+              }
+            ].map((item, index) => (
+              <div key={index} className="relative p-6 bg-background rounded-lg border border-border shadow-sm hover:shadow-md transition-all duration-300 group">
+                <div className="text-4xl font-bold text-primary/10 mb-4 group-hover:text-primary/20 transition-colors">
+                  {item.step}
+                </div>
+                <h3 className="text-xl font-bold font-heading mb-2">{item.title}</h3>
+                <p className="text-muted-foreground">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Roles Section */}
       <section className="py-24 bg-background">
         <div className="container">
