@@ -100,7 +100,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
             {/* Brand Column */}
             <div className="space-y-4">
-              <h3 className="font-heading font-bold text-lg">Flowstate Search</h3>
+              <img src="/logo.png" alt="Flowstate Search" className="h-8 w-auto mb-4" />
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Finding construction leaders who thrive, not just survive. We recruit the talent already performing at your competitors.
               </p>
