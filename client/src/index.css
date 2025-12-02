@@ -64,17 +64,17 @@
 
   /* Muted: Brand Grey (#b5b9bf) */
   --muted: oklch(0.8 0.02 260);
-  --muted-foreground: oklch(0.35 0.1 275);
+  --muted-foreground: oklch(0.45 0 0); /* Neutral Grey */
 
   /* Backgrounds */
-  --background: oklch(0.99 0.005 260);
-  --foreground: oklch(0 0 0);
+  --background: oklch(1 0 0); /* Pure White */
+  --foreground: oklch(0 0 0); /* Pure Black */
   
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.2 0.05 260);
+  --card-foreground: oklch(0 0 0); /* Pure Black */
   
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2 0.05 260);
+  --popover-foreground: oklch(0 0 0); /* Pure Black */
 
   --destructive: oklch(0.6 0.2 25);
   --destructive-foreground: oklch(0.98 0 0);
