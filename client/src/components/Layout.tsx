@@ -23,8 +23,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <Link href="/">
-            <div className="flex items-center gap-2 font-heading font-bold text-xl tracking-tighter text-primary cursor-pointer">
-              <span className="text-foreground">FLOWSTATE</span> SEARCH
+            <div className="flex items-center gap-2 cursor-pointer">
+              <img src="/logo.png" alt="Flowstate Search" className="h-10 w-auto" />
             </div>
           </Link>
 
