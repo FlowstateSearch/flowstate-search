@@ -171,7 +171,7 @@ export default function StartSearch() {
         <div className="container text-center max-w-3xl mx-auto space-y-8">
           <h2 className="text-3xl md:text-5xl font-heading font-bold">Stop Competing on Job Boards. Start Taking Market Share.</h2>
           <p className="text-xl text-muted-foreground">
-            Let's hunt the construction leaders already performing at your competitors and bring them to your team.
+            We’ll hunt the construction leaders already winning for your competitors and bring them to your team.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Link href="/contact">
