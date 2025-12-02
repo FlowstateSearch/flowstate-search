@@ -202,7 +202,10 @@ export default function HowItWorks() {
       <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/flow-blueprint-bg.png')] opacity-10 mix-blend-overlay bg-cover bg-center"></div>
         <div className="container relative z-10 text-center max-w-3xl mx-auto space-y-8">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold">Ready to Experience a Search That Flows?</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-bold">Build a Team That Builds the Future</h2>
+          <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
+            Stop reacting to hiring emergencies. Start proactively recruiting proven construction leaders who drive results.
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Link href="/start-search">
               <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-11 px-8 text-base px-10 h-14 font-bold text-primary bg-white hover:bg-white/90 cursor-pointer" style={{backgroundColor: '#969696', fontWeight: '700'}}>
