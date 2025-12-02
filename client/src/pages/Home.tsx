@@ -46,7 +46,8 @@ export default function Home() {
             </motion.h1>
             
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
-              Job boards attract job seekers. We hunt the talent that makes companies legendary.
+              The project managers and superintendents driving your
+competitors' biggest wins—we bring them to you.
             </motion.p>
             
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
@@ -65,7 +66,7 @@ export default function Home() {
             <motion.div variants={fadeIn} className="pt-8 flex items-center gap-8 text-sm font-mono text-muted-foreground">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-primary" />
-                <span style={{fontSize: '20px'}}>NO JOB BOARDS</span>
+                <span style={{fontSize: '20px'}}>STRATEGIC TALENT HUNTING</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-primary" />
