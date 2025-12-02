@@ -31,13 +31,38 @@ export default function StartSearch() {
             </p>
           </div>
 
+          {/* Investment Section Content Moved Here */}
+          <div className="mb-16 p-8 rounded-2xl bg-muted/20 border border-border/50 text-center space-y-6">
+            <h3 className="text-2xl font-heading font-bold">Pricing Built for Results</h3>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              Our fee structure is performance-based—we only get paid when you hire. Let's discuss your specific search during our discovery call. Every role is different, and we'll build a partnership that makes sense for both of us.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto pt-4">
+              <div className="flex items-center gap-3">
+                <CheckCircle2 className="w-5 h-5 text-primary" />
+                <span>Custom hiring portal access</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckCircle2 className="w-5 h-5 text-primary" />
+                <span>Strategic market mapping</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckCircle2 className="w-5 h-5 text-primary" />
+                <span>Culture-first evaluation</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckCircle2 className="w-5 h-5 text-primary" />
+                <span>91% retention rate</span>
+              </div>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              "Frustrated with high turnover in critical leadership roles",
-              "Have project backlogs they can't clear because they can't hire fast enough",
-              "Value culture fit as much as technical skills",
-              "Want a recruiting partner, not a resume vendor",
-              "Tired of email chaos and want a seamless hiring experience"
+              "Frustrated with constant turnover costing time and profit",
+              "Losing revenue due to project backlogs and understaffed jobs",
+              "Need leaders who elevate culture, not disrupt it",
+              "Want a recruiting partner accountable for results"
             ].map((item, index) => (
               <div key={index} className="flex items-start gap-4 p-6 rounded-xl bg-muted/30 border border-border/50">
                 <CheckCircle2 className="w-6 h-6 text-primary mt-1 shrink-0" />
@@ -80,7 +105,9 @@ export default function StartSearch() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold font-heading">Step 2: Search Kickoff</h3>
                   <p className="text-muted-foreground">
-                    We map your market, benchmark compensation, and begin strategic recruiting. You'll get access to your hiring portal immediately.
+                    Market mapping ensures you know every qualified leader in your region — not just active applicants.
+                    <br /><br />
+                    Visibility = better hiring decisions.
                   </p>
                 </div>
               </CardContent>
@@ -104,43 +131,7 @@ export default function StartSearch() {
         </div>
       </section>
 
-      {/* Investment Section */}
-      <section className="py-24 border-b border-border/50">
-        <div className="container max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold">Pricing Built for Results</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Our fee structure is performance-based—we only get paid when you hire. Let's discuss your specific search during our discovery call. Every role is different, and we'll build a partnership that makes sense for both of us.
-          </p>
-          
-          <div className="grid sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto bg-muted/20 p-8 rounded-2xl border border-border/50">
-            <div className="font-bold text-lg mb-4 col-span-full">What You Get:</div>
-            <div className="flex items-center gap-3">
-              <CheckCircle2 className="w-5 h-5 text-primary" />
-              <span>Custom hiring portal access</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <CheckCircle2 className="w-5 h-5 text-primary" />
-              <span>Strategic market mapping</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <CheckCircle2 className="w-5 h-5 text-primary" />
-              <span>Culture-first evaluation</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <CheckCircle2 className="w-5 h-5 text-primary" />
-              <span>91% retention rate</span>
-            </div>
-          </div>
 
-          <div className="pt-8">
-            <Link href="/contact">
-              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 text-base px-10 h-14 shadow-xl shadow-primary/20 cursor-pointer">
-                Schedule a Discovery Call
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ Section */}
       <section className="py-24 bg-muted/30">
