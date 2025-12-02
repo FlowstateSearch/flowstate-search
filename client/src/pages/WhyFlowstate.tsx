@@ -192,10 +192,10 @@ export default function WhyFlowstate() {
                 Recruiting Built by Construction Insiders
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                "I started Flowstate Search because I saw too many great construction companies struggling to find the leaders they deserved. Traditional recruiters didn't understand the field, and job boards were just noise."
+                I started Flowstate Search because I saw too many great construction companies struggling to find the leaders they deserved. Traditional recruiters didn't understand the field, and job boards were just noise.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                "We built this system to be the partner I wish I had—transparent, data-driven, and relentlessly focused on quality. When you work with us, you're not just getting resumes; you're getting a strategic ally committed to your long-term success."
+                We built this system to be the partner I wish I had—transparent, data-driven, and relentlessly focused on quality. When you work with us, you're not just getting resumes, you're getting a strategic ally committed to your long-term success.
               </p>
               <div className="pt-4">
                 <p className="font-bold text-xl">Jordan Arp</p>
