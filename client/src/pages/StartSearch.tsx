@@ -31,31 +31,7 @@ export default function StartSearch() {
             </p>
           </div>
 
-          {/* Investment Section Content Moved Here */}
-          <div className="mb-16 p-8 rounded-2xl bg-muted/20 border border-border/50 text-center space-y-6">
-            <h3 className="text-2xl font-heading font-bold">Pricing Built for Results</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Our fee structure is performance-based—we only get paid when you hire. Let's discuss your specific search during our discovery call. Every role is different, and we'll build a partnership that makes sense for both of us.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto pt-4">
-              <div className="flex items-center gap-3">
-                <CheckCircle2 className="w-5 h-5 text-primary" />
-                <span>Custom hiring portal access</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle2 className="w-5 h-5 text-primary" />
-                <span>Strategic market mapping</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle2 className="w-5 h-5 text-primary" />
-                <span>Culture-first evaluation</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle2 className="w-5 h-5 text-primary" />
-                <span>91% retention rate</span>
-              </div>
-            </div>
-          </div>
+
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
