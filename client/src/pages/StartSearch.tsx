@@ -86,7 +86,9 @@ export default function StartSearch() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold font-heading">Step 1: Discovery Call</h3>
                   <p className="text-muted-foreground">
-                    We'll spend 30 minutes understanding your culture, team dynamics, hiring goals, and the role you're filling.
+                    We spend 30 minutes understanding your culture, team dynamics, and role requirements. 
+                    <br /><br />
+                    We only present candidates who will actually thrive—no wasted interviews on bad fits.
                   </p>
                 </div>
               </CardContent>
@@ -118,7 +120,9 @@ export default function StartSearch() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold font-heading">Step 3: Hire & Onboard</h3>
                   <p className="text-muted-foreground">
-                    We present deeply vetted candidates. You interview your top picks. We support you through offer, negotiation, and close.
+                    We present deeply vetted candidates through your portal. You interview your top picks. We support through offer, negotiation, and close. 
+                    <br /><br />
+                    Faster decisions, fewer rejected offers, smooth path to hire.
                   </p>
                 </div>
               </CardContent>
