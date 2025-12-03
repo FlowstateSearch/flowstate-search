@@ -51,16 +51,16 @@ competitors' biggest wins—we bring them to you.
             </motion.p>
             
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
-              <Link href="/start-search">
+              <a href="https://zcal.co/flowstate/your-next-hire" target="_blank" rel="noopener noreferrer">
                 <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 text-base h-12 shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all cursor-pointer">
                   Find Your Next Hire
                 </div>
-              </Link>
-              <Link href="/how-it-works">
+              </a>
+              <a href="https://zcal.co/flowstate/how-we-work" target="_blank" rel="noopener noreferrer">
                 <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-[#0db54b] hover:text-white hover:border-[#0db54b] h-11 px-8 text-base h-12 border-primary/20 cursor-pointer">
                   See How It Works
                 </div>
-              </Link>
+              </a>
             </motion.div>
 
             <motion.div variants={fadeIn} className="pt-8 flex items-center gap-8 text-sm font-mono text-muted-foreground">
