@@ -143,7 +143,7 @@ export default function Contact() {
               </div>
 
               <div className="grid gap-6">
-                <a href="https://calendar.app.google/AqXeWeNxbRwMtkB67" target="_blank" rel="noopener noreferrer" className="block">
+                <a href="https://zcal.co/flowstate/discovery-call" target="_blank" rel="noopener noreferrer" className="block">
                   <Card className="hover:border-primary/50 transition-colors cursor-pointer group">
                     <CardContent className="p-6 flex items-start gap-4">
                       <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
@@ -158,7 +158,7 @@ export default function Contact() {
                   </Card>
                 </a>
 
-                <a href="https://calendar.app.google/AqXeWeNxbRwMtkB67" target="_blank" rel="noopener noreferrer" className="block">
+                <a href="https://zcal.co/flowstate/portal-demo" target="_blank" rel="noopener noreferrer" className="block">
                   <Card className="hover:border-primary/50 transition-colors cursor-pointer group">
                     <CardContent className="p-6 flex items-start gap-4">
                       <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">

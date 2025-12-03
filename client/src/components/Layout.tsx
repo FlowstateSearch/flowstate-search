@@ -46,11 +46,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 Login
               </Button>
             </Link>
-            <Link href="/contact">
+            <a href="https://zcal.co/flowstate/portal-demo" target="_blank" rel="noopener noreferrer">
               <Button variant="default" size="sm" className="font-semibold">
                 Request Portal Demo
               </Button>
-            </Link>
+            </a>
           </nav>
 
           {/* Mobile Nav */}
@@ -81,11 +81,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     Login
                   </Button>
                 </Link>
-                <Link href="/contact">
+                <a href="https://zcal.co/flowstate/portal-demo" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full mt-2" onClick={() => setIsMobileMenuOpen(false)}>
                     Request Portal Demo
                   </Button>
-                </Link>
+                </a>
               </nav>
             </SheetContent>
           </Sheet>
@@ -121,9 +121,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   </li>
                 ))}
                 <li>
-                  <Link href="/contact">
+                  <a href="https://zcal.co/flowstate/portal-demo" target="_blank" rel="noopener noreferrer">
                     <div className="hover:text-primary transition-colors cursor-pointer">Request Portal Demo</div>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -150,9 +150,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   </a>
                 </li>
                 <li>
-                  <Link href="/contact">
+                  <a href="https://zcal.co/flowstate/discovery-call" target="_blank" rel="noopener noreferrer">
                     <div className="hover:text-primary transition-colors cursor-pointer">Schedule a Call</div>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
