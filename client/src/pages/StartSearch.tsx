@@ -177,16 +177,16 @@ export default function StartSearch() {
           <p className="text-xl text-muted-foreground">
            We’ll hunt the construction leaders already winning for your competitors and bring them to your team.          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Link href="/contact">
+            <a href="https://zcal.co/flowstate/competitive-edge" target="_blank" rel="noopener noreferrer">
               <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 text-base px-10 h-14 shadow-xl shadow-primary/20 cursor-pointer">
                 Claim Your Competitive Edge
               </div>
-            </Link>
-            <Link href="/contact">
+            </a>
+            <a href="https://zcal.co/flowstate/portal-demo" target="_blank" rel="noopener noreferrer">
               <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-[#0db54b] hover:text-white hover:border-[#0db54b] h-11 px-8 text-base px-10 h-14 cursor-pointer">
                 Request a Portal Demo
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
