@@ -42,7 +42,7 @@ export default function Home() {
             className="space-y-8"
           >
             <motion.h1 variants={fadeIn} className="text-4xl md:text-6xl font-heading font-bold tracking-tight leading-tight text-foreground" style={{fontSize: '37px'}}>
-              Recruit The <span className="text-primary">High-Performing Construction Leaders</span> Your Competitors Fear Losing.
+              Recruit The <span className="text-[#00a69c]">High-Performing Construction Leaders</span> Your Competitors Fear Losing.
             </motion.h1>
             
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
