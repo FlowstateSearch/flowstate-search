@@ -179,7 +179,7 @@ export default function WhyFlowstate() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl blur-2xl opacity-50"></div>
               <img 
-                src="/images/founder-headshot.png" 
+                src="/images/founder-headshot-v2.jpg" 
                 alt="Jordan Arp, Founder of Flowstate Search" 
                 className="relative rounded-xl shadow-2xl border border-border/50 w-full h-auto object-cover aspect-[4/5]"
               />
