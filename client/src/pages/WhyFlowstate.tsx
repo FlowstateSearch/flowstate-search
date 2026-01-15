@@ -53,7 +53,7 @@ export default function WhyFlowstate() {
               </div>
 
               <a href="https://zcal.co/flowstate/portal-demo" target="_blank" rel="noopener noreferrer">
-                <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-[#0db54b] hover:text-white hover:border-[#0db54b] h-11 px-8 cursor-pointer">
+                <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-[#294e7a] hover:text-white hover:border-[#294e7a] h-11 px-8 cursor-pointer">
                   Request a Portal Demo
                 </div>
               </a>
@@ -226,7 +226,7 @@ export default function WhyFlowstate() {
               </div>
             </a>
             <a href="https://zcal.co/flowstate/portal-demo" target="_blank" rel="noopener noreferrer">
-              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-[#0db54b] hover:text-white hover:border-[#0db54b] h-11 px-8 text-base px-10 h-14 cursor-pointer">
+              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-[#294e7a] hover:text-white hover:border-[#294e7a] h-11 px-8 text-base px-10 h-14 cursor-pointer">
                 See a Sample Portal Dashboard
               </div>
             </a>
