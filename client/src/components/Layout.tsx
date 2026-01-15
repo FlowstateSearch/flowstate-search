@@ -24,7 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container flex h-16 items-center justify-between">
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer">
-              <img src="/COMPLETELOGO.png" alt="Flowstate Search" className="h-10 w-auto" />
+              <img src="/logo.svg" alt="Flowstate Search" className="h-10 w-auto" />
             </div>
           </Link>
 
@@ -102,7 +102,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             {/* Brand Column */}
             <div className="space-y-4">
               <Link href="/">
-                <img src="/COMPLETELOGO.png" alt="Flowstate Search" className="h-8 w-auto mb-4 cursor-pointer" />
+                <img src="/logo.svg" alt="Flowstate Search" className="h-8 w-auto mb-4 cursor-pointer" />
               </Link>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Finding construction leaders who thrive, not just survive. We recruit the talent already performing at your competitors.
