@@ -21,10 +21,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen flex flex-col bg-background font-sans">
       {/* Navigation */}
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-24 items-center justify-between">
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer">
-              <img src="/logo.svg" alt="Flowstate Search" className="h-14 w-auto" />
+              <img src="/logo.svg" alt="Flowstate Search" className="h-20 w-auto" />
             </div>
           </Link>
 
