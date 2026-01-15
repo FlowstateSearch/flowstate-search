@@ -40,12 +40,14 @@ function Router() {
 // - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
 
 import Layout from "./components/Layout";
+import Loading from "./components/Loading";
 
 function App() {
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
+          <Loading />
           <Toaster />
           <Layout>
             <Router />
