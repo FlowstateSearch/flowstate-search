@@ -83,7 +83,7 @@ competitors' biggest wins—we bring them to you.
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-card/50 backdrop-blur-sm">
               <img 
-                src="/images/hero-commanding.jpg" 
+                src="/images/hero-executive-charcoal.jpg" 
                 alt="Construction Leadership Team" 
                 className="w-full h-auto object-cover rounded-2xl"
               />
