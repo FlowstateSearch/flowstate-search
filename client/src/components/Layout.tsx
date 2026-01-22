@@ -42,12 +42,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </Link>
             ))}
             <Link href="/portal">
-              <Button variant="outline" size="sm" className="font-semibold">
+              <Button variant="outline" size="sm" className="font-semibold hover-brand-yellow">
                 Login
               </Button>
             </Link>
             <a href="https://zcal.co/flowstate/portal-demo" target="_blank" rel="noopener noreferrer">
-              <Button variant="default" size="sm" className="font-semibold">
+              <Button variant="default" size="sm" className="font-semibold hover-brand-yellow">
                 Request Portal Demo
               </Button>
             </a>
@@ -77,12 +77,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   </Link>
                 ))}
                 <Link href="/portal">
-                  <Button variant="outline" className="w-full mt-4" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Button variant="outline" className="w-full mt-4 hover-brand-yellow" onClick={() => setIsMobileMenuOpen(false)}>
                     Login
                   </Button>
                 </Link>
                 <a href="https://zcal.co/flowstate/portal-demo" target="_blank" rel="noopener noreferrer">
-                  <Button className="w-full mt-2" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Button className="w-full mt-2 hover-brand-yellow" onClick={() => setIsMobileMenuOpen(false)}>
                     Request Portal Demo
                   </Button>
                 </a>
