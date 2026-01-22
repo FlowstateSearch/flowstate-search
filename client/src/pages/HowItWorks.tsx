@@ -133,7 +133,7 @@ export default function HowItWorks() {
                     {step.id === 1 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
-                          src="/images/how-it-works-charcoal.jpg" 
+                          src="/market-mapping.png" 
                           alt="Market Mapping Visualization" 
                           className="w-full h-full object-cover"
                         />
