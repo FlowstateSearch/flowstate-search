@@ -121,7 +121,7 @@ export default function HowItWorks() {
                   </div>
                   {step.id === 4 && (
                     <Link href="/contact">
-                      <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 mt-4 cursor-pointer">
+                      <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover-brand-yellow h-10 px-4 py-2 mt-4 cursor-pointer">
                         Request a Portal Demo
                       </div>
                     </Link>
@@ -205,12 +205,12 @@ export default function HowItWorks() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <a href="https://zcal.co/flowstate/start-your-search" target="_blank" rel="noopener noreferrer">
-              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-11 px-8 text-base px-10 h-14 font-bold text-primary bg-white hover:bg-white/90 cursor-pointer" style={{backgroundColor: '#969696', fontWeight: '700'}}>
+              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover-brand-yellow h-11 px-8 text-base px-10 h-14 font-bold text-primary bg-white hover-brand-yellow cursor-pointer" style={{backgroundColor: '#969696', fontWeight: '700'}}>
                 Start Your Search
               </div>
             </a>
             <a href="https://zcal.co/flowstate/market-map" target="_blank" rel="noopener noreferrer">
-              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 text-base px-10 h-14 border-white/20 text-white hover:bg-white/10 hover:text-white cursor-pointer" style={{backgroundColor: '#969696', fontWeight: '700'}}>
+              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover-brand-yellow h-11 px-8 text-base px-10 h-14 border-white/20 text-white hover-brand-yellow cursor-pointer" style={{backgroundColor: '#969696', fontWeight: '700'}}>
                 See a Live Example of a Market Map
               </div>
             </a>

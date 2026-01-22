@@ -41,7 +41,7 @@ export default function NotFound() {
             </Button>
             <Button
               onClick={handleGoHome}
-              className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground"
+              className="w-full sm:w-auto bg-primary hover-brand-yellow text-primary-foreground"
             >
               <Home className="w-4 h-4 mr-2" />
               Return Home

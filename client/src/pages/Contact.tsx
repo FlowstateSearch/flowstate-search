@@ -144,9 +144,9 @@ export default function Contact() {
 
               <div className="grid gap-6">
                 <a href="https://zcal.co/flowstate/discovery-call" target="_blank" rel="noopener noreferrer" className="block">
-                  <Card className="hover:border-primary/50 transition-colors cursor-pointer group">
+                  <Card className="hover:border-[#ffc229] transition-colors cursor-pointer group">
                     <CardContent className="p-6 flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-[#ffc229] group-hover:text-[#1a1a1a] transition-colors">
                         <Calendar className="w-6 h-6" />
                       </div>
                       <div className="space-y-1">
@@ -159,9 +159,9 @@ export default function Contact() {
                 </a>
 
                 <a href="https://zcal.co/flowstate/portal-demo" target="_blank" rel="noopener noreferrer" className="block">
-                  <Card className="hover:border-primary/50 transition-colors cursor-pointer group">
+                  <Card className="hover:border-[#ffc229] transition-colors cursor-pointer group">
                     <CardContent className="p-6 flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-[#ffc229] group-hover:text-[#1a1a1a] transition-colors">
                         <Monitor className="w-6 h-6" />
                       </div>
                       <div className="space-y-1">
@@ -174,9 +174,9 @@ export default function Contact() {
                 </a>
 
                 <a href="mailto:hello@flowstatesearch.com" className="block">
-                  <Card className="hover:border-primary/50 transition-colors cursor-pointer group">
+                  <Card className="hover:border-[#ffc229] transition-colors cursor-pointer group">
                     <CardContent className="p-6 flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-[#ffc229] group-hover:text-[#1a1a1a] transition-colors">
                         <Mail className="w-6 h-6" />
                       </div>
                       <div className="space-y-1">

@@ -4,8 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: "Montserrat", sans-serif;
-  --font-heading: "Chopin-Trial", sans-serif;
+  --font-sans: "Open Sans", sans-serif;
+  --font-heading: "Montserrat", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
   --radius-sm: calc(var(--radius) - 4px);
@@ -69,17 +69,17 @@
 
   /* Muted: Light Grey for backgrounds */
   --muted: #f3f4f6;
-  --muted-foreground: #2b2b2b;
+  --muted-foreground: #1a1a1a;
 
   /* Backgrounds */
   --background: #ffffff;
-  --foreground: #2b2b2b; /* Brand Dark Grey */
+  --foreground: #1a1a1a; /* Deep Charcoal */
   
   --card: #ffffff;
-  --card-foreground: #2b2b2b;
+  --card-foreground: #1a1a1a;
   
   --popover: #ffffff;
-  --popover-foreground: #2b2b2b;
+  --popover-foreground: #1a1a1a;
 
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
@@ -91,11 +91,11 @@
 
   /* Sidebar */
   --sidebar: #f9fafb;
-  --sidebar-foreground: #2b2b2b;
+  --sidebar-foreground: #1a1a1a;
   --sidebar-primary: #007065;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #f3f4f6;
-  --sidebar-accent-foreground: #2b2b2b;
+  --sidebar-accent-foreground: #1a1a1a;
   --sidebar-border: #e5e7eb;
   --sidebar-ring: #007065;
 
@@ -199,5 +199,11 @@
       padding-right: 2rem;
       max-width: 1280px;
     }
+  }
+}
+
+@layer utilities {
+  .hover-brand-yellow {
+    @apply hover:bg-[#ffc229] hover:text-[#1a1a1a] hover:border-[#ffc229] transition-colors duration-300;
   }
 }
