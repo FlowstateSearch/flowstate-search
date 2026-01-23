@@ -49,9 +49,10 @@ export default function Home() {
               Recruit The <span className="text-[#00a69c]">High-Performing Construction Leaders</span> Your Competitors Fear Losing.
             </motion.h1>
             
-            <motion.h2 variants={fadeIn} className="text-2xl md:text-3xl font-medium text-muted-foreground max-w-xl leading-relaxed pt-2">
-              Pivotal Talent. Lasting Impact.
-            </motion.h2>
+            <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
+              The project managers and superintendents driving your
+competitors' biggest wins—we bring them to you.
+            </motion.p>
             
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
               <a href="https://zcal.co/flowstate/your-next-hire" target="_blank" rel="noopener noreferrer">
