@@ -6,90 +6,16 @@ import { Check, Zap, Layout, Users, ShieldCheck, Target, Heart, Handshake, Globe
 export default function WhyFlowstate() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Mission Section (New) */}
-      <section className="relative py-20 md:py-24 overflow-hidden bg-muted/10">
-        <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-8">
+      {/* Hero Section (Original) */}
+      <section className="relative py-12 md:py-16 overflow-hidden bg-muted/10">
+        <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight">
-            More Than a Placement.<br />
-            <span className="text-primary">A Partnership.</span>
+            The Portal. The Process.<br />
+            <span className="text-primary">The Results.</span>
           </h1>
-          <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground">
-            Pivotal Talent. Lasting Impact.
-          </h2>
-          
-          <div className="relative mt-12 p-8 md:p-12 bg-background rounded-2xl shadow-xl border border-border/50">
-            <div className="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 text-primary/10">
-              <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M14.017 21L14.017 18C14.017 16.8954 13.1216 16 12.017 16H9.01699V12.999L14.017 13V10.999L9.01699 11V8L15.017 8V6H8.01699V21H14.017ZM21.017 21V6H15.017V21H21.017Z" />
-              </svg>
-            </div>
-            <blockquote className="text-xl md:text-2xl font-medium leading-relaxed text-foreground italic relative z-10">
-              "Our mission is to be the most trusted partner in executive search, providing the pivotal talent that gives mission-driven companies their competitive edge. We operate with radical transparency, building partnerships that create more meaningful lives and radiate positive impact."
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
-      {/* What Drives Us Section (New) */}
-      <section className="py-20 md:py-24 bg-background">
-        <div className="container max-w-4xl mx-auto text-center space-y-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
-            <Heart className="w-4 h-4" />
-            <span>WHAT DRIVES US</span>
-          </div>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold">
-            Radiating Positive Impact
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            At Flowstate Search, we believe a successful placement is just the beginning. Our goal is to 'radiate positive impact'—a principle that guides everything we do. When we connect an exceptional individual with a mission-driven company, we spark a powerful chain reaction. An engaged professional finds deeper meaning in their work, leading to greater self-worth and happiness that extends to their family and community. Simultaneously, the company gains a competitive advantage, not just through talent, but through a re-energized culture. This is our measure of success: creating value that multiplies.
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto" style={{fontSize: '18px'}}>
+            Because every delayed hire is a delayed project. Our system keeps your pipeline moving, reduces turnover, and gets proven leaders onto your job sites faster.
           </p>
-        </div>
-      </section>
-
-      {/* Guiding Principles Section (New) */}
-      <section className="py-20 md:py-24 bg-muted/30 border-y border-border/50">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold">Our Guiding Principles</h2>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-background border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group h-full">
-              <CardContent className="p-8 space-y-4 text-center">
-                <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors mb-6">
-                  <ShieldCheck className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold font-heading">Radical Transparency</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  We tell it like it is. Your goals become our goals, and we provide the unfiltered, honest advice necessary to build a partnership founded on unwavering trust.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-background border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group h-full">
-              <CardContent className="p-8 space-y-4 text-center">
-                <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors mb-6">
-                  <Handshake className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold font-heading">True Partnership</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  We are an extension of your team. We invest deeply in understanding your unique culture, challenges, and goals to ensure the partnerships we build are successful for the long term.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-background border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group h-full">
-              <CardContent className="p-8 space-y-4 text-center">
-                <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors mb-6">
-                  <Globe className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold font-heading">A Commitment to Community</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  We believe in sharing our success. For every placement we make, we donate a portion of our proceeds to a charity dedicated to creating positive experiences and opportunities, helping to build stronger communities.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </section>
 
@@ -211,7 +137,7 @@ export default function WhyFlowstate() {
       </section>
 
       {/* The Results Section */}
-      <section className="py-24">
+      <section className="py-24 border-b border-border/50">
         <div className="container text-center max-w-4xl mx-auto space-y-12">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
@@ -242,6 +168,93 @@ export default function WhyFlowstate() {
               <h3 className="font-bold text-lg">Candidates Evaluated</h3>
               <p className="text-sm text-muted-foreground">Per search to find your perfect match.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section (New) */}
+      <section className="relative py-20 md:py-24 overflow-hidden bg-muted/10">
+        <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-8">
+          <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight">
+            More Than a Placement.<br />
+            <span className="text-primary">A Partnership.</span>
+          </h1>
+          <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground">
+            Pivotal Talent. Lasting Impact.
+          </h2>
+          
+          <div className="relative mt-12 p-8 md:p-12 bg-background rounded-2xl shadow-xl border border-border/50">
+            <div className="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 text-primary/10">
+              <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14.017 21L14.017 18C14.017 16.8954 13.1216 16 12.017 16H9.01699V12.999L14.017 13V10.999L9.01699 11V8L15.017 8V6H8.01699V21H14.017ZM21.017 21V6H15.017V21H21.017Z" />
+              </svg>
+            </div>
+            <blockquote className="text-xl md:text-2xl font-medium leading-relaxed text-foreground italic relative z-10">
+              "Our mission is to be the most trusted partner in executive search, providing the pivotal talent that gives mission-driven companies their competitive edge. We operate with radical transparency, building partnerships that create more meaningful lives and radiate positive impact."
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      {/* What Drives Us Section (New) */}
+      <section className="py-20 md:py-24 bg-background">
+        <div className="container max-w-4xl mx-auto text-center space-y-8">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+            <Heart className="w-4 h-4" />
+            <span>WHAT DRIVES US</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold">
+            Radiating Positive Impact
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            At Flowstate Search, we believe a successful placement is just the beginning. Our goal is to 'radiate positive impact'—a principle that guides everything we do. When we connect an exceptional individual with a mission-driven company, we spark a powerful chain reaction. An engaged professional finds deeper meaning in their work, leading to greater self-worth and happiness that extends to their family and community. Simultaneously, the company gains a competitive advantage, not just through talent, but through a re-energized culture. This is our measure of success: creating value that multiplies.
+          </p>
+        </div>
+      </section>
+
+      {/* Guiding Principles Section (New) */}
+      <section className="py-20 md:py-24 bg-muted/30 border-y border-border/50">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold">Our Guiding Principles</h2>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="bg-background border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group h-full">
+              <CardContent className="p-8 space-y-4 text-center">
+                <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors mb-6">
+                  <ShieldCheck className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-bold font-heading">Radical Transparency</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  We tell it like it is. Your goals become our goals, and we provide the unfiltered, honest advice necessary to build a partnership founded on unwavering trust.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group h-full">
+              <CardContent className="p-8 space-y-4 text-center">
+                <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors mb-6">
+                  <Handshake className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-bold font-heading">True Partnership</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  We are an extension of your team. We invest deeply in understanding your unique culture, challenges, and goals to ensure the partnerships we build are successful for the long term.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group h-full">
+              <CardContent className="p-8 space-y-4 text-center">
+                <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors mb-6">
+                  <Globe className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-bold font-heading">A Commitment to Community</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  We believe in sharing our success. For every placement we make, we donate a portion of our proceeds to a charity dedicated to creating positive experiences and opportunities, helping to build stronger communities.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
