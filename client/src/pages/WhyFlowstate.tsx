@@ -262,16 +262,16 @@ export default function WhyFlowstate() {
       {/* Meet the Founder Section */}
       <section className="py-24 bg-background border-t border-border/50">
         <div className="container max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl blur-2xl opacity-50"></div>
+          <div className="grid md:grid-cols-3 gap-12 items-center">
+            <div className="relative md:col-span-1">
+              <div className="absolute -inset-4 bg-gradient-to-tr from-primary/10 to-accent/10 rounded-3xl blur-xl opacity-30"></div>
               <img 
                 src="/images/founder-headshot-v2.jpg" 
                 alt="Jordan Arp, Founder of Flowstate Search" 
-                className="relative rounded-xl shadow-2xl border border-border/50 w-full h-auto object-cover aspect-[4/5]"
+                className="relative rounded-xl shadow-lg border border-border/50 w-full h-auto object-cover aspect-[3/4] max-w-[300px] mx-auto"
               />
             </div>
-            <div className="space-y-6">
+            <div className="space-y-6 md:col-span-2">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
                 <span>MEET THE FOUNDER</span>
               </div>
