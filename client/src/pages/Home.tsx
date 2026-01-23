@@ -98,7 +98,13 @@ competitors' biggest wins—we bring them to you.
       <section className="py-24 bg-muted/30 border-y border-border/50">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1">
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="order-2 lg:order-1"
+            >
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl blur-2xl opacity-50"></div>
                 <Card className="relative border-border/50 bg-background/80 backdrop-blur shadow-xl">
@@ -123,9 +129,15 @@ competitors' biggest wins—we bring them to you.
                   </CardContent>
                 </Card>
               </div>
-            </div>
+            </motion.div>
             
-            <div className="order-1 lg:order-2 space-y-6">
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="order-1 lg:order-2 space-y-6"
+            >
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
                 Your Best Hires Aren't on Job Boards
               </h2>
@@ -137,7 +149,7 @@ competitors' biggest wins—we bring them to you.
                 <li>You don't need more applications.</li>
                 <li>You need someone who will recruit the people who aren't looking—but should be.</li>
               </ul>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -153,47 +165,59 @@ competitors' biggest wins—we bring them to you.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-background/50 backdrop-blur border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
-              <CardContent className="p-8 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  <Target className="w-6 h-6" />
-                </div>
-                <h3 className="text-xl font-bold font-heading">We Recruit, We Don't Wait</h3>
-                <p className="text-muted-foreground">
-                  We identify and recruit the project managers, superintendents, and directors already excelling at other companies.
-                </p>
-              </CardContent>
-            </Card>
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="grid md:grid-cols-3 gap-8"
+          >
+            <motion.div variants={fadeIn}>
+              <Card className="bg-background/50 backdrop-blur border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group h-full">
+                <CardContent className="p-8 space-y-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <Target className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-bold font-heading">We Recruit, We Don't Wait</h3>
+                  <p className="text-muted-foreground">
+                    We identify and recruit the project managers, superintendents, and directors already excelling at other companies.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
 
-            <Card className="bg-background/50 backdrop-blur border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
-              <CardContent className="p-8 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  <Briefcase className="w-6 h-6" />
-                </div>
-                <h3 className="text-xl font-bold font-heading">Your Hiring Portal</h3>
-                <p className="text-muted-foreground">
-                  See every candidate, every document, every piece of feedback in one place. No email attachments. Just clarity.
-                </p>
-                <ul className="text-sm text-muted-foreground list-disc pl-4 space-y-1">
-                  <li>Faster decision-making</li>
-                  <li>Live status tracking</li>
-                </ul>
-              </CardContent>
-            </Card>
+            <motion.div variants={fadeIn}>
+              <Card className="bg-background/50 backdrop-blur border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group h-full">
+                <CardContent className="p-8 space-y-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <Briefcase className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-bold font-heading">Your Hiring Portal</h3>
+                  <p className="text-muted-foreground">
+                    See every candidate, every document, every piece of feedback in one place. No email attachments. Just clarity.
+                  </p>
+                  <ul className="text-sm text-muted-foreground list-disc pl-4 space-y-1">
+                    <li>Faster decision-making</li>
+                    <li>Live status tracking</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </motion.div>
 
-            <Card className="bg-background/50 backdrop-blur border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
-              <CardContent className="p-8 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  <BarChart3 className="w-6 h-6" />
-                </div>
-                <h3 className="text-xl font-bold font-heading">91% Retention Rate</h3>
-                <p className="text-muted-foreground">
-                  Our placements stay. One year later, 91% of the construction leaders we place are still thriving on your team.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
+            <motion.div variants={fadeIn}>
+              <Card className="bg-background/50 backdrop-blur border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group h-full">
+                <CardContent className="p-8 space-y-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <BarChart3 className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-bold font-heading">91% Retention Rate</h3>
+                  <p className="text-muted-foreground">
+                    Our placements stay. One year later, 91% of the construction leaders we place are still thriving on your team.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </motion.div>
 
           <div className="mt-12 text-center">
             <a href="https://zcal.co/flowstate/how-we-work" target="_blank" rel="noopener noreferrer">
