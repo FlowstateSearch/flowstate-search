@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    document.title = "Flowstate Search | Premier Construction Executive Recruitment";
+    document.title = "Flowstate Search | Construction Executive Recruitment";
   }, []);
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
