@@ -49,15 +49,15 @@
 :root {
   /* Flowstate Search Brand Palette */
   
-  /* Primary: #007065 (Deep Green) */
-  --primary: #007065;
+  /* Primary: #00a69c (Logo Teal) */
+  --primary: #00a69c;
   --primary-foreground: #ffffff;
 
-  /* Secondary: #294e7a (Dark Blue) */
-  --secondary: #294e7a;
+  /* Secondary: #3a6eb5 (Logo Blue) */
+  --secondary: #3a6eb5;
   --secondary-foreground: #ffffff;
 
-  /* Accent: #00a69c (Teal) */
+  /* Accent: #00a69c (Logo Teal) */
   --accent: #00a69c;
   --accent-foreground: #ffffff;
 
@@ -87,7 +87,7 @@
   /* Borders: Light Blue tint */
   --border: #e5e7eb;
   --input: #e5e7eb;
-  --ring: #007065; /* Primary Green */
+  --ring: #00a69c; /* Logo Teal */
 
   /* Sidebar */
   --sidebar: #f9fafb;
@@ -100,8 +100,8 @@
   --sidebar-ring: #007065;
 
   /* Charts */
-  --chart-1: #007065; /* Primary Green */
-  --chart-2: #294e7a; /* Secondary Blue */
+  --chart-1: #00a69c; /* Logo Teal */
+  --chart-2: #3a6eb5; /* Logo Blue */
   --chart-3: #00a69c; /* Accent Teal */
   --chart-4: #3a6eb5; /* Medium Blue */
   --chart-5: #9cb6da; /* Light Blue */
