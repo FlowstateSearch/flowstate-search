@@ -3,8 +3,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, ArrowRight, BarChart3, Users, Target, Briefcase } from "lucide-react";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Flowstate Search | Premier Construction Executive Recruitment";
+  }, []);
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
