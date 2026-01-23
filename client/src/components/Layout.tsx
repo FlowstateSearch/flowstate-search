@@ -105,7 +105,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <img src="/LogoDark_R1.png" alt="Flowstate Search" className="h-12 w-auto mb-4 cursor-pointer" />
               </Link>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Finding construction leaders who thrive, not just survive. We recruit the talent already performing at your competitors.
+                Pivotal Talent. Lasting Impact.
               </p>
             </div>
 

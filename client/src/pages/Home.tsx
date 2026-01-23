@@ -49,10 +49,9 @@ export default function Home() {
               Recruit The <span className="text-[#00a69c]">High-Performing Construction Leaders</span> Your Competitors Fear Losing.
             </motion.h1>
             
-            <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
-              The project managers and superintendents driving your
-competitors' biggest wins—we bring them to you.
-            </motion.p>
+            <motion.h2 variants={fadeIn} className="text-2xl md:text-3xl font-medium text-muted-foreground max-w-xl leading-relaxed pt-2">
+              Pivotal Talent. Lasting Impact.
+            </motion.h2>
             
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
               <a href="https://zcal.co/flowstate/your-next-hire" target="_blank" rel="noopener noreferrer">
@@ -165,7 +164,7 @@ competitors' biggest wins—we bring them to you.
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl md:text-4xl font-heading font-bold">Strategic Recruiting Meets Seamless Execution</h2>
             <p className="text-lg text-muted-foreground">
-              We map your market, identify the talent already performing at your competitors, and recruit them to join your team.
+              We map your market, identify the talent already performing at your competitors, and recruit them to join your team. Every placement is built on a foundation of trust and designed to create lasting impact—for your business, your new hire, and your community.
             </p>
           </div>
 
