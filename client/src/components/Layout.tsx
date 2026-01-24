@@ -150,7 +150,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   </a>
                 </li>
                 <li>
-                  <a href="https://zcal.co/flowstate/discovery-call" target="_blank" rel="noopener noreferrer">
+                  <a href="https://schedule.flowstatesearch.com/15-min-call" target="_blank" rel="noopener noreferrer">
                     <div className="hover:text-primary transition-colors cursor-pointer">Schedule a Call</div>
                   </a>
                 </li>
