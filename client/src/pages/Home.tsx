@@ -352,7 +352,7 @@ competitors' biggest wins—we bring them to you.
             If you're tired of backlog, turnover, and hiring risk—it's time for a proactive recruiting strategy built for construction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <a href="https://zcal.co/flowstate/15-min-call" target="_blank" rel="noopener noreferrer">
+            <a href="https://schedule.flowstatesearch.com/discovery-call" target="_blank" rel="noopener noreferrer">
               <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover-brand-yellow h-11 px-8 text-base px-10 h-14 shadow-xl shadow-primary/20 cursor-pointer">
                 Book a 15-Minute Call
               </div>
