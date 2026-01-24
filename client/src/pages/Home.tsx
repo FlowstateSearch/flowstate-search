@@ -60,7 +60,7 @@ competitors' biggest wins—we bring them to you.
                   Find Your Next Hire
                 </div>
               </a>
-              <a href="https://zcal.co/flowstate/how-we-work" target="_blank" rel="noopener noreferrer">
+              <a href="https://schedule.flowstatesearch.com/how-we-work" target="_blank" rel="noopener noreferrer">
                 <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover-brand-yellow h-11 px-8 text-base h-12 border-primary/20 cursor-pointer">
                   See How It Works
                 </div>
@@ -224,7 +224,7 @@ competitors' biggest wins—we bring them to you.
           </motion.div>
 
           <div className="mt-12 text-center">
-            <a href="https://zcal.co/flowstate/how-we-work" target="_blank" rel="noopener noreferrer">
+            <a href="https://schedule.flowstatesearch.com/how-we-work" target="_blank" rel="noopener noreferrer">
               <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover-brand-yellow h-10 px-4 py-2 group cursor-pointer">
                 See How It Works
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
