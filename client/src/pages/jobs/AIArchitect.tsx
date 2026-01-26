@@ -67,5 +67,5 @@ export default function AIArchitect() {
     ]
   };
 
-  return <JobApplication jobData={jobData} jobId="ai-architect" />;
+  return <JobApplication jobData={jobData} />;
 }

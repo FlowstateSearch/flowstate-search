@@ -15,3 +15,6 @@
 - [x] Update backend to submit LinkedIn URL to Loxo
 
 - [x] Update AI Architect job description with restoration-focused content
+
+- [x] Debug 404 error on AI Architect job submission
+- [x] Verify correct Loxo job ID is being used
