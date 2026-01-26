@@ -11,6 +11,7 @@ export const loxoRouter = router({
         name: z.string().min(1, "Name is required"),
         email: z.string().email("Valid email is required"),
         phone: z.string().optional(),
+        linkedinUrl: z.string().optional(),
         resume: z.object({
           name: z.string(),
           type: z.string(),
@@ -22,7 +23,7 @@ export const loxoRouter = router({
     )
     .mutation(async ({ input }) => {
       try {
-        const { name, email, phone, resume, consent, jobId } = input;
+        const { name, email, phone, linkedinUrl, resume, consent, jobId } = input;
 
         // Use provided jobId or fall back to default from env
         const targetJobId = jobId || ENV.loxoJobId;
@@ -59,6 +60,9 @@ export const loxoRouter = router({
         loxoFormData.append("name", name);
         loxoFormData.append("email", email);
         loxoFormData.append("phone", phone || "");
+        if (linkedinUrl) {
+          loxoFormData.append("linkedin", linkedinUrl);
+        }
 
         // Convert base64 to Buffer for form-data
         const resumeBuffer = Buffer.from(resume.base64, "base64");

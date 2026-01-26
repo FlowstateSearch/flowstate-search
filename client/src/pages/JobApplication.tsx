@@ -42,6 +42,7 @@ export function JobApplication({ jobData, jobId }: JobApplicationProps) {
     name: "",
     email: "",
     phone: "",
+    linkedinUrl: "",
     consent: false,
   });
   const [resumeFile, setResumeFile] = useState<File | null>(null);
@@ -86,6 +87,7 @@ export function JobApplication({ jobData, jobId }: JobApplicationProps) {
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
+          linkedinUrl: formData.linkedinUrl,
           resume: {
             name: resumeFile.name,
             type: resumeFile.type,
@@ -170,19 +172,30 @@ export function JobApplication({ jobData, jobId }: JobApplicationProps) {
                   />
                 </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Phone Number</Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="(555) 123-4567"
-                  />
-                </div>
+              <div className="space-y-2">
+                <Label htmlFor="phone">Phone Number</Label>
+                <Input
+                  id="phone"
+                  type="tel"
+                  value={formData.phone}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  placeholder="(555) 123-4567"
+                />
+              </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="resume">Resume/CV *</Label>
+              <div className="space-y-2">
+                <Label htmlFor="linkedinUrl">LinkedIn Profile URL</Label>
+                <Input
+                  id="linkedinUrl"
+                  type="url"
+                  value={formData.linkedinUrl}
+                  onChange={(e) => setFormData({ ...formData, linkedinUrl: e.target.value })}
+                  placeholder="https://www.linkedin.com/in/yourprofile"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="resume">Resume/CV *</Label>
                   <Input
                     id="resume"
                     type="file"

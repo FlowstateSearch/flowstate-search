@@ -10,3 +10,6 @@
 - [x] Test end-to-end application submission
 
 - [x] Update job application page formatting to match existing Flowstate job pages
+
+- [x] Add optional LinkedIn URL field to job application form
+- [x] Update backend to submit LinkedIn URL to Loxo
