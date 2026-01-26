@@ -18,3 +18,5 @@
 
 - [x] Debug 404 error on AI Architect job submission
 - [x] Verify correct Loxo job ID is being used
+
+- [x] Remove LinkedIn URL field from application form (Loxo doesn't support it)
