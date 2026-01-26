@@ -13,3 +13,5 @@
 
 - [x] Add optional LinkedIn URL field to job application form
 - [x] Update backend to submit LinkedIn URL to Loxo
+
+- [x] Update AI Architect job description with restoration-focused content

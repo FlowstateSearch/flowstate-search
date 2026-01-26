@@ -3,66 +3,67 @@ import { JobApplication } from "../JobApplication";
 export default function AIArchitect() {
   const jobData = {
     title: "AI Architect",
-    location: "San Francisco, CA",
+    location: "Remote or Hybrid",
     employmentType: "Full Time",
     postedDate: "Posted Recently",
-    tags: ["Technology", "AI/ML", "Leadership", "Strategy"],
+    tags: ["Technology", "AI/ML", "Enterprise Architecture", "Restoration"],
     
-    quickOverview: `Our client is hiring an AI Architect for a cutting-edge technology company revolutionizing the construction industry with artificial intelligence. This is your chance to lead AI strategy and implementation while working for one of the most innovative tech companies in the space.`,
+    quickOverview: `My Client is seeking a hands-on, technically proficient AI Architect to design, integrate, and scale AI-powered systems that enhance field operations, automate repetitive tasks, and drive efficiency across our restoration business. You will work at the intersection of machine learning, enterprise platforms, and operational systems to deliver AI tools that impact real-world workflows.`,
     
-    theWho: "A venture-backed technology company with over 500 employees transforming construction through AI and machine learning. Trusted by Fortune 500 construction firms.",
+    theWho: "A leading restoration company leveraging cutting-edge AI technology to transform field operations and drive efficiency. We partner with both internal teams and external vendors to implement the best technologies for our business needs.",
     
-    theWhat: "You'll be the technical leader for AI architecture and implementation, responsible for designing scalable AI systems, leading ML engineering teams, and driving AI strategy across the organization.",
+    theWhat: "You'll architect and implement AI solutions using OpenAI, Microsoft Copilot, and enterprise tools while building data pipelines that connect internal systems like Xactimate, Cotality RMS (DASH), and custom data warehouses.",
     
-    theWhy: "Shape the future of construction technology by building AI systems that solve real-world problems for an industry ready for transformation.",
+    theWhy: "Work at the intersection of AI innovation and real-world impact. Your solutions will directly improve field operations, automate repetitive tasks, and enhance the daily work of restoration professionals.",
     
-    theWhere: "San Francisco, California, with hybrid work options and occasional travel to construction sites.",
+    theWhere: "Remote or Hybrid work environment with flexibility to collaborate across teams.",
     
-    roleDescription: "You are a technical visionary and hands-on architect. You lead with innovation, strategic thinking, and deep technical expertise while earning respect from engineering teams to executive leadership.",
+    roleDescription: "You are a hands-on technical leader who bridges the gap between AI innovation and practical business applications. You work autonomously in a startup-style environment within a larger organization, partnering with IT, operations, and business leaders to deliver secure, compliant AI solutions.",
     
     keyResponsibilities: [
-      "Design and implement scalable AI/ML architecture for construction applications",
-      "Lead cross-functional teams of ML engineers and data scientists",
-      "Define AI strategy and roadmap in collaboration with product and executive teams",
-      "Build and optimize large-scale machine learning pipelines",
-      "Evaluate and integrate cutting-edge AI technologies and frameworks",
-      "Establish best practices for ML ops, model deployment, and monitoring",
-      "Mentor engineering teams on AI/ML best practices and architecture patterns"
+      "Architect and implement AI solutions using OpenAI, Microsoft Copilot, and enterprise tools",
+      "Build and integrate data pipelines connecting internal systems like Xactimate, Cotality RMS (DASH), and custom data warehouses",
+      "Design scalable AI agent workflows using approved enterprise platforms and secure APIs",
+      "Collaborate with multiple teams to translate roadmap priorities into technical blueprints",
+      "Evaluate third-party tools (e.g., XTGlobal, Glean) and partner on implementation and integration",
+      "Partner with IT on governance, model risk, and data privacy to ensure SOC2, GDPR, and internal standards",
+      "Tune models and prompt flows based on real-time field feedback to improve adoption and utility",
+      "Contribute to long-term AI infrastructure design including vector databases, embedding models, and RAG pipelines when applicable"
     ],
     
     mustHaves: [
-      "8+ years in software engineering with 4+ years focused on AI/ML",
-      "Proven track record architecting and deploying production ML systems at scale",
-      "Deep expertise in modern ML frameworks (PyTorch, TensorFlow, etc.)",
-      "Strong foundation in computer vision, NLP, or reinforcement learning",
-      "Experience leading technical teams and driving AI strategy",
-      "Excellent communication skills with both technical and non-technical stakeholders"
+      "5+ years in machine learning, enterprise architecture, or AI/ML engineering roles",
+      "Demonstrated experience working with LLMs, OpenAI APIs, and prompt engineering",
+      "Strong technical skills in Python, REST APIs, Azure/GCP, and enterprise data architectures",
+      "Familiarity with systems integration (e.g., Xactimate, custom CRMs, etc)",
+      "Experience working cross-functionally with IT, operations, and business leaders",
+      "Ability to work autonomously in a startup-style environment within a larger organization"
     ],
     
     preferred: [
-      "PhD or Master's in Computer Science, AI, or related field",
-      "Experience in construction tech, PropTech, or related industries",
-      "Published research or contributions to open-source AI projects",
-      "Experience with cloud ML platforms (AWS SageMaker, Google Vertex AI, Azure ML)"
+      "Experience in construction, restoration, or adjacent industries",
+      "Background in field operations or understanding of restoration workflows",
+      "Experience with vector databases, embedding models, and RAG pipelines",
+      "Track record of deploying AI solutions that improved operational efficiency"
     ],
     
     compensation: {
-      range: "$200k - $250k",
-      label: "Base Salary",
+      range: "$150k - $200k+",
+      label: "Total Compensation",
       additional: [
-        "Equity/Stock Options",
-        "Performance Bonuses"
+        "Base Salary",
+        "Performance-Based Bonus"
       ]
     },
     
     benefits: [
+      "Remote or hybrid work flexibility",
       "Medical, dental, vision plans",
       "401k matching",
-      "Flexible PTO policy",
-      "Remote/hybrid work options",
       "Professional development budget",
-      "Conference and education stipend",
-      "Latest tech equipment"
+      "Opportunity to build and lead a team",
+      "Work with cutting-edge AI technologies",
+      "Direct impact on field operations"
     ]
   };
 
