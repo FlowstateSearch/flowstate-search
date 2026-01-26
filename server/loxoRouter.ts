@@ -38,15 +38,18 @@ export const loxoRouter = router({
         const html = formPageResponse.data;
 
         // Extract authenticity token from the HTML
-        const tokenMatch = html.match(/name="authenticity_token"\s+value="([^"]+)"/);
-        const sourceTypeMatch = html.match(/name="source_type_id"\s+value="([^"]+)"/);
+        // Handle both single and double quotes, with or without spaces
+        const tokenMatch = html.match(/name=['"]authenticity_token['"]\s*value=(['"])([^'"]+)\1/) ||
+                          html.match(/name=['"]authenticity_token['"]\s*value=([^\s>\/]+)/);
+        const sourceTypeMatch = html.match(/name=['"]source_type_id['"]\s*value=(['"])([^'"]+)\1/) ||
+                               html.match(/name=['"]source_type_id['"]\s*value=([^\s>\/]+)/);
+        
+        const authenticityToken = tokenMatch ? (tokenMatch[2] || tokenMatch[1]) : null;
+        const sourceTypeId = sourceTypeMatch ? (sourceTypeMatch[2] || sourceTypeMatch[1]) : null;
 
-        if (!tokenMatch || !sourceTypeMatch) {
+        if (!authenticityToken || !sourceTypeId) {
           throw new Error("Could not extract required tokens from Loxo form");
         }
-
-        const authenticityToken = tokenMatch[1];
-        const sourceTypeId = sourceTypeMatch[1];
 
         // Step 2: Prepare form data for Loxo submission
         const loxoFormData = new FormData();
@@ -59,10 +62,11 @@ export const loxoRouter = router({
 
         // Convert base64 to Buffer for form-data
         const resumeBuffer = Buffer.from(resume.base64, "base64");
-        loxoFormData.append("resume", resumeBuffer, {
+        loxoFormData.append("resume_uploaded_file[]", resumeBuffer, {
           filename: resume.name,
           contentType: resume.type,
         });
+        loxoFormData.append("resume_source_type_id", sourceTypeId);
 
         if (consent) {
           loxoFormData.append("contact-consent-box", "on");

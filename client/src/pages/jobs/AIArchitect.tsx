@@ -1,51 +1,70 @@
-import JobApplication from "../JobApplication";
+import { JobApplication } from "../JobApplication";
 
-export default function AIArchitectJob() {
-  const jobDescription = (
-    <>
-      <p>
-        My Client is seeking a hands-on, technically proficient AI Architect to design, integrate,
-        and scale AI-powered systems that enhance field operations, automate repetitive tasks, and
-        drive efficiency across our restoration business.
-      </p>
+export default function AIArchitect() {
+  const jobData = {
+    title: "AI Architect",
+    location: "San Francisco, CA",
+    employmentType: "Full Time",
+    postedDate: "Posted Recently",
+    tags: ["Technology", "AI/ML", "Leadership", "Strategy"],
+    
+    quickOverview: `Our client is hiring an AI Architect for a cutting-edge technology company revolutionizing the construction industry with artificial intelligence. This is your chance to lead AI strategy and implementation while working for one of the most innovative tech companies in the space.`,
+    
+    theWho: "A venture-backed technology company with over 500 employees transforming construction through AI and machine learning. Trusted by Fortune 500 construction firms.",
+    
+    theWhat: "You'll be the technical leader for AI architecture and implementation, responsible for designing scalable AI systems, leading ML engineering teams, and driving AI strategy across the organization.",
+    
+    theWhy: "Shape the future of construction technology by building AI systems that solve real-world problems for an industry ready for transformation.",
+    
+    theWhere: "San Francisco, California, with hybrid work options and occasional travel to construction sites.",
+    
+    roleDescription: "You are a technical visionary and hands-on architect. You lead with innovation, strategic thinking, and deep technical expertise while earning respect from engineering teams to executive leadership.",
+    
+    keyResponsibilities: [
+      "Design and implement scalable AI/ML architecture for construction applications",
+      "Lead cross-functional teams of ML engineers and data scientists",
+      "Define AI strategy and roadmap in collaboration with product and executive teams",
+      "Build and optimize large-scale machine learning pipelines",
+      "Evaluate and integrate cutting-edge AI technologies and frameworks",
+      "Establish best practices for ML ops, model deployment, and monitoring",
+      "Mentor engineering teams on AI/ML best practices and architecture patterns"
+    ],
+    
+    mustHaves: [
+      "8+ years in software engineering with 4+ years focused on AI/ML",
+      "Proven track record architecting and deploying production ML systems at scale",
+      "Deep expertise in modern ML frameworks (PyTorch, TensorFlow, etc.)",
+      "Strong foundation in computer vision, NLP, or reinforcement learning",
+      "Experience leading technical teams and driving AI strategy",
+      "Excellent communication skills with both technical and non-technical stakeholders"
+    ],
+    
+    preferred: [
+      "PhD or Master's in Computer Science, AI, or related field",
+      "Experience in construction tech, PropTech, or related industries",
+      "Published research or contributions to open-source AI projects",
+      "Experience with cloud ML platforms (AWS SageMaker, Google Vertex AI, Azure ML)"
+    ],
+    
+    compensation: {
+      range: "$200k - $250k",
+      label: "Base Salary",
+      additional: [
+        "Equity/Stock Options",
+        "Performance Bonuses"
+      ]
+    },
+    
+    benefits: [
+      "Medical, dental, vision plans",
+      "401k matching",
+      "Flexible PTO policy",
+      "Remote/hybrid work options",
+      "Professional development budget",
+      "Conference and education stipend",
+      "Latest tech equipment"
+    ]
+  };
 
-      <h2>Key Responsibilities</h2>
-      <ul>
-        <li>Architect and implement AI solutions using OpenAI, Microsoft Copilot, and enterprise tools</li>
-        <li>Build and integrate data pipelines connecting internal systems like Xactimate, Cotality RMS (DASH), and custom data warehouses</li>
-        <li>Design scalable AI agent workflows using approved enterprise platforms and secure APIs</li>
-        <li>Collaborate with multiple teams to translate roadmap priorities into technical blueprints</li>
-        <li>Evaluate third-party tools (e.g., XTGlobal, Glean) and partner on implementation and integration</li>
-        <li>Partner with IT on governance, model risk, and data privacy to ensure SOC2, GDPR, and internal standards</li>
-        <li>Tune models and prompt flows based on real-time field feedback to improve adoption and utility</li>
-      </ul>
-
-      <h2>Qualifications</h2>
-      <ul>
-        <li>5+ years in machine learning, enterprise architecture, or AI/ML engineering roles</li>
-        <li>Demonstrated experience working with LLMs, OpenAI APIs, and prompt engineering</li>
-        <li>Strong technical skills in Python, REST APIs, Azure/GCP, and enterprise data architectures</li>
-        <li>Familiarity with systems integration (e.g., Xactimate, custom CRMs, etc)</li>
-        <li>Experience working cross-functionally with IT, operations, and business leaders</li>
-        <li>Ability to work autonomously in a startup-style environment within a larger organization</li>
-        <li>Experience in construction, restoration, or adjacent industries a plus</li>
-      </ul>
-
-      <h2>Compensation</h2>
-      <p>
-        <strong>Estimated Total Compensation: $150,000 – $200,000+</strong>
-        <br />
-        Includes base salary and performance-based bonus (dependent on experience and location).
-      </p>
-    </>
-  );
-
-  return (
-    <JobApplication
-      jobTitle="AI Architect"
-      jobLocation="Remote or Hybrid"
-      jobSalary="$150,000 - $200,000+"
-      jobDescription={jobDescription}
-    />
-  );
+  return <JobApplication jobData={jobData} jobId="ai-architect" />;
 }
