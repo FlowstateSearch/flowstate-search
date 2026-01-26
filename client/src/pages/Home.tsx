@@ -1,3 +1,4 @@
+import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, ArrowRight, BarChart3, Users, Target, Briefcase } from "lucide-react";
@@ -6,6 +7,10 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 export default function Home() {
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
   useEffect(() => {
     document.title = "Flowstate Search | Construction Executive Recruitment";
   }, []);
