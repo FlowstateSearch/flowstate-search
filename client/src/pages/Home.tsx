@@ -362,41 +362,54 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Cost of Bad Hire Section */}
-      <section className="py-24 bg-background">
+      {/* Cost of Bad Hire Section - Professional Marketing Graphic */}
+      <section className="py-24 bg-gradient-to-b from-background to-muted/20">
         <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <Card className="bg-gradient-to-br from-destructive/5 to-destructive/10 border-destructive/20">
-              <CardContent className="p-12 text-center space-y-6">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
-                  The Real Cost of a Bad Hire
-                </h2>
-                <div className="grid md:grid-cols-3 gap-8 py-8">
-                  <div>
-                    <p className="text-5xl font-bold text-destructive">$250K-$500K</p>
-                    <p className="text-sm text-muted-foreground mt-2">Average cost of a failed executive hire</p>
-                  </div>
-                  <div>
-                    <p className="text-5xl font-bold text-destructive">60%</p>
-                    <p className="text-sm text-muted-foreground mt-2">Industry average retention rate (24 months)</p>
-                  </div>
-                  <div>
-                    <p className="text-5xl font-bold text-primary">91%</p>
-                    <p className="text-sm text-muted-foreground mt-2">Flowstate retention rate (24 months)</p>
-                  </div>
-                </div>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Turnover costs include lost productivity, team morale damage, project delays, and the expense of rehiring. Flowstate's 91% retention rate means you hire once, not twice.
-                </p>
-                <div className="pt-4">
-                  <a href="https://schedule.flowstatesearch.com/discovery-call" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" className="bg-primary text-primary-foreground hover:bg-[#ffc229] hover:text-background transition-all">
-                      Get a Free Competitive Talent Map
-                    </Button>
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
+          <div className="max-w-6xl mx-auto">
+            {/* Title */}
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-center text-foreground mb-16">
+              The Real Cost of a Bad Hire in Construction
+            </h2>
+
+            {/* Three Stats - Horizontal Layout */}
+            <div className="grid md:grid-cols-3 gap-12 mb-16">
+              {/* STAT 1: Cost (RED) */}
+              <div className="text-center space-y-3">
+                <p className="text-5xl md:text-6xl font-bold text-red-600">$500K-$1.2M</p>
+                <p className="text-xl font-semibold text-foreground">Average cost of a failed construction executive</p>
+                <p className="text-sm text-muted-foreground">Based on 2-5x salary multiplier</p>
+              </div>
+
+              {/* STAT 2: Timeline (ORANGE/YELLOW) */}
+              <div className="text-center space-y-3">
+                <p className="text-5xl md:text-6xl font-bold text-orange-500">12-18 months</p>
+                <p className="text-xl font-semibold text-foreground">Time to identify, exit, and replace</p>
+                <p className="text-sm text-muted-foreground">Lost momentum and opportunity cost</p>
+              </div>
+
+              {/* STAT 3: Retention (GREEN) */}
+              <div className="text-center space-y-3">
+                <p className="text-5xl md:text-6xl font-bold text-primary">91%</p>
+                <p className="text-xl font-semibold text-foreground">Flowstate retention rate (24 months)</p>
+                <p className="text-sm text-muted-foreground">We help you hire once, not twice</p>
+              </div>
+            </div>
+
+            {/* Supporting Copy */}
+            <div className="max-w-4xl mx-auto text-center mb-12">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Turnover costs include lost productivity, team morale damage, project delays (5-10% of project costs), safety risks (70% of construction accidents linked to human error), and the expense of rehiring. Flowstate's 91% retention rate means you hire once, not twice.
+              </p>
+            </div>
+
+            {/* CTA Button */}
+            <div className="text-center">
+              <a href="https://schedule.flowstatesearch.com/market-map" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-[#ffc229] hover:text-background transition-all shadow-lg text-base px-8 h-12">
+                  Get a Free Competitive Talent Map
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>

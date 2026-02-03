@@ -160,3 +160,20 @@
 - [x] Update traditional agencies retention rate from 60% to 57%
 - [x] Add DIY/in-house retention rate of 33% to comparison chart
 - [x] Strengthen competitive advantage messaging (91% vs 57% vs 33%)
+
+## Cost of Bad Hire Graphic Redesign
+
+- [x] Replace current section with professional marketing graphic
+- [x] Add centered title: "The Real Cost of a Bad Hire in Construction"
+- [x] Create three-stat horizontal layout with equal spacing
+- [x] STAT 1 (red): $500K-$1.2M + subtitle + small text
+- [x] STAT 2 (orange/yellow): 12-18 months + subtitle + small text
+- [x] STAT 3 (green): 91% + subtitle + small text
+- [x] Add supporting copy below stats (turnover costs explanation)
+- [x] Add teal CTA button: "Get a Free Competitive Talent Map"
+- [x] Use clean, modern design with plenty of white space
+- [x] Apply brand colors (teal primary, red/orange/yellow for stats)
+
+## CTA Link Update
+
+- [x] Update "Get a Free Competitive Talent Map" button link to https://schedule.flowstatesearch.com/market-map
