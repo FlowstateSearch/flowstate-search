@@ -32,14 +32,24 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section - Redesigned */}
       <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden bg-background">
-        {/* Background Video/Image */}
+        {/* Background Video */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80 z-10"></div>
-          <img 
-            src="/images/hero-construction-site.jpg" 
-            alt="Construction Site" 
-            className="w-full h-full object-cover opacity-60"
-          />
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="w-full h-full object-cover opacity-50"
+          >
+            <source src="/videos/hero-background.mp4" type="video/mp4" />
+            {/* Fallback to image if video doesn't load */}
+            <img 
+              src="/images/hero-construction-site.jpg" 
+              alt="Construction Site" 
+              className="w-full h-full object-cover"
+            />
+          </video>
         </div>
 
         <div className="container relative z-20 py-20">
@@ -118,61 +128,25 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              {/* Intro Video Placeholder (Bottom Right) */}
+              {/* Intro Video Thumbnail (Bottom Right) */}
               <motion.div 
                 initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ 
-                  opacity: 1, 
-                  scale: 1,
-                }}
+                animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="absolute -bottom-8 -right-8 cursor-pointer group"
+                className="absolute -bottom-16 -right-8 w-56 h-56 rounded-2xl overflow-hidden border-4 border-background shadow-2xl cursor-pointer group transition-transform duration-300 hover:scale-105"
                 onClick={() => setShowVideo(true)}
               >
-                {/* Animated Dashed Border */}
-                <motion.div
-                  animate={{
-                    rotate: 360,
-                  }}
-                  transition={{
-                    duration: 20,
-                    repeat: Infinity,
-                    ease: "linear"
-                  }}
-                  className="absolute inset-0 rounded-2xl"
-                  style={{
-                    background: `conic-gradient(from 0deg, transparent 0%, #00a69c 50%, transparent 100%)`,
-                    padding: '4px',
-                    WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
-                    WebkitMaskComposite: 'xor',
-                    maskComposite: 'exclude',
-                  }}
-                />
-                
-                {/* Breathing Animation Container */}
-                <motion.div
-                  animate={{
-                    scale: [1, 1.03, 1],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                  className="relative w-64 h-64 rounded-2xl overflow-hidden border-4 border-primary/30 shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary/40"
-                >
-                  <div className="relative w-full h-full bg-black flex items-center justify-center">
-                    <img 
-                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/dbBspvJJKWBHFkln.gif" 
-                      alt="Founder Introduction" 
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all"></div>
-                    <div className="absolute bottom-4 left-4 right-4 text-center">
-                      <p className="text-white text-base font-bold drop-shadow-lg">Intro Video</p>
-                    </div>
+                <div className="relative w-full h-full bg-black flex items-center justify-center">
+                  <img 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/dbBspvJJKWBHFkln.gif" 
+                    alt="Founder Introduction" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all"></div>
+                  <div className="absolute bottom-4 left-4 right-4 text-center">
+                    <p className="text-white text-base font-bold drop-shadow-lg">Intro Video</p>
                   </div>
-                </motion.div>
+                </div>
               </motion.div>
             </motion.div>
           </div>

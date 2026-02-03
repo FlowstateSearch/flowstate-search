@@ -109,3 +109,17 @@
 - [x] Add smooth animations and movement to video thumbnail
 - [x] Enhance visual polish (shadows, borders, effects)
 - [x] Make video feel more dynamic and professional
+
+## Hero Background Video Implementation
+
+- [ ] Remove rotating border animation from video thumbnail
+- [ ] Simplify video thumbnail back to clean design
+- [ ] Add looping background video to hero section (behind text)
+- [ ] Ensure video autoplays, loops, and is muted
+- [ ] Add gradient overlay for text readability
+
+## Background Video & Thumbnail Positioning
+
+- [x] Search for high-quality construction background video (provided Pexels link to user)
+- [ ] Download and upload background video (waiting for user to select and send)
+- [x] Adjust video thumbnail position to not cover testimonial text
