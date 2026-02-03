@@ -135,3 +135,11 @@
 - [x] Update video source to use S3 CDN URL
 - [x] Verify video plays automatically in hero section
 - [x] Test video loop and muted playback
+
+## Hero Section Dark Overlay
+
+- [x] Add darker overlay to hero section to make video more visible (black/80 to black/60)
+- [x] Change hero text from black to white
+- [x] Adjust gradient to show more video background (opacity 70%)
+- [x] Ensure sections below hero remain light background
+- [x] Update testimonial card styling for dark hero (white card with dark text)

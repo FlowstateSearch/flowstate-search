@@ -31,16 +31,16 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section - Redesigned */}
-      <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden bg-background">
+      <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden bg-black">
         {/* Background Video */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80 z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/60 z-10"></div>
           <video 
             autoPlay 
             loop 
             muted 
             playsInline
-            className="w-full h-full object-cover opacity-50"
+            className="w-full h-full object-cover opacity-70"
           >
             <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/QXCGUgKrlBSieqcZ.mp4" type="video/mp4" />
             {/* Fallback to image if video doesn't load */}
@@ -61,11 +61,11 @@ export default function Home() {
               variants={staggerContainer}
               className="space-y-8"
             >
-              <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold tracking-tight leading-tight text-foreground">
+              <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold tracking-tight leading-tight text-white">
                 Recruit The <span className="text-[#00a69c]">High-Performing Construction Leaders</span> Your Competitors Fear Losing.
               </motion.h1>
               
-              <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
+              <motion.p variants={fadeIn} className="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
                 The project managers and superintendents driving your competitors' biggest wins—we bring them to you.
               </motion.p>
               
@@ -76,7 +76,7 @@ export default function Home() {
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <span className="text-sm font-medium text-muted-foreground">
+                <span className="text-sm font-medium text-gray-300">
                   Trusted by Construction Leaders
                 </span>
               </motion.div>
@@ -94,7 +94,7 @@ export default function Home() {
                 </a>
               </motion.div>
 
-              <motion.div variants={fadeIn} className="pt-4 flex items-center gap-6 text-sm font-mono text-muted-foreground">
+              <motion.div variants={fadeIn} className="pt-4 flex items-center gap-6 text-sm font-mono text-gray-300">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-primary" />
                   <span className="text-base">STRATEGIC TALENT HUNTING</span>
@@ -113,17 +113,17 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              <Card className="bg-background/90 backdrop-blur border-primary/20 shadow-2xl">
+              <Card className="bg-white/95 backdrop-blur border-primary/20 shadow-2xl">
                 <CardContent className="p-8 space-y-6">
                   <div className="flex items-start gap-2">
                     <div className="text-6xl text-primary/20 font-serif leading-none">"</div>
-                    <p className="text-lg text-foreground leading-relaxed pt-4">
+                    <p className="text-lg text-gray-900 leading-relaxed pt-4">
                       Most recruiters throw resumes at you and hope something sticks. Flowstate took the time to understand our culture, our challenges, and what 'great' actually looked like for us. They were transparent - told us the red flags and the green flags for every candidate. We made a hire we feel great about, and we're already planning our next search with them.
                     </p>
                   </div>
                   <div className="border-t border-border pt-4">
-                    <p className="font-bold text-foreground">Jacob R.</p>
-                    <p className="text-sm text-muted-foreground">VP of Operations, Commercial Construction Management</p>
+                    <p className="font-bold text-gray-900">Jacob R.</p>
+                    <p className="text-sm text-gray-600">VP of Operations, Commercial Construction Management</p>
                   </div>
                 </CardContent>
               </Card>
@@ -133,7 +133,7 @@ export default function Home() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="absolute -bottom-28 -right-8 w-48 h-48 rounded-2xl overflow-hidden border-4 border-background shadow-2xl cursor-pointer group transition-transform duration-300 hover:scale-105"
+                className="absolute -bottom-28 -right-8 w-48 h-48 rounded-2xl overflow-hidden border-4 border-white shadow-2xl cursor-pointer group transition-transform duration-300 hover:scale-105"
                 onClick={() => setShowVideo(true)}
               >
                 <div className="relative w-full h-full bg-black flex items-center justify-center">
