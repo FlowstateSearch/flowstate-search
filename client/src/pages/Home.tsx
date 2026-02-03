@@ -121,22 +121,58 @@ export default function Home() {
               {/* Intro Video Placeholder (Bottom Right) */}
               <motion.div 
                 initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
+                animate={{ 
+                  opacity: 1, 
+                  scale: 1,
+                }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="absolute -bottom-6 -right-6 w-48 h-48 rounded-2xl overflow-hidden border-4 border-background shadow-2xl cursor-pointer group transition-transform duration-300 hover:scale-110"
+                className="absolute -bottom-8 -right-8 cursor-pointer group"
                 onClick={() => setShowVideo(true)}
               >
-                <div className="relative w-full h-full bg-black flex items-center justify-center">
-                  <img 
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/dbBspvJJKWBHFkln.gif" 
-                    alt="Founder Introduction" 
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all"></div>
-                  <div className="absolute bottom-3 left-3 right-3 text-center">
-                    <p className="text-white text-sm font-bold drop-shadow-lg">Intro Video</p>
+                {/* Animated Dashed Border */}
+                <motion.div
+                  animate={{
+                    rotate: 360,
+                  }}
+                  transition={{
+                    duration: 20,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                  className="absolute inset-0 rounded-2xl"
+                  style={{
+                    background: `conic-gradient(from 0deg, transparent 0%, #00a69c 50%, transparent 100%)`,
+                    padding: '4px',
+                    WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                    WebkitMaskComposite: 'xor',
+                    maskComposite: 'exclude',
+                  }}
+                />
+                
+                {/* Breathing Animation Container */}
+                <motion.div
+                  animate={{
+                    scale: [1, 1.03, 1],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                  className="relative w-64 h-64 rounded-2xl overflow-hidden border-4 border-primary/30 shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary/40"
+                >
+                  <div className="relative w-full h-full bg-black flex items-center justify-center">
+                    <img 
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/dbBspvJJKWBHFkln.gif" 
+                      alt="Founder Introduction" 
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all"></div>
+                    <div className="absolute bottom-4 left-4 right-4 text-center">
+                      <p className="text-white text-base font-bold drop-shadow-lg">Intro Video</p>
+                    </div>
                   </div>
-                </div>
+                </motion.div>
               </motion.div>
             </motion.div>
           </div>
