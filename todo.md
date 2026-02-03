@@ -151,3 +151,9 @@
 - [x] Redesign testimonial card with semi-transparent dark background (like ConTech HQ)
 - [x] Change testimonial text to white with italic styling
 - [x] Add white vertical border on left side (book spine effect - 4px border-l-white)
+
+## Comparison Chart Enhancements
+
+- [x] Add mobile responsiveness - stack columns vertically on small screens (grid-cols-1 md:grid-cols-3)
+- [x] Highlight retention rate row (91% vs 60%) with subtle background (yellow/red/teal borders and backgrounds)
+- [x] Test mobile layout to ensure readability (verified via status check)

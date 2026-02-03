@@ -197,7 +197,7 @@ export default function Home() {
           {/* Table-style comparison with horizontal rows */}
           <div className="max-w-6xl mx-auto">
             {/* Header Row */}
-            <div className="grid grid-cols-3 gap-4 mb-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
               <div className="bg-destructive/80 text-destructive-foreground py-4 text-center font-bold text-lg rounded-t-lg">
                 HIRING BY YOURSELF
               </div>
@@ -210,7 +210,7 @@ export default function Home() {
             </div>
 
             {/* Content Rows - Aligned horizontally */}
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {/* Column 1: DIY */}
               <Card className="bg-gradient-to-br from-destructive/5 to-destructive/10 border-destructive/20">
                 <CardContent className="p-4 space-y-3">
@@ -238,10 +238,10 @@ export default function Home() {
                     <p className="text-sm text-foreground">How do I assess construction leadership skills?</p>
                   </div>
                   
-                  {/* Row 5: Retention */}
-                  <div className="flex items-start gap-3 transform -rotate-2 ml-2 min-h-[45px]">
+                  {/* Row 5: Retention - HIGHLIGHTED */}
+                  <div className="flex items-start gap-3 transform -rotate-2 ml-2 min-h-[45px] bg-yellow-50 border-l-4 border-yellow-400 -mx-4 px-4 py-2">
                     <HelpCircle className="w-5 h-5 text-destructive mt-1 flex-shrink-0" />
-                    <p className="text-sm text-foreground">What if they leave in 6 months?</p>
+                    <p className="text-sm text-foreground font-semibold">What if they leave in 6 months?</p>
                   </div>
                   
                   {/* Row 6: Outcome */}
@@ -284,10 +284,10 @@ export default function Home() {
                     <p className="text-sm text-foreground">Limited construction expertise</p>
                   </div>
                   
-                  {/* Row 5: Retention */}
-                  <div className="flex items-start gap-3 min-h-[45px]">
+                  {/* Row 5: Retention - HIGHLIGHTED */}
+                  <div className="flex items-start gap-3 min-h-[45px] bg-red-50 border-l-4 border-red-400 -mx-4 px-4 py-2">
                     <X className="w-5 h-5 text-muted-foreground mt-1 flex-shrink-0" />
-                    <p className="text-sm text-foreground">~60% retention rate</p>
+                    <p className="text-sm text-foreground font-semibold">~60% retention rate</p>
                   </div>
                   
                   {/* Row 6: Outcome */}
@@ -330,10 +330,10 @@ export default function Home() {
                     <p className="text-sm text-foreground font-medium">30+ years construction recruiting</p>
                   </div>
                   
-                  {/* Row 5: Retention */}
-                  <div className="flex items-start gap-3 min-h-[45px]">
+                  {/* Row 5: Retention - HIGHLIGHTED */}
+                  <div className="flex items-start gap-3 min-h-[45px] bg-primary/10 border-l-4 border-primary -mx-4 px-4 py-2">
                     <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <p className="text-sm text-foreground font-medium">91% retention focus</p>
+                    <p className="text-sm text-foreground font-bold">91% retention focus</p>
                   </div>
                   
                   {/* Row 6: Outcome */}
