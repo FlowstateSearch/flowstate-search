@@ -74,3 +74,9 @@
 ## Video Thumbnail Hover Effect
 
 - [x] Add scale-up animation on hover to show video is clickable
+
+## Testimonial Update
+
+- [x] Remove "radically" from testimonial quote
+- [x] Remove em dash, use regular dash
+- [x] Change attribution to "VP of Operations" at "Commercial Construction Management"

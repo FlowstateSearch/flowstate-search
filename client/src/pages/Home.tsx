@@ -108,12 +108,12 @@ export default function Home() {
                   <div className="flex items-start gap-2">
                     <div className="text-6xl text-primary/20 font-serif leading-none">"</div>
                     <p className="text-lg text-foreground leading-relaxed pt-4">
-                      Most recruiters throw resumes at you and hope something sticks. Flowstate took the time to understand our culture, our challenges, and what 'great' actually looked like for us. They were radically transparent—told us the red flags and the green flags for every candidate. We made a hire we feel great about, and we're already planning our next search with them.
+                      Most recruiters throw resumes at you and hope something sticks. Flowstate took the time to understand our culture, our challenges, and what 'great' actually looked like for us. They were transparent - told us the red flags and the green flags for every candidate. We made a hire we feel great about, and we're already planning our next search with them.
                     </p>
                   </div>
                   <div className="border-t border-border pt-4">
-                    <p className="font-bold text-foreground">CEO</p>
-                    <p className="text-sm text-muted-foreground">Infrastructure & Heavy Civil Contractor</p>
+                    <p className="font-bold text-foreground">VP of Operations</p>
+                    <p className="text-sm text-muted-foreground">Commercial Construction Management</p>
                   </div>
                 </CardContent>
               </Card>
