@@ -103,7 +103,7 @@ export default function PrivacyPolicy() {
               <li><strong>Data Portability:</strong> You may request a copy of your data in a structured, machine-readable format.</li>
             </ul>
             <p className="text-foreground/90 leading-relaxed mt-4">
-              To exercise any of these rights, please contact us at info@flowstatesearch.com. We will respond to your request within a reasonable timeframe as required by applicable law.
+              To exercise any of these rights, please contact us at hello@flowstatesearch.com. We will respond to your request within a reasonable timeframe as required by applicable law.
             </p>
           </section>
 
@@ -156,7 +156,7 @@ export default function PrivacyPolicy() {
             </p>
             <p className="text-foreground/90 leading-relaxed">
               <strong>Flowstate Search</strong><br />
-              Email: info@flowstatesearch.com
+              Email: hello@flowstatesearch.com
             </p>
           </section>
         </div>

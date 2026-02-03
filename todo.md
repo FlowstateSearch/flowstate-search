@@ -26,3 +26,5 @@
 - [x] Create Terms of Service page component
 - [x] Create Privacy Policy page component
 - [x] Add footer links to legal pages
+
+- [x] Update contact email to hello@flowstatesearch.com in legal pages

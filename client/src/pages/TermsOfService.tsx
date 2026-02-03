@@ -131,7 +131,7 @@ export default function TermsOfService() {
             </p>
             <p className="text-foreground/90 leading-relaxed">
               <strong>Flowstate Search</strong><br />
-              Email: info@flowstatesearch.com
+              Email: hello@flowstatesearch.com
             </p>
           </section>
         </div>
