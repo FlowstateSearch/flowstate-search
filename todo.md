@@ -58,3 +58,10 @@
 ## Video Modal Update
 
 - [x] Change video modal from full-screen to compact overlay (smaller, cleaner design)
+
+## Custom Video Player Implementation
+
+- [x] Upload intro video and GIF preview to S3
+- [x] Replace YouTube embed with custom HTML5 video player
+- [x] Use GIF as animated thumbnail preview
+- [x] Implement clean modal player (no YouTube branding)

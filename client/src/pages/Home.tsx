@@ -126,9 +126,9 @@ export default function Home() {
                 className="absolute -bottom-6 -right-6 w-48 h-48 rounded-2xl overflow-hidden border-4 border-background shadow-2xl cursor-pointer group"
                 onClick={() => setShowVideo(true)}
               >
-                <div className="relative w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                <div className="relative w-full h-full bg-black flex items-center justify-center">
                   <img 
-                    src="/images/founder-headshot-v2.jpg" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/dbBspvJJKWBHFkln.gif" 
                     alt="Founder Introduction" 
                     className="w-full h-full object-cover"
                   />
@@ -163,16 +163,15 @@ export default function Home() {
                 <X className="w-5 h-5" />
               </button>
               <div className="aspect-video bg-black">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/iKMnONJp3NM?autoplay=1"
-                  title="Flowstate Search Introduction"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
+                <video
                   className="w-full h-full"
-                ></iframe>
+                  controls
+                  autoPlay
+                  playsInline
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/mXrFvWhbzTPTVOIQ.mov"
+                >
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </motion.div>
           </div>
