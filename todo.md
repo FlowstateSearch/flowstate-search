@@ -94,3 +94,7 @@
 - [x] Reduce min-height of rows to make more compact (60px to 45px)
 - [x] Reduce padding in cards to save space (p-6 to p-4)
 - [x] Keep all content readable and aligned
+
+## Comparison Chart Text Update
+
+- [x] Change "30+ years construction networks" to "30+ years construction recruiting"

@@ -317,7 +317,7 @@ export default function Home() {
                   {/* Row 4: Expertise */}
                   <div className="flex items-start gap-3 min-h-[45px]">
                     <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <p className="text-sm text-foreground font-medium">30+ years construction networks</p>
+                    <p className="text-sm text-foreground font-medium">30+ years construction recruiting</p>
                   </div>
                   
                   {/* Row 5: Retention */}
