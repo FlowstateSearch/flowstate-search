@@ -184,8 +184,67 @@ export default function Home() {
         )}
       </section>
 
+      {/* Problem Section */}
+      <section className="py-24 bg-muted/30 border-y border-border/50">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="order-2 lg:order-1"
+            >
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl blur-2xl opacity-50"></div>
+                <Card className="relative border-border/50 bg-background/80 backdrop-blur shadow-xl">
+                  <CardContent className="p-8 space-y-6">
+                    <div className="space-y-4">
+                      <div className="flex items-start gap-4 p-4 rounded-lg bg-destructive/5 border border-destructive/10">
+                        <div className="mt-1 text-destructive">❌</div>
+                        <div>
+                          <h4 className="font-bold text-foreground">High Turnover</h4>
+                          <p className="text-sm text-muted-foreground">Stop the revolving door. Hire leaders committed to long-term growth.</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-4 p-4 rounded-lg bg-destructive/5 border border-destructive/10">
+                        <div className="mt-1 text-destructive">❌</div>
+                        <div>
+                          <h4 className="font-bold text-foreground">Project Backlogs</h4>
+                          <p className="text-sm text-muted-foreground">Can't clear work because you can't hire fast enough.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="order-1 lg:order-2 space-y-6"
+            >
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
+                Your Best Hires Aren't on Job Boards
+              </h2>
+              <ul className="text-lg text-muted-foreground leading-relaxed space-y-4 list-disc pl-5">
+                <li>The top project managers, supers, and construction directors aren't scrolling LinkedIn.</li>
+                <li>They're already employed, already performing, already embedded at other companies in your market.</li>
+              </ul>
+              <ul className="text-lg text-muted-foreground leading-relaxed space-y-4 list-disc pl-5">
+                <li>You don't need more applications.</li>
+                <li>You need someone who will recruit the people who aren't looking—but should be.</li>
+              </ul>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Comparison Chart Section */}
-      <section className="py-24 bg-muted/30">
+      <section className="py-24 bg-background">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl md:text-4xl font-heading font-bold">How Do You Find Your Next Executive Hire?</h2>
@@ -410,65 +469,6 @@ export default function Home() {
                 </Button>
               </a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Problem Section */}
-      <section className="py-24 bg-muted/30 border-y border-border/50">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div 
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="order-2 lg:order-1"
-            >
-              <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl blur-2xl opacity-50"></div>
-                <Card className="relative border-border/50 bg-background/80 backdrop-blur shadow-xl">
-                  <CardContent className="p-8 space-y-6">
-                    <div className="space-y-4">
-                      <div className="flex items-start gap-4 p-4 rounded-lg bg-destructive/5 border border-destructive/10">
-                        <div className="mt-1 text-destructive">❌</div>
-                        <div>
-                          <h4 className="font-bold text-foreground">High Turnover</h4>
-                          <p className="text-sm text-muted-foreground">Stop the revolving door. Hire leaders committed to long-term growth.</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start gap-4 p-4 rounded-lg bg-destructive/5 border border-destructive/10">
-                        <div className="mt-1 text-destructive">❌</div>
-                        <div>
-                          <h4 className="font-bold text-foreground">Project Backlogs</h4>
-                          <p className="text-sm text-muted-foreground">Can't clear work because you can't hire fast enough.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </motion.div>
-            
-            <motion.div 
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="order-1 lg:order-2 space-y-6"
-            >
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
-                Your Best Hires Aren't on Job Boards
-              </h2>
-              <ul className="text-lg text-muted-foreground leading-relaxed space-y-4 list-disc pl-5">
-                <li>The top project managers, supers, and construction directors aren't scrolling LinkedIn.</li>
-                <li>They're already employed, already performing, already embedded at other companies in your market.</li>
-              </ul>
-              <ul className="text-lg text-muted-foreground leading-relaxed space-y-4 list-disc pl-5">
-                <li>You don't need more applications.</li>
-                <li>You need someone who will recruit the people who aren't looking—but should be.</li>
-              </ul>
-            </motion.div>
           </div>
         </div>
       </section>

@@ -177,3 +177,10 @@
 ## CTA Link Update
 
 - [x] Update "Get a Free Competitive Talent Map" button link to https://schedule.flowstatesearch.com/market-map
+
+## Section Reordering for Better Narrative Flow
+
+- [x] Move Problem Section ("Your Best Hires Aren't on Job Boards") to come after Hero Section
+- [x] Problem Section should appear BEFORE Comparison Chart
+- [x] New order: Hero → Problem → Comparison → Cost → Solution → Stats → Who We Place → Final CTA
+- [x] Improves narrative: Promise → Pain → Options → Stakes → How → Proof → Conversion
