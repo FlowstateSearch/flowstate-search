@@ -241,7 +241,7 @@ export default function Home() {
                   {/* Row 5: Retention - HIGHLIGHTED */}
                   <div className="flex items-start gap-3 transform -rotate-2 ml-2 min-h-[45px] bg-yellow-50 border-l-4 border-yellow-400 -mx-4 px-4 py-2">
                     <HelpCircle className="w-5 h-5 text-destructive mt-1 flex-shrink-0" />
-                    <p className="text-sm text-foreground font-semibold">What if they leave in 6 months?</p>
+                    <p className="text-sm text-foreground font-semibold">33% retention rate (industry avg)</p>
                   </div>
                   
                   {/* Row 6: Outcome */}
@@ -287,7 +287,7 @@ export default function Home() {
                   {/* Row 5: Retention - HIGHLIGHTED */}
                   <div className="flex items-start gap-3 min-h-[45px] bg-red-50 border-l-4 border-red-400 -mx-4 px-4 py-2">
                     <X className="w-5 h-5 text-muted-foreground mt-1 flex-shrink-0" />
-                    <p className="text-sm text-foreground font-semibold">~60% retention rate</p>
+                    <p className="text-sm text-foreground font-semibold">57% retention rate</p>
                   </div>
                   
                   {/* Row 6: Outcome */}
