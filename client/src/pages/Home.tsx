@@ -111,7 +111,7 @@ export default function Home() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
+              className="relative mb-32 lg:mb-0"
             >
               <Card className="bg-black/40 backdrop-blur border-l-4 border-l-white border-t-0 border-r-0 border-b-0 shadow-2xl">
                 <CardContent className="p-8 space-y-6">
@@ -128,12 +128,12 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              {/* Intro Video Thumbnail (Bottom Right) */}
+              {/* Intro Video Thumbnail (Bottom Right) - Hidden on mobile */}
               <motion.div 
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="absolute -bottom-28 -right-8 w-48 h-48 rounded-2xl overflow-hidden border-4 border-white shadow-2xl cursor-pointer group transition-transform duration-300 hover:scale-105"
+                className="hidden lg:block absolute -bottom-28 -right-8 w-48 h-48 rounded-2xl overflow-hidden border-4 border-white shadow-2xl cursor-pointer group transition-transform duration-300 hover:scale-105"
                 onClick={() => setShowVideo(true)}
               >
                 <div className="relative w-full h-full bg-black flex items-center justify-center">
