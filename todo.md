@@ -65,3 +65,12 @@
 - [x] Replace YouTube embed with custom HTML5 video player
 - [x] Use GIF as animated thumbnail preview
 - [x] Implement clean modal player (no YouTube branding)
+
+## Video Thumbnail Update
+
+- [x] Remove play button overlay from video thumbnail
+- [x] Keep only "Intro Video" text label at bottom
+
+## Video Thumbnail Hover Effect
+
+- [x] Add scale-up animation on hover to show video is clickable

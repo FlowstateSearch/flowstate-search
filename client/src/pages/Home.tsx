@@ -123,7 +123,7 @@ export default function Home() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="absolute -bottom-6 -right-6 w-48 h-48 rounded-2xl overflow-hidden border-4 border-background shadow-2xl cursor-pointer group"
+                className="absolute -bottom-6 -right-6 w-48 h-48 rounded-2xl overflow-hidden border-4 border-background shadow-2xl cursor-pointer group transition-transform duration-300 hover:scale-110"
                 onClick={() => setShowVideo(true)}
               >
                 <div className="relative w-full h-full bg-black flex items-center justify-center">
@@ -132,11 +132,7 @@ export default function Home() {
                     alt="Founder Introduction" 
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all flex items-center justify-center">
-                    <div className="bg-white/90 rounded-full p-4 group-hover:scale-110 transition-transform">
-                      <Play className="w-6 h-6 text-primary" />
-                    </div>
-                  </div>
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-sm font-bold drop-shadow-lg">Intro Video</p>
                   </div>
