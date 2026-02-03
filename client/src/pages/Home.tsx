@@ -203,45 +203,45 @@ export default function Home() {
             <div className="grid grid-cols-3 gap-4">
               {/* Column 1: DIY */}
               <Card className="bg-gradient-to-br from-destructive/5 to-destructive/10 border-destructive/20">
-                <CardContent className="p-6 space-y-6">
+                <CardContent className="p-4 space-y-3">
                   {/* Row 1: Sourcing Method */}
-                  <div className="flex items-start gap-3 transform -rotate-2 min-h-[60px]">
+                  <div className="flex items-start gap-3 transform -rotate-2 min-h-[45px]">
                     <HelpCircle className="w-5 h-5 text-destructive mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground">Which job boards actually work?</p>
                   </div>
                   
                   {/* Row 2: Search Quality */}
-                  <div className="flex items-start gap-3 transform rotate-1 ml-4 min-h-[60px]">
+                  <div className="flex items-start gap-3 transform rotate-1 ml-4 min-h-[45px]">
                     <HelpCircle className="w-5 h-5 text-destructive mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground">How do I find passive candidates?</p>
                   </div>
                   
                   {/* Row 3: Relationship */}
-                  <div className="flex items-start gap-3 transform -rotate-1 min-h-[60px]">
+                  <div className="flex items-start gap-3 transform -rotate-1 min-h-[45px]">
                     <HelpCircle className="w-5 h-5 text-destructive mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground">Where do I even start?</p>
                   </div>
                   
                   {/* Row 4: Expertise */}
-                  <div className="flex items-start gap-3 transform rotate-2 ml-6 min-h-[60px]">
+                  <div className="flex items-start gap-3 transform rotate-2 ml-6 min-h-[45px]">
                     <HelpCircle className="w-5 h-5 text-destructive mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground">How do I assess construction leadership skills?</p>
                   </div>
                   
                   {/* Row 5: Retention */}
-                  <div className="flex items-start gap-3 transform -rotate-2 ml-2 min-h-[60px]">
+                  <div className="flex items-start gap-3 transform -rotate-2 ml-2 min-h-[45px]">
                     <HelpCircle className="w-5 h-5 text-destructive mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground">What if they leave in 6 months?</p>
                   </div>
                   
                   {/* Row 6: Outcome */}
-                  <div className="flex items-start gap-3 transform rotate-1 ml-8 min-h-[60px]">
+                  <div className="flex items-start gap-3 transform rotate-1 ml-8 min-h-[45px]">
                     <HelpCircle className="w-5 h-5 text-destructive mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground">How long will this take?</p>
                   </div>
 
                   {/* Bottom Label */}
-                  <div className="mt-8 bg-destructive/10 border border-destructive/30 rounded-lg p-4 text-center">
+                  <div className="mt-6 bg-destructive/10 border border-destructive/30 rounded-lg p-3 text-center">
                     <p className="text-sm font-bold text-destructive">Overwhelming & Risky</p>
                   </div>
                 </CardContent>
@@ -249,45 +249,45 @@ export default function Home() {
 
               {/* Column 2: Traditional Agencies */}
               <Card className="bg-gradient-to-br from-muted to-muted/50 border-border">
-                <CardContent className="p-6 space-y-6">
+                <CardContent className="p-4 space-y-3">
                   {/* Row 1: Sourcing Method */}
-                  <div className="flex items-start gap-3 min-h-[60px]">
+                  <div className="flex items-start gap-3 min-h-[45px]">
                     <X className="w-5 h-5 text-muted-foreground mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground">Post & pray (job board reliance)</p>
                   </div>
                   
                   {/* Row 2: Search Quality */}
-                  <div className="flex items-start gap-3 min-h-[60px]">
+                  <div className="flex items-start gap-3 min-h-[45px]">
                     <X className="w-5 h-5 text-muted-foreground mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground">Surface-level LinkedIn searches</p>
                   </div>
                   
                   {/* Row 3: Relationship */}
-                  <div className="flex items-start gap-3 min-h-[60px]">
+                  <div className="flex items-start gap-3 min-h-[45px]">
                     <X className="w-5 h-5 text-muted-foreground mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground">Transactional relationship</p>
                   </div>
                   
                   {/* Row 4: Expertise */}
-                  <div className="flex items-start gap-3 min-h-[60px]">
+                  <div className="flex items-start gap-3 min-h-[45px]">
                     <X className="w-5 h-5 text-muted-foreground mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground">Limited construction expertise</p>
                   </div>
                   
                   {/* Row 5: Retention */}
-                  <div className="flex items-start gap-3 min-h-[60px]">
+                  <div className="flex items-start gap-3 min-h-[45px]">
                     <X className="w-5 h-5 text-muted-foreground mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground">~60% retention rate</p>
                   </div>
                   
                   {/* Row 6: Outcome */}
-                  <div className="flex items-start gap-3 min-h-[60px]">
+                  <div className="flex items-start gap-3 min-h-[45px]">
                     <X className="w-5 h-5 text-muted-foreground mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground">Juggling 30-50 searches at once</p>
                   </div>
 
                   {/* Bottom Label */}
-                  <div className="mt-8 bg-muted border border-border rounded-lg p-4 text-center">
+                  <div className="mt-6 bg-muted border border-border rounded-lg p-3 text-center">
                     <p className="text-sm font-bold text-muted-foreground">Lazy & Transactional</p>
                   </div>
                 </CardContent>
@@ -295,45 +295,45 @@ export default function Home() {
 
               {/* Column 3: Flowstate Search */}
               <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-primary/30 shadow-xl">
-                <CardContent className="p-6 space-y-6">
+                <CardContent className="p-4 space-y-3">
                   {/* Row 1: Sourcing Method */}
-                  <div className="flex items-start gap-3 min-h-[60px]">
+                  <div className="flex items-start gap-3 min-h-[45px]">
                     <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground font-medium">Proactive market mapping</p>
                   </div>
                   
                   {/* Row 2: Search Quality */}
-                  <div className="flex items-start gap-3 min-h-[60px]">
+                  <div className="flex items-start gap-3 min-h-[45px]">
                     <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground font-medium">Ranked candidate scoring</p>
                   </div>
                   
                   {/* Row 3: Relationship */}
-                  <div className="flex items-start gap-3 min-h-[60px]">
+                  <div className="flex items-start gap-3 min-h-[45px]">
                     <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground font-medium">Partnership approach (transparency)</p>
                   </div>
                   
                   {/* Row 4: Expertise */}
-                  <div className="flex items-start gap-3 min-h-[60px]">
+                  <div className="flex items-start gap-3 min-h-[45px]">
                     <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground font-medium">30+ years construction networks</p>
                   </div>
                   
                   {/* Row 5: Retention */}
-                  <div className="flex items-start gap-3 min-h-[60px]">
+                  <div className="flex items-start gap-3 min-h-[45px]">
                     <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground font-medium">91% retention focus</p>
                   </div>
                   
                   {/* Row 6: Outcome */}
-                  <div className="flex items-start gap-3 min-h-[60px]">
+                  <div className="flex items-start gap-3 min-h-[45px]">
                     <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <p className="text-sm text-foreground font-medium">Weekly communication & pipeline management</p>
                   </div>
 
                   {/* Bottom Label */}
-                  <div className="mt-8 bg-primary/10 border border-primary/30 rounded-lg p-4 text-center">
+                  <div className="mt-6 bg-primary/10 border border-primary/30 rounded-lg p-3 text-center">
                     <p className="text-sm font-bold text-primary">Strategic & Proven</p>
                   </div>
                 </CardContent>

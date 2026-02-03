@@ -87,3 +87,10 @@
 - [x] Group retention rates on same row
 - [x] Group relationship approach on same row
 - [x] Make side-by-side comparison easier to read
+
+## Comparison Chart Spacing Reduction
+
+- [x] Reduce vertical spacing between rows (space-y-6 to space-y-3)
+- [x] Reduce min-height of rows to make more compact (60px to 45px)
+- [x] Reduce padding in cards to save space (p-6 to p-4)
+- [x] Keep all content readable and aligned
