@@ -28,3 +28,18 @@
 - [x] Add footer links to legal pages
 
 - [x] Update contact email to hello@flowstatesearch.com in legal pages
+
+## CRO Improvements (Designer Feedback)
+
+- [x] Redesign hero section with background video/imagery
+- [x] Add testimonial to hero section (Option 1B)
+- [x] Add intro video placeholder (bottom right corner)
+- [x] Add 5-star review badge to hero
+- [x] Create "DIY vs Traditional Agencies vs Flowstate" comparison chart
+- [x] Design chaotic/messy visual for DIY column
+- [x] Design clean/organized visual for Flowstate column
+- [x] Add "Cost of Bad Hire" section (reframe cost as investment)
+- [x] Update "invite-only networks" language to trust-based referrals
+- [ ] Add post-placement support details
+- [x] Create clear CTA: "Book a 15-Minute Market Insight Call"
+- [x] Emphasize retained partnership model throughout copy
