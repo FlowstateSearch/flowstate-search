@@ -80,3 +80,10 @@
 - [x] Remove "radically" from testimonial quote
 - [x] Remove em dash, use regular dash
 - [x] Change attribution to "VP of Operations" at "Commercial Construction Management"
+
+## Comparison Chart Restructure
+
+- [x] Align related items horizontally across all three columns
+- [x] Group retention rates on same row
+- [x] Group relationship approach on same row
+- [x] Make side-by-side comparison easier to read
