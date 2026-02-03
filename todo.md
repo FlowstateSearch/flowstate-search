@@ -143,3 +143,11 @@
 - [x] Adjust gradient to show more video background (opacity 70%)
 - [x] Ensure sections below hero remain light background
 - [x] Update testimonial card styling for dark hero (white card with dark text)
+
+## Hero Section Visual Refinements
+
+- [x] Reduce overlay opacity to show more video background (black/60 to black/40, video opacity 80%)
+- [x] Fix "Book a Discovery Call" button visibility on dark background (white border, semi-transparent bg)
+- [x] Redesign testimonial card with semi-transparent dark background (like ConTech HQ)
+- [x] Change testimonial text to white with italic styling
+- [x] Add white vertical border on left side (book spine effect - 4px border-l-white)

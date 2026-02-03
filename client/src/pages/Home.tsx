@@ -34,13 +34,13 @@ export default function Home() {
       <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden bg-black">
         {/* Background Video */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/60 z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/40 z-10"></div>
           <video 
             autoPlay 
             loop 
             muted 
             playsInline
-            className="w-full h-full object-cover opacity-70"
+            className="w-full h-full object-cover opacity-80"
           >
             <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/QXCGUgKrlBSieqcZ.mp4" type="video/mp4" />
             {/* Fallback to image if video doesn't load */}
@@ -88,7 +88,7 @@ export default function Home() {
                   </Button>
                 </a>
                 <a href="https://schedule.flowstatesearch.com/discovery-call" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" variant="outline" className="border-primary/20 hover:bg-[#ffc229] hover:text-background hover:border-[#ffc229] transition-all text-base px-8 h-12">
+                  <Button size="lg" variant="outline" className="border-white/40 text-white hover:bg-[#ffc229] hover:text-background hover:border-[#ffc229] transition-all text-base px-8 h-12 bg-white/10 backdrop-blur">
                     Book a Discovery Call
                   </Button>
                 </a>
@@ -113,17 +113,17 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              <Card className="bg-white/95 backdrop-blur border-primary/20 shadow-2xl">
+              <Card className="bg-black/40 backdrop-blur border-l-4 border-l-white border-t-0 border-r-0 border-b-0 shadow-2xl">
                 <CardContent className="p-8 space-y-6">
                   <div className="flex items-start gap-2">
-                    <div className="text-6xl text-primary/20 font-serif leading-none">"</div>
-                    <p className="text-lg text-gray-900 leading-relaxed pt-4">
+                    <div className="text-6xl text-white/40 font-serif leading-none">"</div>
+                    <p className="text-lg text-white leading-relaxed pt-4 italic">
                       Most recruiters throw resumes at you and hope something sticks. Flowstate took the time to understand our culture, our challenges, and what 'great' actually looked like for us. They were transparent - told us the red flags and the green flags for every candidate. We made a hire we feel great about, and we're already planning our next search with them.
                     </p>
                   </div>
-                  <div className="border-t border-border pt-4">
-                    <p className="font-bold text-gray-900">Jacob R.</p>
-                    <p className="text-sm text-gray-600">VP of Operations, Commercial Construction Management</p>
+                  <div className="border-t border-white/20 pt-4">
+                    <p className="font-bold text-white">Jacob R.</p>
+                    <p className="text-sm text-gray-300">VP of Operations, Commercial Construction Management</p>
                   </div>
                 </CardContent>
               </Card>
