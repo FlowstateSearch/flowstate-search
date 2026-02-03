@@ -15,6 +15,8 @@ import JobDescriptionCPM from "./pages/JobDescriptionCPM";
 import JobDescriptionSuperintendent from "./pages/JobDescriptionSuperintendent";
 import JobDescriptionFreightBroker from "./pages/JobDescriptionFreightBroker";
 import AIArchitectJob from "./pages/jobs/AIArchitect";
+import TermsOfService from "./pages/TermsOfService";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -30,6 +32,8 @@ function Router() {
       <Route path="/jobs/senior-superintendent-in" component={JobDescriptionSuperintendent} />
       <Route path="/jobs/freight-broker-remote" component={JobDescriptionFreightBroker} />
       <Route path="/jobs/ai-architect" component={AIArchitectJob} />
+      <Route path="/terms" component={TermsOfService} />
+      <Route path="/privacy" component={PrivacyPolicy} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

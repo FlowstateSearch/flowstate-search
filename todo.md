@@ -20,3 +20,9 @@
 - [x] Verify correct Loxo job ID is being used
 
 - [x] Remove LinkedIn URL field from application form (Loxo doesn't support it)
+
+- [x] Draft streamlined Terms of Service for Flowstate Search
+- [x] Draft Privacy Policy for Flowstate Search
+- [x] Create Terms of Service page component
+- [x] Create Privacy Policy page component
+- [x] Add footer links to legal pages

@@ -161,8 +161,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
             <p>© 2025 Flowstate Search. All rights reserved.</p>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
+              <Link href="/privacy">
+                <div className="hover:text-foreground transition-colors cursor-pointer">Privacy Policy</div>
+              </Link>
+              <Link href="/terms">
+                <div className="hover:text-foreground transition-colors cursor-pointer">Terms of Service</div>
+              </Link>
             </div>
           </div>
         </div>
