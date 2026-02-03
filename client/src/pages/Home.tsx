@@ -42,7 +42,7 @@ export default function Home() {
             playsInline
             className="w-full h-full object-cover opacity-50"
           >
-            <source src="/videos/hero-background.mp4" type="video/mp4" />
+            <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/QXCGUgKrlBSieqcZ.mp4" type="video/mp4" />
             {/* Fallback to image if video doesn't load */}
             <img 
               src="/images/hero-construction-site.jpg" 

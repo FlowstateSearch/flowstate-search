@@ -128,3 +128,10 @@
 
 - [x] Move video thumbnail further down to completely avoid covering testimonial (changed to -bottom-28 and w-48)
 - [x] Test on live preview to ensure no overlap (verified - video now positioned below testimonial card)
+
+## Background Video Upload
+
+- [x] Copy video file to project public directory (uploaded to S3 CDN instead)
+- [x] Update video source to use S3 CDN URL
+- [x] Verify video plays automatically in hero section
+- [x] Test video loop and muted playback
