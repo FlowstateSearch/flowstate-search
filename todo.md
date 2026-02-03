@@ -191,3 +191,10 @@
 - [x] Adjust testimonial card bottom margin to prevent overlap
 - [x] Add responsive positioning for Intro Video thumbnail
 - [x] Test hero section on mobile viewport after changes
+
+## Mobile Comparison Chart Header Fix
+
+- [x] Restructure comparison chart so headers are grouped with their content cards
+- [x] On mobile, each header should be attached to its corresponding card (not floating separately)
+- [x] Maintain desktop layout (headers in row, content in row below)
+- [x] Test mobile layout to ensure headers and cards move together as one unit

@@ -255,8 +255,8 @@ export default function Home() {
 
           {/* Table-style comparison with horizontal rows */}
           <div className="max-w-6xl mx-auto">
-            {/* Header Row */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+            {/* Desktop: Header Row */}
+            <div className="hidden md:grid grid-cols-3 gap-4 mb-4">
               <div className="bg-destructive/80 text-destructive-foreground py-4 text-center font-bold text-lg rounded-t-lg">
                 HIRING BY YOURSELF
               </div>
@@ -271,7 +271,12 @@ export default function Home() {
             {/* Content Rows - Aligned horizontally */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {/* Column 1: DIY */}
-              <Card className="bg-gradient-to-br from-destructive/5 to-destructive/10 border-destructive/20">
+              <div className="flex flex-col">
+                {/* Mobile: Header attached to card */}
+                <div className="md:hidden bg-destructive/80 text-destructive-foreground py-4 text-center font-bold text-lg rounded-t-lg">
+                  HIRING BY YOURSELF
+                </div>
+                <Card className="bg-gradient-to-br from-destructive/5 to-destructive/10 border-destructive/20 md:rounded-lg rounded-t-none">
                 <CardContent className="p-4 space-y-3">
                   {/* Row 1: Sourcing Method */}
                   <div className="flex items-start gap-3 transform -rotate-2 min-h-[45px]">
@@ -314,10 +319,16 @@ export default function Home() {
                     <p className="text-sm font-bold text-destructive">Overwhelming & Risky</p>
                   </div>
                 </CardContent>
-              </Card>
+                </Card>
+              </div>
 
               {/* Column 2: Traditional Agencies */}
-              <Card className="bg-gradient-to-br from-muted to-muted/50 border-border">
+              <div className="flex flex-col">
+                {/* Mobile: Header attached to card */}
+                <div className="md:hidden bg-muted-foreground/80 text-background py-4 text-center font-bold text-lg rounded-t-lg">
+                  TRADITIONAL AGENCIES
+                </div>
+                <Card className="bg-gradient-to-br from-muted to-muted/50 border-border md:rounded-lg rounded-t-none">
                 <CardContent className="p-4 space-y-3">
                   {/* Row 1: Sourcing Method */}
                   <div className="flex items-start gap-3 min-h-[45px]">
@@ -360,10 +371,16 @@ export default function Home() {
                     <p className="text-sm font-bold text-muted-foreground">Lazy & Transactional</p>
                   </div>
                 </CardContent>
-              </Card>
+                </Card>
+              </div>
 
               {/* Column 3: Flowstate Search */}
-              <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-primary/30 shadow-xl">
+              <div className="flex flex-col">
+                {/* Mobile: Header attached to card */}
+                <div className="md:hidden bg-primary text-primary-foreground py-4 text-center font-bold text-lg rounded-t-lg">
+                  FLOWSTATE SEARCH
+                </div>
+                <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-primary/30 shadow-xl md:rounded-lg rounded-t-none">
                 <CardContent className="p-4 space-y-3">
                   {/* Row 1: Sourcing Method */}
                   <div className="flex items-start gap-3 min-h-[45px]">
@@ -406,7 +423,8 @@ export default function Home() {
                     <p className="text-sm font-bold text-primary">Strategic & Proven</p>
                   </div>
                 </CardContent>
-              </Card>
+                </Card>
+              </div>
             </div>
           </div>
 
