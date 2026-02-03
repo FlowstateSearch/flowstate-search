@@ -123,3 +123,8 @@
 - [x] Search for high-quality construction background video (provided Pexels link to user)
 - [ ] Download and upload background video (waiting for user to select and send)
 - [x] Adjust video thumbnail position to not cover testimonial text
+
+## Video Thumbnail Positioning Fix
+
+- [x] Move video thumbnail further down to completely avoid covering testimonial (changed to -bottom-28 and w-48)
+- [x] Test on live preview to ensure no overlap (verified - video now positioned below testimonial card)
