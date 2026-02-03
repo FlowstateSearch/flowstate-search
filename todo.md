@@ -43,3 +43,10 @@
 - [ ] Add post-placement support details
 - [x] Create clear CTA: "Book a 15-Minute Market Insight Call"
 - [x] Emphasize retained partnership model throughout copy
+
+## Hybrid Approach - Restore Key Sections
+
+- [x] Restore condensed stats section (91% retention, 200+ candidates evaluated)
+- [x] Restore "Who We Place" role list section
+- [x] Restore final CTA section with strong closing message
+- [x] Position restored sections after comparison chart, before final CTA

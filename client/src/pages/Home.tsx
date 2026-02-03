@@ -521,8 +521,124 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-primary text-primary-foreground">
+      {/* Stats Section - Condensed */}
+      <section className="py-16 bg-muted/30">
+        <div className="container">
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto"
+          >
+            <motion.div variants={fadeIn}>
+              <Card className="bg-background/50 backdrop-blur border-primary/10 text-center h-full">
+                <CardContent className="p-8 space-y-3">
+                  <div className="text-5xl font-bold text-primary">91%</div>
+                  <h3 className="text-lg font-bold font-heading">Retention Rate</h3>
+                  <p className="text-sm text-muted-foreground">After 24 months, our placements are still thriving.</p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div variants={fadeIn}>
+              <Card className="bg-background/50 backdrop-blur border-primary/10 text-center h-full">
+                <CardContent className="p-8 space-y-3">
+                  <div className="text-5xl font-bold text-primary">200+</div>
+                  <h3 className="text-lg font-bold font-heading">Candidates Per Search</h3>
+                  <p className="text-sm text-muted-foreground">Evaluated to present you with the top 6-8 fits.</p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div variants={fadeIn}>
+              <Card className="bg-background/50 backdrop-blur border-primary/10 text-center h-full">
+                <CardContent className="p-8 space-y-3">
+                  <div className="text-5xl font-bold text-primary">30+</div>
+                  <h3 className="text-lg font-bold font-heading">Years of Expertise</h3>
+                  <p className="text-sm text-muted-foreground">Construction recruiting experience across all sectors.</p>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Who We Place Section */}
+      <section className="py-24 bg-background">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold">The Construction Leaders We Place</h2>
+            <p className="text-lg text-muted-foreground">
+              We specialize in mid-to-senior level roles across construction operations, sales, and project delivery.
+            </p>
+          </div>
+
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto"
+          >
+            {[
+              "Project Managers",
+              "Superintendents",
+              "Director of Operations",
+              "Director of Construction",
+              "Director of Sales / BD",
+              "VP of Operations",
+              "Regional Managers",
+              "Senior Estimators"
+            ].map((role, index) => (
+              <motion.div key={index} variants={fadeIn}>
+                <Card className="bg-muted/30 border-border/50 hover:border-primary/30 transition-all hover:shadow-md">
+                  <CardContent className="p-6 text-center">
+                    <p className="font-bold text-foreground">{role}</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Final CTA Section - Enhanced */}
+      <section className="py-24 bg-gradient-to-br from-primary via-primary to-accent text-primary-foreground relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/flow-blueprint-bg.png')] opacity-10 bg-cover bg-center"></div>
+        <div className="container relative z-10 text-center space-y-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="space-y-6"
+          >
+            <h2 className="text-3xl md:text-5xl font-heading font-bold">
+              Stop Competing on Job Boards.<br />Start Recruiting the Leaders Driving Results in Your Market.
+            </h2>
+            <p className="text-xl max-w-3xl mx-auto opacity-90">
+              If you're tired of backlog, turnover, and hiring risk—it's time for a proactive recruiting strategy built for construction.
+            </p>
+          </motion.div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+            <a href="https://schedule.flowstatesearch.com/15-min-call" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="secondary" className="bg-background text-foreground hover:bg-[#ffc229] hover:text-background transition-all shadow-lg px-8 h-12 text-base">
+                Book a 15-Minute Call
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </a>
+            <a href="https://schedule.flowstatesearch.com/discovery-call" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="border-2 border-background text-background hover:bg-background hover:text-foreground transition-all px-8 h-12 text-base">
+                Book a Discovery Call
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Old CTA Section - Removed */}
+      <section className="py-24 bg-primary text-primary-foreground" style={{display: 'none'}}>
         <div className="container text-center space-y-8">
           <h2 className="text-3xl md:text-4xl font-heading font-bold">
             Ready to Hire Leaders Who Stay?
