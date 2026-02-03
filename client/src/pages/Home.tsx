@@ -112,8 +112,8 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="border-t border-border pt-4">
-                    <p className="font-bold text-foreground">VP of Operations</p>
-                    <p className="text-sm text-muted-foreground">Commercial Construction Management</p>
+                    <p className="font-bold text-foreground">Jacob R.</p>
+                    <p className="text-sm text-muted-foreground">VP of Operations, Commercial Construction Management</p>
                   </div>
                 </CardContent>
               </Card>

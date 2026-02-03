@@ -98,3 +98,7 @@
 ## Comparison Chart Text Update
 
 - [x] Change "30+ years construction networks" to "30+ years construction recruiting"
+
+## Testimonial Name Addition
+
+- [x] Add "Jacob R." as the name to hero section testimonial
