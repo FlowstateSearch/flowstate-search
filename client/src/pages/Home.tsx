@@ -146,20 +146,35 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Video Modal */}
+        {/* Video Modal - Compact Overlay */}
         {showVideo && (
-          <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4" onClick={() => setShowVideo(false)}>
-            <div className="relative max-w-4xl w-full bg-background rounded-lg p-8" onClick={(e) => e.stopPropagation()}>
+          <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4" onClick={() => setShowVideo(false)}>
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3 }}
+              className="relative max-w-2xl w-full bg-background rounded-xl shadow-2xl border-2 border-border overflow-hidden" 
+              onClick={(e) => e.stopPropagation()}
+            >
               <button 
                 onClick={() => setShowVideo(false)}
-                className="absolute top-4 right-4 text-muted-foreground hover:text-foreground"
+                className="absolute top-3 right-3 z-10 bg-background/80 hover:bg-background rounded-full p-2 text-muted-foreground hover:text-foreground transition-all shadow-lg"
               >
-                <X className="w-6 h-6" />
+                <X className="w-5 h-5" />
               </button>
-              <div className="aspect-video bg-muted rounded flex items-center justify-center">
-                <p className="text-muted-foreground">Video placeholder - Add your intro video here</p>
+              <div className="aspect-video bg-black">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/iKMnONJp3NM?autoplay=1"
+                  title="Flowstate Search Introduction"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
               </div>
-            </div>
+            </motion.div>
           </div>
         )}
       </section>

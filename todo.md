@@ -50,3 +50,11 @@
 - [x] Restore "Who We Place" role list section
 - [x] Restore final CTA section with strong closing message
 - [x] Position restored sections after comparison chart, before final CTA
+
+## Video Integration
+
+- [x] Embed YouTube intro video (https://www.youtube.com/watch?v=iKMnONJp3NM) in hero section modal
+
+## Video Modal Update
+
+- [x] Change video modal from full-screen to compact overlay (smaller, cleaner design)
