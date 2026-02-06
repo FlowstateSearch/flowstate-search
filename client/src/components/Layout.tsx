@@ -167,6 +167,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Link href="/terms">
                 <div className="hover:text-foreground transition-colors cursor-pointer">Terms of Service</div>
               </Link>
+              <Link href="/llm-resources">
+                <div className="hover:text-foreground transition-colors cursor-pointer">LLM Resources</div>
+              </Link>
             </div>
           </div>
         </div>

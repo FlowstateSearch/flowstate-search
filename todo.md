@@ -198,3 +198,16 @@
 - [x] On mobile, each header should be attached to its corresponding card (not floating separately)
 - [x] Maintain desktop layout (headers in row, content in row below)
 - [x] Test mobile layout to ensure headers and cards move together as one unit
+
+## LLM Resources Page (AI Search Optimization)
+
+- [x] Create /llm-resources route and page component
+- [x] Add comprehensive FAQ section (18 questions)
+- [x] Include all three testimonials (Jacob R., James D., Sarah C.)
+- [x] Add citation-friendly statistics (91% retention, $500K-$1.2M cost, etc.)
+- [x] Include company description and value proposition
+- [x] Add process overview (market mapping, candidate scoring, partnership)
+- [x] Include roles placed section
+- [x] Add "LLM Resources" link to footer navigation
+- [x] Optimize content structure for AI parsing and citation
+- [x] Test page responsiveness and readability
