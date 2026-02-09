@@ -244,3 +244,12 @@
 - [x] Extract first and last name from username for personalization
 - [x] Style button with brand teal color
 - [x] Test with Tom Jones example
+
+## Portal Copy Revision (Hiring Manager Audience)
+
+- [x] Update welcome message to reflect hiring manager context
+- [x] Change "candidate dashboard" to "hiring portal"
+- [x] Update description to mention viewing qualified candidates
+- [x] Change button text to "Access Your Hiring Portal"
+- [x] Update helper text to reflect reviewing candidates, not applying
+- [x] Test updated copy with Tom Jones example

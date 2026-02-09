@@ -95,7 +95,7 @@ export default function CandidatePortal() {
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-xl mx-auto">
-          Your personalized hiring portal is ready. Click below to access your candidate dashboard and view opportunities.
+          Your personalized hiring portal is ready. Click below to access qualified candidates for your open positions.
         </p>
 
         {/* Access Button */}
@@ -104,12 +104,12 @@ export default function CandidatePortal() {
           size="lg"
           className="bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
         >
-          Access Your Flowstate Portal
+          Access Your Hiring Portal
         </Button>
 
         {/* Helper Text */}
         <p className="mt-8 text-sm text-muted-foreground">
-          You'll be redirected to your secure candidate portal where you can view job details and submit your application.
+          You'll be redirected to your secure hiring portal where you can review candidate profiles, qualifications, and next steps.
         </p>
       </div>
     </div>
