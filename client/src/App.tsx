@@ -10,6 +10,7 @@ import WhyFlowstate from "./pages/WhyFlowstate";
 import StartSearch from "./pages/StartSearch";
 import Contact from "./pages/Contact";
 import Portal from "./pages/Portal";
+import CandidatePortal from "./pages/CandidatePortal";
 import JobDescription from "./pages/JobDescription";
 import JobDescriptionCPM from "./pages/JobDescriptionCPM";
 import JobDescriptionSuperintendent from "./pages/JobDescriptionSuperintendent";
@@ -27,7 +28,7 @@ function Router() {
       <Route path="/why-flowstate" component={WhyFlowstate} />
       <Route path="/start-search" component={StartSearch} />
       <Route path="/contact" component={Contact} />
-      <Route path="/portal" component={Portal} />
+      <Route path="/portal/:username" component={CandidatePortal} />
       <Route path="/jobs/senior-project-manager-ny" component={JobDescription} />
       <Route path="/jobs/construction-project-manager-in" component={JobDescriptionCPM} />
       <Route path="/jobs/senior-superintendent-in" component={JobDescriptionSuperintendent} />

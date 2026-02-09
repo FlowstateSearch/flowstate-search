@@ -211,3 +211,26 @@
 - [x] Add "LLM Resources" link to footer navigation
 - [x] Optimize content structure for AI parsing and citation
 - [x] Test page responsiveness and readability
+
+## Portal URL Masking Implementation
+
+- [x] Create dynamic portal page component (/candidate-portal/:username)
+- [x] Implement user-to-email mapping system
+- [x] Load Loxo portal in iframe with user_email parameter
+- [x] Handle unknown usernames with error message
+- [x] Keep flowstatesearch.com URL visible in address bar
+- [x] Add demo users: 'test' and 'david' → TestingTJones@gmail.com
+- [x] Add route to App.tsx for /candidate-portal/:username
+- [x] Test portal loading with demo user (BLOCKED: Loxo sets X-Frame-Options: SAMEORIGIN)
+- [x] Document how to add new users to mapping
+
+## Portal Redirect System (Replacing Iframe)
+
+- [x] Modify CandidatePortal to use redirect instead of iframe
+- [x] Change user mapping to store full Loxo URLs instead of just emails
+- [x] Add branded loading page with Flowstate logo and spinner
+- [x] Implement automatic redirect after 1.5 seconds
+- [x] Update route from /candidate-portal/:username to /portal/:username
+- [x] Add Tom Jones as first example: TomJones → Loxo URL
+- [x] Test redirect with Tom Jones example
+- [x] Document how to add new candidates
