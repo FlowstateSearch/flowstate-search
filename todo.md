@@ -234,3 +234,13 @@
 - [x] Add Tom Jones as first example: TomJones → Loxo URL
 - [x] Test redirect with Tom Jones example
 - [x] Document how to add new candidates
+
+## Portal Welcome Page Updates
+
+- [x] Remove auto-redirect timer
+- [x] Add personalized welcome message: "Welcome [Name]"
+- [x] Add branded button: "Access Your Flowstate Portal"
+- [x] Button only redirects on click (no auto-redirect)
+- [x] Extract first and last name from username for personalization
+- [x] Style button with brand teal color
+- [x] Test with Tom Jones example
