@@ -8,6 +8,13 @@
       "when": 1769457225595,
       "tag": "0000_noisy_gargoyle",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1770676118965,
+      "tag": "0001_quiet_vector",
+      "breakpoints": true
     }
   ]
 }

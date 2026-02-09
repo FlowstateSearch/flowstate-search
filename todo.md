@@ -261,3 +261,22 @@
 - [x] Store display names separately in user mapping
 - [x] Test with TomJones, tomjones, TOMJONES, ToMjOnEs variations
 - [x] Ensure name formatting still works correctly (displays "Tom Jones")
+
+## Admin Dashboard for Portal Management
+
+- [x] Create database schema for portal_users table (id, username, displayName, loxoUrl, createdAt)
+- [x] Run database migration with `pnpm db:push`
+- [x] Create tRPC procedures: listPortalUsers, addPortalUser, updatePortalUser, deletePortalUser
+- [x] Add admin-only protection to portal management procedures
+- [x] Create admin dashboard UI component at /admin/portals
+- [x] Add table view with all hiring managers
+- [x] Add form for creating new portal users
+- [x] Add edit functionality (inline editing)
+- [x] Add delete confirmation dialog
+- [x] Add "Copy Portal Link" button for each user
+- [ ] Add search/filter functionality (future enhancement)
+- [x] Update CandidatePortal to fetch user data from database instead of hardcoded mapping
+- [x] Add admin route protection (owner-only access via tRPC)
+- [x] Add admin route to App.tsx
+- [x] Test full CRUD workflow (ready for user testing)
+- [x] Migrate Tom Jones from hardcoded mapping to database

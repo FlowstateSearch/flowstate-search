@@ -25,4 +25,25 @@ export const users = mysqlTable("users", {
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
 
+/**
+ * Portal users table for managing hiring manager access to candidate portals.
+ * Each entry represents a hiring manager who can access their personalized portal.
+ */
+export const portalUsers = mysqlTable("portal_users", {
+  id: int("id").autoincrement().primaryKey(),
+  /** Unique username used in the portal URL (e.g., 'tomjones' for /portal/tomjones) */
+  username: varchar("username", { length: 100 }).notNull().unique(),
+  /** Display name shown on the welcome page (e.g., 'Tom Jones') */
+  displayName: varchar("displayName", { length: 200 }).notNull(),
+  /** Full Loxo portal URL with user_email parameter */
+  loxoUrl: text("loxoUrl").notNull(),
+  /** Optional notes about this hiring manager */
+  notes: text("notes"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type PortalUser = typeof portalUsers.$inferSelect;
+export type InsertPortalUser = typeof portalUsers.$inferInsert;
+
 // TODO: Add your tables here

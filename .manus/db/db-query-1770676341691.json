@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO portal_users (username, displayName, loxoUrl, notes)\nVALUES (\n  'tomjones',\n  'Tom Jones',\n  'https://palermo-rhodes.app.loxo.co/agencies/340/jobs/3525548?user_email=TestingTJones%40gmail.com',\n  'Initial test user migrated from hardcoded mapping'\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4DHuHyy6o6p19dv.root --database 5EpJBgcsc9XY35Zdhkd8SY --execute INSERT INTO portal_users (username, displayName, loxoUrl, notes)\nVALUES (\n  'tomjones',\n  'Tom Jones',\n  'https://palermo-rhodes.app.loxo.co/agencies/340/jobs/3525548?user_email=TestingTJones%40gmail.com',\n  'Initial test user migrated from hardcoded mapping'\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 574
+}

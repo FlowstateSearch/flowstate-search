@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { InsertUser, users, portalUsers, InsertPortalUser } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -87,6 +87,64 @@ export async function getUserByOpenId(openId: string) {
   const result = await db.select().from(users).where(eq(users.openId, openId)).limit(1);
 
   return result.length > 0 ? result[0] : undefined;
+}
+
+// Portal Users Query Helpers
+
+export async function listPortalUsers() {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot list portal users: database not available");
+    return [];
+  }
+  return await db.select().from(portalUsers);
+}
+
+export async function getPortalUserByUsername(username: string) {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot get portal user: database not available");
+    return undefined;
+  }
+  const result = await db
+    .select()
+    .from(portalUsers)
+    .where(eq(portalUsers.username, username.toLowerCase()))
+    .limit(1);
+  return result.length > 0 ? result[0] : undefined;
+}
+
+export async function createPortalUser(data: InsertPortalUser) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  // Normalize username to lowercase for case-insensitive lookup
+  const normalizedData = {
+    ...data,
+    username: data.username.toLowerCase(),
+  };
+  await db.insert(portalUsers).values(normalizedData);
+}
+
+export async function updatePortalUser(id: number, data: Partial<InsertPortalUser>) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  // Normalize username if provided
+  const normalizedData = data.username
+    ? { ...data, username: data.username.toLowerCase() }
+    : data;
+  await db.update(portalUsers).set(normalizedData).where(eq(portalUsers.id, id));
+}
+
+export async function deletePortalUser(id: number) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  await db.delete(portalUsers).where(eq(portalUsers.id, id));
 }
 
 // TODO: add feature queries here as your schema grows.

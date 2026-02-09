@@ -19,6 +19,7 @@ import AIArchitectJob from "./pages/jobs/AIArchitect";
 import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import LLMResources from "./pages/LLMResources";
+import AdminPortals from "./pages/AdminPortals";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -37,6 +38,7 @@ function Router() {
       <Route path="/terms" component={TermsOfService} />
       <Route path="/privacy" component={PrivacyPolicy} />
       <Route path="/llm-resources" component={LLMResources} />
+      <Route path="/admin/portals" component={AdminPortals} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
