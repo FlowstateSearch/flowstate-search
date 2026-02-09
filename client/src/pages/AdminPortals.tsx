@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { trpc } from "@/lib/trpc";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -11,6 +11,32 @@ import { Trash2, Copy, Plus, Pencil, Check } from "lucide-react";
 
 
 export default function AdminPortals() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [passwordInput, setPasswordInput] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+  
+  const ADMIN_PASSWORD = "P0rter32%";
+  
+  // Check localStorage for existing auth
+  useEffect(() => {
+    const authStatus = localStorage.getItem("admin_authenticated");
+    if (authStatus === "true") {
+      setIsAuthenticated(true);
+    }
+  }, []);
+  
+  const handlePasswordSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (passwordInput === ADMIN_PASSWORD) {
+      setIsAuthenticated(true);
+      localStorage.setItem("admin_authenticated", "true");
+      setPasswordError("");
+    } else {
+      setPasswordError("Incorrect password. Please try again.");
+      setPasswordInput("");
+    }
+  };
+  
   const toast = (opts: { title: string; description?: string; variant?: string }) => {
     alert(opts.description ? `${opts.title}\n${opts.description}` : opts.title);
   };
@@ -104,6 +130,43 @@ export default function AdminPortals() {
     navigator.clipboard.writeText(link);
       toast({ title: "Copied!", description: link });
   };
+  
+  // Password protection screen
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-background p-4">
+        <Card className="w-full max-w-md">
+          <CardHeader>
+            <CardTitle>Admin Access</CardTitle>
+            <CardDescription>Enter password to access the portal management dashboard</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <form onSubmit={handlePasswordSubmit} className="space-y-4">
+              <div className="space-y-2">
+                <Label htmlFor="password">Password</Label>
+                <Input
+                  id="password"
+                  type="password"
+                  value={passwordInput}
+                  onChange={(e) => setPasswordInput(e.target.value)}
+                  placeholder="Enter admin password"
+                  autoFocus
+                />
+              </div>
+              {passwordError && (
+                <Alert variant="destructive">
+                  <AlertDescription>{passwordError}</AlertDescription>
+                </Alert>
+              )}
+              <Button type="submit" className="w-full">
+                Access Dashboard
+              </Button>
+            </form>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
   
   if (isLoading) {
     return (
