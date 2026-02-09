@@ -25,9 +25,19 @@ export default function CandidatePortal() {
     { enabled: !!username }
   );
 
-  // Handle button click - redirect to Loxo portal
-  const handleAccessPortal = () => {
+  // Track access mutation
+  const trackAccess = trpc.portals.trackAccess.useMutation();
+
+  // Handle button click - track access and redirect to Loxo portal
+  const handleAccessPortal = async () => {
     if (userInfo?.loxoUrl) {
+      // Track the access (fire and forget)
+      try {
+        await trackAccess.mutateAsync({ username });
+      } catch (error) {
+        console.error('Failed to track access:', error);
+        // Continue with redirect even if tracking fails
+      }
       window.location.href = userInfo.loxoUrl;
     }
   };

@@ -147,4 +147,23 @@ export async function deletePortalUser(id: number) {
   await db.delete(portalUsers).where(eq(portalUsers.id, id));
 }
 
+export async function trackPortalAccess(username: string) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  const user = await getPortalUserByUsername(username);
+  if (!user) {
+    throw new Error("Portal user not found");
+  }
+  // Increment access count and update last accessed timestamp
+  await db
+    .update(portalUsers)
+    .set({
+      accessCount: (user.accessCount || 0) + 1,
+      lastAccessed: new Date(),
+    })
+    .where(eq(portalUsers.id, user.id));
+}
+
 // TODO: add feature queries here as your schema grows.

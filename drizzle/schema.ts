@@ -39,6 +39,10 @@ export const portalUsers = mysqlTable("portal_users", {
   loxoUrl: text("loxoUrl").notNull(),
   /** Optional notes about this hiring manager */
   notes: text("notes"),
+  /** Last time the hiring manager accessed their portal */
+  lastAccessed: timestamp("lastAccessed"),
+  /** Number of times the hiring manager has accessed their portal */
+  accessCount: int("accessCount").default(0).notNull(),
   createdAt: timestamp("createdAt").defaultNow().notNull(),
   updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
 });

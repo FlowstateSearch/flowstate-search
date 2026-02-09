@@ -287,3 +287,15 @@
 - [x] Set password to P0rter32%
 - [x] Store password state in localStorage after successful entry
 - [x] Test password protection functionality
+
+## Portal Access Tracking
+
+- [x] Add lastAccessed and accessCount columns to portal_users table schema
+- [x] Run database migration with `pnpm db:push`
+- [x] Create tRPC procedure to track portal access (trackAccess mutation)
+- [x] Add trackPortalAccess function to db.ts
+- [x] Update CandidatePortal to call trackAccess when button is clicked
+- [x] Update AdminPortals table to display Last Accessed and Access Count columns
+- [x] Format lastAccessed as relative time (e.g., "2 hours ago", "Never")
+- [x] Add formatRelativeTime helper function
+- [x] Test access tracking with Tom Jones portal

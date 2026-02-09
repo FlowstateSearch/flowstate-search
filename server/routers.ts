@@ -84,6 +84,13 @@ export const appRouter = router({
         await db.deletePortalUser(input.id);
         return { success: true };
       }),
+
+    trackAccess: publicProcedure
+      .input(z.object({ username: z.string() }))
+      .mutation(async ({ input }) => {
+        await db.trackPortalAccess(input.username);
+        return { success: true };
+      }),
   }),
 
   // TODO: add feature routers here, e.g.
