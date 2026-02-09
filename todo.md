@@ -299,3 +299,28 @@
 - [x] Format lastAccessed as relative time (e.g., "2 hours ago", "Never")
 - [x] Add formatRelativeTime helper function
 - [x] Test access tracking with Tom Jones portal
+
+## Admin Dashboard Enhancements
+
+### Logout Button
+- [x] Add logout button to admin dashboard header
+- [x] Clear localStorage on logout
+- [x] Return to password prompt after logout
+- [x] Test logout functionality
+
+### Email Template Generator
+- [x] Add "Generate Email" button next to each portal user in table
+- [x] Create email template modal/dialog component
+- [x] Generate personalized email with hiring manager name and portal URL
+- [x] Include welcome message and instructions in template
+- [x] Add "Copy to Clipboard" button for email template
+- [x] Style email template professionally
+- [x] Test email generation with Tom Jones example
+
+### CSV Export for Analytics
+- [x] Add "Export CSV" button to admin dashboard header
+- [x] Create CSV generation function with all portal user data
+- [x] Include columns: Username, Display Name, Loxo URL, Last Accessed, Access Count, Created At, Notes
+- [x] Format dates properly in CSV (ISO format)
+- [x] Trigger browser download of CSV file
+- [x] Test CSV export with current data
