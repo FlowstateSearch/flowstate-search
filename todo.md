@@ -253,3 +253,11 @@
 - [x] Change button text to "Access Your Hiring Portal"
 - [x] Update helper text to reflect reviewing candidates, not applying
 - [x] Test updated copy with Tom Jones example
+
+## Case-Insensitive Username Lookup
+
+- [x] Convert username to lowercase before lookup
+- [x] Convert all mapping keys to lowercase
+- [x] Store display names separately in user mapping
+- [x] Test with TomJones, tomjones, TOMJONES, ToMjOnEs variations
+- [x] Ensure name formatting still works correctly (displays "Tom Jones")

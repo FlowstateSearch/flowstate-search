@@ -23,23 +23,40 @@ import { Button } from "@/components/ui/button";
  * };
  */
 
-// USER MAPPING: Add your candidates here (username → full Loxo URL)
-const userMapping: Record<string, string> = {
+// USER MAPPING: Add your hiring managers here
+// Note: Usernames are case-insensitive (TomJones, tomjones, TOMJONES all work)
+interface UserInfo {
+  displayName: string;
+  loxoUrl: string;
+}
+
+const userMapping: Record<string, UserInfo> = {
   // Example: Tom Jones
-  'TomJones': 'https://palermo-rhodes.app.loxo.co/agencies/340/jobs/3525548?user_email=TestingTJones%40gmail.com',
+  'tomjones': {
+    displayName: 'Tom Jones',
+    loxoUrl: 'https://palermo-rhodes.app.loxo.co/agencies/340/jobs/3525548?user_email=TestingTJones%40gmail.com',
+  },
   
-  // Add more candidates below:
-  // 'DavidSmith': 'https://palermo-rhodes.app.loxo.co/agencies/340/jobs/3525548?user_email=david.smith@example.com',
-  // 'JaneWilliams': 'https://palermo-rhodes.app.loxo.co/agencies/340/jobs/3525548?user_email=jane.williams@example.com',
+  // Add more hiring managers below:
+  // 'davidsmith': {
+  //   displayName: 'David Smith',
+  //   loxoUrl: 'https://palermo-rhodes.app.loxo.co/agencies/340/jobs/3525548?user_email=david.smith@example.com',
+  // },
 };
 
 /**
  * Extract first and last name from username for personalized greeting
- * Examples: "TomJones" → "Tom Jones", "SarahChen" → "Sarah Chen"
+ * Examples: "TomJones" → "Tom Jones", "tomjones" → "Tom Jones", "TOMJONES" → "Tom Jones"
  */
 function formatName(username: string): string {
+  // Normalize to title case: first letter uppercase, rest lowercase
+  // Then split on capital letters to separate first/last name
+  const normalized = username
+    .toLowerCase()
+    .replace(/(?:^|\s)\w/g, match => match.toUpperCase());
+  
   // Split on capital letters to separate first/last name
-  const parts = username.split(/(?=[A-Z])/);
+  const parts = normalized.split(/(?=[A-Z])/);
   return parts.join(' ');
 }
 
@@ -48,10 +65,10 @@ export default function CandidatePortal() {
   const username = params.username || '';
   const [error, setError] = useState<string | null>(null);
 
-  // Look up the Loxo URL for this username
-  const loxoUrl = userMapping[username];
+  // Look up the user info for this username (case-insensitive)
+  const userInfo = userMapping[username.toLowerCase()];
 
-  if (!loxoUrl) {
+  if (!userInfo) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background p-4">
         <div className="max-w-md w-full">
@@ -70,11 +87,12 @@ export default function CandidatePortal() {
     );
   }
 
-  const candidateName = formatName(username);
+  const candidateName = userInfo.displayName;
+  const loxoUrl = userInfo.loxoUrl;
 
   // Handle button click - redirect to Loxo portal
   const handleAccessPortal = () => {
-    window.location.href = loxoUrl;
+    window.location.href = userInfo.loxoUrl;
   };
 
   return (
