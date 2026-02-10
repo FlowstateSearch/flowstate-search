@@ -324,3 +324,10 @@
 - [x] Format dates properly in CSV (ISO format)
 - [x] Trigger browser download of CSV file
 - [x] Test CSV export with current data
+
+## Fix Broken Images
+- [x] Identify all broken image references across the website
+- [x] Find replacement images (restored from git history)
+- [x] Restore all 10 missing images from previous commits
+- [x] Update image references in all components
+- [x] Test all pages to verify images load correctly

@@ -493,7 +493,7 @@ export default function Home() {
 
       {/* Solution Section */}
       <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/flow-blueprint-bg.png')] opacity-5 bg-cover bg-center bg-fixed"></div>
+        <div className="absolute inset-0 bg-[url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/rCadWruzySwIXenp.png')] opacity-5 bg-cover bg-center bg-fixed"></div>
         <div className="container relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl md:text-4xl font-heading font-bold">Strategic Recruiting Meets Seamless Execution</h2>
@@ -642,7 +642,7 @@ export default function Home() {
 
       {/* Final CTA Section - Enhanced */}
       <section className="py-24 bg-gradient-to-br from-primary via-primary to-accent text-primary-foreground relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/flow-blueprint-bg.png')] opacity-10 bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/rCadWruzySwIXenp.png')] opacity-10 bg-cover bg-center"></div>
         <div className="container relative z-10 text-center space-y-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

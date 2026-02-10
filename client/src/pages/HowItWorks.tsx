@@ -59,7 +59,7 @@ export default function HowItWorks() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/flow-blueprint-bg.png')] opacity-5 bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/rCadWruzySwIXenp.png')] opacity-5 bg-cover bg-center"></div>
         <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight" style={{fontSize: '41px'}}>
             A Hiring Process <span className="text-primary">Built for Construction</span>. <br className="hidden md:block" />Designed to Maintain Schedule, Reduce Turnover, and Strengthen Project Delivery
@@ -133,7 +133,7 @@ export default function HowItWorks() {
                     {step.id === 1 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
-                          src="/market-mapping.png" 
+                          src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/SgdmXMekzxbKnGLc.png" 
                           alt="Market Mapping Visualization" 
                           className="w-full h-full object-cover"
                         />
@@ -141,7 +141,7 @@ export default function HowItWorks() {
                     ) : step.id === 2 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
-                          src="/targeted-outreach.png" 
+                          src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/foSvjmbfCQTjdqmO.png" 
                           alt="Targeted Outreach Visualization" 
                           className="w-full h-full object-cover"
                         />
@@ -149,7 +149,7 @@ export default function HowItWorks() {
                     ) : step.id === 3 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
-                          src="/culture-evaluation.png" 
+                          src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/UsVaJCDoXICqvSjM.png" 
                           alt="Culture-First Evaluation Visualization" 
                           className="w-full h-full object-cover"
                         />
@@ -157,7 +157,7 @@ export default function HowItWorks() {
                     ) : step.id === 4 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
-                          src="/seamless-presentation.png" 
+                          src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/UivsYaueeBALwPyP.png" 
                           alt="Seamless Presentation Visualization" 
                           className="w-full h-full object-cover"
                         />
@@ -165,7 +165,7 @@ export default function HowItWorks() {
                     ) : step.id === 5 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
-                          src="/interview-support.png" 
+                          src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/aVALOUzaTkMaPZZT.png" 
                           alt="Interview Support Visualization" 
                           className="w-full h-full object-cover"
                         />
@@ -173,7 +173,7 @@ export default function HowItWorks() {
                     ) : step.id === 6 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
-                          src="/post-hire-followup.png" 
+                          src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/yZQbJMWUIpKzdkXI.png" 
                           alt="Post-Hire Follow-Up Visualization" 
                           className="w-full h-full object-cover"
                         />
@@ -197,7 +197,7 @@ export default function HowItWorks() {
 
       {/* CTA Section */}
       <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/flow-blueprint-bg.png')] opacity-10 mix-blend-overlay bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/rCadWruzySwIXenp.png')] opacity-10 mix-blend-overlay bg-cover bg-center"></div>
         <div className="container relative z-10 text-center max-w-3xl mx-auto space-y-8">
           <h2 className="text-3xl md:text-5xl font-heading font-bold">Build a Team That Builds the Future</h2>
           <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">

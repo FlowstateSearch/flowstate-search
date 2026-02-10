@@ -8,7 +8,7 @@ export default function StartSearch() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 overflow-hidden bg-primary text-primary-foreground">
-        <div className="absolute inset-0 bg-[url('/flow-blueprint-bg.png')] opacity-10 mix-blend-overlay bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/rCadWruzySwIXenp.png')] opacity-10 mix-blend-overlay bg-cover bg-center"></div>
         <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight">
             Hire Leaders,<br />Not Applications.

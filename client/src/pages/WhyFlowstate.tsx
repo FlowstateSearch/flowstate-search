@@ -62,7 +62,7 @@ export default function WhyFlowstate() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl blur-2xl opacity-50"></div>
               <img 
-                src="/portal-dashboard-abstract.png" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/XahDLgPgyLuUBKFG.png" 
                 alt="Portal Dashboard" 
                 className="relative rounded-xl shadow-2xl border border-border/50 w-full h-auto"
               />
@@ -266,7 +266,7 @@ export default function WhyFlowstate() {
             <div className="relative md:col-span-1">
               <div className="absolute -inset-4 bg-gradient-to-tr from-primary/10 to-accent/10 rounded-3xl blur-xl opacity-30"></div>
               <img 
-                src="/images/founder-headshot-v2.jpg" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/opDxOReLoludiVdO.jpg" 
                 alt="Jordan Arp, Founder of Flowstate Search" 
                 className="relative rounded-xl shadow-lg border border-border/50 w-full h-auto object-cover aspect-[3/4] max-w-[300px] mx-auto"
               />
