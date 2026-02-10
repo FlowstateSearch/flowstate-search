@@ -63,8 +63,9 @@ export default function WhyFlowstate() {
               <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl blur-2xl opacity-50"></div>
               <img 
                 src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/XahDLgPgyLuUBKFG.png" 
-                alt="Portal Dashboard" 
+                alt="Flowstate Search custom hiring portal showing real-time construction candidate tracking, interview recordings, and team collaboration tools" 
                 className="relative rounded-xl shadow-2xl border border-border/50 w-full h-auto"
+                loading="lazy"
               />
             </div>
           </div>
@@ -267,8 +268,9 @@ export default function WhyFlowstate() {
               <div className="absolute -inset-4 bg-gradient-to-tr from-primary/10 to-accent/10 rounded-3xl blur-xl opacity-30"></div>
               <img 
                 src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/opDxOReLoludiVdO.jpg" 
-                alt="Jordan Arp, Founder of Flowstate Search" 
+                alt="Jordan Arp, Founder of Flowstate Search - Construction executive recruiter specializing in project managers and superintendents" 
                 className="relative rounded-xl shadow-lg border border-border/50 w-full h-auto object-cover aspect-[3/4] max-w-[300px] mx-auto"
+                loading="lazy"
               />
             </div>
             <div className="space-y-6 md:col-span-2">

@@ -134,48 +134,54 @@ export default function HowItWorks() {
                       <div className="relative h-[300px] w-full">
                         <img 
                           src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/SgdmXMekzxbKnGLc.png" 
-                          alt="Market Mapping Visualization" 
+                          alt="Construction executive recruitment market mapping showing network of qualified project managers and superintendents" 
                           className="w-full h-full object-cover"
+                          loading="lazy"
                         />
                       </div>
                     ) : step.id === 2 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
                           src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/foSvjmbfCQTjdqmO.png" 
-                          alt="Targeted Outreach Visualization" 
+                          alt="Multi-channel recruiting outreach strategy using video messages, direct contact, and industry networking for construction talent" 
                           className="w-full h-full object-cover"
+                          loading="lazy"
                         />
                       </div>
                     ) : step.id === 3 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
                           src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/UsVaJCDoXICqvSjM.png" 
-                          alt="Culture-First Evaluation Visualization" 
+                          alt="Construction leadership evaluation process assessing job site performance, communication skills, and cultural fit" 
                           className="w-full h-full object-cover"
+                          loading="lazy"
                         />
                       </div>
                     ) : step.id === 4 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
                           src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/UivsYaueeBALwPyP.png" 
-                          alt="Seamless Presentation Visualization" 
+                          alt="Custom hiring portal dashboard displaying construction candidate profiles, resumes, and interview assessments" 
                           className="w-full h-full object-cover"
+                          loading="lazy"
                         />
                       </div>
                     ) : step.id === 5 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
                           src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/aVALOUzaTkMaPZZT.png" 
-                          alt="Interview Support Visualization" 
+                          alt="Construction executive interview coordination and offer negotiation support for seamless hiring process" 
                           className="w-full h-full object-cover"
+                          loading="lazy"
                         />
                       </div>
                     ) : step.id === 6 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
                           src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/yZQbJMWUIpKzdkXI.png" 
-                          alt="Post-Hire Follow-Up Visualization" 
+                          alt="Construction hire onboarding support ensuring 91% retention rate through proactive follow-up and integration" 
                           className="w-full h-full object-cover"
+                          loading="lazy"
                         />
                       </div>
                     ) : (
