@@ -41,11 +41,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               </Link>
             ))}
-            <Link href="/portal">
-              <Button variant="outline" size="sm" className="font-semibold hover-brand-yellow">
-                Login
-              </Button>
-            </Link>
             <a href="https://schedule.flowstatesearch.com/portal-demo" target="_blank" rel="noopener noreferrer">
               <Button variant="default" size="sm" className="font-semibold hover-brand-yellow">
                 Request Portal Demo
@@ -63,7 +58,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-              <nav className="flex flex-col gap-4 mt-8">
+              <nav className="flex flex-col gap-4 mt-8 px-4">
                 {navLinks.map((link) => (
                   <Link key={link.href} href={link.href}>
                     <div
@@ -76,11 +71,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     </div>
                   </Link>
                 ))}
-                <Link href="/portal">
-                  <Button variant="outline" className="w-full mt-4 hover-brand-yellow" onClick={() => setIsMobileMenuOpen(false)}>
-                    Login
-                  </Button>
-                </Link>
                 <a href="https://schedule.flowstatesearch.com/portal-demo" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full mt-2 hover-brand-yellow" onClick={() => setIsMobileMenuOpen(false)}>
                     Request Portal Demo
