@@ -348,3 +348,8 @@
 - [x] Add useEffect hook to scroll to top on route change
 - [x] Test footer links (How It Works, Why Flowstate, Start Your Search, Contact)
 - [x] Verify scroll-to-top works on mobile and desktop
+
+## Smooth Scroll Animation Enhancement
+- [x] Replace instant scroll with smooth behavior in Layout.tsx
+- [x] Test smooth scroll on footer link navigation
+- [x] Verify smooth scroll works across all browsers

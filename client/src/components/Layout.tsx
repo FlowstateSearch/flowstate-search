@@ -17,9 +17,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   const isActive = (path: string) => location === path;
 
-  // Scroll to top on route change
+  // Scroll to top on route change with smooth animation
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [location]);
 
   return (
