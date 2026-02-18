@@ -343,3 +343,8 @@
 - [x] Remove Login button from header navigation (404 issue)
 - [x] Test mobile menu spacing on mobile viewport
 - [x] Verify navigation works correctly without Login button
+
+## Footer Navigation Scroll-to-Top Fix
+- [x] Add useEffect hook to scroll to top on route change
+- [x] Test footer links (How It Works, Why Flowstate, Start Your Search, Contact)
+- [x] Verify scroll-to-top works on mobile and desktop
