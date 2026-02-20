@@ -353,3 +353,12 @@
 - [x] Replace instant scroll with smooth behavior in Layout.tsx
 - [x] Test smooth scroll on footer link navigation
 - [x] Verify smooth scroll works across all browsers
+
+## Back to Top Floating Button
+- [x] Create BackToTop component with scroll detection logic
+- [x] Add circular button with up arrow icon (ChevronUp from lucide-react)
+- [x] Implement show/hide based on 50% page scroll threshold
+- [x] Position fixed bottom-right with proper spacing
+- [x] Add smooth scroll to top on click
+- [x] Style with brand colors and hover effects
+- [x] Test visibility threshold and scroll behavior
