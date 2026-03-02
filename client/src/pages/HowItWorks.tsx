@@ -181,7 +181,7 @@ export default function HowItWorks() {
                     ) : step.id === 6 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
-                          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step6_followup_v2_832293ad.jpeg" 
+                          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step6_followup_v3_3fcf5679.jpeg" 
                           alt="New construction hire reviewing plans with team on job site — settled in and operating" 
                           className="w-full h-full object-cover object-top"
                           loading="lazy"
