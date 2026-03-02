@@ -16,7 +16,7 @@ export default function HowItWorks() {
     {
       id: 2,
       title: "Targeted Sourcing & Outreach",
-      description: "The best candidates aren't on job boards — they're already employed and not looking. We reach them through personalized video messages, direct outreach, industry networks, and certification databases. You get access to people your competitors can't touch.",
+      description: "The best candidates aren't on job boards — they're already employed and not looking. We reach them through phone, email, LinkedIn, and industry networks your competitors don't have access to.",
       icon: Target,
       color: "text-amber-500",
       bg: "bg-amber-500/10"
@@ -168,12 +168,12 @@ export default function HowItWorks() {
                               </div>
                               <span className="text-sm font-semibold text-foreground">Email</span>
                             </div>
-                            {/* Video */}
+                            {/* Industry Networks */}
                             <div className="flex flex-col items-center gap-3 p-5 rounded-xl bg-background border border-border/60 shadow-sm hover:border-primary/40 hover:shadow-md transition-all">
                               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 8-6 4 6 4V8z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="3" cy="6" r="2"/><circle cx="21" cy="6" r="2"/><circle cx="3" cy="18" r="2"/><circle cx="21" cy="18" r="2"/><path d="M5 6h5M14 6h5M5 18h5M14 18h5M12 9v-1.5M12 15v1.5"/></svg>
                               </div>
-                              <span className="text-sm font-semibold text-foreground">Video</span>
+                              <span className="text-sm font-semibold text-foreground">Industry Networks</span>
                             </div>
                           </div>
                         </div>
