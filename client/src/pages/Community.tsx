@@ -63,13 +63,13 @@ export default function Community() {
             }}
             className="max-w-3xl space-y-5"
           >
-            <motion.p variants={fadeIn} className="text-sm font-mono uppercase tracking-widest text-primary">
-              Flowstate Field Days
-            </motion.p>
-            <motion.h1 variants={fadeIn} className="text-4xl md:text-6xl font-heading font-bold text-white leading-tight">
-              Get Outside.<br />Give Back.<br />
-              <span className="text-primary">Build Something Real.</span>
+            <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-white leading-none tracking-tight">
+              Flowstate<br /><span className="text-primary">Field Days</span>
             </motion.h1>
+            <motion.p variants={fadeIn} className="text-2xl md:text-3xl font-heading font-bold text-white/90 leading-snug">
+              Get Outside. Give Back.<br />
+              <span className="text-primary">Build Something Real.</span>
+            </motion.p>
             <motion.p variants={fadeIn} className="text-xl text-white/80 max-w-xl leading-relaxed">
               We help you build a stronger community — one placement at a time.
             </motion.p>
