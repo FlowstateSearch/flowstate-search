@@ -13,17 +13,17 @@ function CoreValueRow({ value, index }: { value: { title: string; body: string }
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.07 }}
-      className="py-7 border-b border-border/60 last:border-b-0 cursor-default"
+      className="py-4 border-b border-border/40 last:border-b-0 cursor-default"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       <div className="flex items-start gap-6">
-        <span className="text-xs font-mono text-muted-foreground/40 mt-2 w-6 shrink-0 select-none">
+        <span className="text-xs font-mono text-muted-foreground/30 mt-1 w-5 shrink-0 select-none">
           {String(index + 1).padStart(2, '0')}
         </span>
         <div className="overflow-hidden">
           <h3
-            className="text-2xl font-heading font-bold transition-colors duration-200"
+            className="text-lg font-heading font-bold transition-colors duration-200"
             style={{ color: hovered ? 'var(--color-primary)' : 'var(--color-foreground)' }}
           >
             {value.title}
@@ -34,7 +34,7 @@ function CoreValueRow({ value, index }: { value: { title: string; body: string }
             transition={{ duration: 0.25, ease: 'easeInOut' }}
             style={{ overflow: 'hidden' }}
           >
-            <p className="text-muted-foreground leading-relaxed text-base">{value.body}</p>
+            <p className="text-muted-foreground leading-relaxed text-sm">{value.body}</p>
           </motion.div>
         </div>
       </div>
@@ -269,14 +269,14 @@ export default function WhyFlowstate() {
       </section>
 
       {/* Core Values Section */}
-      <section className="py-24 bg-background">
+      <section className="py-16 bg-background">
         <div className="container max-w-3xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.65 }}
-            className="mb-16 space-y-4"
+            className="mb-10 space-y-3"
           >
             <p className="text-sm font-mono uppercase tracking-widest text-primary">What We Stand For</p>
             <h2 className="text-3xl md:text-4xl font-heading font-bold">This is how we work.</h2>
