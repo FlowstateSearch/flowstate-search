@@ -8,7 +8,7 @@ export default function HowItWorks() {
     {
       id: 1,
       title: "Discovery & Market Mapping",
-      description: "We dig into your culture, team dynamics, and hiring goals. Then we map every project manager, super, and director in your market who could be a fit. This targets the right talent pool from day one—no wasted outreach.",
+      description: "Before we reach out to a single candidate, we learn your company. Culture, team dynamics, what's worked before, what hasn't. Then we map every PM, super, and director in your market worth knowing about. No wasted outreach. No guessing.",
       icon: Search,
       color: "text-blue-500",
       bg: "bg-blue-500/10"
@@ -16,7 +16,7 @@ export default function HowItWorks() {
     {
       id: 2,
       title: "Targeted Sourcing & Outreach",
-      description: "We find candidates where other recruiters don't look—personalized video messages, direct outreach, industry groups, and certification databases. You get access to top performers who aren't actively looking—the ones your competitors want but can't reach.",
+      description: "The best candidates aren't on job boards — they're already employed and not looking. We reach them through personalized video messages, direct outreach, industry networks, and certification databases. You get access to people your competitors can't touch.",
       icon: Target,
       color: "text-amber-500",
       bg: "bg-amber-500/10"
@@ -24,7 +24,7 @@ export default function HowItWorks() {
     {
       id: 3,
       title: "Culture-First Evaluation",
-      description: "We evaluate proven performance, leadership style, communication strength, and job-site behavior. We look for leaders who perform under pressure and elevate field + office execution.",
+      description: "We're not just checking boxes. We evaluate track record, leadership style, how they communicate under pressure, and how they show up on the job site. We're looking for the person who makes your whole team better — not just someone who can do the job.",
       icon: Users,
       color: "text-indigo-500",
       bg: "bg-indigo-500/10"
@@ -32,7 +32,7 @@ export default function HowItWorks() {
     {
       id: 4,
       title: "Seamless Presentation",
-      description: "You log into your custom hiring portal and see full candidate profiles, resumes, assessments, and interview recordings. Your team stays aligned, decisions happen faster, and nothing gets lost.",
+      description: "You log into your custom hiring portal and see everything — full profiles, resumes, assessments, interview recordings. Your whole team is looking at the same information. Decisions happen faster. Nothing falls through the cracks.",
       icon: LayoutDashboard,
       color: "text-cyan-500",
       bg: "bg-cyan-500/10"
@@ -40,7 +40,7 @@ export default function HowItWorks() {
     {
       id: 5,
       title: "Interview Support & Closing",
-      description: "We're with you through interview prep, debrief sessions, offer strategy, and background checks. We're your partner, not a resume vendor—which means fewer rejected offers, smoother negotiations, and confidence in your hire.",
+      description: "We stay in it with you through interview prep, debrief calls, offer strategy, and background checks. This is where most recruiters disappear. We don't. Fewer rejected offers, smoother negotiations, and you walk away confident in your decision.",
       icon: MessageSquare,
       color: "text-emerald-500",
       bg: "bg-emerald-500/10"
@@ -48,7 +48,7 @@ export default function HowItWorks() {
     {
       id: 6,
       title: "Post-Hire Follow-Up",
-      description: "We check in during onboarding to ensure your new hire is settling in and thriving. Early intervention prevents small issues from becoming turnover.",
+      description: "The hire isn't the finish line. We check in during onboarding to make sure your new leader is settling in and your team is clicking. Small issues caught early don't become expensive turnover problems later.",
       icon: UserCheck,
       color: "text-primary",
       bg: "bg-primary/10"
@@ -62,10 +62,10 @@ export default function HowItWorks() {
         <div className="absolute inset-0 bg-[url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/rCadWruzySwIXenp.png')] opacity-5 bg-cover bg-center"></div>
         <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight" style={{fontSize: '41px'}}>
-            A Hiring Process <span className="text-primary">Built for Construction</span>. <br className="hidden md:block" />Designed to Maintain Schedule, Reduce Turnover, and Strengthen Project Delivery
+            A Hiring Process <span className="text-primary">Built for Construction</span>.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            No stops and starts. No email chaos. Just a clear, strategic path to finding construction leaders who will thrive on your team.
+            No stops and starts. No email chaos. A clear, strategic path to finding leaders who will actually thrive on your team.
           </p>
         </div>
       </section>
@@ -73,12 +73,12 @@ export default function HowItWorks() {
       {/* Intro Section */}
       <section className="py-16 bg-muted/30 border-y border-border/50">
         <div className="container max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold">A True Partner, Not Just a Resume Vendor</h2>
+          <h2 className="text-2xl md:text-3xl font-heading font-bold">Six steps. One partner. No runaround.</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Traditional recruiting is full of friction which leads to missed deadlines, frustrated clients, and millions lost in backlog bottlenecks.
+            Traditional recruiting is slow, opaque, and full of friction. Missed deadlines. Frustrated teams. Expensive mis-hires. We built a different way.
           </p>
           <p className="text-lg font-medium text-foreground">
-            Our process keeps projects moving and hiring momentum strong. From the moment we kick off your search to the day your new hire starts, you'll have visibility, momentum, and a partner who stays in the zone.
+            From kickoff to onboarding, you'll have full visibility, a clear process, and a partner who's bought in — not just filling a seat.
           </p>
         </div>
       </section>
@@ -205,9 +205,9 @@ export default function HowItWorks() {
       <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/rCadWruzySwIXenp.png')] opacity-10 mix-blend-overlay bg-cover bg-center"></div>
         <div className="container relative z-10 text-center max-w-3xl mx-auto space-y-8">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold">Build a Team That Builds the Future</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-bold">Ready to stop reacting and start building?</h2>
           <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-            Stop reacting to hiring emergencies. Start proactively recruiting proven construction leaders who drive results.
+            The best construction leaders aren't waiting around. Let's go find yours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <a href="https://schedule.flowstatesearch.com/start-your-search" target="_blank" rel="noopener noreferrer">

@@ -14,7 +14,7 @@ export default function StartSearch() {
             Hire Leaders,<br />Not Applications.
           </h1>
           <p className="text-xl opacity-90 max-w-2xl mx-auto" style={{fontSize: '25px'}}>
-            When you’re tired of churn and chaos, we deliver proven construction talent built to stay.
+            The project managers and superintendents driving your competitors' biggest wins — we bring them to you.
           </p>
         </div>
       </section>
@@ -24,19 +24,19 @@ export default function StartSearch() {
         <div className="container max-w-4xl mx-auto">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-3xl md:text-4xl font-heading font-bold">
-              We Partner with Construction Companies Who Care About Long-Term Fit
+              Before we talk, make sure we're actually right for each other.
             </h2>
             <p className="text-lg text-muted-foreground">
-              Flowstate Search is built for companies who are ready to stop churning through hires and start building a legacy team.
+              We're selective about who we work with — not to be difficult, but because the right fit produces results that last. We do our best work with companies who:
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-16">
             {[
-              "Frustrated with constant turnover costing time and profit",
-              "Losing revenue due to project backlogs and understaffed jobs",
-              "Need leaders who elevate culture, not disrupt it",
-              "Want a recruiting partner accountable for results"
+              "Know who they are and what they're building",
+              "Pay their people what they're worth — and know what that number is",
+              "Believe their employees are their greatest competitive advantage",
+              "Want a long-term partner, not a resume delivery service"
             ].map((item, index) => (
               <div key={index} className="flex items-start gap-4 p-6 rounded-xl bg-muted/30 border border-border/50">
                 <CheckCircle2 className="w-6 h-6 text-primary mt-1 shrink-0" />
@@ -46,7 +46,7 @@ export default function StartSearch() {
           </div>
 
           <div className="p-8 rounded-2xl bg-muted/20 border border-border/50 text-center space-y-6">
-            <h3 className="text-2xl font-heading font-bold">What You Get</h3>
+            <h3 className="text-2xl font-heading font-bold">What comes with every search</h3>
             <div className="grid sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto pt-4">
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary" />
@@ -73,7 +73,7 @@ export default function StartSearch() {
       <section className="py-24 bg-muted/30">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold">Here's How We Partner Together</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold">What working together actually looks like</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -86,9 +86,9 @@ export default function StartSearch() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold font-heading">Step 1: Discovery Call</h3>
                   <p className="text-muted-foreground">
-                    We spend 30 minutes understanding your culture, team dynamics, and role requirements. 
+                    We spend 30 minutes learning your company — culture, team dynamics, what's worked, what hasn't.
                     <br /><br />
-                    We only present candidates who will actually thrive—no wasted interviews on bad fits.
+                    We only put people in front of you who could actually thrive there. No wasted interviews.
                   </p>
                 </div>
               </CardContent>
@@ -103,9 +103,9 @@ export default function StartSearch() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold font-heading">Step 2: Search Kickoff</h3>
                   <p className="text-muted-foreground">
-                    Market mapping ensures you know every qualified leader in your region — not just active applicants.
+                    We map every qualified leader in your market — not just the ones actively looking.
                     <br /><br />
-                    Visibility = better hiring decisions.
+                    You'll know who's out there. That changes how you make decisions.
                   </p>
                 </div>
               </CardContent>
@@ -120,9 +120,9 @@ export default function StartSearch() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold font-heading">Step 3: Hire & Onboard</h3>
                   <p className="text-muted-foreground">
-                    We present deeply vetted candidates through your portal. You interview your top picks. We support through offer, negotiation, and close. 
+                    Vetted candidates show up in your portal. You interview your top picks. We stay in it through offer, negotiation, and close.
                     <br /><br />
-                    Faster decisions, fewer rejected offers, smooth path to hire.
+                    Faster decisions. Fewer rejected offers. A hire you're confident in.
                   </p>
                 </div>
               </CardContent>
@@ -142,19 +142,19 @@ export default function StartSearch() {
             {[
               {
                 q: "How long does a typical search take?",
-                a: "Most searches take 4-8 weeks from kickoff to offer accepted, depending on the role and market conditions. We prioritize quality over speed—but we move fast."
+                a: "Most searches run 4–8 weeks from kickoff to offer accepted, depending on the role and market. We move fast — but we don't cut corners on fit."
               },
               {
                 q: "What if the hire doesn't work out?",
-                a: "We offer a guarantee period. If the hire doesn't work out due to performance or fit, we'll re-open the search at no additional fee."
+                a: "We stand behind our work. If a placement doesn't stick due to performance or fit issues, we'll re-open the search at no additional fee."
               },
               {
                 q: "Do you only work with large construction companies?",
-                a: "No. We work with companies of all sizes—from growing regional builders to established GCs. If you care about culture fit and long-term retention, we're a fit."
+                a: "Size doesn't matter to us. We work with growing regional builders and established GCs alike. What matters is that you care about culture and you're serious about building a team that lasts."
               },
               {
                 q: "How is the portal different from email?",
-                a: "Your portal is a centralized hiring hub. No more hunting for email attachments, no more lost resumes. Everything lives in one organized, accessible place."
+                a: "Email is chaos. The portal is clarity. Every candidate, every note, every interview recording — all in one place. Your whole team sees the same thing at the same time."
               }
             ].map((faq, index) => (
               <div key={index} className="space-y-2">
@@ -169,13 +169,12 @@ export default function StartSearch() {
       {/* CTA Section */}
       <section className="py-24 bg-background border-t border-border">
         <div className="container text-center max-w-5xl mx-auto space-y-8">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold whitespace-nowrap">
-            Stop Competing on Job Boards.
-            <br />
-            Start Taking Market Share.
+          <h2 className="text-3xl md:text-5xl font-heading font-bold">
+            The leaders your competitors are afraid to lose — let's go find them.
           </h2>
           <p className="text-xl text-muted-foreground">
-           We’ll hunt the construction leaders already winning for your competitors and bring them to your team.          </p>
+            If you're ready to stop reacting to hiring emergencies and start building a team that actually sticks, let's talk.
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <a href="https://schedule.flowstatesearch.com/competitive-edge" target="_blank" rel="noopener noreferrer">
               <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover-brand-yellow h-11 px-8 text-base px-10 h-14 shadow-xl shadow-primary/20 cursor-pointer">

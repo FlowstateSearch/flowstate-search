@@ -362,3 +362,15 @@
 - [x] Add smooth scroll to top on click
 - [x] Style with brand colors and hover effects
 - [x] Test visibility threshold and scroll behavior
+
+## Brand Foundation Restructuring
+- [x] Upload trail-building and group photos to S3 CDN
+- [x] Add "Community" to main nav (desktop + mobile)
+- [x] Update footer tagline to "Building More Than Buildings."
+- [x] Add community teaser section to homepage
+- [x] Create new Community/Field Days page (/community)
+- [x] Rewrite Why Flowstate page: add core values (Set 2) + Who We're For/Not For
+- [x] Tone rewrite: How It Works page body copy
+- [x] Tone rewrite: Contact page body copy
+- [x] Tone rewrite: Start Your Search page body copy (with soft filter)
+- [x] Register /community route in App.tsx

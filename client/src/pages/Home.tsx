@@ -640,7 +640,60 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA Section - Enhanced */}
+      {/* Community Teaser Section */}
+      <section className="py-24 bg-background">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Image */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="relative rounded-2xl overflow-hidden"
+            >
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/IMG_1736_e22718ed.JPG"
+                alt="Flowstate Field Days — trail building volunteer event with Outdoor Colorado"
+                className="w-full h-[420px] object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <p className="text-sm font-medium opacity-90">Outdoor Colorado Trail Build — Denver, CO</p>
+              </div>
+            </motion.div>
+
+            {/* Copy */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="space-y-6"
+            >
+              <p className="text-sm font-mono uppercase tracking-widest text-primary">Flowstate Field Days</p>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground leading-tight">
+                The Dollars Matter.<br />
+                <span className="text-primary">The Hours Matter More.</span>
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Every Flowstate placement funds a local green space, park, or trail initiative — chosen by the people involved, in the community where it matters most. We show up in person. We get our hands dirty. We invite our clients and candidates to join us.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                This isn't a check in the mail. It's a belief that the best relationships — in business and in life — are built outside, side by side, doing something real.
+              </p>
+              <Link href="/community">
+                <Button variant="outline" className="mt-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+                  Get Outside. Give Back. Build Something Real.
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 bg-gradient-to-br from-primary via-primary to-accent text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/rCadWruzySwIXenp.png')] opacity-10 bg-cover bg-center"></div>
         <div className="container relative z-10 text-center space-y-8">

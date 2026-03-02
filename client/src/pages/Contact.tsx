@@ -51,7 +51,7 @@ export default function Contact() {
         <div className="container text-center max-w-4xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight">Let's Talk</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Whether you're ready to kick off a search or just exploring your options, we're here.
+            No pitch. No pressure. Whether you're ready to kick off a search or just figuring out if we're the right fit, reach out.
           </p>
         </div>
       </section>
@@ -63,7 +63,7 @@ export default function Contact() {
             <div className="space-y-8">
               <div className="space-y-2">
                 <h2 className="text-2xl font-heading font-bold">Send us a message</h2>
-                <p className="text-muted-foreground">Fill out the form below and we'll get back to you within 24 hours.</p>
+                <p className="text-muted-foreground">Tell us what you're dealing with. We'll get back to you within 24 hours — usually faster.</p>
               </div>
 
               <form ref={form} className="space-y-6" onSubmit={sendEmail}>
@@ -99,7 +99,7 @@ export default function Contact() {
                   <Textarea 
                     id="message" 
                     name="message"
-                    placeholder="Tell us about your current situation..." 
+                    placeholder="Be real with us — what's not working right now?" 
                     className="min-h-[120px]"
                     required
                   />
@@ -138,8 +138,8 @@ export default function Contact() {
             {/* Alternative Contact Options */}
             <div className="space-y-8">
               <div className="space-y-2">
-                <h2 className="text-2xl font-heading font-bold">Other ways to connect</h2>
-                <p className="text-muted-foreground">Choose the method that works best for you.</p>
+                <h2 className="text-2xl font-heading font-bold">Prefer a different approach?</h2>
+                <p className="text-muted-foreground">Pick whatever works for you. We'll meet you there.</p>
               </div>
 
               <div className="grid gap-6">
@@ -151,7 +151,7 @@ export default function Contact() {
                       </div>
                       <div className="space-y-1">
                         <h3 className="font-bold text-lg">Schedule a Discovery Call</h3>
-                        <p className="text-muted-foreground text-sm">Book a 30-minute discovery call to discuss your hiring goals.</p>
+                        <p className="text-muted-foreground text-sm">15 minutes. No fluff. We'll figure out quickly if we're the right fit for each other.</p>
                         <div className="pt-2 text-primary font-medium text-sm group-hover:underline">Book now →</div>
                       </div>
                     </CardContent>
@@ -166,7 +166,7 @@ export default function Contact() {
                       </div>
                       <div className="space-y-1">
                         <h3 className="font-bold text-lg">Request a Portal Demo</h3>
-                        <p className="text-muted-foreground text-sm">See how our hiring portal works and how it streamlines your process.</p>
+                        <p className="text-muted-foreground text-sm">See exactly what your team would be working with. Takes 20 minutes and changes how you think about hiring.</p>
                         <div className="pt-2 text-primary font-medium text-sm group-hover:underline">View demo →</div>
                       </div>
                     </CardContent>
@@ -181,7 +181,7 @@ export default function Contact() {
                       </div>
                       <div className="space-y-1">
                         <h3 className="font-bold text-lg">Email Us Directly</h3>
-                        <p className="text-muted-foreground text-sm">Prefer email? Drop us a line and we'll respond within 24 hours.</p>
+                        <p className="text-muted-foreground text-sm">Old school works too. We read every message and respond personally.</p>
                         <div className="pt-2 text-primary font-medium text-sm group-hover:underline">hello@flowstatesearch.com</div>
                       </div>
                     </CardContent>
