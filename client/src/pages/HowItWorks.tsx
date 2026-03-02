@@ -183,7 +183,7 @@ export default function HowItWorks() {
                         <img 
                           src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step3_interview_0f415a25.jpeg" 
                           alt="Construction leadership evaluation — assessing job site performance, communication skills, and how candidates show up under pressure" 
-                          className="w-full h-full object-cover object-center"
+                          className="w-full h-full object-cover object-[center_30%]"
                           loading="lazy"
                         />
                       </div>
@@ -201,7 +201,7 @@ export default function HowItWorks() {
                         <img 
                           src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step5_closing_c0c37d6d.jpeg" 
                           alt="Construction executive confident on job site — the moment after a successful hire and placement" 
-                          className="w-full h-full object-cover object-center"
+                          className="w-full h-full object-cover object-[center_20%]"
                           loading="lazy"
                         />
                       </div>
@@ -210,7 +210,7 @@ export default function HowItWorks() {
                         <img 
                           src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step6_followup_v3_3fcf5679.jpeg" 
                           alt="New construction hire reviewing plans with team on job site — settled in and operating" 
-                          className="w-full h-full object-cover object-top"
+                          className="w-full h-full object-cover object-[left_center]"
                           loading="lazy"
                         />
                       </div>
