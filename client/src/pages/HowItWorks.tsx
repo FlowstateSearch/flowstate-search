@@ -61,8 +61,9 @@ export default function HowItWorks() {
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/rCadWruzySwIXenp.png')] opacity-5 bg-cover bg-center"></div>
         <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight" style={{fontSize: '41px'}}>
-            A Hiring Process <span className="text-primary">Built for Construction</span>.
+          <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight leading-tight">
+            A Hiring Process <span className="text-primary">Built for Construction</span>.<br />
+            Designed to Maintain Schedule, Reduce Turnover, and Strengthen Project Delivery.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             No stops and starts. No email chaos. A clear, strategic path to finding leaders who will actually thrive on your team.
@@ -73,7 +74,6 @@ export default function HowItWorks() {
       {/* Intro Section */}
       <section className="py-16 bg-muted/30 border-y border-border/50">
         <div className="container max-w-4xl mx-auto text-center space-y-8">
-          <p className="text-sm font-mono font-bold text-primary tracking-widest uppercase">Designed to Maintain Schedule, Reduce Turnover, and Strengthen Project Delivery</p>
           <h2 className="text-2xl md:text-3xl font-heading font-bold">A True Partner, Not Just a Resume Vendor</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Traditional recruiting is full of friction which leads to missed deadlines, frustrated clients, and millions lost in backlog bottlenecks.
