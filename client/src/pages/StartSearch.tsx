@@ -58,7 +58,7 @@ export default function StartSearch() {
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary" />
-                <span>Culture-first evaluation</span>
+                <span>Beyond-the-resume evaluation</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary" />
@@ -86,7 +86,7 @@ export default function StartSearch() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold font-heading">Step 1: Discovery Call</h3>
                   <p className="text-muted-foreground">
-                    We spend 30 minutes learning your company — culture, team dynamics, what's worked, what hasn't.
+                    We spend 30 minutes learning your company — how your team works, what's clicked before, what hasn't.
                     <br /><br />
                     We only put people in front of you who could actually thrive there. No wasted interviews.
                   </p>
@@ -150,7 +150,7 @@ export default function StartSearch() {
               },
               {
                 q: "Do you only work with large construction companies?",
-                a: "Size doesn't matter to us. We work with growing regional builders and established GCs alike. What matters is that you care about culture and you're serious about building a team that lasts."
+                a: "Size doesn't matter to us. We work with growing regional builders and established GCs alike. What matters is that you care about who you're building with — and that you're serious about building a team that lasts."
               },
               {
                 q: "How is the portal different from email?",

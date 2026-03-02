@@ -118,7 +118,7 @@ export default function Home() {
                   <div className="flex items-start gap-2">
                     <div className="text-6xl text-white/40 font-serif leading-none">"</div>
                     <p className="text-lg text-white leading-relaxed pt-4 italic">
-                      Most recruiters throw resumes at you and hope something sticks. Flowstate took the time to understand our culture, our challenges, and what 'great' actually looked like for us. They were transparent - told us the red flags and the green flags for every candidate. We made a hire we feel great about, and we're already planning our next search with them.
+                      Most recruiters throw resumes at you and hope something sticks. Flowstate took the time to understand how we operate, our challenges, and what 'great' actually looked like for us. They were transparent - told us the red flags and the green flags for every candidate. We made a hire we feel great about, and we're already planning our next search with them.
                     </p>
                   </div>
                   <div className="border-t border-white/20 pt-4">
@@ -496,7 +496,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/rCadWruzySwIXenp.png')] opacity-5 bg-cover bg-center bg-fixed"></div>
         <div className="container relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold">Strategic Recruiting Meets Seamless Execution</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold">Built-In, Not Bolted On.</h2>
             <p className="text-lg text-muted-foreground">
               We've built trust with 500+ construction executives who refer us to their peers when we're mapping the market—giving us access to talent that never hits job boards. Every placement is built on a foundation of trust and designed to create lasting impact—for your business, your new hire, and your community.
             </p>

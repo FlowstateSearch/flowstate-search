@@ -8,7 +8,7 @@ export default function HowItWorks() {
     {
       id: 1,
       title: "Discovery & Market Mapping",
-      description: "Before we reach out to a single candidate, we learn your company. Culture, team dynamics, what's worked before, what hasn't. Then we map every PM, super, and director in your market worth knowing about. No wasted outreach. No guessing.",
+      description: "Before we reach out to a single candidate, we learn your company. How your team actually works, what's clicked before, what hasn't. Then we map every PM, super, and director in your market worth knowing about. No wasted outreach. No guessing.",
       icon: Search,
       color: "text-blue-500",
       bg: "bg-blue-500/10"
@@ -23,7 +23,7 @@ export default function HowItWorks() {
     },
     {
       id: 3,
-      title: "Culture-First Evaluation",
+      title: "Beyond the Resume",
       description: "We're not just checking boxes. We evaluate track record, leadership style, how they communicate under pressure, and how they show up on the job site. We're looking for the person who makes your whole team better — not just someone who can do the job.",
       icon: Users,
       color: "text-indigo-500",
@@ -31,7 +31,7 @@ export default function HowItWorks() {
     },
     {
       id: 4,
-      title: "Seamless Presentation",
+      title: "Everything in One Place",
       description: "You log into your custom hiring portal and see everything — full profiles, resumes, assessments, interview recordings. Your whole team is looking at the same information. Decisions happen faster. Nothing falls through the cracks.",
       icon: LayoutDashboard,
       color: "text-cyan-500",
@@ -152,7 +152,7 @@ export default function HowItWorks() {
                       <div className="relative h-[300px] w-full">
                         <img 
                           src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/UsVaJCDoXICqvSjM.png" 
-                          alt="Construction leadership evaluation process assessing job site performance, communication skills, and cultural fit" 
+                          alt="Construction leadership evaluation process assessing job site performance, communication skills, and how candidates show up under pressure" 
                           className="w-full h-full object-cover"
                           loading="lazy"
                         />
@@ -170,7 +170,7 @@ export default function HowItWorks() {
                       <div className="relative h-[300px] w-full">
                         <img 
                           src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/aVALOUzaTkMaPZZT.png" 
-                          alt="Construction executive interview coordination and offer negotiation support for seamless hiring process" 
+                          alt="Construction executive interview coordination and offer negotiation support from kickoff to signed offer" 
                           className="w-full h-full object-cover"
                           loading="lazy"
                         />
