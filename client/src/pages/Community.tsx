@@ -103,6 +103,29 @@ export default function Community() {
         </div>
       </section>
 
+      {/* Jordan's Why */}
+      <section className="py-12 bg-background border-t border-border/40">
+        <div className="container max-w-2xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.65 }}
+            className="space-y-4"
+          >
+            <p className="text-sm font-mono uppercase tracking-widest text-primary">From the Founder</p>
+            <p className="text-lg text-foreground leading-relaxed">
+              I started Flowstate because I believe business can be a force for good. Not in a bumper sticker way.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              I got tired of watching companies write checks to causes nobody in the room actually cared about — and call it community. I wanted something different. Something where the people we work with could stand in the same place, get their hands dirty, and build something that outlasts the deal.
+            </p>
+            <p className="text-lg font-medium text-foreground">That's where Field Days came from.</p>
+            <p className="text-sm text-muted-foreground">— Jordan Arp, Founder</p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* How It Works */}
       <section className="py-20 bg-muted/30">
         <div className="container">
