@@ -202,8 +202,8 @@ export default function Community() {
                 className="w-full h-[420px] object-cover"
                 loading="lazy"
               />
-              <div className="absolute bottom-4 left-4 text-white">
-                <p className="text-sm font-medium opacity-90">Outdoor Colorado Trail Build — Rocky Mountains, CO</p>
+              <div className="absolute bottom-4 left-4">
+                <p className="text-sm font-semibold text-white bg-black/65 backdrop-blur-sm px-3 py-1.5 rounded-md">Outdoor Colorado Trail Build — Rocky Mountains, CO</p>
               </div>
             </motion.div>
           </div>
