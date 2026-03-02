@@ -278,8 +278,8 @@ export default function WhyFlowstate() {
             transition={{ duration: 0.65 }}
             className="mb-10 space-y-3"
           >
-            <p className="text-base font-heading font-bold uppercase tracking-widest text-primary">What We Stand For</p>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold">This is how we work.</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary">What We Stand For</h2>
+            <p className="text-xl md:text-2xl font-heading font-semibold text-foreground">This is how we work.</p>
             <p className="text-muted-foreground text-lg">
               These aren't on a poster in a break room. They're how we make decisions, have hard conversations, and show up for the people we work with.
             </p>
