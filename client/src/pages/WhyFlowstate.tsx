@@ -3,7 +3,44 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, X, Zap, Layout, Users, ShieldCheck, Target, ArrowRight } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
+function CoreValueRow({ value, index }: { value: { title: string; body: string }; index: number }) {
+  const [hovered, setHovered] = useState(false);
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.07 }}
+      className="py-7 border-b border-border/60 last:border-b-0 cursor-default"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div className="flex items-start gap-6">
+        <span className="text-xs font-mono text-muted-foreground/40 mt-2 w-6 shrink-0 select-none">
+          {String(index + 1).padStart(2, '0')}
+        </span>
+        <div className="overflow-hidden">
+          <h3
+            className="text-2xl font-heading font-bold transition-colors duration-200"
+            style={{ color: hovered ? 'var(--color-primary)' : 'var(--color-foreground)' }}
+          >
+            {value.title}
+          </h3>
+          <motion.div
+            initial={false}
+            animate={hovered ? { height: 'auto', opacity: 1, marginTop: 8 } : { height: 0, opacity: 0, marginTop: 0 }}
+            transition={{ duration: 0.25, ease: 'easeInOut' }}
+            style={{ overflow: 'hidden' }}
+          >
+            <p className="text-muted-foreground leading-relaxed text-base">{value.body}</p>
+          </motion.div>
+        </div>
+      </div>
+    </motion.div>
+  );
+}
 
 export default function WhyFlowstate() {
   useEffect(() => {
@@ -250,22 +287,7 @@ export default function WhyFlowstate() {
 
           <div className="space-y-0">
             {coreValues.map((value, i) => (
-              <motion.div
-                key={value.title}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.07 }}
-                className="group py-8 border-b border-border/60 last:border-b-0"
-              >
-                <div className="flex items-start gap-6">
-                  <span className="text-xs font-mono text-muted-foreground/40 mt-1.5 w-6 shrink-0 select-none">{String(i + 1).padStart(2, '0')}</span>
-                  <div className="space-y-2">
-                    <h3 className="text-2xl font-heading font-bold text-foreground group-hover:text-primary transition-colors duration-200">{value.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{value.body}</p>
-                  </div>
-                </div>
-              </motion.div>
+              <CoreValueRow key={value.title} value={value} index={i} />
             ))}
           </div>
         </div>
