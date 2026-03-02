@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "/how-it-works", label: "How It Works" },
+    { href: "/how-it-works", label: "How We Work" },
     { href: "/why-flowstate", label: "Why Flowstate" },
     { href: "/community", label: "Community" },
     { href: "/start-search", label: "Start Your Search" },
