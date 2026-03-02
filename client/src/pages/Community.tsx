@@ -115,12 +115,12 @@ export default function Community() {
           >
             <p className="text-sm font-mono uppercase tracking-widest text-primary">From the Founder</p>
             <p className="text-lg text-foreground leading-relaxed">
-              I started Flowstate because I believe business can be a force for good. Not in a bumper sticker way.
+              I started Flowstate Search because I believe business can be a force for good. Not in a bumper sticker way.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I got tired of watching companies write checks to causes nobody in the room actually cared about — and call it community. I wanted something different. Something where the people we work with could stand in the same place, get their hands dirty, and build something that outlasts the deal.
+              I got tired of watching companies write checks to causes nobody in the room actually cared about, and call it community. I wanted something different. Something where the people we work with could stand in the same place, get their hands dirty, and build something that outlasts the deal.
             </p>
-            <p className="text-lg font-medium text-foreground">That's where Field Days came from.</p>
+            <p className="text-lg font-medium text-foreground">That's where Flowstate Field Days came from.</p>
             <p className="text-sm text-muted-foreground">— Jordan Arp, Founder</p>
           </motion.div>
         </div>
