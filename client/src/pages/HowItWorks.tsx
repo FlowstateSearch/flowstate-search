@@ -201,7 +201,7 @@ export default function HowItWorks() {
                         <img 
                           src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step5_closing_c0c37d6d.jpeg" 
                           alt="Construction executive confident on job site — the moment after a successful hire and placement" 
-                          className="w-full h-full object-cover object-[center_20%]"
+                          className="w-full h-full object-cover object-[center_40%]"
                           loading="lazy"
                         />
                       </div>
