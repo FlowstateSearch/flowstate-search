@@ -374,3 +374,8 @@
 - [x] Tone rewrite: Contact page body copy
 - [x] Tone rewrite: Start Your Search page body copy (with soft filter)
 - [x] Register /community route in App.tsx
+
+## How It Works Copy Restoration & Core Values Redesign
+- [x] Restore subheadline: "Designed to Maintain Schedule, Reduce Turnover, and Strengthen Project Delivery"
+- [x] Restore intro copy: "A True Partner, Not Just a Resume Vendor" section with original body copy
+- [x] Redesign core values section on Why Flowstate: vertical manifesto-style list (no tiles)

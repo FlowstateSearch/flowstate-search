@@ -232,34 +232,39 @@ export default function WhyFlowstate() {
       </section>
 
       {/* Core Values Section */}
-      <section className="py-24 bg-muted/30">
-        <div className="container">
+      <section className="py-24 bg-background">
+        <div className="container max-w-3xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.65 }}
-            className="text-center max-w-3xl mx-auto mb-16 space-y-4"
+            className="mb-16 space-y-4"
           >
             <p className="text-sm font-mono uppercase tracking-widest text-primary">What We Stand For</p>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold">Our Core Values</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold">This is how we work.</h2>
             <p className="text-muted-foreground text-lg">
               These aren't on a poster in a break room. They're how we make decisions, have hard conversations, and show up for the people we work with.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="space-y-0">
             {coreValues.map((value, i) => (
               <motion.div
                 key={value.title}
-                initial={{ opacity: 0, y: 24 }}
+                initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.08 }}
-                className="bg-background rounded-2xl p-8 border border-border space-y-3 hover:border-primary/40 transition-colors"
+                transition={{ duration: 0.5, delay: i * 0.07 }}
+                className="group py-8 border-b border-border/60 last:border-b-0"
               >
-                <h3 className="text-lg font-heading font-bold text-foreground">{value.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{value.body}</p>
+                <div className="flex items-start gap-6">
+                  <span className="text-xs font-mono text-muted-foreground/40 mt-1.5 w-6 shrink-0 select-none">{String(i + 1).padStart(2, '0')}</span>
+                  <div className="space-y-2">
+                    <h3 className="text-2xl font-heading font-bold text-foreground group-hover:text-primary transition-colors duration-200">{value.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{value.body}</p>
+                  </div>
+                </div>
               </motion.div>
             ))}
           </div>
