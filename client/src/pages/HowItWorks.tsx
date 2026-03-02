@@ -58,13 +58,15 @@ export default function HowItWorks() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 overflow-hidden">
+      <section className="relative py-12 md:py-16 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/rCadWruzySwIXenp.png')] opacity-5 bg-cover bg-center"></div>
-        <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight leading-tight">
-            A Hiring Process <span className="text-primary">Built for Construction</span>.<br />
-            Designed to Maintain Schedule, Reduce Turnover, and Strengthen Project Delivery.
+        <div className="container relative z-10 text-center max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold tracking-tight">
+            A Hiring Process <span className="text-primary">Built for Construction</span>.
           </h1>
+          <p className="text-2xl md:text-3xl font-heading font-bold mt-3 mb-6">
+            Designed to Maintain Schedule, Reduce Turnover, and Strengthen Project Delivery.
+          </p>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             No stops and starts. No email chaos. A clear, strategic path to finding leaders who will actually thrive on your team.
           </p>
