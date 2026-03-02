@@ -154,7 +154,7 @@ export default function HowItWorks() {
                     ) : step.id === 3 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
-                          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step3_conversation_5d048214.jpeg" 
+                          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step3_interview_0f415a25.jpeg" 
                           alt="Construction leadership evaluation — assessing job site performance, communication skills, and how candidates show up under pressure" 
                           className="w-full h-full object-cover object-center"
                           loading="lazy"
@@ -172,7 +172,7 @@ export default function HowItWorks() {
                     ) : step.id === 5 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
-                          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step5_closing_492284f4.jpeg" 
+                          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step5_closing_c0c37d6d.jpeg" 
                           alt="Construction executive confident on job site — the moment after a successful hire and placement" 
                           className="w-full h-full object-cover object-center"
                           loading="lazy"
@@ -181,7 +181,7 @@ export default function HowItWorks() {
                     ) : step.id === 6 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
-                          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step6_followup_25bcaf40.jpeg" 
+                          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step6_followup_8854b4f4.jpeg" 
                           alt="New construction hire reviewing plans with team on job site — settled in and operating" 
                           className="w-full h-full object-cover object-top"
                           loading="lazy"
