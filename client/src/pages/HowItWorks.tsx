@@ -32,7 +32,7 @@ export default function HowItWorks() {
     {
       id: 4,
       title: "Everything in One Place",
-      description: "You log into your custom hiring portal and see everything — full profiles, resumes, assessments, interview recordings. Your whole team is looking at the same information. Decisions happen faster. Nothing falls through the cracks.",
+      description: "You log into your custom hiring portal and see everything — full profiles, resumes, assessments, and job-specific scorecards. Your whole team is looking at the same information. Decisions happen faster. Nothing falls through the cracks.",
       icon: LayoutDashboard,
       color: "text-cyan-500",
       bg: "bg-cyan-500/10"
