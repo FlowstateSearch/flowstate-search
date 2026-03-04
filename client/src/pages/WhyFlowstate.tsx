@@ -1,21 +1,123 @@
-import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
-import { Check, Zap, Layout, Users, ShieldCheck, Target, Heart, Handshake, Globe } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Check, X, Zap, Layout, Users, ShieldCheck, Target, ArrowRight } from "lucide-react";
+import { useEffect, useState } from "react";
+
+function CoreValueRow({ value, index }: { value: { title: string; body: string }; index: number }) {
+  const [hovered, setHovered] = useState(false);
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.07 }}
+      className="py-4 border-b border-border/40 last:border-b-0 cursor-default"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div className="flex items-start gap-6">
+        <span className="text-xs font-mono text-muted-foreground/30 mt-1 w-5 shrink-0 select-none">
+          {String(index + 1).padStart(2, '0')}
+        </span>
+        <div className="overflow-hidden">
+          <h3
+            className="text-lg font-heading font-bold transition-colors duration-200"
+            style={{ color: hovered ? 'var(--color-primary)' : 'var(--color-foreground)' }}
+          >
+            {value.title}
+          </h3>
+          <motion.div
+            initial={false}
+            animate={hovered ? { height: 'auto', opacity: 1, marginTop: 8 } : { height: 0, opacity: 0, marginTop: 0 }}
+            transition={{ duration: 0.25, ease: 'easeInOut' }}
+            style={{ overflow: 'hidden' }}
+          >
+            <p className="text-muted-foreground leading-relaxed text-sm">{value.body}</p>
+          </motion.div>
+        </div>
+      </div>
+    </motion.div>
+  );
+}
 
 export default function WhyFlowstate() {
+  useEffect(() => {
+    document.title = "Why Flowstate | Flowstate Search";
+  }, []);
+
+  const coreValues = [
+    {
+      title: "Say the Hard Thing",
+      body: "Honesty is the highest form of caring. We tell you what you need to hear — especially when it's uncomfortable.",
+    },
+    {
+      title: "Walk in Their Boots",
+      body: "See it from their side first. Always.",
+    },
+    {
+      title: "Never the Finished Product",
+      body: "A building is never truly done. Neither are we.",
+    },
+    {
+      title: "Get Outside. Get Perspective.",
+      body: "Put the podcast down. Nature has better answers.",
+    },
+    {
+      title: "Built-In, Not Bolted On",
+      body: "We learn your company like we work there — because that's the only way to find people who truly fit.",
+    },
+    {
+      title: "Automate the Process. Never the Relationship.",
+      body: "Technology makes us faster and smarter. It will never replace the moments that actually matter.",
+    },
+  ];
+
+  const forYou = [
+    "You know who you are and what you're building",
+    "You pay your people what they're worth — and you know what that number is",
+    "You have a mission that your leadership actually lives by",
+    "You believe your employees are your greatest competitive advantage",
+    "You want a long-term partner, not a resume delivery service",
+    "You're obsessed with growth — for your company, your people, and your community",
+    "You communicate openly, give feedback freely, and hate operating in silos",
+    "You believe business can be a force for good in the world",
+  ];
+
+  const notForYou = [
+    "You're working with 12 recruiters simultaneously and treating search like a numbers game",
+    "You pay below market and wonder why your best people leave",
+    "You don't have a company mission — or have one nobody believes",
+    "You think ghosting candidates is acceptable",
+    "You see recruiting as a transaction",
+    "You're not willing to be radically transparent about your culture, your challenges, and your goals",
+    "You believe parks are wasted space",
+  ];
+
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section (Original) */}
-      <section className="relative py-12 md:py-16 overflow-hidden bg-muted/10">
+
+      {/* Hero */}
+      <section className="relative py-16 md:py-24 overflow-hidden bg-muted/10">
         <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight">
+          <motion.h1
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.65 }}
+            className="text-4xl md:text-6xl font-heading font-bold tracking-tight"
+          >
             The Portal. The Process.<br />
             <span className="text-primary">The Results.</span>
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto" style={{fontSize: '18px'}}>
-            Because every delayed hire is a delayed project. Our system keeps your pipeline moving, reduces turnover, and gets proven leaders onto your job sites faster.
-          </p>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.65, delay: 0.1 }}
+            className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
+          >
+            Every delayed hire is a delayed project. We built a system that keeps your pipeline moving, cuts turnover, and gets proven leaders onto your job sites — without the runaround.
+          </motion.p>
         </div>
       </section>
 
@@ -28,42 +130,38 @@ export default function WhyFlowstate() {
                 <Layout className="w-4 h-4" />
                 <span>THE PORTAL</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold" style={{fontSize: '35px'}}>
-                We built a portal so you actually know what's happening in your search all in one place.
+              <h2 className="text-3xl md:text-4xl font-heading font-bold">
+                You shouldn't have to wonder what's happening in your search.
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Faster decisions = projects staffed sooner. No more delaying mobilization or asking the team to do more with less.
+                We built a portal so you always know where things stand — no chasing emails, no guessing. Faster decisions mean projects staffed sooner and less scrambling in the field.
               </p>
-              
-              
               <div className="space-y-4">
                 {[
-                  "Align office and field decision-makers faster",
-                  "Reduce weeks of back-and-forth so projects start on schedule",
-                  "Prevent costly mis-hires and turnover cycles",
-                  "Full transparency into your search pipeline"
+                  "Align office and field decision-makers without the back-and-forth",
+                  "Reduce weeks of delays so projects start on schedule",
+                  "Prevent costly mis-hires before they happen",
+                  "Full transparency into your search — every step of the way",
                 ].map((benefit) => (
                   <div key={benefit} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full bg-green-500/10 flex items-center justify-center text-green-600">
+                    <div className="w-6 h-6 rounded-full bg-green-500/10 flex items-center justify-center text-green-600 shrink-0">
                       <Check className="w-4 h-4" />
                     </div>
                     <span className="font-medium">{benefit}</span>
                   </div>
                 ))}
               </div>
-
               <a href="https://schedule.flowstatesearch.com/portal-demo" target="_blank" rel="noopener noreferrer">
-                <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover-brand-yellow h-11 px-8 cursor-pointer">
+                <Button variant="outline" className="hover-brand-yellow">
                   Request a Portal Demo
-                </div>
+                </Button>
               </a>
             </div>
-            
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl blur-2xl opacity-50"></div>
-              <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/XahDLgPgyLuUBKFG.png" 
-                alt="Flowstate Search custom hiring portal showing real-time construction candidate tracking, interview recordings, and team collaboration tools" 
+              <img
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/XahDLgPgyLuUBKFG.png"
+                alt="Flowstate Search custom hiring portal showing real-time construction candidate tracking, interview recordings, and team collaboration tools"
                 className="relative rounded-xl shadow-2xl border border-border/50 w-full h-auto"
                 loading="lazy"
               />
@@ -90,44 +188,42 @@ export default function WhyFlowstate() {
                     <Users className="w-8 h-8 text-blue-500 mb-4" />
                     <h3 className="font-bold">Human Expertise</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground">Evaluating fit, risk, and opportunity.</p>
+                  <p className="text-sm text-muted-foreground">Evaluating fit, risk, and real opportunity.</p>
                 </Card>
                 <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4 h-full flex flex-col justify-between">
                   <div>
                     <Target className="w-8 h-8 text-red-500 mb-4" />
                     <h3 className="font-bold">Market Mapping</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground">Identifying every potential candidate.</p>
+                  <p className="text-sm text-muted-foreground">Finding every candidate worth knowing about.</p>
                 </Card>
                 <Card className="bg-background/80 backdrop-blur border-border/50 p-6 space-y-4 h-full flex flex-col justify-between">
                   <div>
                     <ShieldCheck className="w-8 h-8 text-green-500 mb-4" />
                     <h3 className="font-bold">Omni-Channel</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground">Reaching candidates where they are.</p>
+                  <p className="text-sm text-muted-foreground">Reaching candidates where they actually are.</p>
                 </Card>
               </div>
             </div>
-
             <div className="order-1 lg:order-2 space-y-8">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
                 <Zap className="w-4 h-4" />
                 <span>THE PROCESS</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-heading font-bold">
-                Strategic Sourcing + Human Expertise
+                We don't post-and-pray. We hunt.
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We don't post-and-pray. We hunt. AI ranks candidate performance indicators, track records, and career progression — then our industry experts evaluate leadership style, communication skills, and job site fit.
+                AI ranks performance indicators, track records, and career progression. Then our people evaluate leadership style, communication, and job site fit. Technology makes us faster. Judgment makes us right.
               </p>
-              
               <div className="p-6 bg-background rounded-xl border border-border shadow-sm">
                 <div className="flex items-start gap-4">
                   <div className="text-4xl">🎯</div>
                   <div>
-                    <h4 className="font-bold text-lg mb-1">Our Pipeline Stats</h4>
+                    <h4 className="font-bold text-lg mb-1">Our Pipeline</h4>
                     <p className="text-muted-foreground">
-                      200+ professionals evaluated → 6-8 presented → 1 excellent hire who stays.
+                      200+ professionals evaluated → 6–8 presented → 1 excellent hire who stays.
                     </p>
                   </div>
                 </div>
@@ -146,13 +242,12 @@ export default function WhyFlowstate() {
               <span>THE RESULTS</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-heading font-bold">
-              We Find People Who Thrive, Not Just Survive
+              People who thrive. Not just survive.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Flow state means fewer mistakes, better communication, safer job sites, and projects that finish on time and under budget.
+              When someone's in flow state, they make fewer mistakes, communicate better, and build safer job sites. Projects finish on time. Teams stay together. That's what we're after.
             </p>
           </div>
-
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-8 rounded-2xl bg-muted/30 border border-border/50 space-y-4">
               <div className="text-4xl font-bold font-mono text-primary">91%</div>
@@ -161,114 +256,116 @@ export default function WhyFlowstate() {
             </div>
             <div className="p-8 rounded-2xl bg-muted/30 border border-border/50 space-y-4">
               <div className="text-4xl font-bold font-mono text-primary">5-Star</div>
-              <h3 className="font-bold text-lg">Candidate Satisfaction</h3>
-              <p className="text-sm text-muted-foreground">We treat candidates like professionals.</p>
+              <h3 className="font-bold text-lg">Candidate Experience</h3>
+              <p className="text-sm text-muted-foreground">Everyone gets feedback. Everyone gets respect.</p>
             </div>
             <div className="p-8 rounded-2xl bg-muted/30 border border-border/50 space-y-4">
               <div className="text-4xl font-bold font-mono text-primary">200+</div>
               <h3 className="font-bold text-lg">Candidates Evaluated</h3>
-              <p className="text-sm text-muted-foreground">Per search to find your perfect match.</p>
+              <p className="text-sm text-muted-foreground">Per search. So you only see the ones worth your time.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Mission Section (New) */}
-      <section className="relative py-20 md:py-24 overflow-hidden bg-muted/10">
-        <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-8">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight">
-            More Than a Placement.<br />
-            <span className="text-primary">A Partnership.</span>
-          </h1>
-          <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground">
-            Pivotal Talent. Lasting Impact.
-          </h2>
-          
-          <div className="relative mt-12 p-8 md:p-12 bg-background rounded-2xl shadow-xl border border-border/50">
-            <div className="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 text-primary/10">
-              <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M14.017 21L14.017 18C14.017 16.8954 13.1216 16 12.017 16H9.01699V12.999L14.017 13V10.999L9.01699 11V8L15.017 8V6H8.01699V21H14.017ZM21.017 21V6H15.017V21H21.017Z" />
-              </svg>
-            </div>
-            <blockquote className="text-xl md:text-2xl font-medium leading-relaxed text-foreground italic relative z-10">
-              "Our mission is to be the most trusted partner in executive search, providing the pivotal talent that gives mission-driven companies their competitive edge. We operate with radical transparency, building partnerships that create more meaningful lives and radiate positive impact."
-            </blockquote>
+      {/* Core Values Section */}
+      <section className="py-16 bg-background">
+        <div className="container max-w-3xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.65 }}
+            className="mb-10 space-y-3"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary">What We Stand For</h2>
+            <p className="text-muted-foreground text-lg">
+              These aren't on a poster in a break room. They're how we make decisions, have hard conversations, and show up for the people we work with.
+            </p>
+          </motion.div>
+
+          <div className="space-y-0">
+            {coreValues.map((value, i) => (
+              <CoreValueRow key={value.title} value={value} index={i} />
+            ))}
           </div>
         </div>
       </section>
 
-      {/* What Drives Us Section (New) */}
-      <section className="py-20 md:py-24 bg-background">
-        <div className="container max-w-4xl mx-auto text-center space-y-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
-            <Heart className="w-4 h-4" />
-            <span>WHAT DRIVES US</span>
-          </div>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold">
-            Radiating Positive Impact
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            At Flowstate Search, we believe a successful placement is just the beginning. Our goal is to 'radiate positive impact'—a principle that guides everything we do. When we connect an exceptional individual with a mission-driven company, we spark a powerful chain reaction. An engaged professional finds deeper meaning in their work, leading to greater self-worth and happiness that extends to their family and community. Simultaneously, the company gains a competitive advantage, not just through talent, but through a re-energized culture. This is our measure of success: creating value that multiplies.
-          </p>
-        </div>
-      </section>
+      {/* Who We're For / Not For */}
+      <section className="py-24 bg-background border-y border-border/50">
+        <div className="container max-w-5xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.65 }}
+            className="text-center mb-16 space-y-4"
+          >
+            <p className="text-sm font-mono uppercase tracking-widest text-primary">Honest Assessment</p>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold">Are We Right for Each Other?</h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              We don't say this to be difficult. We say it because a bad fit wastes everyone's time and helps nobody. The right fit changes everything.
+            </p>
+          </motion.div>
 
-      {/* Guiding Principles Section (New) */}
-      <section className="py-20 md:py-24 bg-muted/30 border-y border-border/50">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold">Our Guiding Principles</h2>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-background border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group h-full">
-              <CardContent className="p-8 space-y-4 text-center">
-                <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors mb-6">
-                  <ShieldCheck className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold font-heading">Radical Transparency</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  We tell it like it is. Your goals become our goals, and we provide the unfiltered, honest advice necessary to build a partnership founded on unwavering trust.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* For You */}
+            <motion.div
+              initial={{ opacity: 0, x: -24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.65 }}
+              className="bg-green-500/5 border border-green-500/20 rounded-2xl p-8 space-y-6"
+            >
+              <h3 className="text-xl font-heading font-bold text-foreground flex items-center gap-2">
+                <Check className="w-5 h-5 text-green-600" />
+                We're Built For You If:
+              </h3>
+              <ul className="space-y-4">
+                {forYou.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-muted-foreground">
+                    <Check className="w-4 h-4 text-green-600 mt-0.5 shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
 
-            <Card className="bg-background border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group h-full">
-              <CardContent className="p-8 space-y-4 text-center">
-                <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors mb-6">
-                  <Handshake className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold font-heading">True Partnership</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  We are an extension of your team. We invest deeply in understanding your unique culture, challenges, and goals to ensure the partnerships we build are successful for the long term.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-background border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group h-full">
-              <CardContent className="p-8 space-y-4 text-center">
-                <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors mb-6">
-                  <Globe className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold font-heading">A Commitment to Community</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  We believe in sharing our success. For every placement we make, we donate a portion of our proceeds to a charity dedicated to creating positive experiences and opportunities, helping to build stronger communities.
-                </p>
-              </CardContent>
-            </Card>
+            {/* Not For You */}
+            <motion.div
+              initial={{ opacity: 0, x: 24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.65 }}
+              className="bg-muted/30 border border-border rounded-2xl p-8 space-y-6"
+            >
+              <h3 className="text-xl font-heading font-bold text-foreground flex items-center gap-2">
+                <X className="w-5 h-5 text-muted-foreground" />
+                We're Probably Not Your Firm If:
+              </h3>
+              <ul className="space-y-4">
+                {notForYou.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-muted-foreground">
+                    <X className="w-4 h-4 text-muted-foreground/60 mt-0.5 shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Meet the Founder Section */}
-      <section className="py-24 bg-background border-t border-border/50">
+      <section className="py-24 bg-muted/30">
         <div className="container max-w-5xl mx-auto">
           <div className="grid md:grid-cols-3 gap-12 items-center">
             <div className="relative md:col-span-1">
               <div className="absolute -inset-4 bg-gradient-to-tr from-primary/10 to-accent/10 rounded-3xl blur-xl opacity-30"></div>
-              <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/opDxOReLoludiVdO.jpg" 
-                alt="Jordan Arp, Founder of Flowstate Search - Construction executive recruiter specializing in project managers and superintendents" 
+              <img
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/opDxOReLoludiVdO.jpg"
+                alt="Jordan Arp, Founder of Flowstate Search — construction executive recruiter specializing in project managers and superintendents"
                 className="relative rounded-xl shadow-lg border border-border/50 w-full h-auto object-cover aspect-[3/4] max-w-[300px] mx-auto"
                 loading="lazy"
               />
@@ -278,13 +375,13 @@ export default function WhyFlowstate() {
                 <span>MEET THE FOUNDER</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-heading font-bold">
-                Recruiting Built by Construction Insiders
+                Built by someone who gives a damn.
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I started Flowstate Search because I saw too many great construction companies struggling to find the leaders they deserved. Traditional recruiters didn't understand the field, and job boards were just noise.
+                I started Flowstate Search because I saw too many great construction companies struggling to find the leaders they deserved — and too many great candidates being ghosted, lowballed, and treated like a number. That's not how this should work.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We built this system to be the partner I wish I had—transparent, data-driven, and relentlessly focused on quality. When you work with us, you're not just getting resumes, you're getting a strategic ally committed to your long-term success.
+                We built this to be the partner I wish existed. Honest about what we know, honest about what we don't, and relentlessly focused on getting it right. When you work with Flowstate, you get a strategic ally who's bought in for the long haul — not someone chasing a quick placement fee.
               </p>
               <div className="pt-4">
                 <p className="font-bold text-xl">Jordan Arp</p>
@@ -295,33 +392,28 @@ export default function WhyFlowstate() {
         </div>
       </section>
 
-      {/* Concrete Ending Section */}
-      <section className="py-20 bg-muted/30 border-y border-border/50">
-        <div className="container text-center max-w-3xl mx-auto">
-          <p className="text-xl md:text-2xl font-medium text-foreground leading-relaxed">
-            If you’re tired of waiting for applications, fighting turnover, and losing talent to competitors, it’s time for a recruiting system built for construction. Let’s build your leadership pipeline.
-          </p>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-background">
+      {/* Closing CTA */}
+      <section className="py-20 bg-background border-t border-border/50">
         <div className="container text-center max-w-3xl mx-auto space-y-8">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold">See the Difference for Yourself</h2>
+          <p className="text-xl md:text-2xl font-medium text-foreground leading-relaxed">
+            If you're tired of waiting on applications, fighting turnover, and losing your best people to competitors — it's time for a different approach.
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <a href="https://schedule.flowstatesearch.com/discovery-call" target="_blank" rel="noopener noreferrer">
-              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover-brand-yellow h-11 px-8 text-base px-10 h-14 shadow-xl shadow-primary/20 cursor-pointer">
-                Book a 15-Minute Discovery Call
-              </div>
+              <Button size="lg" className="hover-brand-yellow px-10 h-14 shadow-xl shadow-primary/20 text-base">
+                Book a 15-Minute Call
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
             </a>
             <a href="https://schedule.flowstatesearch.com/portal-demo" target="_blank" rel="noopener noreferrer">
-              <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover-brand-yellow h-11 px-8 text-base px-10 h-14 cursor-pointer">
-                See a Sample Portal Dashboard
-              </div>
+              <Button size="lg" variant="outline" className="hover-brand-yellow px-10 h-14 text-base">
+                See a Sample Portal
+              </Button>
             </a>
           </div>
         </div>
       </section>
+
     </div>
   );
 }

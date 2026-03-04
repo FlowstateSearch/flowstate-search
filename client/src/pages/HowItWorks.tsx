@@ -8,7 +8,7 @@ export default function HowItWorks() {
     {
       id: 1,
       title: "Discovery & Market Mapping",
-      description: "We dig into your culture, team dynamics, and hiring goals. Then we map every project manager, super, and director in your market who could be a fit. This targets the right talent pool from day one—no wasted outreach.",
+      description: "Before we reach out to a single candidate, we learn your company. How your team actually works, what's clicked before, what hasn't. Then we map every PM, super, and director in your market worth knowing about. No wasted outreach. No guessing.",
       icon: Search,
       color: "text-blue-500",
       bg: "bg-blue-500/10"
@@ -16,23 +16,23 @@ export default function HowItWorks() {
     {
       id: 2,
       title: "Targeted Sourcing & Outreach",
-      description: "We find candidates where other recruiters don't look—personalized video messages, direct outreach, industry groups, and certification databases. You get access to top performers who aren't actively looking—the ones your competitors want but can't reach.",
+      description: "The best candidates aren't on job boards — they're already employed and not looking. We reach them through phone, email, LinkedIn, and industry networks your competitors don't have access to.",
       icon: Target,
       color: "text-amber-500",
       bg: "bg-amber-500/10"
     },
     {
       id: 3,
-      title: "Culture-First Evaluation",
-      description: "We evaluate proven performance, leadership style, communication strength, and job-site behavior. We look for leaders who perform under pressure and elevate field + office execution.",
+      title: "Beyond the Resume",
+      description: "We're not just checking boxes. We evaluate track record, leadership style, how they communicate under pressure, and how they show up on the job site. We're looking for the person who makes your whole team better — not just someone who can do the job.",
       icon: Users,
       color: "text-indigo-500",
       bg: "bg-indigo-500/10"
     },
     {
       id: 4,
-      title: "Seamless Presentation",
-      description: "You log into your custom hiring portal and see full candidate profiles, resumes, assessments, and interview recordings. Your team stays aligned, decisions happen faster, and nothing gets lost.",
+      title: "Everything in One Place",
+      description: "You log into your custom hiring portal and see everything — full profiles, resumes, assessments, and job-specific scorecards. Your whole team is looking at the same information. Decisions happen faster. Nothing falls through the cracks.",
       icon: LayoutDashboard,
       color: "text-cyan-500",
       bg: "bg-cyan-500/10"
@@ -40,7 +40,7 @@ export default function HowItWorks() {
     {
       id: 5,
       title: "Interview Support & Closing",
-      description: "We're with you through interview prep, debrief sessions, offer strategy, and background checks. We're your partner, not a resume vendor—which means fewer rejected offers, smoother negotiations, and confidence in your hire.",
+      description: "We stay in it with you through interview prep, debrief calls, offer strategy, and background checks. This is where most recruiters disappear. We don't. Fewer rejected offers, smoother negotiations, and you walk away confident in your decision.",
       icon: MessageSquare,
       color: "text-emerald-500",
       bg: "bg-emerald-500/10"
@@ -48,7 +48,7 @@ export default function HowItWorks() {
     {
       id: 6,
       title: "Post-Hire Follow-Up",
-      description: "We check in during onboarding to ensure your new hire is settling in and thriving. Early intervention prevents small issues from becoming turnover.",
+      description: "The hire isn't the finish line. We check in during onboarding to make sure your new leader is settling in and your team is clicking. Small issues caught early don't become expensive turnover problems later.",
       icon: UserCheck,
       color: "text-primary",
       bg: "bg-primary/10"
@@ -58,14 +58,17 @@ export default function HowItWorks() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 overflow-hidden">
+      <section className="relative py-12 md:py-16 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/rCadWruzySwIXenp.png')] opacity-5 bg-cover bg-center"></div>
-        <div className="container relative z-10 text-center max-w-4xl mx-auto space-y-6">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight" style={{fontSize: '41px'}}>
-            A Hiring Process <span className="text-primary">Built for Construction</span>. <br className="hidden md:block" />Designed to Maintain Schedule, Reduce Turnover, and Strengthen Project Delivery
+        <div className="container relative z-10 text-center max-w-4xl mx-auto">
+          <h1 className="font-heading font-bold tracking-tight whitespace-nowrap" style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.75rem)' }}>
+            A Hiring Process <span className="text-primary">Built for Construction</span>.
           </h1>
+          <p className="font-heading font-bold mt-3 mb-6" style={{ fontSize: 'clamp(1.25rem, 2.5vw, 2rem)' }}>
+            Designed to Maintain Schedule, Reduce Turnover, and Strengthen Project Delivery.
+          </p>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            No stops and starts. No email chaos. Just a clear, strategic path to finding construction leaders who will thrive on your team.
+            No stops and starts. No email chaos. A clear, strategic path to finding leaders who will actually thrive on your team.
           </p>
         </div>
       </section>
@@ -140,20 +143,47 @@ export default function HowItWorks() {
                         />
                       </div>
                     ) : step.id === 2 ? (
-                      <div className="relative h-[300px] w-full">
-                        <img 
-                          src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/foSvjmbfCQTjdqmO.png" 
-                          alt="Multi-channel recruiting outreach strategy using video messages, direct contact, and industry networking for construction talent" 
-                          className="w-full h-full object-cover"
-                          loading="lazy"
-                        />
+                      <div className="relative h-[300px] w-full bg-muted/20 flex items-center justify-center p-8">
+                        <div className="w-full max-w-sm space-y-4">
+                          <p className="text-center text-xs font-mono uppercase tracking-widest text-muted-foreground mb-6">We reach them where they are</p>
+                          <div className="grid grid-cols-2 gap-4">
+                            {/* Phone & Text */}
+                            <div className="flex flex-col items-center gap-3 p-5 rounded-xl bg-background border border-border/60 shadow-sm hover:border-primary/40 hover:shadow-md transition-all">
+                              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                              </div>
+                              <span className="text-sm font-semibold text-foreground">Phone & Text</span>
+                            </div>
+                            {/* LinkedIn */}
+                            <div className="flex flex-col items-center gap-3 p-5 rounded-xl bg-background border border-border/60 shadow-sm hover:border-primary/40 hover:shadow-md transition-all">
+                              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                              </div>
+                              <span className="text-sm font-semibold text-foreground">LinkedIn</span>
+                            </div>
+                            {/* Email */}
+                            <div className="flex flex-col items-center gap-3 p-5 rounded-xl bg-background border border-border/60 shadow-sm hover:border-primary/40 hover:shadow-md transition-all">
+                              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                              </div>
+                              <span className="text-sm font-semibold text-foreground">Email</span>
+                            </div>
+                            {/* Industry Networks */}
+                            <div className="flex flex-col items-center gap-3 p-5 rounded-xl bg-background border border-border/60 shadow-sm hover:border-primary/40 hover:shadow-md transition-all">
+                              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="3" cy="6" r="2"/><circle cx="21" cy="6" r="2"/><circle cx="3" cy="18" r="2"/><circle cx="21" cy="18" r="2"/><path d="M5 6h5M14 6h5M5 18h5M14 18h5M12 9v-1.5M12 15v1.5"/></svg>
+                              </div>
+                              <span className="text-sm font-semibold text-foreground">Industry Networks</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     ) : step.id === 3 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
-                          src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/UsVaJCDoXICqvSjM.png" 
-                          alt="Construction leadership evaluation process assessing job site performance, communication skills, and cultural fit" 
-                          className="w-full h-full object-cover"
+                          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step3_interview_0f415a25.jpeg" 
+                          alt="Construction leadership evaluation — assessing job site performance, communication skills, and how candidates show up under pressure" 
+                          className="w-full h-full object-cover object-[center_30%]"
                           loading="lazy"
                         />
                       </div>
@@ -169,18 +199,18 @@ export default function HowItWorks() {
                     ) : step.id === 5 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
-                          src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/aVALOUzaTkMaPZZT.png" 
-                          alt="Construction executive interview coordination and offer negotiation support for seamless hiring process" 
-                          className="w-full h-full object-cover"
+                          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step5_closing_c0c37d6d.jpeg" 
+                          alt="Construction executive confident on job site — the moment after a successful hire and placement" 
+                          className="w-full h-full object-cover object-[center_40%]"
                           loading="lazy"
                         />
                       </div>
                     ) : step.id === 6 ? (
                       <div className="relative h-[300px] w-full">
                         <img 
-                          src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/yZQbJMWUIpKzdkXI.png" 
-                          alt="Construction hire onboarding support ensuring 91% retention rate through proactive follow-up and integration" 
-                          className="w-full h-full object-cover"
+                          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/step6_followup_v3_3fcf5679.jpeg" 
+                          alt="New construction hire reviewing plans with team on job site — settled in and operating" 
+                          className="w-full h-full object-cover object-[left_center]"
                           loading="lazy"
                         />
                       </div>
@@ -205,9 +235,9 @@ export default function HowItWorks() {
       <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/rCadWruzySwIXenp.png')] opacity-10 mix-blend-overlay bg-cover bg-center"></div>
         <div className="container relative z-10 text-center max-w-3xl mx-auto space-y-8">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold">Build a Team That Builds the Future</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-bold">Ready to stop reacting and start building?</h2>
           <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-            Stop reacting to hiring emergencies. Start proactively recruiting proven construction leaders who drive results.
+            The best construction leaders aren't waiting around. Let's go find yours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <a href="https://schedule.flowstatesearch.com/start-your-search" target="_blank" rel="noopener noreferrer">

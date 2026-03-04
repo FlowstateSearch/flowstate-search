@@ -10,8 +10,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "/how-it-works", label: "How It Works" },
+    { href: "/how-it-works", label: "How We Work" },
     { href: "/why-flowstate", label: "Why Flowstate" },
+    { href: "/community", label: "Community" },
     { href: "/start-search", label: "Start Your Search" },
     { href: "/contact", label: "Contact" },
   ];
@@ -101,7 +102,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <img src="/LogoDark_R1.png" alt="Flowstate Search" className="h-12 w-auto mb-4 cursor-pointer" />
               </Link>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Pivotal Talent. Lasting Impact.
+                Building More Than Buildings.
               </p>
             </div>
 
