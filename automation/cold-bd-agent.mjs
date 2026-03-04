@@ -55,6 +55,7 @@ const CONSTRUCTION_KEYWORDS = [
 const EXCLUDED_KEYWORDS = [
   'golf', 'resort', 'hotel', 'hospitality', 'retail', 'grocery',
   'convenience store', 'restaurant', 'casino',
+  'facility solutions', 'facilities management', 'facilities services',
 ];
 
 // If Apollo returns one of these industries, hard reject — not construction
