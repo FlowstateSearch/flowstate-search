@@ -1,0 +1,37 @@
+name: Daily BD Agent
+
+on:
+  schedule:
+    - cron: '0 14 * * 1-5'  # 8am Mountain Time (MST), Monday–Friday
+  workflow_dispatch:          # allows manual trigger from GitHub UI
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run BD Agent
+        env:
+          APOLLO_API_KEY: ${{ secrets.APOLLO_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LEMLIST_API_KEY: ${{ secrets.LEMLIST_API_KEY }}
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+          SLACK_DREAM100_CHANNEL_ID: ${{ secrets.SLACK_DREAM100_CHANNEL_ID }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: node automation/cold-bd-agent.mjs
+
+      - name: Save data files back to repo
+        run: |
+          git config user.name "Flowstate BD Bot"
+          git config user.email "bot@flowstatesearch.com"
+          git add automation/data/
+          git diff --staged --quiet || git commit -m "chore: update agent data [skip ci]"
+          git push

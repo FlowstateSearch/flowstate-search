@@ -1,0 +1,33 @@
+name: Check Approvals
+
+on:
+  schedule:
+    - cron: '*/15 13-23 * * 1-5'  # Every 15 min, 7am–5pm Mountain Time, Mon–Fri
+  workflow_dispatch:                # allows manual trigger from GitHub UI
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Check Approvals
+        env:
+          LEMLIST_API_KEY: ${{ secrets.LEMLIST_API_KEY }}
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+        run: node automation/check-approvals.mjs
+
+      - name: Save data files back to repo
+        run: |
+          git config user.name "Flowstate BD Bot"
+          git config user.email "bot@flowstatesearch.com"
+          git add automation/data/
+          git diff --staged --quiet || git commit -m "chore: update approval data [skip ci]"
+          git push
