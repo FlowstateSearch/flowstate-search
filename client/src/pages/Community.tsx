@@ -237,7 +237,7 @@ export default function Community() {
               Three years from now, the measure of our success isn't a revenue number.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Three years from now, the measure of our success isn't a revenue number. It's this. People are more human because of the work we do. Relationships run deeper. Communities are stronger. And somewhere out there, a kid is playing in a park that exists because a great candidate found a great company and Flowstate made it happen.
+              It's this. People are more human because of the work we do. Relationships run deeper. Communities are stronger. And somewhere out there, a kid is playing in a park that exists because a great candidate found a great company and Flowstate made it happen.
             </p>
             <p className="text-primary font-semibold text-lg">That's when we'll know we made it.</p>
           </motion.div>
