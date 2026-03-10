@@ -258,7 +258,7 @@ export default function Community() {
               Want to be part of it?
             </h2>
             <p className="text-xl max-w-2xl mx-auto opacity-90">
-              Whether you're a client, a candidate, or just someone who gives a damn — there's a place for you at the next Flowstate Field Day.
+              Whether you're a client, a candidate, or just someone who gives a damn. There's a place for you at the next Flowstate Field Day.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
               <Link href="/contact">
