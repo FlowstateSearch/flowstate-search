@@ -134,7 +134,7 @@ export default function WhyFlowstate() {
                 You shouldn't have to wonder what's happening in your search.
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We built a portal so you always know where things stand — no chasing emails, no guessing. Faster decisions mean projects staffed sooner and less scrambling in the field.
+                We built a portal so you always know where things stand. No chasing emails. No guessing. Faster decisions mean projects staffed sooner and less scrambling in the field.
               </p>
               <div className="space-y-4">
                 {[
@@ -245,7 +245,7 @@ export default function WhyFlowstate() {
               People who thrive. Not just survive.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When someone's in flow state, they make fewer mistakes, communicate better, and build safer job sites. Projects finish on time. Teams stay together. That's what we're after.
+              Projects finish on time. Teams stay together. That's what we're after.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
