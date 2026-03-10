@@ -87,11 +87,7 @@ export default function Home() {
                     Book a 15-Minute Call
                   </Button>
                 </a>
-                <a href="https://schedule.flowstatesearch.com/discovery-call" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" variant="outline" className="border-white/40 text-white hover:bg-[#ffc229] hover:text-background hover:border-[#ffc229] transition-all text-base px-8 h-12 bg-white/10 backdrop-blur">
-                    Book a Discovery Call
-                  </Button>
-                </a>
+
               </motion.div>
 
               <motion.div variants={fadeIn} className="pt-4 flex items-center gap-6 text-sm font-mono text-gray-300">
