@@ -116,7 +116,7 @@ export default function WhyFlowstate() {
             transition={{ duration: 0.65, delay: 0.1 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
           >
-            Every delayed hire is a delayed project. We built a system that keeps your pipeline moving, cuts turnover, and gets proven leaders onto your job sites — without the runaround.
+            Every delayed hire is a delayed project. We built a system that keeps your pipeline moving, cuts turnover, and gets proven leaders onto your job sites. No runaround. No guessing. Just results.
           </motion.p>
         </div>
       </section>
