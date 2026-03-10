@@ -76,7 +76,7 @@ export default function HowItWorks() {
       {/* Intro Section */}
       <section className="py-16 bg-muted/30 border-y border-border/50">
         <div className="container max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold">A True Partner, Not Just a Resume Vendor</h2>
+          <h2 className="text-2xl md:text-3xl font-heading font-bold">Not a Resume Farmer. A Partner.</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Traditional recruiting is full of friction. Missed deadlines, frustrated clients, and millions lost in backlog bottlenecks.
           </p>
