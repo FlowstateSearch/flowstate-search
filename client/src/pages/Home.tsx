@@ -66,7 +66,7 @@ export default function Home() {
               </motion.h1>
               
               <motion.p variants={fadeIn} className="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
-                The project managers and superintendents driving your competitors' biggest wins—we bring them to you.
+                The project managers and superintendents driving your competitors' biggest wins. We bring them to you.
               </motion.p>
               
               {/* 5-Star Review Badge */}
@@ -236,7 +236,7 @@ export default function Home() {
               </ul>
               <ul className="text-lg text-muted-foreground leading-relaxed space-y-4 list-disc pl-5">
                 <li>You don't need more applications.</li>
-                <li>You need someone who will recruit the people who aren't looking—but should be.</li>
+                <li>You need someone who will recruit the people who aren't looking. But should be.</li>
               </ul>
             </motion.div>
           </div>
@@ -498,7 +498,7 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl md:text-4xl font-heading font-bold">Built-In, Not Bolted On.</h2>
             <p className="text-lg text-muted-foreground">
-              We've built trust with 500+ construction executives who refer us to their peers when we're mapping the market—giving us access to talent that never hits job boards. Every placement is built on a foundation of trust and designed to create lasting impact—for your business, your new hire, and your community.
+              We've built trust with 500+ construction executives who refer us to their peers when we're mapping the market. That gives us access to talent that never hits job boards. Every placement is built on a foundation of trust and designed to create lasting impact for your business, your new hire, and your community.
             </p>
           </div>
 
@@ -549,7 +549,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold font-heading">Radical Transparency</h3>
                   <p className="text-muted-foreground">
-                    We tell you the red flags and the green flags for every candidate. No surprises, no spin—just honest partnership.
+                    We tell you the red flags and the green flags for every candidate. No surprises, no spin. Just honest partnership.
                   </p>
                 </CardContent>
               </Card>
@@ -678,10 +678,10 @@ export default function Home() {
                 <span className="text-primary">The Hours Matter More.</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Every Flowstate placement funds a local green space, park, or trail initiative — chosen by the people involved, in the community where it matters most. We show up in person. We get our hands dirty. We invite our clients and candidates to join us.
+                Every Flowstate placement funds a local green space, park, or trail initiative chosen by the people involved, in the community where it matters most. We show up in person. We get our hands dirty. We invite our clients and candidates to join us.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                This isn't a check in the mail. It's a belief that the best relationships — in business and in life — are built outside, side by side, doing something real.
+                This isn't a check in the mail. It's a belief that the best relationships in business and in life are built outside, side by side, doing something real.
               </p>
               <Link href="/community">
                 <Button variant="outline" className="mt-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
@@ -708,7 +708,7 @@ export default function Home() {
               Stop Competing on Job Boards.<br />Start Recruiting the Leaders Driving Results in Your Market.
             </h2>
             <p className="text-xl max-w-3xl mx-auto opacity-90">
-              If you're tired of backlog, turnover, and hiring risk—it's time for a proactive recruiting strategy built for construction.
+              Tired of backlog, turnover, and hiring risk? It's time for a proactive recruiting strategy built for construction.
             </p>
           </motion.div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">

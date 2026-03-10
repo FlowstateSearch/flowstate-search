@@ -14,7 +14,7 @@ export default function StartSearch() {
             Hire Leaders,<br />Not Applications.
           </h1>
           <p className="text-xl opacity-90 max-w-2xl mx-auto" style={{fontSize: '25px'}}>
-            The project managers and superintendents driving your competitors' biggest wins — we bring them to you.
+            The project managers and superintendents driving your competitors' biggest wins. We bring them to you.
           </p>
         </div>
       </section>
@@ -27,14 +27,14 @@ export default function StartSearch() {
               Before we talk, make sure we're actually right for each other.
             </h2>
             <p className="text-lg text-muted-foreground">
-              We're selective about who we work with — not to be difficult, but because the right fit produces results that last. We do our best work with companies who:
+              We're selective about who we work with. Not to be difficult, but because the right fit produces results that last. We do our best work with companies who:
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-16">
             {[
               "Know who they are and what they're building",
-              "Pay their people what they're worth — and know what that number is",
+              "Pay their people what they're worth and know what that number is",
               "Believe their employees are their greatest competitive advantage",
               "Want a long-term partner, not a resume delivery service"
             ].map((item, index) => (
@@ -86,7 +86,7 @@ export default function StartSearch() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold font-heading">Step 1: Discovery Call</h3>
                   <p className="text-muted-foreground">
-                    We spend 30 minutes learning your company — how your team works, what's clicked before, what hasn't.
+                    We spend 30 minutes learning your company. How your team works, what's clicked before, what hasn't.
                     <br /><br />
                     We only put people in front of you who could actually thrive there. No wasted interviews.
                   </p>
@@ -103,7 +103,7 @@ export default function StartSearch() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold font-heading">Step 2: Search Kickoff</h3>
                   <p className="text-muted-foreground">
-                    We map every qualified leader in your market — not just the ones actively looking.
+                    We map every qualified leader in your market. Not just the ones actively looking.
                     <br /><br />
                     You'll know who's out there. That changes how you make decisions.
                   </p>
@@ -142,7 +142,7 @@ export default function StartSearch() {
             {[
               {
                 q: "How long does a typical search take?",
-                a: "Most searches run 4–8 weeks from kickoff to offer accepted, depending on the role and market. We move fast — but we don't cut corners on fit."
+                a: "Most searches run 4–8 weeks from kickoff to offer accepted, depending on the role and market. We move fast. But we don't cut corners on fit."
               },
               {
                 q: "What if the hire doesn't work out?",
@@ -150,11 +150,11 @@ export default function StartSearch() {
               },
               {
                 q: "Do you only work with large construction companies?",
-                a: "Size doesn't matter to us. We work with growing regional builders and established GCs alike. What matters is that you care about who you're building with — and that you're serious about building a team that lasts."
+                a: "Size doesn't matter to us. We work with growing regional builders and established GCs alike. What matters is that you care about who you're building with. And that you're serious about building a team that lasts."
               },
               {
                 q: "How is the portal different from email?",
-                a: "Email is chaos. The portal is clarity. Every candidate, every note, every interview recording — all in one place. Your whole team sees the same thing at the same time."
+                a: "Email is chaos. The portal is clarity. Every candidate, every note, every interview recording. All in one place. Your whole team sees the same thing at the same time."
               }
             ].map((faq, index) => (
               <div key={index} className="space-y-2">
@@ -170,7 +170,7 @@ export default function StartSearch() {
       <section className="py-24 bg-background border-t border-border">
         <div className="container text-center max-w-5xl mx-auto space-y-8">
           <h2 className="text-3xl md:text-5xl font-heading font-bold">
-            The leaders your competitors are afraid to lose — let's go find them.
+            The leaders your competitors are afraid to lose. Let's go find them.
           </h2>
           <p className="text-xl text-muted-foreground">
             If you're ready to stop reacting to hiring emergencies and start building a team that actually sticks, let's talk.

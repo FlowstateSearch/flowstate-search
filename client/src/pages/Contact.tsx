@@ -99,7 +99,7 @@ export default function Contact() {
                   <Textarea 
                     id="message" 
                     name="message"
-                    placeholder="Be real with us — what's not working right now?" 
+                    placeholder="Be real with us. What's not working right now?" 
                     className="min-h-[120px]"
                     required
                   />

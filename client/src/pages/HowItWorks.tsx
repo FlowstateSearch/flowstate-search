@@ -16,7 +16,7 @@ export default function HowItWorks() {
     {
       id: 2,
       title: "Targeted Sourcing & Outreach",
-      description: "The best candidates aren't on job boards — they're already employed and not looking. We reach them through phone, email, LinkedIn, and industry networks your competitors don't have access to.",
+      description: "The best candidates aren't on job boards. They're already employed and not looking. We reach them through phone, email, LinkedIn, and industry networks your competitors don't have access to.",
       icon: Target,
       color: "text-amber-500",
       bg: "bg-amber-500/10"
@@ -24,7 +24,7 @@ export default function HowItWorks() {
     {
       id: 3,
       title: "Beyond the Resume",
-      description: "We're not just checking boxes. We evaluate track record, leadership style, how they communicate under pressure, and how they show up on the job site. We're looking for the person who makes your whole team better — not just someone who can do the job.",
+      description: "We're not just checking boxes. We evaluate track record, leadership style, how they communicate under pressure, and how they show up on the job site. We're looking for the person who makes your whole team better. Not just someone who can do the job.",
       icon: Users,
       color: "text-indigo-500",
       bg: "bg-indigo-500/10"
@@ -32,7 +32,7 @@ export default function HowItWorks() {
     {
       id: 4,
       title: "Everything in One Place",
-      description: "You log into your custom hiring portal and see everything — full profiles, resumes, assessments, and job-specific scorecards. Your whole team is looking at the same information. Decisions happen faster. Nothing falls through the cracks.",
+      description: "You log into your custom hiring portal and see everything. Full profiles, resumes, assessments, and job-specific scorecards. Your whole team is looking at the same information. Decisions happen faster. Nothing falls through the cracks.",
       icon: LayoutDashboard,
       color: "text-cyan-500",
       bg: "bg-cyan-500/10"

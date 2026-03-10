@@ -21,22 +21,22 @@ export default function Community() {
     {
       icon: <MapPin className="w-6 h-6 text-primary" />,
       title: "At Intake",
-      body: "Every new client tells us what matters in their community. Which green spaces need support. Which parks need funding. Which trails need building. This becomes part of the partnership from day one — not an afterthought.",
+      body: "Every new client tells us what matters in their community. Which green spaces need support. Which parks need funding. Which trails need building. This becomes part of the partnership from day one. Not an afterthought.",
     },
     {
       icon: <Heart className="w-6 h-6 text-primary" />,
       title: "At Placement",
-      body: "A donation is made in the client's and candidate's names — not Flowstate's. This isn't about us. It's about them and the community they're now both invested in together.",
+      body: "A donation is made in the client's and candidate's names. Not Flowstate's. This isn't about us. It's about them and the community they're now both invested in together.",
     },
     {
       icon: <Users className="w-6 h-6 text-primary" />,
       title: "Annually",
-      body: "We host Flowstate Field Days — volunteer events open to our entire network. Clients. Candidates. Team members. No business cards. No formal agenda. No networking theater. Just people, outside, doing something that matters.",
+      body: "We host Flowstate Field Days. Volunteer events open to our entire network. Clients. Candidates. Team members. No business cards. No formal agenda. No networking theater. Just people, outside, doing something that matters.",
     },
     {
       icon: <TreePine className="w-6 h-6 text-primary" />,
       title: "In New Markets",
-      body: "We call local leaders. We ask what they care about, what needs funding, and what projects are already in motion. Local community leaders know more than we ever could — and they're always willing to talk when someone shows up genuinely trying to help.",
+      body: "We call local leaders. We ask what they care about, what needs funding, and what projects are already in motion. Local community leaders know more than we ever could. And they're always willing to talk when someone shows up genuinely trying to help.",
     },
   ];
 

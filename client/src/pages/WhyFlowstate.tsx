@@ -50,7 +50,7 @@ export default function WhyFlowstate() {
   const coreValues = [
     {
       title: "Say the Hard Thing",
-      body: "Honesty is the highest form of caring. We tell you what you need to hear — especially when it's uncomfortable.",
+      body: "Honesty is the highest form of caring. We tell you what you need to hear. Especially when it's uncomfortable.",
     },
     {
       title: "Walk in Their Boots",
@@ -66,7 +66,7 @@ export default function WhyFlowstate() {
     },
     {
       title: "Built-In, Not Bolted On",
-      body: "We learn your company like we work there — because that's the only way to find people who truly fit.",
+      body: "We learn your company like we work there. Because that's the only way to find people who truly fit.",
     },
     {
       title: "Automate the Process. Never the Relationship.",
@@ -76,11 +76,11 @@ export default function WhyFlowstate() {
 
   const forYou = [
     "You know who you are and what you're building",
-    "You pay your people what they're worth — and you know what that number is",
+    "You pay your people what they're worth and you know what that number is",
     "You have a mission that your leadership actually lives by",
     "You believe your employees are your greatest competitive advantage",
     "You want a long-term partner, not a resume delivery service",
-    "You're obsessed with growth — for your company, your people, and your community",
+    "You're obsessed with growth for your company, your people, and your community",
     "You communicate openly, give feedback freely, and hate operating in silos",
     "You believe business can be a force for good in the world",
   ];
@@ -88,7 +88,7 @@ export default function WhyFlowstate() {
   const notForYou = [
     "You're working with 12 recruiters simultaneously and treating search like a numbers game",
     "You pay below market and wonder why your best people leave",
-    "You don't have a company mission — or have one nobody believes",
+    "You don't have a company mission. Or have one nobody believes.",
     "You think ghosting candidates is acceptable",
     "You see recruiting as a transaction",
     "You're not willing to be radically transparent about your culture, your challenges, and your goals",
@@ -378,10 +378,10 @@ export default function WhyFlowstate() {
                 Built by someone who gives a damn.
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I started Flowstate Search because I saw too many great construction companies struggling to find the leaders they deserved — and too many great candidates being ghosted, lowballed, and treated like a number. That's not how this should work.
+                I started Flowstate Search because I saw too many great construction companies struggling to find the leaders they deserved. And too many great candidates being ghosted, lowballed, and treated like a number. That's not how this should work.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We built this to be the partner I wish existed. Honest about what we know, honest about what we don't, and relentlessly focused on getting it right. When you work with Flowstate, you get a strategic ally who's bought in for the long haul — not someone chasing a quick placement fee.
+                We built this to be the partner I wish existed. Honest about what we know, honest about what we don't, and relentlessly focused on getting it right. When you work with Flowstate, you get a strategic ally who's bought in for the long haul. Not someone chasing a quick placement fee.
               </p>
               <div className="pt-4">
                 <p className="font-bold text-xl">Jordan Arp</p>
@@ -396,7 +396,7 @@ export default function WhyFlowstate() {
       <section className="py-20 bg-background border-t border-border/50">
         <div className="container text-center max-w-3xl mx-auto space-y-8">
           <p className="text-xl md:text-2xl font-medium text-foreground leading-relaxed">
-            If you're tired of waiting on applications, fighting turnover, and losing your best people to competitors — it's time for a different approach.
+            If you're tired of waiting on applications, fighting turnover, and losing your best people to competitors. It's time for a different approach.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <a href="https://schedule.flowstatesearch.com/discovery-call" target="_blank" rel="noopener noreferrer">
