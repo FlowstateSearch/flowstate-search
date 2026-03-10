@@ -71,7 +71,7 @@ export default function Community() {
               <span className="text-primary">Build Something Real.</span>
             </motion.p>
             <motion.p variants={fadeIn} className="text-xl text-white/80 max-w-xl leading-relaxed">
-              We help you build a stronger community — one placement at a time.
+              We help you build a stronger community. One placement at a time.
             </motion.p>
           </motion.div>
         </div>
