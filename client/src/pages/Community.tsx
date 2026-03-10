@@ -195,7 +195,7 @@ export default function Community() {
                 You have to show up. Put a smile on someone's face. Get your hands dirty. Learn from people whose lives look nothing like yours. Every person has a perspective worth hearing. Every neighborhood has a story worth knowing.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Flowstate Field Days exists because we believe the best relationships — in business and in life — are built outside, side by side, doing something real.
+                Flowstate Field Days exists because we believe the best relationships in business and in life are built outside, side by side, doing something real.
               </p>
               <p className="font-medium text-foreground">
                 Experiences over stuff. Connection over recognition. Presence over plaques.
@@ -237,7 +237,7 @@ export default function Community() {
               Three years from now, the measure of our success isn't a revenue number.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              It's this: people are more human because of the work we do. Relationships run deeper. Communities are stronger. And somewhere out there, a kid is playing in a park that exists because a great candidate found a great company — and Flowstate made it happen.
+              Three years from now, the measure of our success isn't a revenue number. It's this. People are more human because of the work we do. Relationships run deeper. Communities are stronger. And somewhere out there, a kid is playing in a park that exists because a great candidate found a great company and Flowstate made it happen.
             </p>
             <p className="text-primary font-semibold text-lg">That's when we'll know we made it.</p>
           </motion.div>
