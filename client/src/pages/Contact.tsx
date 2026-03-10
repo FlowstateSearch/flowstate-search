@@ -63,7 +63,7 @@ export default function Contact() {
             <div className="space-y-8">
               <div className="space-y-2">
                 <h2 className="text-2xl font-heading font-bold">Send us a message</h2>
-                <p className="text-muted-foreground">Tell us what you're dealing with. We'll get back to you within 24 hours — usually faster.</p>
+                <p className="text-muted-foreground">Tell us what you're dealing with. We'll get back to you within 24 hours. Usually faster.</p>
               </div>
 
               <form ref={form} className="space-y-6" onSubmit={sendEmail}>
