@@ -36,7 +36,7 @@ export default function StartSearch() {
               "Know who they are and what they're building",
               "Pay their people what they're worth and know what that number is",
               "Believe their employees are their greatest competitive advantage",
-              "Want a long-term partner, not a resume delivery service"
+              "Want a long-term partner, not a resume farmer"
             ].map((item, index) => (
               <div key={index} className="flex items-start gap-4 p-6 rounded-xl bg-muted/30 border border-border/50">
                 <CheckCircle2 className="w-6 h-6 text-primary mt-1 shrink-0" />
@@ -178,7 +178,7 @@ export default function StartSearch() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <a href="https://schedule.flowstatesearch.com/competitive-edge" target="_blank" rel="noopener noreferrer">
               <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover-brand-yellow h-11 px-8 text-base px-10 h-14 shadow-xl shadow-primary/20 cursor-pointer">
-                Claim Your Competitive Edge
+                Start the Search
               </div>
             </a>
             <a href="https://schedule.flowstatesearch.com/portal-demo" target="_blank" rel="noopener noreferrer">
