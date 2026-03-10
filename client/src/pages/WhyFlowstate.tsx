@@ -79,7 +79,7 @@ export default function WhyFlowstate() {
     "You pay your people what they're worth and you know what that number is",
     "You have a mission that your leadership actually lives by",
     "You believe your employees are your greatest competitive advantage",
-    "You want a long-term partner, not a resume delivery service",
+    "You want a long-term partner, not a resume farmer",
     "You're obsessed with growth for your company, your people, and your community",
     "You communicate openly, give feedback freely, and hate operating in silos",
     "You believe business can be a force for good in the world",
@@ -396,7 +396,7 @@ export default function WhyFlowstate() {
       <section className="py-20 bg-background border-t border-border/50">
         <div className="container text-center max-w-3xl mx-auto space-y-8">
           <p className="text-xl md:text-2xl font-medium text-foreground leading-relaxed">
-            If you're tired of waiting on applications, fighting turnover, and losing your best people to competitors. It's time for a different approach.
+            Tired of waiting on applications, fighting turnover, and losing your best people to competitors? It's time for a different approach.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <a href="https://schedule.flowstatesearch.com/discovery-call" target="_blank" rel="noopener noreferrer">
