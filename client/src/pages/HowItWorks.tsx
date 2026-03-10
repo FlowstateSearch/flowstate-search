@@ -113,7 +113,7 @@ export default function HowItWorks() {
                     )}
                     {step.id === 5 && (
                       <div className="mt-4 p-4 bg-muted/30 rounded-lg border-l-4 border-primary">
-                 <p className="font-bold text-primary">5-Star Candidate Satisfaction</p>                        <p className="text-sm text-muted-foreground">We treat your future leaders with respect.</p>
+                 <p className="font-bold text-primary">5-Star Candidate Experience</p>                        <p className="text-sm text-muted-foreground">Everyone gets feedback. Even the ones we don't place.</p>
                       </div>
                     )}
                     {step.id === 6 && (
