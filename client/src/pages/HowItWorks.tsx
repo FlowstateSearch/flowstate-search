@@ -65,7 +65,7 @@ export default function HowItWorks() {
             A Hiring Process <span className="text-primary">Built for Construction</span>.
           </h1>
           <p className="font-heading font-bold mt-3 mb-6" style={{ fontSize: 'clamp(1.25rem, 2.5vw, 2rem)' }}>
-            Designed to Maintain Schedule, Reduce Turnover, and Strengthen Project Delivery.
+            Because missed schedules, high turnover, and project delays all have one thing in common. The wrong person in the wrong seat.
           </p>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             No stops and starts. No email chaos. A clear, strategic path to finding leaders who will actually thrive on your team.
