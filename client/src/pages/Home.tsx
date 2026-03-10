@@ -498,7 +498,7 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl md:text-4xl font-heading font-bold">Built-In, Not Bolted On.</h2>
             <p className="text-lg text-muted-foreground">
-              We've built trust with 500+ construction executives who refer us to their peers when we're mapping the market. That gives us access to talent that never hits job boards. Every placement is built on a foundation of trust and designed to create lasting impact for your business, your new hire, and your community.
+              We've built trust with 500+ construction executives who refer us to their peers when we're mapping the market. That gives us access to talent that never hits job boards. Every placement is built to last. For your business, your new hire, and your community.
             </p>
           </div>
 
