@@ -78,10 +78,10 @@ export default function HowItWorks() {
         <div className="container max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-2xl md:text-3xl font-heading font-bold">A True Partner, Not Just a Resume Vendor</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Traditional recruiting is full of friction which leads to missed deadlines, frustrated clients, and millions lost in backlog bottlenecks.
+            Traditional recruiting is full of friction. Missed deadlines, frustrated clients, and millions lost in backlog bottlenecks.
           </p>
           <p className="text-lg font-medium text-foreground">
-            Our process keeps projects moving and hiring momentum strong. From the moment we kick off your search to the day your new hire starts, you'll have visibility, momentum, and a partner who stays in the zone.
+            Our process keeps things moving from kickoff to close. You'll have visibility, momentum, and a partner who never disappears on you.
           </p>
         </div>
       </section>
