@@ -48,9 +48,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               </Link>
             ))}
-            <a href="https://schedule.flowstatesearch.com/portal-demo" target="_blank" rel="noopener noreferrer">
+            <a href="https://schedule.flowstatesearch.com/discovery-call" target="_blank" rel="noopener noreferrer">
               <Button variant="default" size="sm" className="font-semibold hover-brand-yellow">
-                Request Portal Demo
+                Book a 15-Min Call
               </Button>
             </a>
           </nav>
@@ -78,9 +78,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     </div>
                   </Link>
                 ))}
-                <a href="https://schedule.flowstatesearch.com/portal-demo" target="_blank" rel="noopener noreferrer">
+                <a href="https://schedule.flowstatesearch.com/discovery-call" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full mt-2 hover-brand-yellow" onClick={() => setIsMobileMenuOpen(false)}>
-                    Request Portal Demo
+                    Book a 15-Min Call
                   </Button>
                 </a>
               </nav>
@@ -118,8 +118,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   </li>
                 ))}
                 <li>
-                  <a href="https://schedule.flowstatesearch.com/portal-demo" target="_blank" rel="noopener noreferrer">
-                    <div className="hover:text-primary transition-colors cursor-pointer">Request Portal Demo</div>
+                  <a href="https://schedule.flowstatesearch.com/discovery-call" target="_blank" rel="noopener noreferrer">
+                    <div className="hover:text-primary transition-colors cursor-pointer">Book a 15-Min Call</div>
                   </a>
                 </li>
               </ul>
