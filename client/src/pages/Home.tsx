@@ -547,7 +547,7 @@ export default function Home() {
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                     <Users className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-bold font-heading">Radical Transparency</h3>
+                  <h3 className="text-xl font-bold font-heading">Straight Talk</h3>
                   <p className="text-muted-foreground">
                     We tell you the red flags and the green flags for every candidate. No surprises, no spin. Just honest partnership.
                   </p>
