@@ -257,7 +257,7 @@ export default function WhyFlowstate() {
             <div className="p-8 rounded-2xl bg-muted/30 border border-border/50 space-y-4">
               <div className="text-4xl font-bold font-mono text-primary">5-Star</div>
               <h3 className="font-bold text-lg">Candidate Experience</h3>
-              <p className="text-sm text-muted-foreground">Everyone gets feedback. Everyone gets respect.</p>
+              <p className="text-sm text-muted-foreground">Everyone gets feedback. Even the ones we don't place.</p>
             </div>
             <div className="p-8 rounded-2xl bg-muted/30 border border-border/50 space-y-4">
               <div className="text-4xl font-bold font-mono text-primary">200+</div>
