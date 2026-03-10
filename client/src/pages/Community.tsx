@@ -91,10 +91,10 @@ export default function Community() {
               Every placement creates a ripple.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              A great candidate finds meaningful work. They show up differently — as a better partner, parent, friend, and neighbor. The company gains a leader who is bought in, engaged, and invested. That company serves its clients better, builds safer job sites, and strengthens its community.
+              A great candidate finds meaningful work. They show up differently. As a better partner, parent, friend, and neighbor. The company gains a leader who is bought in, engaged, and invested. That company serves its clients better, builds safer job sites, and strengthens its community.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              One placement. Infinite ripple. That is why we exist.
+              One placement. The ripple goes further than you think. That is why we exist.
             </p>
             <p className="text-base text-muted-foreground/70 italic">
               The dollars matter. The hours matter more. The relationships change everything.
