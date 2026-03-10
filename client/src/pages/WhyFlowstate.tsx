@@ -141,7 +141,7 @@ export default function WhyFlowstate() {
                   "Align office and field decision-makers without the back-and-forth",
                   "Reduce weeks of delays so projects start on schedule",
                   "Prevent costly mis-hires before they happen",
-                  "Full transparency into your search — every step of the way",
+                  "No more wondering. You see every step of the search in real time.",
                 ].map((benefit) => (
                   <div key={benefit} className="flex items-center gap-3">
                     <div className="w-6 h-6 rounded-full bg-green-500/10 flex items-center justify-center text-green-600 shrink-0">
