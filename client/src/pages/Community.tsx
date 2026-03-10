@@ -96,9 +96,7 @@ export default function Community() {
             <p className="text-lg text-muted-foreground leading-relaxed">
               One placement. The ripple goes further than you think. That is why we exist.
             </p>
-            <p className="text-base text-muted-foreground/70 italic">
-              The dollars matter. The hours matter more. The relationships change everything.
-            </p>
+
           </motion.div>
         </div>
       </section>
@@ -160,6 +158,21 @@ export default function Community() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Statement Break */}
+      <section className="py-24 bg-background">
+        <div className="container max-w-3xl text-center">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="text-2xl md:text-3xl font-bold text-foreground leading-snug"
+          >
+            The dollars matter. The hours matter more.<br />The relationships change everything.
+          </motion.p>
         </div>
       </section>
 
