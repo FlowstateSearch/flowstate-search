@@ -136,7 +136,7 @@ export default function Home() {
                   <img 
                     src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/WebsiteGif_7dc469bc.gif" 
                     alt="Founder Introduction" 
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover" style={{ objectPosition: 'center 25%' }}
                   />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all"></div>
                   <div className="absolute bottom-4 left-4 right-4 text-center">
