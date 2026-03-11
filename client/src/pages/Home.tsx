@@ -155,7 +155,8 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3 }}
-              className="relative max-w-2xl w-full bg-background rounded-xl shadow-2xl border-2 border-border overflow-hidden" 
+              className="relative bg-background rounded-xl shadow-2xl border-2 border-border overflow-hidden" 
+              style={{ width: 'min(360px, 90vw)' }}
               onClick={(e) => e.stopPropagation()}
             >
               <button 
@@ -164,13 +165,13 @@ export default function Home() {
               >
                 <X className="w-5 h-5" />
               </button>
-              <div className="aspect-video bg-black">
+              <div className="bg-black" style={{ aspectRatio: '9/16' }}>
                 <video
                   className="w-full h-full"
                   controls
                   autoPlay
                   playsInline
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/mXrFvWhbzTPTVOIQ.mov"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/WebsiteIntroVideo_8bb0a6dd.mp4"
                 >
                   Your browser does not support the video tag.
                 </video>
