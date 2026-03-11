@@ -134,7 +134,7 @@ export default function Home() {
               >
                 <div className="relative w-full h-full bg-black flex items-center justify-center">
                   <img 
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232464487/dbBspvJJKWBHFkln.gif" 
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/WebsiteGif_7dc469bc.gif" 
                     alt="Founder Introduction" 
                     className="w-full h-full object-cover"
                   />
