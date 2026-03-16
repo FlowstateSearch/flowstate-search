@@ -8,7 +8,7 @@ const AUTHOR = {
   photo: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/jordan-arp-headshot_4d62367f.jpg",
 };
 
-const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-cost-bad-hire_d2f179a0.jpg";
+const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-post1-hero_5bdbd104.webp";
 
 export default function CostOfBadHire() {
   useEffect(() => {
