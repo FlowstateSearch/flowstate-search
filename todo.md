@@ -401,3 +401,7 @@
 - [ ] Build SEO landing page: /construction-superintendent-recruiter
 - [ ] Source real construction photography for blog post headers
 - [ ] Register all new routes in App.tsx
+
+## Blog Design Overhaul & Backdating
+- [ ] Backdate posts: Oct 2025 (Passive Candidates), Nov 2025 (Talent Shortage), Dec 2025 (Retained vs Contingency), Jan 2026 (Super Salary), Feb 2026 (PM Salary), Mar 2026 (Cost of Bad Hire)
+- [ ] Redesign all 6 posts: more whitespace, larger section headings, pull-out stat callouts, cleaner paragraph spacing, better scannability

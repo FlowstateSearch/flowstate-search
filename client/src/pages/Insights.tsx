@@ -7,49 +7,55 @@ const posts = [
     slug: "/blog/cost-of-bad-hire-construction",
     category: "Hiring Strategy",
     title: "The Real Cost of a Bad Construction Executive Hire in 2026",
-    description: "A failed construction executive hire costs $500K–$1.2M and 12–18 months of your time. Here's exactly where the money goes — and how to stop it from happening again.",
+    description: "A failed construction executive hire costs $500K to $1.2M and 12 to 18 months of your time. Here is exactly where the money goes and how to stop it from happening again.",
     readTime: "7 min",
+    date: "March 4, 2026",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-cost-bad-hire_d2f179a0.jpg",
   },
   {
     slug: "/blog/construction-project-manager-salary",
     category: "Salary Data",
     title: "Construction Project Manager Salary Guide 2026: What PMs Actually Earn",
-    description: "National medians, salary by experience level, project type, and geography — plus what drives above-market comp.",
+    description: "National medians, salary by experience level, project type, and geography. Plus what drives above-market comp.",
     readTime: "9 min",
+    date: "February 11, 2026",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-pm-salary_71f36616.jpg",
   },
   {
     slug: "/blog/construction-superintendent-salary",
     category: "Salary Data",
     title: "Construction Superintendent Salary Guide 2026: What Supers Actually Earn",
-    description: "Salary by experience level, project type, and market — plus the superintendent shortage driving comp above median.",
+    description: "Salary by experience level, project type, and market. Plus the superintendent shortage driving comp above median.",
     readTime: "7 min",
+    date: "January 14, 2026",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-super-salary_92d0929a.jpg",
-  },
-  {
-    slug: "/blog/how-to-find-passive-construction-candidates",
-    category: "Hiring Strategy",
-    title: "How to Find Passive Construction Candidates (Who Aren't on Job Boards)",
-    description: "The best construction executives aren't on job boards. Here's exactly how to find the people who are currently employed, performing well, and not looking — but open to the right conversation.",
-    readTime: "6 min",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-passive-candidates_394d5afe.jpg",
-  },
-  {
-    slug: "/blog/construction-talent-shortage-2026",
-    category: "Market Intelligence",
-    title: "Construction Talent Shortage 2026: What Every Hiring Manager Needs to Know",
-    description: "The shortage is worse than the headlines suggest. Here's what's actually driving it, which roles are hardest to fill, and what companies doing it right are doing differently.",
-    readTime: "6 min",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-talent-shortage_bc9cb61f.jpg",
   },
   {
     slug: "/blog/retained-vs-contingency-construction-recruiting",
     category: "Recruiting Models",
     title: "Retained vs. Contingency Construction Recruiting: Which Model Is Right for You?",
-    description: "What's the actual difference, when does each model make sense, and why Flowstate only does retained. A straight answer with no spin.",
+    description: "What is the actual difference, when does each model make sense, and why Flowstate only does retained. A straight answer with no spin.",
     readTime: "5 min",
+    date: "December 9, 2025",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-retained-vs-contingency_f0d5f3c3.jpg",
+  },
+  {
+    slug: "/blog/construction-talent-shortage-2026",
+    category: "Market Intelligence",
+    title: "Construction Talent Shortage 2026: What Every Hiring Manager Needs to Know",
+    description: "The shortage is worse than the headlines suggest. Here is what is actually driving it, which roles are hardest to fill, and what companies doing it right are doing differently.",
+    readTime: "6 min",
+    date: "November 11, 2025",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-talent-shortage_bc9cb61f.jpg",
+  },
+  {
+    slug: "/blog/how-to-find-passive-construction-candidates",
+    category: "Recruiting Strategy",
+    title: "How to Find Passive Construction Candidates (Who Aren't on Job Boards)",
+    description: "The best construction executives are not on job boards. Here is exactly how to find the people who are currently employed, performing well, and not looking — but open to the right conversation.",
+    readTime: "6 min",
+    date: "October 14, 2025",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-passive-candidates_394d5afe.jpg",
   },
 ];
 
@@ -98,6 +104,7 @@ export default function Insights() {
                 </h2>
                 <p className="text-sm text-muted-foreground leading-relaxed">{featured.description}</p>
                 <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                  <span>{featured.date}</span>
                   <span className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" />{featured.readTime} read</span>
                 </div>
                 <div className="flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">
@@ -130,6 +137,10 @@ export default function Insights() {
                   {post.title}
                 </h3>
                 <p className="text-xs text-muted-foreground leading-relaxed mb-3 line-clamp-2">{post.description}</p>
+                <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
+                  <span>{post.date}</span>
+                  <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{post.readTime}</span>
+                </div>
                 <div className="flex items-center gap-1.5 text-xs font-semibold text-primary group-hover:gap-2.5 transition-all mt-auto">
                   Read more <ArrowRight className="w-3.5 h-3.5" />
                 </div>
