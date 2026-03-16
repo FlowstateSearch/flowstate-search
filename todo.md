@@ -379,3 +379,25 @@
 - [x] Restore subheadline: "Designed to Maintain Schedule, Reduce Turnover, and Strengthen Project Delivery"
 - [x] Restore intro copy: "A True Partner, Not Just a Resume Vendor" section with original body copy
 - [x] Redesign core values section on Why Flowstate: vertical manifesto-style list (no tiles)
+
+## SEO & Blog/Insights Implementation
+
+- [ ] Upload Jordan's headshot to CDN
+- [ ] Update site-wide metadata: title tags, meta descriptions on all existing pages
+- [ ] Add Open Graph / Twitter card meta tags to all pages
+- [ ] Add Article schema markup to blog posts
+- [ ] Build /insights index page (Apple-style, clean, minimal)
+- [ ] Add "From the Field" section to homepage (dark bg grid, above footer)
+- [ ] Add /insights footer link
+- [ ] Build single blog post template (Apple-style design framework)
+- [ ] Build Blog Post 1: /blog/cost-of-bad-hire-construction
+- [ ] Get Jordan approval on Post 1 design before building remaining posts
+- [ ] Build Blog Post 2: /blog/construction-project-manager-salary
+- [ ] Build Blog Post 3: /blog/construction-superintendent-salary
+- [ ] Build Blog Post 4: /blog/how-to-find-passive-construction-candidates
+- [ ] Build Blog Post 5: /blog/construction-talent-shortage-2026
+- [ ] Build Blog Post 6: /blog/retained-vs-contingency-construction-recruiting
+- [ ] Build SEO landing page: /construction-project-manager-recruiter
+- [ ] Build SEO landing page: /construction-superintendent-recruiter
+- [ ] Source real construction photography for blog post headers
+- [ ] Register all new routes in App.tsx

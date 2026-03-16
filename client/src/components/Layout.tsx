@@ -95,7 +95,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Footer */}
       <footer className="border-t border-border bg-muted/30">
         <div className="container py-12 md:py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
             {/* Brand Column */}
             <div className="space-y-4">
               <Link href="/">
@@ -122,6 +122,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     <div className="hover:text-primary transition-colors cursor-pointer">Book a 15-Min Call</div>
                   </a>
                 </li>
+              </ul>
+            </div>
+
+            {/* Insights */}
+            <div className="space-y-4">
+              <h4 className="font-heading font-semibold text-sm uppercase tracking-wider text-foreground/80">Insights</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/insights"><div className="hover:text-primary transition-colors cursor-pointer">All Posts</div></Link></li>
+                <li><Link href="/blog/cost-of-bad-hire-construction"><div className="hover:text-primary transition-colors cursor-pointer">Cost of a Bad Hire</div></Link></li>
+                <li><Link href="/blog/construction-project-manager-salary"><div className="hover:text-primary transition-colors cursor-pointer">PM Salary Guide 2026</div></Link></li>
+                <li><Link href="/blog/construction-superintendent-salary"><div className="hover:text-primary transition-colors cursor-pointer">Superintendent Salary 2026</div></Link></li>
               </ul>
             </div>
 

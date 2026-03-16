@@ -724,6 +724,62 @@ export default function Home() {
         </div>
       </section>
 
+      {/* From the Field — Insights Section */}
+      <section className="py-16 md:py-20 bg-[#0f1117] text-white">
+        <div className="container">
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <p className="text-xs font-mono uppercase tracking-widest text-primary mb-2">From the Field</p>
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-white leading-tight">Straight talk on construction recruiting.</h2>
+            </div>
+            <Link href="/insights">
+              <div className="hidden md:flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-3 transition-all cursor-pointer">
+                All posts <ArrowRight className="w-4 h-4" />
+              </div>
+            </Link>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/blog/cost-of-bad-hire-construction">
+              <div className="group cursor-pointer border border-white/10 rounded-xl p-6 hover:border-primary/40 hover:bg-white/5 transition-all">
+                <p className="text-xs font-mono uppercase tracking-widest text-primary mb-3">Hiring Strategy</p>
+                <h3 className="text-base font-heading font-bold text-white group-hover:text-primary transition-colors leading-snug mb-2">The Real Cost of a Bad Construction Executive Hire in 2026</h3>
+                <p className="text-xs text-white/50 leading-relaxed">A failed hire costs $500K–$1.2M. Here's exactly where the money goes.</p>
+                <div className="flex items-center gap-1 text-xs font-semibold text-primary mt-4 group-hover:gap-2 transition-all">
+                  Read <ArrowRight className="w-3 h-3" />
+                </div>
+              </div>
+            </Link>
+            <Link href="/blog/construction-project-manager-salary">
+              <div className="group cursor-pointer border border-white/10 rounded-xl p-6 hover:border-primary/40 hover:bg-white/5 transition-all">
+                <p className="text-xs font-mono uppercase tracking-widest text-primary mb-3">Salary Data</p>
+                <h3 className="text-base font-heading font-bold text-white group-hover:text-primary transition-colors leading-snug mb-2">Construction Project Manager Salary Guide 2026</h3>
+                <p className="text-xs text-white/50 leading-relaxed">What PMs actually earn — by experience, project type, and market.</p>
+                <div className="flex items-center gap-1 text-xs font-semibold text-primary mt-4 group-hover:gap-2 transition-all">
+                  Read <ArrowRight className="w-3 h-3" />
+                </div>
+              </div>
+            </Link>
+            <Link href="/blog/retained-vs-contingency-construction-recruiting">
+              <div className="group cursor-pointer border border-white/10 rounded-xl p-6 hover:border-primary/40 hover:bg-white/5 transition-all">
+                <p className="text-xs font-mono uppercase tracking-widest text-primary mb-3">Recruiting Models</p>
+                <h3 className="text-base font-heading font-bold text-white group-hover:text-primary transition-colors leading-snug mb-2">Retained vs. Contingency Construction Recruiting</h3>
+                <p className="text-xs text-white/50 leading-relaxed">What's the actual difference — and why Flowstate only does retained.</p>
+                <div className="flex items-center gap-1 text-xs font-semibold text-primary mt-4 group-hover:gap-2 transition-all">
+                  Read <ArrowRight className="w-3 h-3" />
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="mt-8 md:hidden">
+            <Link href="/insights">
+              <div className="flex items-center gap-1.5 text-sm font-semibold text-primary cursor-pointer">
+                View all posts <ArrowRight className="w-4 h-4" />
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Old CTA Section - Removed */}
       <section className="py-24 bg-primary text-primary-foreground" style={{display: 'none'}}>
         <div className="container text-center space-y-8">

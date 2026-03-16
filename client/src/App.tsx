@@ -21,6 +21,8 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import LLMResources from "./pages/LLMResources";
 import AdminPortals from "./pages/AdminPortals";
 import Community from "./pages/Community";
+import Insights from "./pages/Insights";
+import CostOfBadHire from "./pages/blog/CostOfBadHire";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -41,6 +43,8 @@ function Router() {
       <Route path="/llm-resources" component={LLMResources} />
       <Route path="/admin/portals" component={AdminPortals} />
       <Route path="/community" component={Community} />
+      <Route path="/insights" component={Insights} />
+      <Route path="/blog/cost-of-bad-hire-construction" component={CostOfBadHire} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
