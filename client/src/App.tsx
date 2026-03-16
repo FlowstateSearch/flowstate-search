@@ -23,6 +23,13 @@ import AdminPortals from "./pages/AdminPortals";
 import Community from "./pages/Community";
 import Insights from "./pages/Insights";
 import CostOfBadHire from "./pages/blog/CostOfBadHire";
+import PMSalary from "./pages/blog/PMSalary";
+import SuperintendentSalary from "./pages/blog/SuperintendentSalary";
+import PassiveCandidates from "./pages/blog/PassiveCandidates";
+import TalentShortage from "./pages/blog/TalentShortage";
+import RetainedVsContingency from "./pages/blog/RetainedVsContingency";
+import PMRecruiter from "./pages/seo/PMRecruiter";
+import SuperintendentRecruiter from "./pages/seo/SuperintendentRecruiter";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -45,6 +52,13 @@ function Router() {
       <Route path="/community" component={Community} />
       <Route path="/insights" component={Insights} />
       <Route path="/blog/cost-of-bad-hire-construction" component={CostOfBadHire} />
+      <Route path="/blog/construction-project-manager-salary" component={PMSalary} />
+      <Route path="/blog/construction-superintendent-salary" component={SuperintendentSalary} />
+      <Route path="/blog/how-to-find-passive-construction-candidates" component={PassiveCandidates} />
+      <Route path="/blog/construction-talent-shortage-2026" component={TalentShortage} />
+      <Route path="/blog/retained-vs-contingency-construction-recruiting" component={RetainedVsContingency} />
+      <Route path="/construction-project-manager-recruiter" component={PMRecruiter} />
+      <Route path="/construction-superintendent-recruiter" component={SuperintendentRecruiter} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
