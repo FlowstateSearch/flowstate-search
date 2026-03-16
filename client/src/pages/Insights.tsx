@@ -63,7 +63,7 @@ export default function Insights() {
   useEffect(() => {
     document.title = "Insights | Flowstate Search";
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Straight talk on construction recruiting, hiring strategy, and the talent market. From the field, not a content farm.");
+    if (meta) meta.setAttribute("content", "Recruiting strategy, salary data, and market intelligence for construction leaders. Written by someone who does this work every day.");
   }, []);
 
   const [featured, ...rest] = posts;
@@ -78,7 +78,7 @@ export default function Insights() {
             Insights
           </h1>
           <p className="text-base text-muted-foreground max-w-lg leading-relaxed">
-            Straight talk on construction recruiting, hiring strategy, and the talent market. No filler. No SEO fluff. Just what you actually need to know.
+            Recruiting strategy, salary data, and market intelligence for construction leaders. Written by someone who does this work every day.
           </p>
         </div>
       </div>
