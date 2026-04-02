@@ -140,11 +140,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="space-y-4">
               <h4 className="font-heading font-semibold text-sm uppercase tracking-wider text-foreground/80">Roles We Recruit</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>Project Managers</li>
-                <li>Superintendents</li>
-                <li>Directors (Ops, Sales, Construction)</li>
-                <li>VPs & Regional Managers</li>
-                <li>Business Development</li>
+                <li>Chief Operating Officer / President</li>
+                <li>VP of Operations</li>
+                <li>VP of Construction</li>
+                <li>Project Executive</li>
+                <li>Director of Operations / Construction</li>
+                <li>Director of Sales / BD</li>
+                <li>Senior Project Manager</li>
+                <li>General Superintendent</li>
               </ul>
             </div>
 

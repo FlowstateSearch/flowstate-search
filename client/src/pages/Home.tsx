@@ -616,14 +616,14 @@ export default function Home() {
             className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto"
           >
             {[
-              "Project Managers",
-              "Superintendents",
-              "Director of Operations",
-              "Director of Construction",
-              "Director of Sales / BD",
+              "Chief Operating Officer / President",
               "VP of Operations",
-              "Regional Managers",
-              "Senior Estimators"
+              "VP of Construction",
+              "Project Executive",
+              "Director of Operations / Construction",
+              "Director of Sales / BD",
+              "Senior Project Manager",
+              "General Superintendent"
             ].map((role, index) => (
               <motion.div key={index} variants={fadeIn}>
                 <Card className="bg-muted/30 border-border/50 hover:border-primary/30 transition-all hover:shadow-md">
