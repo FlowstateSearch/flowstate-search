@@ -626,8 +626,8 @@ export default function Home() {
               "General Superintendent"
             ].map((role, index) => (
               <motion.div key={index} variants={fadeIn}>
-                <Card className="bg-muted/30 border-border/50 hover:border-primary/30 transition-all hover:shadow-md">
-                  <CardContent className="p-6 text-center">
+                <Card className="bg-muted/30 border-border/50 hover:border-primary/30 transition-all hover:shadow-md h-24">
+                  <CardContent className="p-6 h-full flex items-center justify-center text-center">
                     <p className="font-bold text-foreground">{role}</p>
                   </CardContent>
                 </Card>
