@@ -66,7 +66,7 @@ export default function Home() {
               </motion.h1>
               
               <motion.p variants={fadeIn} className="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
-                The project managers and superintendents driving your competitors' biggest wins. We bring them to you.
+                The construction executives driving your competitors' biggest wins. We bring them to you.
               </motion.p>
               
               {/* 5-Star Review Badge */}
