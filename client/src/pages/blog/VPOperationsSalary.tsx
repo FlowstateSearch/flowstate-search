@@ -134,7 +134,7 @@ export default function VPOperationsSalary() {
           </table>
         </div>
         <p className="text-sm text-gray-400 mb-16">
-          Base salary only. Source: CFMA 2025 Executive Compensation Survey for Contractors. Average bonus for this role is $113,143, bringing total average compensation to approximately $328,000.
+          Base salary only. Source: CFMA 2025 Executive Compensation Survey for Contractors. Bonus typically ranges from $50K–$150K depending on company size and performance.
         </p>
 
         {/* Pull quote */}
