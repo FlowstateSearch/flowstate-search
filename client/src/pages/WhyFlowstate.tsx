@@ -252,7 +252,7 @@ export default function WhyFlowstate() {
             <div className="p-8 rounded-2xl bg-muted/30 border border-border/50 space-y-4">
               <div className="text-4xl font-bold font-mono text-primary">91%</div>
               <h3 className="font-bold text-lg">Retention Rate</h3>
-              <p className="text-sm text-muted-foreground">Of the leaders I've placed are still with their companies today — measured at 12 months post-placement.</p>
+              <p className="text-sm text-muted-foreground">Of the leaders I've placed are still with their companies today. Measured at 12 months post-placement.</p>
             </div>
             <div className="p-8 rounded-2xl bg-muted/30 border border-border/50 space-y-4">
               <div className="text-4xl font-bold font-mono text-primary">5-Star</div>
@@ -269,10 +269,10 @@ export default function WhyFlowstate() {
           {/* Context block */}
           <div className="border-t border-border/40 pt-10 space-y-5 max-w-2xl mx-auto text-center">
             <p className="text-lg text-foreground leading-relaxed">
-              That 91% is mine — built search by search, long before Flowstate had a name. It's not a company stat. It's a personal one. What it tells you: when I say I only take searches I believe in and only present candidates I'd stake my reputation on, this is what that looks like over time.
+              That 91% is mine. Built search by search, long before Flowstate had a name. It's not a company stat. It's a personal one. What it tells you: when I say I only take searches I believe in and only present candidates I'd stake my reputation on, this is what that looks like over time.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
-              We run a focused number of searches at any given time — intentionally. Every engagement gets a defined process, dedicated research, and direct access from kickoff to close. You won't get handed off. You won't wonder where things stand.
+              We run a focused number of searches at any given time. Intentionally. Every engagement gets a defined process, dedicated research, and direct access from kickoff to close. You won't get handed off. You won't wonder where things stand.
             </p>
             <p className="font-semibold text-foreground">
               Flowstate is new. The standard we hold every search to isn't.
