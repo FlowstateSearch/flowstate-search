@@ -273,7 +273,6 @@ export default function VPOperationsSalary() {
             className="inline-flex items-center justify-center bg-[#00a69c] text-white font-semibold text-sm px-8 py-3 rounded-lg hover:bg-[#008f86] transition-colors">
             Book a 15-Minute Call
           </a>
-          <p className="text-xs text-gray-500 mt-5">No pitch. Just a straight answer.</p>
         </div>
       </div>
 
