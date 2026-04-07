@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Check, X, Zap, Layout, Users, ShieldCheck, Target, ArrowRight } from "lucide-react";
+import { Check, X, Zap, Layout, Users, ShieldCheck, Target, ArrowRight, Linkedin } from "lucide-react";
 import { useEffect, useState } from "react";
 
 function CoreValueRow({ value, index }: { value: { title: string; body: string }; index: number }) {
@@ -386,6 +386,15 @@ export default function WhyFlowstate() {
               <div className="pt-4">
                 <p className="font-bold text-xl">Jordan Arp</p>
                 <p className="text-muted-foreground">Founder, Flowstate Search</p>
+                <a
+                  href="https://www.linkedin.com/in/jordan-arp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mt-3 text-sm text-primary hover:text-primary/80 transition-colors font-medium"
+                >
+                  <Linkedin className="w-4 h-4" />
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
           </div>

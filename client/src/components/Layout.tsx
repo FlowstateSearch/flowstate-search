@@ -1,7 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { Menu, Linkedin } from "lucide-react";
 import { useState, useEffect } from "react";
 import BackToTop from "@/components/BackToTop";
 
@@ -104,6 +104,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Building More Than Buildings.
               </p>
+              <a
+                href="https://www.linkedin.com/company/flowstatesearch"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mt-1"
+              >
+                <Linkedin className="w-4 h-4" />
+                LinkedIn
+              </a>
             </div>
 
             {/* Quick Links */}

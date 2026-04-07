@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "wouter";
-import { ArrowLeft, Clock, Calendar } from "lucide-react";
+import { ArrowLeft, Clock, Calendar, Linkedin } from "lucide-react";
 
 const AUTHOR = {
   name: "Jordan Arp",
@@ -59,7 +59,7 @@ export default function PMSalary() {
           <div className="flex items-center gap-3">
             <img src={AUTHOR.photo} alt={AUTHOR.name} className="w-10 h-10 rounded-full object-cover object-top ring-2 ring-gray-100" />
             <div>
-              <p className="text-sm font-semibold text-gray-900 leading-none">{AUTHOR.name}</p>
+              <a href="https://www.linkedin.com/in/jordan-arp/" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-gray-900 leading-none hover:text-[#00a69c] transition-colors flex items-center gap-1">{AUTHOR.name}<Linkedin className="w-3 h-3 inline ml-1" /></a>
               <p className="text-xs text-gray-400 mt-1">{AUTHOR.title}</p>
             </div>
           </div>
