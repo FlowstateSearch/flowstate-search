@@ -10,7 +10,7 @@ const posts = [
     description: "Real comp data by company revenue size, bonus structures, and why most companies are losing this search before it even starts.",
     readTime: "9 min",
     date: "April 7, 2026",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-pm-salary_71f36616.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/VPofOpssalaryguide_2e9165f2.webp",
   },
   {
     slug: "/blog/cost-of-bad-hire-construction",
@@ -19,7 +19,7 @@ const posts = [
     description: "A failed construction executive hire costs $500K to $1.2M and 12 to 18 months of your time. Here is exactly where the money goes and how to stop it from happening again.",
     readTime: "7 min",
     date: "March 4, 2026",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-cost-bad-hire_d2f179a0.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/Realcosrtofconstructionexecutive_43793185.webp",
   },
   {
     slug: "/blog/construction-project-manager-salary",
@@ -28,7 +28,7 @@ const posts = [
     description: "National medians, salary by experience level, project type, and geography. Plus what drives above-market comp.",
     readTime: "9 min",
     date: "February 11, 2026",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-pm-salary_71f36616.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/CroppedPMsalaryGuide_11be8fa6.png",
   },
   {
     slug: "/blog/construction-superintendent-salary",
@@ -46,7 +46,7 @@ const posts = [
     description: "What is the actual difference, when does each model make sense, and why Flowstate only does retained. A straight answer with no spin.",
     readTime: "5 min",
     date: "December 9, 2025",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-retained-vs-contingency_f0d5f3c3.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/retainedvscontingentsearch_d5a7c4e1.webp",
   },
   {
     slug: "/blog/construction-talent-shortage-2026",
@@ -64,7 +64,7 @@ const posts = [
     description: "The best construction executives are not on job boards. Here is exactly how to find the people who are currently employed, performing well, and not looking but open to the right conversation.",
     readTime: "6 min",
     date: "October 14, 2025",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-passive-candidates_394d5afe.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/howtofindpassivecandidates_72c1bdb9.webp",
   },
 ];
 
