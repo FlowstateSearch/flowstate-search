@@ -266,9 +266,6 @@ export default function PMSalary() {
           <h3 className="text-2xl font-bold mb-4 leading-snug">
             We will give you a straight answer on comp, candidate availability, and what it takes to close the person you want.
           </h3>
-          <p className="text-gray-400 leading-relaxed mb-8">
-            No pitch. Just a straight answer.
-          </p>
           <a href="https://schedule.flowstatesearch.com/your-next-hire" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-[#00a69c] text-white font-semibold text-sm px-8 py-3 rounded-lg hover:bg-[#008f86] transition-colors">
             Book a 15-Minute Call
