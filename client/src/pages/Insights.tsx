@@ -4,6 +4,15 @@ import { ArrowRight, Clock } from "lucide-react";
 
 const posts = [
   {
+    slug: "/blog/construction-vp-operations-salary",
+    category: "Salary Data",
+    title: "VP of Operations Construction Salary Guide 2026: What the Market Actually Pays",
+    description: "Real comp data by company revenue size, bonus structures, and why most companies are losing this search before it even starts.",
+    readTime: "9 min",
+    date: "April 7, 2026",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-pm-salary_71f36616.jpg",
+  },
+  {
     slug: "/blog/cost-of-bad-hire-construction",
     category: "Hiring Strategy",
     title: "The Real Cost of a Bad Construction Executive Hire in 2026",

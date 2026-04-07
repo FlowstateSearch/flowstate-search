@@ -28,6 +28,7 @@ import SuperintendentSalary from "./pages/blog/SuperintendentSalary";
 import PassiveCandidates from "./pages/blog/PassiveCandidates";
 import TalentShortage from "./pages/blog/TalentShortage";
 import RetainedVsContingency from "./pages/blog/RetainedVsContingency";
+import VPOperationsSalary from "./pages/blog/VPOperationsSalary";
 import PMRecruiter from "./pages/seo/PMRecruiter";
 import SuperintendentRecruiter from "./pages/seo/SuperintendentRecruiter";
 function Router() {
@@ -57,6 +58,7 @@ function Router() {
       <Route path="/blog/how-to-find-passive-construction-candidates" component={PassiveCandidates} />
       <Route path="/blog/construction-talent-shortage-2026" component={TalentShortage} />
       <Route path="/blog/retained-vs-contingency-construction-recruiting" component={RetainedVsContingency} />
+      <Route path="/blog/construction-vp-operations-salary" component={VPOperationsSalary} />
       <Route path="/construction-project-manager-recruiter" component={PMRecruiter} />
       <Route path="/construction-superintendent-recruiter" component={SuperintendentRecruiter} />
       <Route path="/404" component={NotFound} />
