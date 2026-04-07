@@ -13,7 +13,7 @@ export default function PMSalary() {
   useEffect(() => {
     document.title = "Construction Project Manager Salary Guide 2026 | Flowstate Search";
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "What do construction project managers actually earn in 2026? National medians, salary by experience level, project type, and geography — plus what drives above-market comp.");
+    if (meta) meta.setAttribute("content", "What do construction project managers actually earn in 2026? National medians, salary by experience level, project type, and geography. plus what drives above-market comp.");
 
     const script = document.createElement("script");
     script.type = "application/ld+json";
@@ -87,13 +87,13 @@ export default function PMSalary() {
 
         {/* Section 1 */}
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-          The National Median — And Why It Lies to You
+          The National Median. And Why It Lies to You
         </h2>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
           According to the U.S. Bureau of Labor Statistics, the median annual wage for construction managers is $104,900 as of the most recent reporting period. That number is accurate. It is also nearly useless for making a competitive offer to a high-performing project manager in 2026.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          The median includes every construction manager in the country — from residential PMs in rural markets to senior project executives running $500 million commercial projects in major metros. When you compress that range into a single number, you get a figure that is too high for some markets and embarrassingly low for others.
+          The median includes every construction manager in the country. from residential PMs in rural markets to senior project executives running $500 million commercial projects in major metros. When you compress that range into a single number, you get a figure that is too high for some markets and embarrassingly low for others.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
           The number you need is not the median. It is the 75th percentile for your specific project type, in your specific market, for a PM with your specific experience requirements. That number looks very different.
@@ -131,7 +131,7 @@ export default function PMSalary() {
           </table>
         </div>
         <p className="text-sm text-gray-400 mb-16">
-          Base salary only. Total compensation — including bonuses, profit sharing, vehicle allowances, and benefits — typically adds 15 to 30 percent on top.
+          Base salary only. Total compensation. including bonuses, profit sharing, vehicle allowances, and benefits. typically adds 15 to 30 percent on top.
         </p>
 
         {/* Section 3 — Table */}
@@ -221,7 +221,7 @@ export default function PMSalary() {
         </p>
         <div className="space-y-8 mb-16">
           {[
-            { title: "P&L ownership", body: "A PM who has managed their own project budget — not just tracked it, but owned it, reported on it, and been accountable for it — commands a premium. This is the single biggest differentiator between a PM who is worth market rate and one who is worth above it." },
+            { title: "P&L ownership", body: "A PM who has managed their own project budget. Not just tracked it, but owned it, reported on it, and been accountable for it. commands a premium. This is the single biggest differentiator between a PM who is worth market rate and one who is worth above it." },
             { title: "Project size and complexity", body: "There is a real difference between a PM who has run a $20 million project and one who has run a $150 million project. The skills required, the subcontractor relationships managed, the risk exposure handled. All of it scales. Comp scales with it." },
             { title: "Certifications", body: "A PMP certification adds approximately $10,000 to $20,000 to base salary on average. LEED AP, OSHA 30, and specialty certifications add smaller but meaningful premiums depending on project type." },
             { title: "Passive status", body: "A PM who is currently employed, performing well, and not looking for a job commands a premium over one who is actively on the market. The market is telling you something when someone is not looking. Pay attention to it." },

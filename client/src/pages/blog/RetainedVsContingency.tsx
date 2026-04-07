@@ -13,7 +13,7 @@ export default function RetainedVsContingency() {
   useEffect(() => {
     document.title = "Retained vs. Contingency Construction Recruiting: Which Model Is Right for You? | Flowstate Search";
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Retained vs. contingency recruiting — what's the actual difference, when does each model make sense, and why Flowstate only does retained. A straight answer with no spin.");
+    if (meta) meta.setAttribute("content", "Retained vs. contingency recruiting. what's the actual difference, when does each model make sense, and why Flowstate only does retained. A straight answer with no spin.");
 
     const script = document.createElement("script");
     script.type = "application/ld+json";
@@ -24,7 +24,7 @@ export default function RetainedVsContingency() {
       "author": { "@type": "Person", "name": "Jordan Arp" },
       "publisher": { "@type": "Organization", "name": "Flowstate Search", "url": "https://flowstatesearch.com" },
       "datePublished": "2025-12-09",
-      "description": "Retained vs. contingency recruiting — what's the actual difference, when does each model make sense, and why Flowstate only does retained.",
+      "description": "Retained vs. contingency recruiting. what's the actual difference, when does each model make sense, and why Flowstate only does retained.",
       "url": "https://flowstatesearch.com/blog/retained-vs-contingency-construction-recruiting"
     });
     document.head.appendChild(script);
@@ -83,7 +83,7 @@ export default function RetainedVsContingency() {
           They know one costs money upfront and one does not. Beyond that, it gets murky.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
-          Here is a straight answer — including the parts that do not make retained search look great, because you deserve to know what you are actually choosing between.
+          Here is a straight answer. including the parts that do not make retained search look great, because you deserve to know what you are actually choosing between.
         </p>
 
         <hr className="border-gray-100 mb-16" />
@@ -110,10 +110,10 @@ export default function RetainedVsContingency() {
           What Retained Search Actually Is
         </h2>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          In a retained model, the client pays a portion of the fee upfront — typically one-third — to engage the recruiter exclusively on their search. The recruiter is committed to that role, with the time and resources to do the full market mapping, passive candidate outreach, and relationship work that a senior search requires.
+          In a retained model, the client pays a portion of the fee upfront. typically one-third. to engage the recruiter exclusively on their search. The recruiter is committed to that role, with the time and resources to do the full market mapping, passive candidate outreach, and relationship work that a senior search requires.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          The fee is typically the same percentage of first-year compensation as contingency — usually 20 to 30 percent — but it is structured differently. Part upfront, part at candidate presentation, part at placement. The recruiter has skin in the game from day one, and so does the client.
+          The fee is typically the same percentage of first-year compensation as contingency. Usually 20 to 30 percent but it is structured differently. Part upfront, part at candidate presentation, part at placement. The recruiter has skin in the game from day one, and so does the client.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
           The tradeoff is obvious. You are paying for work before you see results. That requires trust. It also requires a recruiter who has earned that trust.
@@ -124,7 +124,7 @@ export default function RetainedVsContingency() {
           <p className="text-xl md:text-2xl font-light text-gray-700 leading-relaxed italic">
             "The incentives point toward speed and volume, not depth and precision. In a market where the best candidates are passive, that model consistently underperforms."
           </p>
-          <footer className="mt-4 text-sm text-gray-400">Jordan Arp, Founder — Flowstate Search</footer>
+          <footer className="mt-4 text-sm text-gray-400">Jordan Arp, Founder, Flowstate Search</footer>
         </blockquote>
 
         {/* Section 3 */}
@@ -141,7 +141,7 @@ export default function RetainedVsContingency() {
           This is not a character flaw. It is a structural reality of the model. The incentives point toward speed and volume, not depth and precision.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
-          In a market where the best candidates are passive — employed, not looking, hard to reach — a model built around speed and volume will consistently underperform a model built around depth and precision. That is not an opinion. That is math.
+          In a market where the best candidates are passive. employed, not looking, hard to reach. A model built around speed and volume will consistently underperform a model built around depth and precision. That is not an opinion. That is math.
         </p>
 
         {/* Comparison cards */}
@@ -173,7 +173,7 @@ export default function RetainedVsContingency() {
           When Contingency Makes Sense
         </h2>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          Contingency recruiting works well in specific situations. If you are filling a mid-level role where there is a healthy pool of active candidates, a contingency recruiter can move quickly and efficiently. If you are hiring in volume — multiple similar roles at the same time — contingency can work because the recruiter can spread their effort across a larger pool.
+          Contingency recruiting works well in specific situations. If you are filling a mid-level role where there is a healthy pool of active candidates, a contingency recruiter can move quickly and efficiently. If you are hiring in volume. multiple similar roles at the same time. contingency can work because the recruiter can spread their effort across a larger pool.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
           For senior roles, specialized roles, and passive candidate searches, contingency consistently underperforms. Not because the recruiters are bad. Because the model is not built for that kind of work.
@@ -187,7 +187,7 @@ export default function RetainedVsContingency() {
           Retained search is the right model when the role is senior enough that the best candidates are passive, when the search needs to be confidential, when the role is highly specialized, or when the cost of a bad hire is high enough that speed is less important than precision.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          For most construction executive searches — project managers above $120,000, superintendents, directors, VPs — retained is the appropriate model. The candidates worth finding are not in the active pool. Getting to them requires the kind of sustained, relationship-based outreach that only works when the recruiter is fully committed to the search.
+          For most construction executive searches. project managers above $120,000, superintendents, directors, VPs. retained is the appropriate model. The candidates worth finding are not in the active pool. Getting to them requires the kind of sustained, relationship-based outreach that only works when the recruiter is fully committed to the search.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
           The <Link href="/blog/cost-of-bad-hire-construction"><span className="text-[#00a69c] hover:underline cursor-pointer">cost of a bad hire</span></Link> in construction is $500,000 to $1.2 million. A retained search fee is a fraction of that. The math is not complicated.
@@ -198,7 +198,7 @@ export default function RetainedVsContingency() {
           Why Flowstate Only Does Retained
         </h2>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          We only do retained search. Not because it is more profitable — it is actually more work for a similar fee. Because it is the only model that lets us do the job the way it should be done.
+          We only do retained search. Not because it is more profitable. It is actually more work for a similar fee. Because it is the only model that lets us do the job the way it should be done.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
           Retained means we are exclusively focused on your search. We are not splitting our attention across ten other clients. We are doing the market mapping, the passive outreach, the relationship work, because we have the time and the mandate to do it right.

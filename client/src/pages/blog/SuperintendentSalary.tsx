@@ -13,7 +13,7 @@ export default function SuperintendentSalary() {
   useEffect(() => {
     document.title = "Construction Superintendent Salary Guide 2026 | Flowstate Search";
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "What do construction superintendents actually earn in 2026? Salary by experience level, project type, and market — plus the superintendent shortage driving comp above median.");
+    if (meta) meta.setAttribute("content", "What do construction superintendents actually earn in 2026? Salary by experience level, project type, and market. plus the superintendent shortage driving comp above median.");
 
     const script = document.createElement("script");
     script.type = "application/ld+json";
@@ -77,7 +77,7 @@ export default function SuperintendentSalary() {
 
         {/* Hook */}
         <p className="text-xl md:text-2xl text-gray-900 leading-relaxed font-light mb-8">
-          The superintendent is the most important person on your job site. They are the ones who make or break a project — not on paper, but in the field, every day, with every subcontractor, every inspection, every problem that was not in the schedule.
+          The superintendent is the most important person on your job site. They are the ones who make or break a project. Not on paper, but in the field, every day, with every subcontractor, every inspection, every problem that was not in the schedule.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
           They are also among the hardest people in construction to find. And in 2026, they know it.
@@ -217,7 +217,7 @@ export default function SuperintendentSalary() {
           The difference shows up in how they handle the moments that are not in the plan, because those are the moments that define every project. The subcontractor who does not show up. The inspection that fails. The owner who changes their mind on a Friday afternoon. A great superintendent has seen enough of these to know exactly what to do, and more importantly, they have the relationships and the credibility to get it done.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          That kind of experience does not come cheap. And it should not. The cost of having the wrong superintendent on a $50 million project — in delays, rework, subcontractor disputes, and safety incidents — dwarfs the cost of paying the right one above market. Every time. If you want the full breakdown on what a bad hire actually costs, <Link href="/blog/cost-of-bad-hire-construction"><span className="text-[#00a69c] hover:underline cursor-pointer">that is here</span></Link>.
+          That kind of experience does not come cheap. And it should not. The cost of having the wrong superintendent on a $50 million project. in delays, rework, subcontractor disputes, and safety incidents. dwarfs the cost of paying the right one above market. Every time. If you want the full breakdown on what a bad hire actually costs, <Link href="/blog/cost-of-bad-hire-construction"><span className="text-[#00a69c] hover:underline cursor-pointer">that is here</span></Link>.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
           The other thing that separates great supers: they are not looking for a job. They are running a project somewhere right now. Finding them requires someone who knows where to look and how to have a conversation that makes them want to listen.
@@ -231,7 +231,7 @@ export default function SuperintendentSalary() {
           If you are hiring a superintendent in 2026 and your comp range is based on data from 2023, you are already behind. The shortage is real, the competition is real, and the best field leaders have options.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
-          Set your range at the 75th percentile for your market and project type before you start the search. Know what total comp looks like — base, bonus, truck, per diem — and be ready to talk about all of it. If you want to know exactly what the market looks like for the superintendent role you are trying to fill, a <Link href="/start-your-search"><span className="text-[#00a69c] hover:underline cursor-pointer">free market insight call</span></Link> will give you a straight answer in 15 minutes. No pitch. No obligation.
+          Set your range at the 75th percentile for your market and project type before you start the search. Know what total comp looks like. base, bonus, truck, per diem and be ready to talk about all of it. If you want to know exactly what the market looks like for the superintendent role you are trying to fill, a <Link href="/start-your-search"><span className="text-[#00a69c] hover:underline cursor-pointer">free market insight call</span></Link> will give you a straight answer in 15 minutes. No pitch. No obligation.
         </p>
 
         {/* CTA block */}

@@ -13,7 +13,7 @@ export default function PMRecruiter() {
     script.text = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
-      "name": "Flowstate Search — Construction Project Manager Recruiter",
+      "name": "Flowstate Search. Construction Project Manager Recruiter",
       "description": "Retained executive search firm specializing in construction project manager placement across commercial, industrial, and specialty construction.",
       "url": "https://flowstatesearch.com/construction-project-manager-recruiter",
       "areaServed": "United States",
@@ -100,9 +100,9 @@ export default function PMRecruiter() {
           <p className="text-gray-500 mb-10">Retained search is not a job posting with a higher price tag. It is a fundamentally different process.</p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { step: "01", title: "Market Mapping", desc: "We identify every qualified PM in your target market — not just the ones who are available. That map becomes the foundation of the search." },
+              { step: "01", title: "Market Mapping", desc: "We identify every qualified PM in your target market. Not just the ones who are available. That map becomes the foundation of the search." },
               { step: "02", title: "Passive Outreach", desc: "We reach out to the candidates who are employed and not looking. Our relationships in the industry get us responses that cold outreach never does." },
-              { step: "03", title: "Qualified Presentation", desc: "You only meet candidates who have been fully vetted — background, comp expectations, motivation, and fit. No resume dumps." },
+              { step: "03", title: "Qualified Presentation", desc: "You only meet candidates who have been fully vetted, background, comp expectations, motivation, and fit. No resume dumps." },
             ].map(({ step, title, desc }) => (
               <div key={step}>
                 <p className="text-4xl font-bold text-[#00a69c]/20 font-mono mb-3">{step}</p>
@@ -122,10 +122,10 @@ export default function PMRecruiter() {
             Most recruiting firms treat construction project manager searches the same way they treat every other search: post the role, collect resumes, send over whoever applies. That works when the active candidate pool is strong. In today's market, it does not.
           </p>
           <p>
-            The construction project managers worth hiring are almost never on job boards. They are running projects somewhere right now, performing well, and not thinking about making a move. Finding them requires a recruiter who has spent years building relationships in the construction industry — someone who can call a PM who is mid-project and have a conversation that actually gets a response.
+            The construction project managers worth hiring are almost never on job boards. They are running projects somewhere right now, performing well, and not thinking about making a move. Finding them requires a recruiter who has spent years building relationships in the construction industry. someone who can call a PM who is mid-project and have a conversation that actually gets a response.
           </p>
           <p>
-            That is what Flowstate does. We have built a network of 500+ construction executives who trust us because we have treated them well — given them honest feedback, respected their time, and never pushed them toward a role that was not right for them. That network is what makes our searches work.
+            That is what Flowstate does. We have built a network of 500+ construction executives who trust us because we have treated them well. given them honest feedback, respected their time, and never pushed them toward a role that was not right for them. That network is what makes our searches work.
           </p>
           <p>
             We only do retained search. We only take searches we believe we can win. And we back every placement with a replacement guarantee. If it does not work out in the first year, we do the search again at no additional fee.

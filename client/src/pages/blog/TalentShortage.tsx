@@ -93,7 +93,7 @@ export default function TalentShortage() {
           The Numbers Are Bad. The Reality Is Worse.
         </h2>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          The U.S. Bureau of Labor Statistics projects that the construction industry will need to add approximately 546,000 workers annually through 2026 just to meet demand and replace retiring workers. The Associated General Contractors of America reports that 91 percent of construction firms are having difficulty finding qualified workers — a number that has been climbing for several years.
+          The U.S. Bureau of Labor Statistics projects that the construction industry will need to add approximately 546,000 workers annually through 2026 just to meet demand and replace retiring workers. The Associated General Contractors of America reports that 91 percent of construction firms are having difficulty finding qualified workers. A number that has been climbing for several years.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
           At the executive and field leadership level, the problem is more acute. The retirement wave hitting the industry right now is concentrated at the top. The experienced project managers, superintendents, and directors who built their careers over 20 to 30 years are leaving the workforce faster than the next generation can replace them.
@@ -166,7 +166,7 @@ export default function TalentShortage() {
         <div className="space-y-8 mb-16">
           {[
             { title: "They move fast", body: "When a strong candidate is identified, they do not take three weeks to schedule a second interview. They know that a passive candidate who is mildly interested on Monday can be completely disengaged by Friday if the process feels slow or disorganized. Speed signals respect." },
-            { title: "They are straight with candidates about the role", body: "The best candidates are evaluating the opportunity as much as they are being evaluated. Companies that are honest about the challenges, the project complexity, the team dynamics, the growth path — they build more trust in the process than companies that oversell. The candidates worth hiring have seen enough to know when they are being pitched." },
+            { title: "They are straight with candidates about the role", body: "The best candidates are evaluating the opportunity as much as they are being evaluated. Companies that are honest about the challenges, the project complexity, the team dynamics, the growth path. they build more trust in the process than companies that oversell. The candidates worth hiring have seen enough to know when they are being pitched." },
             { title: "They pay what the market actually requires", body: "Not what they budgeted two years ago. Not what they paid for the last person in the role. What the market requires right now, for the specific experience they need, in their specific geography. The companies that are losing candidates at the offer stage are almost always losing them on comp, and almost always because they set the range before they understood the market." },
           ].map(({ title, body }) => (
             <div key={title} className="pl-6 border-l-2 border-gray-100">
@@ -201,7 +201,7 @@ export default function TalentShortage() {
           If you are trying to fill a senior construction role right now, the most important thing you can do is stop treating it like a normal market. It is not.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
-          Set your comp range based on current data, not last year's budget. Move fast when you find a strong candidate. Be honest about the role. And if you have been at it for more than 60 days without finding the right person, consider whether your process is reaching the candidates you actually want — or just the ones who are available.
+          Set your comp range based on current data, not last year's budget. Move fast when you find a strong candidate. Be honest about the role. And if you have been at it for more than 60 days without finding the right person, consider whether your process is reaching the candidates you actually want or just the ones who are available.
         </p>
 
         {/* CTA block */}

@@ -13,7 +13,7 @@ export default function PassiveCandidates() {
   useEffect(() => {
     document.title = "How to Find Passive Construction Candidates (Who Aren't on Job Boards) | Flowstate Search";
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "The best construction executives aren't on job boards. Here's exactly how to find passive candidates who are currently employed, performing well, and not looking — but open to the right conversation.");
+    if (meta) meta.setAttribute("content", "The best construction executives aren't on job boards. Here's exactly how to find passive candidates who are currently employed, performing well, and not looking but open to the right conversation.");
 
     const script = document.createElement("script");
     script.type = "application/ld+json";
@@ -93,13 +93,13 @@ export default function PassiveCandidates() {
           Why the Best Construction Leaders Are Not Looking
         </h2>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          Passive candidates — people who are currently employed and not actively seeking a new role — make up approximately 70 percent of the total workforce at any given time. In construction, that number skews even higher for experienced field and project leadership, because the best operators in the industry are almost always employed. They get recruited before they ever have to look.
+          Passive candidates. people who are currently employed and not actively seeking a new role. make up approximately 70 percent of the total workforce at any given time. In construction, that number skews even higher for experienced field and project leadership, because the best operators in the industry are almost always employed. They get recruited before they ever have to look.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
           This creates a fundamental problem with traditional recruiting. If your strategy is to post a job and wait, you are only reaching the 30 percent who are actively looking. And within that 30 percent, the best candidates are usually there for a reason. A layoff, a company closure, a situation they are trying to get out of. That is not always a red flag. But it is a much smaller and less competitive pool than the full market.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
-          The people who are performing well, staying out of trouble, and building a track record — those people are not on job boards. They have to be found.
+          The people who are performing well, staying out of trouble, and building a track record. those people are not on job boards. They have to be found.
         </p>
 
         {/* Pull quote */}
@@ -167,7 +167,7 @@ export default function PassiveCandidates() {
           A retained search engagement is not a job posting with a higher price tag. It is a fundamentally different process.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          It starts with market mapping — identifying every qualified person in the relevant market for the role, not just the ones who are available. That map might include 40 to 80 people for a senior project manager role. Most of them are employed. Most of them are not looking. That is the point.
+          It starts with market mapping. identifying every qualified person in the relevant market for the role, not just the ones who are available. That map might include 40 to 80 people for a senior project manager role. Most of them are employed. Most of them are not looking. That is the point.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
           From that map, the recruiter identifies the 10 to 15 candidates who are the strongest fit on paper, then does the work of finding out which of them might be open to a conversation. Not a job offer. A conversation.

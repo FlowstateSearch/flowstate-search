@@ -119,7 +119,7 @@ export default function Community() {
               I got tired of watching companies write checks to causes nobody in the room actually cared about, and call it community. I wanted something different. Something where the people we work with could stand in the same place, get their hands dirty, and build something that outlasts the deal.
             </p>
             <p className="text-lg font-medium text-foreground">That's where Flowstate Field Days came from.</p>
-            <p className="text-sm text-muted-foreground">— Jordan Arp, Founder</p>
+            <p className="text-sm text-muted-foreground">Jordan Arp, Founder</p>
           </motion.div>
         </div>
       </section>
@@ -216,7 +216,7 @@ export default function Community() {
                 loading="lazy"
               />
               <div className="absolute bottom-4 left-4">
-                <p className="text-sm font-semibold text-white bg-black/65 backdrop-blur-sm px-3 py-1.5 rounded-md">Colorado Trail Build — Lost Lake</p>
+                <p className="text-sm font-semibold text-white bg-black/65 backdrop-blur-sm px-3 py-1.5 rounded-md">Colorado Trail Build, Lost Lake</p>
               </div>
             </motion.div>
           </div>

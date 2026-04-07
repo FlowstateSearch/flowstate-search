@@ -52,7 +52,7 @@ const posts = [
     slug: "/blog/how-to-find-passive-construction-candidates",
     category: "Recruiting Strategy",
     title: "How to Find Passive Construction Candidates (Who Aren't on Job Boards)",
-    description: "The best construction executives are not on job boards. Here is exactly how to find the people who are currently employed, performing well, and not looking — but open to the right conversation.",
+    description: "The best construction executives are not on job boards. Here is exactly how to find the people who are currently employed, performing well, and not looking but open to the right conversation.",
     readTime: "6 min",
     date: "October 14, 2025",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-passive-candidates_394d5afe.jpg",

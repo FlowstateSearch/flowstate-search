@@ -13,7 +13,7 @@ export default function SuperintendentRecruiter() {
     script.text = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
-      "name": "Flowstate Search — Construction Superintendent Recruiter",
+      "name": "Flowstate Search. Construction Superintendent Recruiter",
       "description": "Retained executive search firm specializing in construction superintendent placement across commercial, industrial, and specialty construction.",
       "url": "https://flowstatesearch.com/construction-superintendent-recruiter",
       "areaServed": "United States",
@@ -102,7 +102,7 @@ export default function SuperintendentRecruiter() {
               The superintendent shortage is the most acute talent problem in construction right now. The AGC consistently ranks field supervision as harder to fill than project management, estimating, or any other role in the industry. The retirement wave hitting experienced supers is real, and the pipeline has not kept up.
             </p>
             <p>
-              What makes superintendent searches particularly difficult is that the best ones are almost never available. A great superintendent is always employed. They get recruited before they ever have to look. The ones who are on job boards are there for a reason — and that reason is worth understanding before you make an offer.
+              What makes superintendent searches particularly difficult is that the best ones are almost never available. A great superintendent is always employed. They get recruited before they ever have to look. The ones who are on job boards are there for a reason and that reason is worth understanding before you make an offer.
             </p>
             <p>
               Finding a great superintendent requires going to where they are: on a job site, running a project, not thinking about you. Getting their attention requires a recruiter they know, trust, and will take a call from. That is not something you can replicate with a LinkedIn message or a job posting.
@@ -120,9 +120,9 @@ export default function SuperintendentRecruiter() {
         <p className="text-gray-500 mb-10">Retained search is not a job posting with a higher price tag. It is a fundamentally different process.</p>
         <div className="grid md:grid-cols-3 gap-8">
           {[
-            { step: "01", title: "Market Mapping", desc: "We identify every qualified superintendent in your target market — not just the ones who are available. That map becomes the foundation of the search." },
+            { step: "01", title: "Market Mapping", desc: "We identify every qualified superintendent in your target market. Not just the ones who are available. That map becomes the foundation of the search." },
             { step: "02", title: "Passive Outreach", desc: "We reach the candidates who are employed and not looking. Our relationships in the field get us responses that cold outreach never does." },
-            { step: "03", title: "Qualified Presentation", desc: "You only meet candidates who have been fully vetted — background, project history, comp expectations, and fit. No resume dumps." },
+            { step: "03", title: "Qualified Presentation", desc: "You only meet candidates who have been fully vetted, background, project history, comp expectations, and fit. No resume dumps." },
           ].map(({ step, title, desc }) => (
             <div key={step}>
               <p className="text-4xl font-bold text-[#00a69c]/20 font-mono mb-3">{step}</p>

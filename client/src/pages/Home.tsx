@@ -701,7 +701,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               <div className="absolute bottom-4 left-4">
-                <p className="text-sm font-semibold text-white bg-black/65 backdrop-blur-sm px-3 py-1.5 rounded-md">Colorado Trail Build — Denver, CO</p>
+                <p className="text-sm font-semibold text-white bg-black/65 backdrop-blur-sm px-3 py-1.5 rounded-md">Colorado Trail Build, Denver, CO</p>
               </div>
             </motion.div>
 
@@ -797,7 +797,7 @@ export default function Home() {
               <div className="group cursor-pointer border border-white/10 rounded-xl p-6 hover:border-primary/40 hover:bg-white/5 transition-all">
                 <p className="text-xs font-mono uppercase tracking-widest text-primary mb-3">Salary Data</p>
                 <h3 className="text-base font-heading font-bold text-white group-hover:text-primary transition-colors leading-snug mb-2">Construction Project Manager Salary Guide 2026</h3>
-                <p className="text-xs text-white/50 leading-relaxed">What PMs actually earn — by experience, project type, and market.</p>
+                <p className="text-xs text-white/50 leading-relaxed">What PMs actually earn, by experience, project type, and market.</p>
                 <div className="flex items-center gap-1 text-xs font-semibold text-primary mt-4 group-hover:gap-2 transition-all">
                   Read <ArrowRight className="w-3 h-3" />
                 </div>
@@ -807,7 +807,7 @@ export default function Home() {
               <div className="group cursor-pointer border border-white/10 rounded-xl p-6 hover:border-primary/40 hover:bg-white/5 transition-all">
                 <p className="text-xs font-mono uppercase tracking-widest text-primary mb-3">Recruiting Models</p>
                 <h3 className="text-base font-heading font-bold text-white group-hover:text-primary transition-colors leading-snug mb-2">Retained vs. Contingency Construction Recruiting</h3>
-                <p className="text-xs text-white/50 leading-relaxed">What's the actual difference — and why Flowstate only does retained.</p>
+                <p className="text-xs text-white/50 leading-relaxed">What's the actual difference and why Flowstate only does retained.</p>
                 <div className="flex items-center gap-1 text-xs font-semibold text-primary mt-4 group-hover:gap-2 transition-all">
                   Read <ArrowRight className="w-3 h-3" />
                 </div>
