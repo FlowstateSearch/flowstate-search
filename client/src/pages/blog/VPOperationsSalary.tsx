@@ -113,24 +113,21 @@ export default function VPOperationsSalary() {
                 <th className="text-left px-5 py-4 font-semibold text-gray-700">Company Revenue</th>
                 <th className="text-left px-5 py-4 font-semibold text-gray-700">25th Percentile</th>
                 <th className="text-left px-5 py-4 font-semibold text-gray-700">Median</th>
-                <th className="text-left px-5 py-4 font-semibold text-gray-700">Average</th>
                 <th className="text-left px-5 py-4 font-semibold text-gray-700">75th Percentile</th>
               </tr>
             </thead>
             <tbody>
               {[
-                ["$5M – $25M", "$113,000", "$150,000", "$149,000", "$172,000"],
-                ["$25M – $100M", "$134,554", "$150,016", "$159,741", "$169,145"],
-                ["$100M – $250M", "$147,742", "$177,220", "$176,585", "$192,200"],
-                ["$250M – $500M", "$167,071", "$175,754", "$245,056", "$215,225"],
-                ["Over $500M", "$176,288", "$253,539", "$197,513", "$222,661"],
-              ].map(([size, p25, median, avg, p75], i) => (
+                ["$5M – $25M", "$113,000", "$150,000", "$172,000"],
+                ["$25M – $100M", "$134,554", "$150,016", "$169,145"],
+                ["$100M – $250M", "$147,742", "$177,220", "$192,200"],
+                ["$250M – $500M", "$167,071", "$175,754", "$215,225"],
+              ].map(([size, p25, median, p75], i) => (
                 <tr key={size} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
                   <td className="px-5 py-4 font-medium text-gray-900">{size}</td>
                   <td className="px-5 py-4 text-gray-500">{p25}</td>
                   <td className="px-5 py-4 text-gray-500">{median}</td>
-                  <td className="px-5 py-4 text-[#00a69c] font-semibold">{avg}</td>
-                  <td className="px-5 py-4 text-gray-500">{p75}</td>
+                  <td className="px-5 py-4 text-[#00a69c] font-semibold">{p75}</td>
                 </tr>
               ))}
             </tbody>
