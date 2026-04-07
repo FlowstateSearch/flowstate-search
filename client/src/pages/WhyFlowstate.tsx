@@ -235,8 +235,8 @@ export default function WhyFlowstate() {
 
       {/* The Results Section */}
       <section className="py-24 border-b border-border/50">
-        <div className="container text-center max-w-4xl mx-auto space-y-12">
-          <div className="space-y-6">
+        <div className="container max-w-4xl mx-auto space-y-12">
+          <div className="text-center space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
               <Users className="w-4 h-4" />
               <span>THE RESULTS</span>
@@ -252,7 +252,7 @@ export default function WhyFlowstate() {
             <div className="p-8 rounded-2xl bg-muted/30 border border-border/50 space-y-4">
               <div className="text-4xl font-bold font-mono text-primary">91%</div>
               <h3 className="font-bold text-lg">Retention Rate</h3>
-              <p className="text-sm text-muted-foreground">After one year, our placements are still thriving.</p>
+              <p className="text-sm text-muted-foreground">Of the leaders I've placed are still with their companies today — measured at 12 months post-placement.</p>
             </div>
             <div className="p-8 rounded-2xl bg-muted/30 border border-border/50 space-y-4">
               <div className="text-4xl font-bold font-mono text-primary">5-Star</div>
@@ -264,6 +264,19 @@ export default function WhyFlowstate() {
               <h3 className="font-bold text-lg">Candidates Evaluated</h3>
               <p className="text-sm text-muted-foreground">Per search. So you only see the ones worth your time.</p>
             </div>
+          </div>
+
+          {/* Context block */}
+          <div className="border-t border-border/40 pt-10 space-y-5 max-w-2xl mx-auto text-center">
+            <p className="text-lg text-foreground leading-relaxed">
+              That 91% is mine — built search by search, long before Flowstate had a name. It's not a company stat. It's a personal one. What it tells you: when I say I only take searches I believe in and only present candidates I'd stake my reputation on, this is what that looks like over time.
+            </p>
+            <p className="text-base text-muted-foreground leading-relaxed">
+              We run a focused number of searches at any given time — intentionally. Every engagement gets a defined process, dedicated research, and direct access from kickoff to close. You won't get handed off. You won't wonder where things stand.
+            </p>
+            <p className="font-semibold text-foreground">
+              Flowstate is new. The standard we hold every search to isn't.
+            </p>
           </div>
         </div>
       </section>
