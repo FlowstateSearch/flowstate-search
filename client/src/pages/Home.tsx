@@ -11,6 +11,50 @@ export default function Home() {
   
   useEffect(() => {
     document.title = "Flowstate Search | Construction Executive Recruitment";
+
+    // Organization schema for Google knowledge panel and AI search
+    const schema = document.createElement("script");
+    schema.type = "application/ld+json";
+    schema.id = "org-schema";
+    schema.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Flowstate Search",
+      "url": "https://flowstatesearch.com",
+      "logo": "https://flowstatesearch.com/LogoDark_R1.png",
+      "description": "Flowstate Search is a construction executive recruiting firm based in Denver, Colorado, specializing in placing COOs, VPs of Operations, VPs of Construction, Project Executives, Directors, and Senior Project Managers for commercial and industrial construction companies.",
+      "foundingDate": "2025",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Denver",
+        "addressRegion": "CO",
+        "addressCountry": "US"
+      },
+      "areaServed": "United States",
+      "sameAs": [
+        "https://www.linkedin.com/company/flowstatesearch"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Jordan Arp",
+        "sameAs": "https://www.linkedin.com/in/jordan-arp/"
+      },
+      "knowsAbout": [
+        "Construction Executive Recruiting",
+        "Construction Industry Talent Acquisition",
+        "Project Manager Recruitment",
+        "Superintendent Recruitment",
+        "VP of Operations Recruitment",
+        "COO Recruitment"
+      ]
+    });
+    if (!document.getElementById("org-schema")) {
+      document.head.appendChild(schema);
+    }
+    return () => {
+      const existing = document.getElementById("org-schema");
+      if (existing) existing.remove();
+    };
   }, []);
   
   const fadeIn = {
