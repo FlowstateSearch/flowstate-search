@@ -7,7 +7,7 @@ const AUTHOR = {
   title: "Founder, Flowstate Search",
   photo: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/jordan-arp-headshot_4d62367f.jpg",
 };
-const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/retainedvscontingentsearch_d5a7c4e1.webp";
+const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/retainedvscontingentsearch_a6cd14f2.webp";
 
 export default function RetainedVsContingency() {
   useEffect(() => {

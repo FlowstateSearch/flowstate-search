@@ -46,7 +46,7 @@ const posts = [
     description: "What is the actual difference, when does each model make sense, and why Flowstate only does retained. A straight answer with no spin.",
     readTime: "5 min",
     date: "December 9, 2025",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/retainedvscontingentsearch_d5a7c4e1.webp",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/retainedvscontingentsearch_a6cd14f2.webp",
   },
   {
     slug: "/blog/construction-talent-shortage-2026",
