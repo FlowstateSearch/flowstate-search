@@ -7,7 +7,7 @@ const AUTHOR = {
   title: "Founder, Flowstate Search",
   photo: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/jordan-arp-headshot_4d62367f.jpg",
 };
-const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-pm-salary_71f36616.jpg";
+const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/VPofOpssalaryguide_2e9165f2.webp";
 
 export default function VPOperationsSalary() {
   useEffect(() => {

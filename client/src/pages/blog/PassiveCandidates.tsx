@@ -7,7 +7,7 @@ const AUTHOR = {
   title: "Founder, Flowstate Search",
   photo: "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/jordan-arp-headshot_4d62367f.jpg",
 };
-const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/blog-passive-candidates_394d5afe.jpg";
+const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663232464487/5EpJBgcsc9XY35Zdhkd8SY/howtofindpassivecandidates_72c1bdb9.webp";
 
 export default function PassiveCandidates() {
   useEffect(() => {
