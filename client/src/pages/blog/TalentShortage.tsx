@@ -204,6 +204,21 @@ export default function TalentShortage() {
           Set your comp range based on current data, not last year's budget. Move fast when you find a strong candidate. Be honest about the role. And if you have been at it for more than 60 days without finding the right person, consider whether your process is reaching the candidates you actually want or just the ones who are available.
         </p>
 
+
+        {/* LinkedIn Share */}
+        <div className="flex items-center justify-center gap-3 py-6 border-t border-gray-100">
+          <span className="text-xs font-mono uppercase tracking-widest text-gray-400">Share this article</span>
+          <a
+            href="https://www.linkedin.com/sharing/share-offsite/?url=https://flowstatesearch.com/blog/construction-talent-shortage-2026"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#0077B5] text-white text-sm font-semibold hover:bg-[#006097] transition-colors"
+          >
+            <Linkedin className="w-4 h-4" />
+            Share on LinkedIn
+          </a>
+        </div>
+
         {/* CTA block */}
         <div className="bg-gray-950 text-white rounded-2xl p-10 md:p-12">
           <p className="text-xs font-mono uppercase tracking-widest text-[#00a69c] mb-4">The shortage is real. Your strategy needs to match it.</p>

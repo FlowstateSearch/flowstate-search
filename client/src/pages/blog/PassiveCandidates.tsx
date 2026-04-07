@@ -190,6 +190,21 @@ export default function PassiveCandidates() {
           If you have been posting the same role for 60 days and getting resumes that are not right, the problem is not the role. The problem is the pool you are fishing in.
         </p>
 
+
+        {/* LinkedIn Share */}
+        <div className="flex items-center justify-center gap-3 py-6 border-t border-gray-100">
+          <span className="text-xs font-mono uppercase tracking-widest text-gray-400">Share this article</span>
+          <a
+            href="https://www.linkedin.com/sharing/share-offsite/?url=https://flowstatesearch.com/blog/how-to-find-passive-construction-candidates"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#0077B5] text-white text-sm font-semibold hover:bg-[#006097] transition-colors"
+          >
+            <Linkedin className="w-4 h-4" />
+            Share on LinkedIn
+          </a>
+        </div>
+
         {/* CTA block */}
         <div className="bg-gray-950 text-white rounded-2xl p-10 md:p-12">
           <p className="text-xs font-mono uppercase tracking-widest text-[#00a69c] mb-4">Stop fishing in the wrong pool</p>

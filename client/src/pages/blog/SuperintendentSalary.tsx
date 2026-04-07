@@ -234,6 +234,21 @@ export default function SuperintendentSalary() {
           Set your range at the 75th percentile for your market and project type before you start the search. Know what total comp looks like. base, bonus, truck, per diem and be ready to talk about all of it. If you want to know exactly what the market looks like for the superintendent role you are trying to fill, a <Link href="/start-your-search"><span className="text-[#00a69c] hover:underline cursor-pointer">free market insight call</span></Link> will give you a straight answer in 15 minutes. No pitch. No obligation.
         </p>
 
+
+        {/* LinkedIn Share */}
+        <div className="flex items-center justify-center gap-3 py-6 border-t border-gray-100">
+          <span className="text-xs font-mono uppercase tracking-widest text-gray-400">Share this article</span>
+          <a
+            href="https://www.linkedin.com/sharing/share-offsite/?url=https://flowstatesearch.com/blog/construction-superintendent-salary"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#0077B5] text-white text-sm font-semibold hover:bg-[#006097] transition-colors"
+          >
+            <Linkedin className="w-4 h-4" />
+            Share on LinkedIn
+          </a>
+        </div>
+
         {/* CTA block */}
         <div className="bg-gray-950 text-white rounded-2xl p-10 md:p-12">
           <p className="text-xs font-mono uppercase tracking-widest text-[#00a69c] mb-4">Ready to hire?</p>
