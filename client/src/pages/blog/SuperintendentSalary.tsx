@@ -231,7 +231,7 @@ export default function SuperintendentSalary() {
           If you are hiring a superintendent in 2026 and your comp range is based on data from 2023, you are already behind. The shortage is real, the competition is real, and the best field leaders have options.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
-          Set your range at the 75th percentile for your market and project type before you start the search. Know what total comp looks like. base, bonus, truck, per diem and be ready to talk about all of it. If you want to know exactly what the market looks like for the superintendent role you are trying to fill, a <Link href="/start-your-search"><span className="text-[#00a69c] hover:underline cursor-pointer">free market insight call</span></Link> will give you a straight answer in 15 minutes. No pitch. No obligation.
+          Set your range at the 75th percentile for your market and project type before you start the search. Know what total comp looks like. base, bonus, truck, per diem and be ready to talk about all of it. If you want to know exactly what the market looks like for the superintendent role you are trying to fill, a <Link href="/start-your-search"><span className="text-[#00a69c] hover:underline cursor-pointer">free market insight call</span></Link> will give you a straight answer in 15 minutes. No pitch. Just a straight answer.
         </p>
         {/* CTA block */}
         <div className="bg-gray-950 text-white rounded-2xl p-10 md:p-12">
@@ -246,7 +246,7 @@ export default function SuperintendentSalary() {
             className="inline-flex items-center justify-center bg-[#00a69c] text-white font-semibold text-sm px-8 py-3 rounded-lg hover:bg-[#008f86] transition-colors">
             Book a 15-Minute Call
           </a>
-          <p className="text-xs text-gray-500 mt-5">No pitch. No pressure. Just a straight answer.</p>
+          <p className="text-xs text-gray-500 mt-5">No pitch. Just a straight answer.</p>
         </div>
       </div>
 

@@ -210,13 +210,13 @@ export default function TalentShortage() {
             Tell us what you are trying to fill. We will tell you what the market actually looks like.
           </h3>
           <p className="text-gray-400 leading-relaxed mb-8">
-            No pitch. Just a straight answer about whether we are the right fit for your search.
+            No pitch. Just a straight answer.
           </p>
           <a href="https://schedule.flowstatesearch.com/your-next-hire" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-[#00a69c] text-white font-semibold text-sm px-8 py-3 rounded-lg hover:bg-[#008f86] transition-colors">
             Book a 15-Minute Call
           </a>
-          <p className="text-xs text-gray-500 mt-5">No pitch. No pressure. Just a straight answer about whether we are the right fit.</p>
+          <p className="text-xs text-gray-500 mt-5">No pitch. Just a straight answer.</p>
         </div>
       </div>
 

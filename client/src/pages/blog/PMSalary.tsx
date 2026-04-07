@@ -258,7 +258,7 @@ export default function PMSalary() {
           Set your comp range before you start the search, not after you meet the candidate. The worst thing you can do is fall in love with someone and then find out your budget is $30,000 short of what it takes to close them.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
-          Be honest about what the role actually requires. If you need someone who has run $100 million projects, price the role accordingly. And if you are not sure what the market looks like for the specific role you are trying to fill, that is exactly what a <Link href="/start-your-search"><span className="text-[#00a69c] hover:underline cursor-pointer">free market insight call</span></Link> is for. We will tell you what the number actually is. No pitch. No obligation.
+          Be honest about what the role actually requires. If you need someone who has run $100 million projects, price the role accordingly. And if you are not sure what the market looks like for the specific role you are trying to fill, that is exactly what a <Link href="/start-your-search"><span className="text-[#00a69c] hover:underline cursor-pointer">free market insight call</span></Link> is for. We will tell you what the number actually is. No pitch. Just a straight answer.
         </p>
         {/* CTA block */}
         <div className="bg-gray-950 text-white rounded-2xl p-10 md:p-12">
@@ -267,13 +267,13 @@ export default function PMSalary() {
             We will give you a straight answer on comp, candidate availability, and what it takes to close the person you want.
           </h3>
           <p className="text-gray-400 leading-relaxed mb-8">
-            No pitch. No obligation. Just a real conversation about your search.
+            No pitch. Just a straight answer.
           </p>
           <a href="https://schedule.flowstatesearch.com/your-next-hire" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-[#00a69c] text-white font-semibold text-sm px-8 py-3 rounded-lg hover:bg-[#008f86] transition-colors">
             Book a 15-Minute Call
           </a>
-          <p className="text-xs text-gray-500 mt-5">No pitch. No pressure. Just a straight answer.</p>
+          <p className="text-xs text-gray-500 mt-5">No pitch. Just a straight answer.</p>
         </div>
       </div>
 

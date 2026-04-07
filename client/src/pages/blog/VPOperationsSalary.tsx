@@ -257,7 +257,7 @@ export default function VPOperationsSalary() {
           Know what the market looks like for your specific revenue size, your specific geography, and the specific background you actually need. Then build an offer that gives you a real chance of closing the person you want. Not the person who was available.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
-          And if you are not sure what that number is, that is exactly what a <Link href="/start-your-search"><span className="text-[#00a69c] hover:underline cursor-pointer">free market insight call</span></Link> is for. We will tell you what the number actually is for your market, your company size, and the profile you are trying to hire. No pitch. No obligation.
+          And if you are not sure what that number is, that is exactly what a <Link href="/start-your-search"><span className="text-[#00a69c] hover:underline cursor-pointer">free market insight call</span></Link> is for. We will tell you what the number actually is for your market, your company size, and the profile you are trying to hire. No pitch. Just a straight answer.
         </p>
 
         {/* CTA block */}
@@ -267,13 +267,13 @@ export default function VPOperationsSalary() {
             We will tell you what the market looks like for your company size, your geography, and the profile you actually need.
           </h3>
           <p className="text-gray-400 leading-relaxed mb-8">
-            No pitch. No obligation. Just a real conversation about your search.
+            No pitch. Just a straight answer.
           </p>
           <a href="https://schedule.flowstatesearch.com/your-next-hire" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-[#00a69c] text-white font-semibold text-sm px-8 py-3 rounded-lg hover:bg-[#008f86] transition-colors">
             Book a 15-Minute Call
           </a>
-          <p className="text-xs text-gray-500 mt-5">No pitch. No pressure. Just a straight answer.</p>
+          <p className="text-xs text-gray-500 mt-5">No pitch. Just a straight answer.</p>
         </div>
       </div>
 
