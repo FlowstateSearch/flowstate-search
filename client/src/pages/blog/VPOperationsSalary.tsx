@@ -13,7 +13,7 @@ export default function VPOperationsSalary() {
   useEffect(() => {
     document.title = "VP of Operations Construction Salary Guide 2026 | Flowstate Search";
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "What does a VP of Operations actually earn in construction in 2026? Real comp data by company revenue size, bonus structures, and why most companies are losing this search before it starts.");
+    if (meta) meta.setAttribute("content", "What does a VP of Operations actually earn in construction in 2026? Real comp data from CFMA, bonus structures, and why most companies are losing this search before it starts.");
 
     const script = document.createElement("script");
     script.type = "application/ld+json";
@@ -24,7 +24,7 @@ export default function VPOperationsSalary() {
       "author": { "@type": "Person", "name": "Jordan Arp" },
       "publisher": { "@type": "Organization", "name": "Flowstate Search", "url": "https://flowstatesearch.com" },
       "datePublished": "2026-04-07",
-      "description": "What does a VP of Operations actually earn in construction in 2026? Real comp data by company revenue size, bonus structures, and why most companies are losing this search before it starts.",
+      "description": "What does a VP of Operations actually earn in construction in 2026? Real comp data from CFMA, bonus structures, and why most companies are losing this search before it starts.",
       "url": "https://flowstatesearch.com/blog/construction-vp-operations-salary"
     });
     document.head.appendChild(script);
@@ -67,7 +67,7 @@ export default function VPOperationsSalary() {
             <Calendar className="w-3.5 h-3.5" /><span>April 7, 2026</span>
           </div>
           <div className="flex items-center gap-1.5 text-xs text-gray-400">
-            <Clock className="w-3.5 h-3.5" /><span>9 min read</span>
+            <Clock className="w-3.5 h-3.5" /><span>8 min read</span>
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@ export default function VPOperationsSalary() {
 
         {/* Hook */}
         <p className="text-xl md:text-2xl text-gray-900 leading-relaxed font-light mb-8">
-          You wouldn't bid a $100 million project with a $60 million budget. Stop hiring your VP of Operations that way.
+          You would not bid a $100 million project with a $60 million budget. Stop hiring your VP of Operations that way.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
           The VP of Operations is the person who determines whether your company makes money or loses it at scale. They run your project portfolio, manage your project executives and superintendents, own your margins, and decide whether your firm can actually execute on the work you are selling. And yet, more often than not, companies price this role like a senior project manager with a fancier title. Then they wonder why the candidates they actually want keep saying no.
@@ -85,7 +85,7 @@ export default function VPOperationsSalary() {
 
         <hr className="border-gray-100 mb-16" />
 
-        {/* Section 1 */}
+        {/* Section 1 — CFMA Data */}
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
           What the Data Actually Says
         </h2>
@@ -93,76 +93,33 @@ export default function VPOperationsSalary() {
           According to CFMA's 2025 Executive Compensation Survey for Contractors, the most comprehensive compensation study in the construction industry, the average VP of Operations base salary is $215,613. The average bonus is $113,143. That puts average total compensation at roughly $328,000.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          That is the average. The candidates you are trying to recruit are not average. The ones who are currently employed, performing well, and not looking for a job are sitting at the 75th percentile or above. And the 75th percentile for VP of Operations base salary is $249,000 before bonus.
+          That is the average. The candidates you are trying to recruit are not average. The ones who are currently employed, performing well, and not looking for a job are sitting at the 75th percentile or above. The 75th percentile for VP of Operations base salary is $249,000 before bonus. The 25th percentile is $180,000.
         </p>
-        <p className="text-base text-gray-500 leading-relaxed mb-16">
-          If your offer starts at $180,000 base, you are not making a competitive offer. You are making a lowball offer and hoping the candidate does not know what the market looks like. They do.
+        <p className="text-base text-gray-500 leading-relaxed mb-6">
+          Read that again. If your offer starts at $180,000 base, you are not making a competitive offer. You are making an offer at the bottom quarter of the market and hoping the candidate does not know what the market looks like. They do.
         </p>
-
-        {/* Section 2 — Main Table */}
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-          VP of Operations Salary by Company Revenue
-        </h2>
-        <p className="text-base text-gray-500 leading-relaxed mb-8">
-          This is the table that matters. The VP of Operations title covers an enormous range of responsibility depending on company size. A VP Ops at a $30 million GC is a different job than a VP Ops at a $300 million GC. The comp reflects that. Find your company size and look at what the market actually pays.
+        <p className="text-base text-gray-500 leading-relaxed mb-4">
+          VP of Operations compensation varies meaningfully based on company revenue, portfolio complexity, and geography. A VP Ops at a $30 million regional GC is a different job than a VP Ops at a $300 million multi-market contractor. The CFMA figures reflect the full respondent pool across all revenue sizes. Firms at the smaller end of the spectrum will generally see comp toward the lower end of the range. Firms at the larger end should expect to be well above the average. Use these numbers as a floor for your planning, not a ceiling.
         </p>
-        <div className="overflow-x-auto mb-4 rounded-xl border border-gray-100">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="bg-gray-50 border-b border-gray-100">
-                <th className="text-left px-5 py-4 font-semibold text-gray-700">Company Revenue</th>
-                <th className="text-left px-5 py-4 font-semibold text-gray-700">25th Percentile</th>
-                <th className="text-left px-5 py-4 font-semibold text-gray-700">Median</th>
-                <th className="text-left px-5 py-4 font-semibold text-gray-700">75th Percentile</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ["$5M – $25M", "$113,000", "$150,000", "$172,000"],
-                ["$25M – $100M", "$134,554", "$150,016", "$169,145"],
-                ["$100M – $250M", "$147,742", "$177,220", "$192,200"],
-                ["$250M – $500M", "$167,071", "$175,754", "$215,225"],
-              ].map(([size, p25, median, p75], i) => (
-                <tr key={size} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
-                  <td className="px-5 py-4 font-medium text-gray-900">{size}</td>
-                  <td className="px-5 py-4 text-gray-500">{p25}</td>
-                  <td className="px-5 py-4 text-gray-500">{median}</td>
-                  <td className="px-5 py-4 text-[#00a69c] font-semibold">{p75}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
         <p className="text-sm text-gray-400 mb-16">
-          Base salary only. Source: CFMA 2025 Executive Compensation Survey for Contractors. Bonus typically ranges from $50K–$150K depending on company size and performance.
+          Source: CFMA 2025 Executive Compensation Survey for Contractors, published by PAS, Inc.
         </p>
 
-        {/* Pull quote */}
-        <blockquote className="border-l-4 border-[#00a69c] pl-8 py-2 mb-16">
-          <p className="text-xl md:text-2xl font-light text-gray-700 leading-relaxed italic">
-            "I just turned in a deal where we took a senior VP from $250,000 total comp to a $270,000 base salary, plus an expected bonus of around $100,000. There is a big delta between what companies pay current employees and what it takes to recruit the right person."
-          </p>
-          <footer className="text-sm text-gray-400 mt-4 not-italic">Mark Jones, Executive VP, Kimmel &amp; Associates — ENR 2026</footer>
-        </blockquote>
-
-        {/* Section 3 */}
+        {/* Section 2 — The Gap */}
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
           The Gap Between Retained and Recruited
         </h2>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          Here is the thing most companies miss. The salary data above reflects what people are currently earning. It does not reflect what it takes to get the person you actually want to leave a job they are comfortable in and take a chance on yours.
+          The salary data above reflects what people are currently earning. It does not reflect what it takes to get the person you actually want to leave a job they are comfortable in and take a chance on yours.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          ENR's own reporting confirms it. A recruiter at Kimmel and Associates described a recent deal where a senior VP went from $250,000 in total compensation to a $270,000 base salary plus an expected $100,000 bonus. That is a $120,000 increase in total comp to make the move. And that is not unusual. That is the market for a high-performing executive who is not looking for a job.
-        </p>
-        <p className="text-base text-gray-500 leading-relaxed mb-6">
-          The same ENR report included a quote from a PE-backed company running a COO search: "I'm not going to let $100,000 stand in the way of getting the right candidate." That is the mindset of a company that understands what this role is actually worth.
+          Recruiting a passive candidate at this level almost always requires a meaningful premium over their current total comp. The person who is performing well, trusted by their leadership team, and not actively looking is not going to move for a lateral offer. They need a reason. That reason is usually a combination of a better opportunity and better money. If you are not prepared to offer both, you are not going to close the candidate you actually want.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
-          If you are competing against that company for the same candidate and your offer is at the CFMA average, you are not competing. You are hoping they say yes out of politeness.
+          If you are competing against a company that understands this and your offer is at the CFMA average, you are not competing. You are hoping they say yes out of politeness.
         </p>
 
-        {/* Section 4 — Bonus Table */}
+        {/* Section 3 — Bonus Table */}
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
           How Bonuses Are Structured at This Level
         </h2>
@@ -184,7 +141,7 @@ export default function VPOperationsSalary() {
                 ["EBITDA-based bonus", "30% – 100% of base", "Stair-stepped incremental EBITDA improvement"],
                 ["Signing bonus", "$25,000 – $75,000+", "Used to close the gap when base is constrained"],
                 ["Long-term incentive / equity", "15% – 30% of base annually", "Deferred comp, phantom stock, profit-sharing"],
-                ["Vehicle allowance", "$800 – $1,500/month", "Standard at this level; expected, not a differentiator"],
+                ["Vehicle allowance", "$800 – $1,500/month", "Standard at this level across most GC and CM firms"],
               ].map(([type, range, driver], i) => (
                 <tr key={type} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
                   <td className="px-5 py-4 font-medium text-gray-900">{type}</td>
@@ -196,10 +153,10 @@ export default function VPOperationsSalary() {
           </table>
         </div>
         <p className="text-sm text-gray-400 mb-16">
-          Sources: CFMA 2025 Executive Compensation Survey, ENR 1Q 2026 Cost Report, K2 Staffing Executive Compensation Benchmarks 2026.
+          Source: CFMA 2025 Executive Compensation Survey for Contractors.
         </p>
 
-        {/* Section 5 */}
+        {/* Section 4 — What Drives Above Market */}
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
           What Drives a VP Ops Salary Above Market
         </h2>
@@ -232,21 +189,21 @@ export default function VPOperationsSalary() {
           ))}
         </div>
 
-        {/* Section 6 */}
+        {/* Section 5 — ROI */}
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
           The ROI Argument You Should Be Making Internally
         </h2>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          If your VP of Operations oversees $100 million in annual project volume and improves your average project margin by two points, that is $2 million in additional profit. If they improve it by three points, that is $3 million. One good hire at this level pays for itself many times over in the first year alone.
+          If a VP of Operations at market-rate comp, roughly $215,000 base plus bonus, oversees $100 million in annual project volume and improves your average project margin by two points, that is $2 million in additional profit. Three points is $3 million. One good hire at this level pays for itself many times over in the first year alone.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-6">
-          So when the conversation internally is about whether you can justify $280,000 in total comp for this role, the real question is whether you can afford not to. A mediocre VP of Operations at $220,000 who costs you two margin points on a $100 million portfolio is not a bargain. They are the most expensive hire you ever made.
+          So when the conversation internally is about whether you can justify paying above the CFMA average for this role, the real question is whether you can afford not to. A mediocre VP of Operations who costs you two margin points on a $100 million portfolio is not a bargain. They are the most expensive hire you ever made.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
           The companies that understand this are the ones willing to pay above market to get the right person. The companies that do not understand it are the ones losing searches to those companies and wondering why.
         </p>
 
-        {/* Section 7 */}
+        {/* Section 6 — What This Means If You Are Hiring */}
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
           What This Means If You Are Hiring
         </h2>
@@ -257,14 +214,14 @@ export default function VPOperationsSalary() {
           Know what the market looks like for your specific revenue size, your specific geography, and the specific background you actually need. Then build an offer that gives you a real chance of closing the person you want. Not the person who was available.
         </p>
         <p className="text-base text-gray-500 leading-relaxed mb-16">
-          And if you are not sure what that number is, that is exactly what a <Link href="/start-your-search"><span className="text-[#00a69c] hover:underline cursor-pointer">free market insight call</span></Link> is for. We will tell you what the number actually is for your market, your company size, and the profile you are trying to hire. No pitch. Just a straight answer.
+          And if you are not sure what that number is, that is exactly what a <Link href="/start-your-search"><span className="text-[#00a69c] hover:underline cursor-pointer">free market insight call</span></Link> is for. We will tell you what the number actually is for your market, your company size, and the profile you are trying to hire.
         </p>
 
         {/* CTA block */}
         <div className="bg-gray-950 text-white rounded-2xl p-10 md:p-12">
           <p className="text-xs font-mono uppercase tracking-widest text-[#00a69c] mb-4">Running a VP of Operations search?</p>
           <h3 className="text-2xl font-bold mb-4 leading-snug">
-            We will tell you what the market looks like for your company size, your geography, and the profile you actually need.
+            Want the best candidate, not just the best available one? That is what retained search is for. Let us talk about whether we are the right fit.
           </h3>
           <a href="https://schedule.flowstatesearch.com/your-next-hire" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-[#00a69c] text-white font-semibold text-sm px-8 py-3 rounded-lg hover:bg-[#008f86] transition-colors">
