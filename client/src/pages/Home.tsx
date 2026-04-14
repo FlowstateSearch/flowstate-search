@@ -134,6 +134,15 @@ export default function Home() {
 
               </motion.div>
 
+              {/* Social proof trust line */}
+              <motion.div variants={fadeIn}>
+                <div className="border-t border-white/10 pt-4">
+                  <p className="text-sm text-gray-400 tracking-wide">
+                    Trusted by regional GCs, ENR 400 contractors, and specialty subcontractors across 12 states.
+                  </p>
+                </div>
+              </motion.div>
+
               <motion.div variants={fadeIn} className="pt-4 flex items-center gap-6 text-sm font-mono text-gray-300">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-primary" />
