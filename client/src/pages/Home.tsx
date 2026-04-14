@@ -106,11 +106,11 @@ export default function Home() {
               className="space-y-8"
             >
               <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold tracking-tight leading-tight text-white">
-                Recruit The <span className="text-[#00a69c]">High-Performing Construction Leaders</span> Your Competitors Fear Losing.
+                We Recruit The <span className="text-[#00a69c]">Construction Leaders</span> Your Competitors Hope You Never Find.
               </motion.h1>
               
               <motion.p variants={fadeIn} className="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
-                The construction executives driving your competitors' biggest wins. We bring them to you.
+                The directors, VPs, and superintendents your competition is counting on — we know how to reach them.
               </motion.p>
               
               {/* 5-Star Review Badge */}
