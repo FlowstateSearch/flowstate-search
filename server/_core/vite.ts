@@ -47,40 +47,74 @@ export async function setupVite(app: Express, server: Server) {
   });
 }
 
+// SSR renderer — lazily loaded once on first request
+let ssrRender: ((url: string) => string) | null = null;
+let ssrTemplate: string | null = null;
+
+async function loadSsrRenderer(distPath: string): Promise<void> {
+  if (ssrRender) return; // already loaded
+
+  const entryServerPath = path.resolve(import.meta.dirname, "entry-server.js");
+  const templatePath = path.resolve(distPath, "index.html");
+
+  if (!fs.existsSync(entryServerPath)) {
+    console.warn("[SSR] entry-server.js not found, SSR disabled");
+    return;
+  }
+  if (!fs.existsSync(templatePath)) {
+    console.warn("[SSR] index.html not found, SSR disabled");
+    return;
+  }
+
+  try {
+    const mod = await import(entryServerPath);
+    ssrRender = mod.render;
+    ssrTemplate = fs.readFileSync(templatePath, "utf-8");
+    console.log("[SSR] Renderer loaded successfully");
+  } catch (e) {
+    console.error("[SSR] Failed to load renderer:", (e as Error).message);
+  }
+}
+
 export function serveStatic(app: Express) {
   const distPath =
     process.env.NODE_ENV === "development"
       ? path.resolve(import.meta.dirname, "../..", "dist", "public")
       : path.resolve(import.meta.dirname, "public");
+
   if (!fs.existsSync(distPath)) {
     console.error(
       `Could not find the build directory: ${distPath}, make sure to build the client first`
     );
   }
 
-  // Serve pre-rendered HTML for routes that have a pre-rendered file,
-  // before falling through to express.static (which would redirect to trailing slash).
-  app.use((req, res, next) => {
-    // Only handle GET requests for HTML pages (not API, assets, etc.)
-    if (req.method !== "GET") return next();
-    const accept = req.headers.accept || "";
-    if (!accept.includes("text/html") && !accept.includes("*/*")) return next();
+  // Eagerly load the SSR renderer on startup
+  loadSsrRenderer(distPath).catch(console.error);
 
-    // Normalize path: strip trailing slash, map root to /index
-    const cleanPath = req.path.replace(/\/+$/, "") || "/";
-    const routePath = cleanPath === "/" ? "/index" : cleanPath;
-    const prerenderedFile = path.resolve(distPath, `.${routePath}`, "index.html");
-
-    if (fs.existsSync(prerenderedFile)) {
-      return res.sendFile(prerenderedFile);
-    }
-    next();
-  });
-
+  // Serve static assets (JS, CSS, images) directly
   app.use(express.static(distPath));
 
-  // Fall back to index.html for client-side routing (auth pages, dynamic routes, etc.)
-  app.use("*", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
+  // For all HTML page requests, attempt SSR then fall back to index.html
+  app.use("*", async (req, res) => {
+    const templatePath = path.resolve(distPath, "index.html");
+
+    // Try SSR first
+    if (ssrRender && ssrTemplate) {
+      try {
+        const url = req.path;
+        const appHtml = ssrRender(url);
+        const html = ssrTemplate.replace(
+          '<div id="root"></div>',
+          `<div id="root">${appHtml}</div>`
+        );
+        return res.status(200).set({ "Content-Type": "text/html" }).end(html);
+      } catch (e) {
+        console.error("[SSR] Render error for", req.path, ":", (e as Error).message);
+        // Fall through to plain index.html
+      }
+    }
+
+    // Fallback: serve empty shell (client-side rendering)
+    res.sendFile(templatePath);
   });
 }

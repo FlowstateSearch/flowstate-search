@@ -435,3 +435,13 @@
 - [x] Verify new approach: 24/24 routes render successfully with vite build --ssr
 - [x] Verify full pnpm build pipeline runs end-to-end with new approach
 - [x] Verify production server locally returns rendered HTML (not empty React shell) for all 6 failing routes
+
+## SSR Runtime Fix (Request-Time Rendering)
+
+- [x] Diagnose that dist/ is in .gitignore so pre-rendered files were never deployed
+- [x] Switch from build-time pre-rendering to server-side rendering at request time
+- [x] Update build script: compile entry-server.tsx with esbuild --packages=external to dist/entry-server.js
+- [x] Rewrite server/_core/vite.ts serveStatic() to dynamically import entry-server.js and call render(url) on each request
+- [x] Fix "Dynamic require of util is not supported" error by using --packages=external in esbuild
+- [x] Verify locally: 6/6 previously-failing routes return <div id="root">< (rendered HTML)
+- [x] Verify [SSR] Renderer loaded successfully in server startup logs
