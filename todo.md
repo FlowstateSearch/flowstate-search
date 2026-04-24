@@ -415,3 +415,15 @@
 - [x] Test all 24 routes render successfully (24/24 passed)
 - [x] Verify pre-rendered HTML contains real content (not empty script shell)
 - [x] Verify server returns 200 with full HTML for blog posts without redirect
+
+## SSR Pre-Rendering (Build-Time Static HTML Generation)
+
+- [x] Create client/src/entry-server.tsx with SSR-safe wouter location hook (getServerSnapshot fix)
+- [x] Create client/src/RouterContent.tsx to separate route declarations for SSR use
+- [x] Refactor client/src/App.tsx to use RouterContent component
+- [x] Fix useAuth.ts to guard localStorage.setItem with typeof window check
+- [x] Create scripts/prerender-ssr.mjs using Vite ssrLoadModule with react jsxRuntime automatic
+- [x] Update server/_core/vite.ts to serve pre-rendered HTML files before falling back to index.html
+- [x] Fix /jobs/ai-architect SSR failure by adding tRPC + QueryClient providers to entry-server.tsx
+- [x] Add prerender-ssr.mjs to pnpm build pipeline in package.json (runs automatically on deploy)
+- [x] Verify all 24 public routes render successfully (24/24 succeeded in production build test)
