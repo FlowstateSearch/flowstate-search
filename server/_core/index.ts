@@ -52,14 +52,33 @@ async function startServer() {
       const entryServerPath = pathMod.resolve(dirname, "entry-server.js");
       const distPublicPath = pathMod.resolve(dirname, "public");
       const indexHtmlPath = pathMod.resolve(distPublicPath, "index.html");
+      const appRoot = pathMod.resolve(dirname, "..");
+      const nodeModulesExists = fsMod.existsSync(pathMod.resolve(appRoot, "node_modules"));
+      const nodeModulesInDist = fsMod.existsSync(pathMod.resolve(dirname, "node_modules"));
+
+      // Try to actually import entry-server.js to see if it works
+      let importError: string | null = null;
+      let importSuccess = false;
+      try {
+        const mod = await import(entryServerPath);
+        importSuccess = typeof mod.render === "function";
+      } catch (importErr: unknown) {
+        importError = (importErr as Error).message;
+      }
+
       res.json({
         dirname,
+        appRoot,
         entryServerPath,
         entryServerExists: fsMod.existsSync(entryServerPath),
         distPublicPath,
         indexHtmlExists: fsMod.existsSync(indexHtmlPath),
         nodeEnv: process.env.NODE_ENV,
+        nodeModulesExistsAtAppRoot: nodeModulesExists,
+        nodeModulesExistsInDist: nodeModulesInDist,
         distContents: fsMod.existsSync(dirname) ? fsMod.readdirSync(dirname) : [],
+        importSuccess,
+        importError,
       });
     } catch (e: unknown) {
       res.json({ error: (e as Error).message });
