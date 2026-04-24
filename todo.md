@@ -427,3 +427,11 @@
 - [x] Fix /jobs/ai-architect SSR failure by adding tRPC + QueryClient providers to entry-server.tsx
 - [x] Add prerender-ssr.mjs to pnpm build pipeline in package.json (runs automatically on deploy)
 - [x] Verify all 24 public routes render successfully (24/24 succeeded in production build test)
+
+## SSR Pre-Rendering Fix (Cloud Build Compatibility)
+
+- [x] Diagnose why pre-rendered files were not being served in production (prerender script used ssrLoadModule which requires a dev server - fails in cloud build)
+- [x] Rewrite scripts/prerender-ssr.mjs to use vite build --ssr (pure compilation step, no dev server required)
+- [x] Verify new approach: 24/24 routes render successfully with vite build --ssr
+- [x] Verify full pnpm build pipeline runs end-to-end with new approach
+- [x] Verify production server locally returns rendered HTML (not empty React shell) for all 6 failing routes

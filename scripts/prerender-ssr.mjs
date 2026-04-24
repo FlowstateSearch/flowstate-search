@@ -1,24 +1,21 @@
 /**
  * Build-time SSR pre-render script
- * 
- * This script:
- * 1. Reads the built index.html from dist/public
- * 2. Uses Vite's SSR build to render each route to HTML string
- * 3. Injects the rendered HTML into the template
- * 4. Saves each route as dist/public/<route>/index.html
- * 
- * Runs after `vite build` as part of `pnpm build`.
+ *
+ * Uses vite build --ssr to compile entry-server.tsx to a Node.js bundle,
+ * then imports and runs it to render all public routes to static HTML.
+ * This approach works in cloud build environments (no dev server required).
  */
 
-import { createServer } from "vite";
+import { build } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import fs from "fs";
-import { fileURLToPath } from "url";
+import { fileURLToPath, pathToFileURL } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, "..");
 const distPublic = path.resolve(projectRoot, "dist/public");
+const distServer = path.resolve(projectRoot, "dist/server");
 
 // All public routes to pre-render
 const routes = [
@@ -51,7 +48,7 @@ const routes = [
 async function main() {
   console.log("Starting SSR pre-render...");
 
-  // Read the built index.html template
+  // Step 1: Check that the client build exists
   const templatePath = path.resolve(distPublic, "index.html");
   if (!fs.existsSync(templatePath)) {
     console.error("dist/public/index.html not found. Run vite build first.");
@@ -59,11 +56,10 @@ async function main() {
   }
   const template = fs.readFileSync(templatePath, "utf-8");
 
-  // Create a Vite dev server in SSR mode to load the entry-server module
-  const vite = await createServer({
+  // Step 2: Compile entry-server.tsx to a Node.js ESM bundle (no dev server needed)
+  console.log("Compiling SSR bundle...");
+  await build({
     root: path.resolve(projectRoot, "client"),
-    server: { middlewareMode: true },
-    appType: "custom",
     plugins: [react({ jsxRuntime: "automatic" })],
     resolve: {
       alias: {
@@ -73,19 +69,27 @@ async function main() {
       },
     },
     envDir: projectRoot,
-    logLevel: "silent",
+    logLevel: "warn",
+    build: {
+      ssr: "./src/entry-server.tsx",
+      outDir: distServer,
+      emptyOutDir: true,
+      rollupOptions: {
+        input: path.resolve(projectRoot, "client/src/entry-server.tsx"),
+      },
+    },
   });
 
+  // Step 3: Import the compiled SSR bundle
+  const ssrBundlePath = pathToFileURL(path.resolve(distServer, "entry-server.js")).href;
+  const { render } = await import(ssrBundlePath);
+
+  // Step 4: Render each route and save to dist/public
   let successCount = 0;
   let errorCount = 0;
 
   for (const route of routes) {
     try {
-      // Load the SSR entry module fresh for each route
-      const { render } = await vite.ssrLoadModule(
-        path.resolve(projectRoot, "client/src/entry-server.tsx")
-      );
-
       const appHtml = render(route);
 
       // Inject rendered HTML into the template
@@ -111,10 +115,8 @@ async function main() {
     }
   }
 
-  await vite.close();
-
   console.log(`\nPre-render complete: ${successCount} succeeded, ${errorCount} failed`);
-  
+
   if (errorCount > 0) {
     process.exit(1);
   }
