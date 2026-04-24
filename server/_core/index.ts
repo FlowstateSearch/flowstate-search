@@ -44,22 +44,26 @@ async function startServer() {
     })
   );
   // SSR debug endpoint — shows what paths the server resolves in production
-  app.get("/api/ssr-debug", (_req, res) => {
-    const path = require("path") as typeof import("path");
-    const fs = require("fs") as typeof import("fs");
-    const dirname = import.meta.dirname;
-    const entryServerPath = path.resolve(dirname, "entry-server.js");
-    const distPublicPath = path.resolve(dirname, "public");
-    const indexHtmlPath = path.resolve(distPublicPath, "index.html");
-    res.json({
-      dirname,
-      entryServerPath,
-      entryServerExists: fs.existsSync(entryServerPath),
-      distPublicPath,
-      indexHtmlExists: fs.existsSync(indexHtmlPath),
-      nodeEnv: process.env.NODE_ENV,
-      distContents: fs.existsSync(dirname) ? fs.readdirSync(dirname) : [],
-    });
+  app.get("/api/ssr-debug", async (_req, res) => {
+    try {
+      const { default: pathMod } = await import("path");
+      const { default: fsMod } = await import("fs");
+      const dirname = import.meta.dirname;
+      const entryServerPath = pathMod.resolve(dirname, "entry-server.js");
+      const distPublicPath = pathMod.resolve(dirname, "public");
+      const indexHtmlPath = pathMod.resolve(distPublicPath, "index.html");
+      res.json({
+        dirname,
+        entryServerPath,
+        entryServerExists: fsMod.existsSync(entryServerPath),
+        distPublicPath,
+        indexHtmlExists: fsMod.existsSync(indexHtmlPath),
+        nodeEnv: process.env.NODE_ENV,
+        distContents: fsMod.existsSync(dirname) ? fsMod.readdirSync(dirname) : [],
+      });
+    } catch (e: unknown) {
+      res.json({ error: (e as Error).message });
+    }
   });
 
   // development mode uses Vite, production mode uses static files
