@@ -405,3 +405,13 @@
 ## Blog Design Overhaul & Backdating
 - [ ] Backdate posts: Oct 2025 (Passive Candidates), Nov 2025 (Talent Shortage), Dec 2025 (Retained vs Contingency), Jan 2026 (Super Salary), Feb 2026 (PM Salary), Mar 2026 (Cost of Bad Hire)
 - [ ] Redesign all 6 posts: more whitespace, larger section headings, pull-out stat callouts, cleaner paragraph spacing, better scannability
+
+## Pre-rendering / SSG for SEO
+
+- [x] Install Puppeteer for headless pre-rendering
+- [x] Write scripts/prerender.mjs to render all 24 public routes to static HTML
+- [x] Update serveStatic in server/_core/vite.ts to serve pre-rendered HTML files
+- [x] Add pnpm prerender and pnpm build:ssg scripts to package.json
+- [x] Test all 24 routes render successfully (24/24 passed)
+- [x] Verify pre-rendered HTML contains real content (not empty script shell)
+- [x] Verify server returns 200 with full HTML for blog posts without redirect

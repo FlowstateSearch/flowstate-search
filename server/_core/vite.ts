@@ -58,9 +58,28 @@ export function serveStatic(app: Express) {
     );
   }
 
+  // Serve pre-rendered HTML for routes that have a pre-rendered file,
+  // before falling through to express.static (which would redirect to trailing slash).
+  app.use((req, res, next) => {
+    // Only handle GET requests for HTML pages (not API, assets, etc.)
+    if (req.method !== "GET") return next();
+    const accept = req.headers.accept || "";
+    if (!accept.includes("text/html") && !accept.includes("*/*")) return next();
+
+    // Normalize path: strip trailing slash, map root to /index
+    const cleanPath = req.path.replace(/\/+$/, "") || "/";
+    const routePath = cleanPath === "/" ? "/index" : cleanPath;
+    const prerenderedFile = path.resolve(distPath, `.${routePath}`, "index.html");
+
+    if (fs.existsSync(prerenderedFile)) {
+      return res.sendFile(prerenderedFile);
+    }
+    next();
+  });
+
   app.use(express.static(distPath));
 
-  // fall through to index.html if the file doesn't exist
+  // Fall back to index.html for client-side routing (auth pages, dynamic routes, etc.)
   app.use("*", (_req, res) => {
     res.sendFile(path.resolve(distPath, "index.html"));
   });
