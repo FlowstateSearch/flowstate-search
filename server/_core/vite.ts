@@ -47,32 +47,40 @@ export async function setupVite(app: Express, server: Server) {
   });
 }
 
-// SSR renderer — lazily loaded once on first request
-let ssrRender: ((url: string) => string) | null = null;
-let ssrTemplate: string | null = null;
+// SSR renderer state
+type SsrRenderer = {
+  render: (url: string) => string;
+  template: string;
+} | null;
 
-async function loadSsrRenderer(distPath: string): Promise<void> {
-  if (ssrRender) return; // already loaded
+// Store the loading promise so all requests can await it
+let ssrRendererPromise: Promise<SsrRenderer> | null = null;
 
+async function loadSsrRenderer(distPath: string): Promise<SsrRenderer> {
   const entryServerPath = path.resolve(import.meta.dirname, "entry-server.js");
   const templatePath = path.resolve(distPath, "index.html");
 
   if (!fs.existsSync(entryServerPath)) {
-    console.warn("[SSR] entry-server.js not found, SSR disabled");
-    return;
+    console.warn("[SSR] entry-server.js not found at", entryServerPath, "- SSR disabled");
+    return null;
   }
   if (!fs.existsSync(templatePath)) {
-    console.warn("[SSR] index.html not found, SSR disabled");
-    return;
+    console.warn("[SSR] index.html not found at", templatePath, "- SSR disabled");
+    return null;
   }
 
   try {
     const mod = await import(entryServerPath);
-    ssrRender = mod.render;
-    ssrTemplate = fs.readFileSync(templatePath, "utf-8");
-    console.log("[SSR] Renderer loaded successfully");
+    if (typeof mod.render !== "function") {
+      console.error("[SSR] entry-server.js has no render export");
+      return null;
+    }
+    const template = fs.readFileSync(templatePath, "utf-8");
+    console.log("[SSR] Renderer loaded successfully from", entryServerPath);
+    return { render: mod.render, template };
   } catch (e) {
     console.error("[SSR] Failed to load renderer:", (e as Error).message);
+    return null;
   }
 }
 
@@ -88,22 +96,25 @@ export function serveStatic(app: Express) {
     );
   }
 
-  // Eagerly load the SSR renderer on startup
-  loadSsrRenderer(distPath).catch(console.error);
+  // Start loading the SSR renderer immediately — store the Promise
+  // so request handlers can await it instead of racing against it
+  ssrRendererPromise = loadSsrRenderer(distPath);
 
   // Serve static assets (JS, CSS, images) directly
   app.use(express.static(distPath));
 
-  // For all HTML page requests, attempt SSR then fall back to index.html
+  // For all HTML page requests, await the renderer then SSR or fall back
   app.use("*", async (req, res) => {
     const templatePath = path.resolve(distPath, "index.html");
 
-    // Try SSR first
-    if (ssrRender && ssrTemplate) {
+    // Await the renderer — this resolves immediately after first load
+    const renderer = await ssrRendererPromise;
+
+    if (renderer) {
       try {
         const url = req.path;
-        const appHtml = ssrRender(url);
-        const html = ssrTemplate.replace(
+        const appHtml = renderer.render(url);
+        const html = renderer.template.replace(
           '<div id="root"></div>',
           `<div id="root">${appHtml}</div>`
         );

@@ -445,3 +445,10 @@
 - [x] Fix "Dynamic require of util is not supported" error by using --packages=external in esbuild
 - [x] Verify locally: 6/6 previously-failing routes return <div id="root">< (rendered HTML)
 - [x] Verify [SSR] Renderer loaded successfully in server startup logs
+
+## SSR Race Condition Fix
+
+- [x] Diagnose: importSuccess=true in production but root div still empty
+- [x] Root cause: loadSsrRenderer was fire-and-forget (.catch only), requests arrived before Promise resolved
+- [x] Fix: store ssrRendererPromise and await it inside every request handler
+- [x] Verified locally: /blog/construction-superintendent-salary returns <div id="root"><link rel="preload"... (real HTML)
